@@ -1,0 +1,42 @@
+name: Unpack Guide RH site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.upload/**'
+      - '.github/workflows/unpack-site.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  unpack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unpack site archive
+        shell: bash
+        run: |
+          if [ ! -f .upload/part00 ]; then
+            echo "Upload archive already unpacked."
+            exit 0
+          fi
+          cat .upload/part* | base64 -d > /tmp/guide-rh-site.zip
+          rm -rf /tmp/guide-rh-site
+          mkdir -p /tmp/guide-rh-site
+          unzip -q /tmp/guide-rh-site.zip -d /tmp/guide-rh-site
+          cp -a /tmp/guide-rh-site/guide-rh/. .
+          rm -rf .upload
+      - name: Commit site files
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+            exit 0
+          fi
+          git commit -m "Add Guide RH website"
+          git push
