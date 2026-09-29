@@ -15,8 +15,10 @@ const url = `${SITE.url}/roleplay-ia/${u.slug}`;
 const anyTested = list.some((p) => p.score !== null);
 const coachello = list.find((p) => p.slug === 'coachello');
 const jsonld: any[] = [
-  { '@type': 'Article', headline: u.title, description: u.description, url, inLanguage: 'fr-FR', datePublished: '2026-10-01', dateModified: CATEGORY.updated,
-    author: SITE.authors.map((a) => ({ '@type': 'Person', name: a.name, jobTitle: a.role, sameAs: a.linkedin })), publisher: { '@id': `${SITE.url}#organization` } },
+  { '@type': 'Article', '@id': `${url}#article`, headline: u.title, description: u.description, url, inLanguage: 'fr-FR', datePublished: '2026-09-29', dateModified: CATEGORY.updated,
+    author: SITE.authors.map((a) => ({ '@id': `${SITE.url}/a-propos#${a.id}` })), publisher: { '@id': `${SITE.url}#organization` } },
+  { '@type': 'ItemList', '@id': `${url}#solutions`, name: `Solutions de roleplay IA pour ${meta.label}`, numberOfItems: list.length,
+    itemListElement: list.map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/roleplay-ia/${p.slug}`, item: { '@id': `${SITE.url}/roleplay-ia/${p.slug}#app`, '@type': 'SoftwareApplication', name: p.name } })) },
 ];
 if (u.faq.length) jsonld.push({ '@type': 'FAQPage', mainEntity: u.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a.replace(/<[^>]+>/g, '') } })) });
 const ph = (s: string) => s.replace(/\[À (COMPLÉTER|VÉRIFIER)[^\]]*\]/g, (m) => `<span class="placeholder">${m}</span>`);
