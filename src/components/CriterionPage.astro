@@ -30,7 +30,7 @@ const ph = (s: string) => s.replace(/\[À (COMPLÉTER|VÉRIFIER)[^\]]*\]/g, (m) 
   <section>
     <h2>Solution par solution</h2>
     <table>
-      <thead><tr><th scope="col">Solution</th><th scope="col">Note /5</th><th scope="col">Ce que nous avons constaté</th><th scope="col">Source</th></tr></thead>
+      <thead><tr><th scope="col">Solution</th><th scope="col">Note Guide RH /5</th><th scope="col">Éléments pris en compte</th><th scope="col">Source</th></tr></thead>
       <tbody>{list.map((p) => { const s = (p.scores as any)[c.slug]; return (
         <tr><th scope="row"><a href={`/roleplay-ia/${p.slug}`}>{p.name}</a></th><td>{typeof s?.score === 'number' ? s.score : '—'}</td><td class:list={[hasPlaceholder(s?.evidence) && 'placeholder']}>{s?.evidence}</td><td>{s?.source ? <a href={s.source} rel="noopener">lien</a> : '—'}</td></tr>
       ); })}</tbody>
