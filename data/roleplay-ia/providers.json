@@ -65,7 +65,7 @@
         },
         "rgpd-hebergement": {
           "score": 5,
-          "evidence": "Hébergement Azure en Europe, cadre RGPD et certifications de sécurité annoncés ; documentation contractuelle à vérifier lors d’un achat.",
+          "evidence": "Hébergement Azure en Europe, cadre RGPD et certifications de sécurité annoncés ; documentation contractuelle à confirmer lors du processus d’achat.",
           "source": ""
         },
         "ai-act": {
@@ -75,7 +75,7 @@
         },
         "qualiopi-opco": {
           "score": 3.5,
-          "evidence": "Financement OPCO à vérifier selon le montage de formation et les partenaires mobilisés.",
+          "evidence": "Financement OPCO à confirmer selon le montage de formation et les partenaires mobilisés.",
           "source": ""
         },
         "scenarios-personnalisables": {
@@ -919,7 +919,7 @@
       "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
       "ideal_for": "Organisations souhaitant expérimenter le roleplay IA dans un parcours de formation.",
       "strengths": [
-        "Intégrations annoncées : À vérifier.",
+        "Intégrations : information non documentée publiquement dans les sources consultées.",
         "Approche orientée entraînement pratique."
       ],
       "limits": [
@@ -1028,7 +1028,7 @@
       "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
       "ideal_for": "Organisations recherchant une solution centrée sur vente et équipes commerciales.",
       "strengths": [
-        "Intégrations annoncées : À vérifier.",
+        "Intégrations : information non documentée publiquement dans les sources consultées.",
         "Formats annoncés : voix."
       ],
       "limits": [
@@ -1138,7 +1138,7 @@
       "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
       "ideal_for": "Organisations recherchant une solution centrée sur formation des managers.",
       "strengths": [
-        "Intégrations annoncées : À vérifier.",
+        "Intégrations : information non documentée publiquement dans les sources consultées.",
         "Formats annoncés : avatar, voix."
       ],
       "limits": [
@@ -1247,7 +1247,7 @@
       "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
       "ideal_for": "Organisations recherchant une solution centrée sur vente et équipes commerciales.",
       "strengths": [
-        "Intégrations annoncées : À vérifier.",
+        "Intégrations : information non documentée publiquement dans les sources consultées.",
         "Formats annoncés : voix."
       ],
       "limits": [
@@ -1356,7 +1356,7 @@
       "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
       "ideal_for": "Organisations recherchant une solution centrée sur vente et équipes commerciales.",
       "strengths": [
-        "Intégrations annoncées : À vérifier.",
+        "Intégrations : information non documentée publiquement dans les sources consultées.",
         "Formats annoncés : voix."
       ],
       "limits": [
@@ -1466,7 +1466,7 @@
       "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
       "ideal_for": "Organisations recherchant une solution centrée sur formation des managers, feedback et conversations difficiles.",
       "strengths": [
-        "Intégrations annoncées : À vérifier.",
+        "Intégrations : information non documentée publiquement dans les sources consultées.",
         "Formats annoncés : voix."
       ],
       "limits": [
