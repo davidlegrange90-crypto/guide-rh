@@ -6,7 +6,7 @@ const total = CRITERIA.reduce((s, c) => s + c.weight, 0);
 ---
 <Base title="Méthodologie : comment Guide RH teste et note les outils IA de formation" description="Grille de 11 critères pondérés, protocole de test identique pour toutes les solutions, contact des éditeurs, droit de réponse, cadence de mise à jour." canonical={url} breadcrumbs={[{ name: 'Méthodologie', url }]}>
   <h1>Méthodologie</h1>
-  <p class="mt-4 text-lg">Toutes les solutions sont testées par les mêmes personnes, sur les mêmes scénarios, en français, et notées sur la même grille publique. Aucun éditeur ne relit ni ne valide les notes avant publication.</p>
+  <p class="mt-4 text-lg">Guide RH applique la même grille publique à toutes les solutions. À ce stade, les notes publiées sont des évaluations éditoriales fondées sur la documentation disponible et l’adéquation aux besoins des entreprises françaises. Lorsqu’un test standardisé est réalisé, son statut et sa date sont indiqués explicitement sur la fiche concernée.</p>
 
   <h2 id="grille">La grille de notation</h2>
   <p>{SCALE_NOTE}</p>
@@ -20,16 +20,16 @@ const total = CRITERIA.reduce((s, c) => s + c.weight, 0);
   <ol class="list">
     <li><strong>Panel.</strong> Toute solution proposant du roleplay IA en français à des entreprises est éligible. Le panel est complété à chaque revue trimestrielle ; un éditeur peut demander à y figurer via la page <a href="/contact">contact</a>.</li>
     <li><strong>Questionnaire.</strong> Chaque éditeur reçoit le même questionnaire (hébergement, sous-traitants IA, certifications, intégrations, prix, références). Les réponses sont citées comme « déclarées » tant qu'elles ne sont pas vérifiées.</li>
-    <li><strong>Accès.</strong> Nous demandons un accès d'essai standard. Nous ne testons pas sur des environnements aménagés pour nous.</li>
-    <li><strong>Scénarios communs.</strong> Chaque solution est jouée sur les mêmes scénarios : recadrage d'un retard récurrent (management), conflit entre deux collaborateurs, feedback sur un livrable défaillant, entretien annuel avec refus de promotion, appel de prospection à un DRH pressé, réclamation client répétée. Les scénarios sont décrits sur chaque page de cas d'usage.</li>
-    <li><strong>Deux testeurs minimum</strong> par solution ; les notes sont discutées jusqu'à accord et l'écart initial est conservé dans nos notes internes.</li>
+    <li><strong>Accès.</strong> Lorsque cela est possible, nous demandons un accès d'essai standard. Une fiche indique explicitement si un test standardisé a été réalisé ou si l'analyse reste documentaire.</li>
+    <li><strong>Scénarios communs.</strong> Pour les tests standardisés, nous utilisons les mêmes scénarios : recadrage d'un retard récurrent (management), conflit entre deux collaborateurs, feedback sur un livrable défaillant, entretien annuel avec refus de promotion, appel de prospection à un DRH pressé, réclamation client répétée. Les scénarios sont décrits sur chaque page de cas d'usage.</li>
+    <li><strong>Statut vérifiable.</strong> Nous ne présentons pas une analyse documentaire comme un test produit. La date et le statut d'évaluation figurent sur chaque fiche.</li>
     <li><strong>Preuves.</strong> Chaque note s'accompagne d'un constat écrit et, quand c'est possible, d'une source publique (page de l'éditeur, documentation, registre officiel).</li>
     <li><strong>Droit de réponse.</strong> Avant publication, l'éditeur reçoit sa fiche pour signaler des erreurs factuelles. Il ne peut pas modifier les notes. Sa réponse, s'il en envoie une, est publiée telle quelle.</li>
     <li><strong>Mise à jour.</strong> {SITE.review_cadence} Chaque changement est daté dans le <a href="/journal">journal</a>.</li>
   </ol>
 
   <h2 id="independance">Indépendance</h2>
-  <p>{SITE.funding} Tout lien commercial entre Guide RH et un éditeur est indiqué sur la fiche de cet éditeur. Les auteurs ne détiennent pas de participation dans les éditeurs comparés. [À COMPLÉTER : déclaration d'intérêts des auteurs.]</p>
+  <p>{SITE.funding} Tout lien professionnel ou commercial entre Guide RH et un éditeur est indiqué sur la fiche de cet éditeur. Les lecteurs doivent tenir compte de ces liens lorsqu'ils interprètent une note ou une sélection éditoriale. Toute correction factuelle demandée par un éditeur est traitée indépendamment de l'existence ou non d'une relation commerciale.</p>
 
   <h2 id="limites">Limites</h2>
   <ul class="list">
