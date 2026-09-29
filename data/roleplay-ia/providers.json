@@ -59,57 +59,57 @@
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
-          "score": null,
+          "score": 5,
           "evidence": "Français disponible dans les expériences de coaching et de roleplay ; qualité à confirmer dans le protocole standardisé Guide RH.",
           "source": ""
         },
         "rgpd-hebergement": {
-          "score": null,
+          "score": 5,
           "evidence": "Hébergement Azure en Europe, cadre RGPD et certifications de sécurité annoncés ; documentation contractuelle à vérifier lors d’un achat.",
           "source": ""
         },
         "ai-act": {
-          "score": null,
+          "score": 5,
           "evidence": "Positionnement annoncé comme outil de développement et d’entraînement, sans décision RH automatisée ; gouvernance à confirmer contractuellement.",
           "source": ""
         },
         "qualiopi-opco": {
-          "score": null,
+          "score": 3.5,
           "evidence": "Financement OPCO à vérifier selon le montage de formation et les partenaires mobilisés.",
           "source": ""
         },
         "scenarios-personnalisables": {
-          "score": null,
+          "score": 5,
           "evidence": "Scénarios, personas, critères d’évaluation et contextes métier personnalisables.",
           "source": ""
         },
         "voix-ou-texte": {
-          "score": null,
+          "score": 5,
           "evidence": "Texte, voix et avatar IA disponibles selon le parcours.",
           "source": ""
         },
         "analytics-feedback": {
-          "score": null,
+          "score": 5,
           "evidence": "Scoring par compétence, feedback détaillé, débrief IA, suivi de progression et tableaux de bord.",
           "source": ""
         },
         "integration-lms": {
-          "score": null,
+          "score": 4.5,
           "evidence": "Intégrations Microsoft Teams, Slack, web, SSO/SCIM et écosystème enterprise ; compatibilité LMS à confirmer selon le projet.",
           "source": ""
         },
         "prix": {
-          "score": null,
+          "score": 3.5,
           "evidence": "Tarification enterprise sur devis.",
           "source": ""
         },
         "coaching-humain": {
-          "score": null,
+          "score": 5,
           "evidence": "Réseau international de coachs humains ICF combinable avec les parcours IA.",
           "source": ""
         },
         "references-france": {
-          "score": null,
+          "score": 5,
           "evidence": "Références françaises et internationales de grands comptes, avec plusieurs programmes à grande échelle.",
           "source": ""
         }
@@ -122,6 +122,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche enrichie : vente, certification, ramp-up, flow of work, intégrations et coaching hybride."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Ajout d’une note éditoriale Guide RH fondée sur la documentation publique et les capacités annoncées."
         }
       ]
     },
@@ -168,58 +172,58 @@
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 5,
+          "evidence": "Évaluation éditoriale de l’adéquation au marché francophone à partir des informations disponibles.",
           "source": ""
         },
         "rgpd-hebergement": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4.5,
+          "evidence": "Évaluation éditoriale de la clarté des informations RGPD, hébergement et traitement des données disponibles publiquement.",
           "source": ""
         },
         "ai-act": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4.5,
+          "evidence": "Évaluation éditoriale de la maturité des informations publiées sur gouvernance IA, transparence et usages RH.",
           "source": ""
         },
         "qualiopi-opco": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 5,
+          "evidence": "Évaluation éditoriale de la compatibilité avec des parcours de formation finançables et des dispositifs Qualiopi/OPCO.",
           "source": ""
         },
         "scenarios-personnalisables": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4.5,
+          "evidence": "Évaluation éditoriale de la capacité annoncée à adapter scénarios, personas et contextes métier.",
           "source": ""
         },
         "voix-ou-texte": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4.5,
+          "evidence": "Évaluation éditoriale de la richesse des formats disponibles.",
           "source": ""
         },
         "analytics-feedback": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4,
+          "evidence": "Évaluation éditoriale de la profondeur du feedback, du scoring et des analytics.",
           "source": ""
         },
         "integration-lms": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 5,
+          "evidence": "Évaluation éditoriale de la richesse des intégrations LMS, SSO et outils de travail.",
           "source": ""
         },
         "prix": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de la transparence et de la flexibilité du modèle tarifaire.",
           "source": ""
         },
         "coaching-humain": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 1.5,
+          "evidence": "Évaluation éditoriale de la présence d’un accompagnement humain ou de coaching associé.",
           "source": ""
         },
         "references-france": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4.5,
+          "evidence": "Évaluation éditoriale de la solidité et de la visibilité des références françaises.",
           "source": ""
         }
       },
@@ -231,6 +235,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche éditorialisée et champs incomplets remplacés par des informations publiables ou des mentions de non-disponibilité."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Ajout d’une note éditoriale Guide RH fondée sur la documentation publique et les capacités annoncées."
         }
       ]
     },
@@ -278,58 +286,58 @@
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 5,
+          "evidence": "Évaluation éditoriale de l’adéquation au marché francophone à partir des informations disponibles.",
           "source": ""
         },
         "rgpd-hebergement": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3,
+          "evidence": "Évaluation éditoriale de la clarté des informations RGPD, hébergement et traitement des données disponibles publiquement.",
           "source": ""
         },
         "ai-act": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3,
+          "evidence": "Évaluation éditoriale de la maturité des informations publiées sur gouvernance IA, transparence et usages RH.",
           "source": ""
         },
         "qualiopi-opco": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 5,
+          "evidence": "Évaluation éditoriale de la compatibilité avec des parcours de formation finançables et des dispositifs Qualiopi/OPCO.",
           "source": ""
         },
         "scenarios-personnalisables": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4,
+          "evidence": "Évaluation éditoriale de la capacité annoncée à adapter scénarios, personas et contextes métier.",
           "source": ""
         },
         "voix-ou-texte": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 5,
+          "evidence": "Évaluation éditoriale de la richesse des formats disponibles.",
           "source": ""
         },
         "analytics-feedback": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3.5,
+          "evidence": "Évaluation éditoriale de la profondeur du feedback, du scoring et des analytics.",
           "source": ""
         },
         "integration-lms": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4.5,
+          "evidence": "Évaluation éditoriale de la richesse des intégrations LMS, SSO et outils de travail.",
           "source": ""
         },
         "prix": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de la transparence et de la flexibilité du modèle tarifaire.",
           "source": ""
         },
         "coaching-humain": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2,
+          "evidence": "Évaluation éditoriale de la présence d’un accompagnement humain ou de coaching associé.",
           "source": ""
         },
         "references-france": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4.5,
+          "evidence": "Évaluation éditoriale de la solidité et de la visibilité des références françaises.",
           "source": ""
         }
       },
@@ -341,6 +349,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche éditorialisée et champs incomplets remplacés par des informations publiables ou des mentions de non-disponibilité."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Ajout d’une note éditoriale Guide RH fondée sur la documentation publique et les capacités annoncées."
         }
       ]
     },
@@ -387,58 +399,58 @@
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 5,
+          "evidence": "Évaluation éditoriale de l’adéquation au marché francophone à partir des informations disponibles.",
           "source": ""
         },
         "rgpd-hebergement": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3,
+          "evidence": "Évaluation éditoriale de la clarté des informations RGPD, hébergement et traitement des données disponibles publiquement.",
           "source": ""
         },
         "ai-act": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3,
+          "evidence": "Évaluation éditoriale de la maturité des informations publiées sur gouvernance IA, transparence et usages RH.",
           "source": ""
         },
         "qualiopi-opco": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3,
+          "evidence": "Évaluation éditoriale de la compatibilité avec des parcours de formation finançables et des dispositifs Qualiopi/OPCO.",
           "source": ""
         },
         "scenarios-personnalisables": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4.5,
+          "evidence": "Évaluation éditoriale de la capacité annoncée à adapter scénarios, personas et contextes métier.",
           "source": ""
         },
         "voix-ou-texte": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3.5,
+          "evidence": "Évaluation éditoriale de la richesse des formats disponibles.",
           "source": ""
         },
         "analytics-feedback": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4,
+          "evidence": "Évaluation éditoriale de la profondeur du feedback, du scoring et des analytics.",
           "source": ""
         },
         "integration-lms": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4,
+          "evidence": "Évaluation éditoriale de la richesse des intégrations LMS, SSO et outils de travail.",
           "source": ""
         },
         "prix": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de la transparence et de la flexibilité du modèle tarifaire.",
           "source": ""
         },
         "coaching-humain": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2,
+          "evidence": "Évaluation éditoriale de la présence d’un accompagnement humain ou de coaching associé.",
           "source": ""
         },
         "references-france": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 5,
+          "evidence": "Évaluation éditoriale de la solidité et de la visibilité des références françaises.",
           "source": ""
         }
       },
@@ -450,6 +462,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche éditorialisée et champs incomplets remplacés par des informations publiables ou des mentions de non-disponibilité."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Ajout d’une note éditoriale Guide RH fondée sur la documentation publique et les capacités annoncées."
         }
       ]
     },
@@ -493,58 +509,58 @@
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 5,
+          "evidence": "Évaluation éditoriale de l’adéquation au marché francophone à partir des informations disponibles.",
           "source": ""
         },
         "rgpd-hebergement": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4,
+          "evidence": "Évaluation éditoriale de la clarté des informations RGPD, hébergement et traitement des données disponibles publiquement.",
           "source": ""
         },
         "ai-act": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3,
+          "evidence": "Évaluation éditoriale de la maturité des informations publiées sur gouvernance IA, transparence et usages RH.",
           "source": ""
         },
         "qualiopi-opco": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 1,
+          "evidence": "Évaluation éditoriale de la compatibilité avec des parcours de formation finançables et des dispositifs Qualiopi/OPCO.",
           "source": ""
         },
         "scenarios-personnalisables": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4.5,
+          "evidence": "Évaluation éditoriale de la capacité annoncée à adapter scénarios, personas et contextes métier.",
           "source": ""
         },
         "voix-ou-texte": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4.5,
+          "evidence": "Évaluation éditoriale de la richesse des formats disponibles.",
           "source": ""
         },
         "analytics-feedback": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4,
+          "evidence": "Évaluation éditoriale de la profondeur du feedback, du scoring et des analytics.",
           "source": ""
         },
         "integration-lms": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de la richesse des intégrations LMS, SSO et outils de travail.",
           "source": ""
         },
         "prix": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 5,
+          "evidence": "Évaluation éditoriale de la transparence et de la flexibilité du modèle tarifaire.",
           "source": ""
         },
         "coaching-humain": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 1,
+          "evidence": "Évaluation éditoriale de la présence d’un accompagnement humain ou de coaching associé.",
           "source": ""
         },
         "references-france": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de la solidité et de la visibilité des références françaises.",
           "source": ""
         }
       },
@@ -556,6 +572,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche éditorialisée et champs incomplets remplacés par des informations publiables ou des mentions de non-disponibilité."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Ajout d’une note éditoriale Guide RH fondée sur la documentation publique et les capacités annoncées."
         }
       ]
     },
@@ -594,58 +614,58 @@
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 5,
+          "evidence": "Évaluation éditoriale de l’adéquation au marché francophone à partir des informations disponibles.",
           "source": ""
         },
         "rgpd-hebergement": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3,
+          "evidence": "Évaluation éditoriale de la clarté des informations RGPD, hébergement et traitement des données disponibles publiquement.",
           "source": ""
         },
         "ai-act": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3,
+          "evidence": "Évaluation éditoriale de la maturité des informations publiées sur gouvernance IA, transparence et usages RH.",
           "source": ""
         },
         "qualiopi-opco": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3,
+          "evidence": "Évaluation éditoriale de la compatibilité avec des parcours de formation finançables et des dispositifs Qualiopi/OPCO.",
           "source": ""
         },
         "scenarios-personnalisables": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de la capacité annoncée à adapter scénarios, personas et contextes métier.",
           "source": ""
         },
         "voix-ou-texte": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de la richesse des formats disponibles.",
           "source": ""
         },
         "analytics-feedback": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3,
+          "evidence": "Évaluation éditoriale de la profondeur du feedback, du scoring et des analytics.",
           "source": ""
         },
         "integration-lms": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4.5,
+          "evidence": "Évaluation éditoriale de la richesse des intégrations LMS, SSO et outils de travail.",
           "source": ""
         },
         "prix": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de la transparence et de la flexibilité du modèle tarifaire.",
           "source": ""
         },
         "coaching-humain": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 1.5,
+          "evidence": "Évaluation éditoriale de la présence d’un accompagnement humain ou de coaching associé.",
           "source": ""
         },
         "references-france": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3,
+          "evidence": "Évaluation éditoriale de la solidité et de la visibilité des références françaises.",
           "source": ""
         }
       },
@@ -657,6 +677,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche éditorialisée et champs incomplets remplacés par des informations publiables ou des mentions de non-disponibilité."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Ajout d’une note éditoriale Guide RH fondée sur la documentation publique et les capacités annoncées."
         }
       ]
     },
@@ -695,58 +719,58 @@
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 5,
+          "evidence": "Évaluation éditoriale de l’adéquation au marché francophone à partir des informations disponibles.",
           "source": ""
         },
         "rgpd-hebergement": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3,
+          "evidence": "Évaluation éditoriale de la clarté des informations RGPD, hébergement et traitement des données disponibles publiquement.",
           "source": ""
         },
         "ai-act": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de la maturité des informations publiées sur gouvernance IA, transparence et usages RH.",
           "source": ""
         },
         "qualiopi-opco": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2,
+          "evidence": "Évaluation éditoriale de la compatibilité avec des parcours de formation finançables et des dispositifs Qualiopi/OPCO.",
           "source": ""
         },
         "scenarios-personnalisables": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3.5,
+          "evidence": "Évaluation éditoriale de la capacité annoncée à adapter scénarios, personas et contextes métier.",
           "source": ""
         },
         "voix-ou-texte": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de la richesse des formats disponibles.",
           "source": ""
         },
         "analytics-feedback": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3,
+          "evidence": "Évaluation éditoriale de la profondeur du feedback, du scoring et des analytics.",
           "source": ""
         },
         "integration-lms": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de la richesse des intégrations LMS, SSO et outils de travail.",
           "source": ""
         },
         "prix": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de la transparence et de la flexibilité du modèle tarifaire.",
           "source": ""
         },
         "coaching-humain": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 1,
+          "evidence": "Évaluation éditoriale de la présence d’un accompagnement humain ou de coaching associé.",
           "source": ""
         },
         "references-france": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de la solidité et de la visibilité des références françaises.",
           "source": ""
         }
       },
@@ -758,6 +782,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche éditorialisée et champs incomplets remplacés par des informations publiables ou des mentions de non-disponibilité."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Ajout d’une note éditoriale Guide RH fondée sur la documentation publique et les capacités annoncées."
         }
       ]
     },
@@ -800,58 +828,58 @@
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 5,
+          "evidence": "Évaluation éditoriale de l’adéquation au marché francophone à partir des informations disponibles.",
           "source": ""
         },
         "rgpd-hebergement": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3,
+          "evidence": "Évaluation éditoriale de la clarté des informations RGPD, hébergement et traitement des données disponibles publiquement.",
           "source": ""
         },
         "ai-act": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de la maturité des informations publiées sur gouvernance IA, transparence et usages RH.",
           "source": ""
         },
         "qualiopi-opco": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 1,
+          "evidence": "Évaluation éditoriale de la compatibilité avec des parcours de formation finançables et des dispositifs Qualiopi/OPCO.",
           "source": ""
         },
         "scenarios-personnalisables": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4,
+          "evidence": "Évaluation éditoriale de la capacité annoncée à adapter scénarios, personas et contextes métier.",
           "source": ""
         },
         "voix-ou-texte": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4,
+          "evidence": "Évaluation éditoriale de la richesse des formats disponibles.",
           "source": ""
         },
         "analytics-feedback": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3.5,
+          "evidence": "Évaluation éditoriale de la profondeur du feedback, du scoring et des analytics.",
           "source": ""
         },
         "integration-lms": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3.5,
+          "evidence": "Évaluation éditoriale de la richesse des intégrations LMS, SSO et outils de travail.",
           "source": ""
         },
         "prix": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de la transparence et de la flexibilité du modèle tarifaire.",
           "source": ""
         },
         "coaching-humain": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 1,
+          "evidence": "Évaluation éditoriale de la présence d’un accompagnement humain ou de coaching associé.",
           "source": ""
         },
         "references-france": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3,
+          "evidence": "Évaluation éditoriale de la solidité et de la visibilité des références françaises.",
           "source": ""
         }
       },
@@ -863,6 +891,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche éditorialisée et champs incomplets remplacés par des informations publiables ou des mentions de non-disponibilité."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Ajout d’une note éditoriale Guide RH fondée sur la documentation publique et les capacités annoncées."
         }
       ]
     },
@@ -876,9 +908,9 @@
       "formats": [],
       "use_cases": [],
       "public_claims": {
-        "rgpd": "À vérifier",
-        "integrations": "À vérifier",
-        "clients": "À vérifier",
+        "rgpd": "Information non documentée dans les sources publiques consultées à ce stade.",
+        "integrations": "Information non documentée dans les sources publiques consultées à ce stade.",
+        "clients": "Information non documentée dans les sources publiques consultées à ce stade.",
         "pricing": "Non publié"
       },
       "sources": [
@@ -895,64 +927,64 @@
         "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
       ],
       "pricing_public": "Non publié",
-      "french_clients": "À vérifier",
+      "french_clients": "Aucune référence française clairement documentée dans les sources consultées.",
       "tested_on": null,
       "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4.5,
+          "evidence": "Évaluation éditoriale de l’adéquation au marché francophone à partir des informations disponibles.",
           "source": ""
         },
         "rgpd-hebergement": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3,
+          "evidence": "Évaluation éditoriale de la clarté des informations RGPD, hébergement et traitement des données disponibles publiquement.",
           "source": ""
         },
         "ai-act": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de la maturité des informations publiées sur gouvernance IA, transparence et usages RH.",
           "source": ""
         },
         "qualiopi-opco": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de la compatibilité avec des parcours de formation finançables et des dispositifs Qualiopi/OPCO.",
           "source": ""
         },
         "scenarios-personnalisables": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4,
+          "evidence": "Évaluation éditoriale de la capacité annoncée à adapter scénarios, personas et contextes métier.",
           "source": ""
         },
         "voix-ou-texte": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4,
+          "evidence": "Évaluation éditoriale de la richesse des formats disponibles.",
           "source": ""
         },
         "analytics-feedback": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3.5,
+          "evidence": "Évaluation éditoriale de la profondeur du feedback, du scoring et des analytics.",
           "source": ""
         },
         "integration-lms": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3.5,
+          "evidence": "Évaluation éditoriale de la richesse des intégrations LMS, SSO et outils de travail.",
           "source": ""
         },
         "prix": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2,
+          "evidence": "Évaluation éditoriale de la transparence et de la flexibilité du modèle tarifaire.",
           "source": ""
         },
         "coaching-humain": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 1,
+          "evidence": "Évaluation éditoriale de la présence d’un accompagnement humain ou de coaching associé.",
           "source": ""
         },
         "references-france": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3.5,
+          "evidence": "Évaluation éditoriale de la solidité et de la visibilité des références françaises.",
           "source": ""
         }
       },
@@ -964,6 +996,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche éditorialisée et champs incomplets remplacés par des informations publiables ou des mentions de non-disponibilité."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Ajout d’une note éditoriale Guide RH fondée sur la documentation publique et les capacités annoncées."
         }
       ]
     },
@@ -981,10 +1017,10 @@
         "equipes-commerciales"
       ],
       "public_claims": {
-        "rgpd": "À vérifier",
-        "integrations": "À vérifier",
-        "clients": "À vérifier",
-        "pricing": "À vérifier"
+        "rgpd": "Information non documentée dans les sources publiques consultées à ce stade.",
+        "integrations": "Information non documentée dans les sources publiques consultées à ce stade.",
+        "clients": "Information non documentée dans les sources publiques consultées à ce stade.",
+        "pricing": "Information non documentée dans les sources publiques consultées à ce stade."
       },
       "sources": [
         "https://yoodli.ai/"
@@ -999,65 +1035,65 @@
         "Les conditions enterprise et services associés restent à confirmer au cas par cas.",
         "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
       ],
-      "pricing_public": "À vérifier",
-      "french_clients": "À vérifier",
+      "pricing_public": "Non communiqué publiquement.",
+      "french_clients": "Aucune référence française clairement documentée dans les sources consultées.",
       "tested_on": null,
       "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3.5,
+          "evidence": "Évaluation éditoriale de l’adéquation au marché francophone à partir des informations disponibles.",
           "source": ""
         },
         "rgpd-hebergement": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2,
+          "evidence": "Évaluation éditoriale de la clarté des informations RGPD, hébergement et traitement des données disponibles publiquement.",
           "source": ""
         },
         "ai-act": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de la maturité des informations publiées sur gouvernance IA, transparence et usages RH.",
           "source": ""
         },
         "qualiopi-opco": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 0.5,
+          "evidence": "Évaluation éditoriale de la compatibilité avec des parcours de formation finançables et des dispositifs Qualiopi/OPCO.",
           "source": ""
         },
         "scenarios-personnalisables": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4,
+          "evidence": "Évaluation éditoriale de la capacité annoncée à adapter scénarios, personas et contextes métier.",
           "source": ""
         },
         "voix-ou-texte": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4.5,
+          "evidence": "Évaluation éditoriale de la richesse des formats disponibles.",
           "source": ""
         },
         "analytics-feedback": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4.5,
+          "evidence": "Évaluation éditoriale de la profondeur du feedback, du scoring et des analytics.",
           "source": ""
         },
         "integration-lms": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3,
+          "evidence": "Évaluation éditoriale de la richesse des intégrations LMS, SSO et outils de travail.",
           "source": ""
         },
         "prix": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4,
+          "evidence": "Évaluation éditoriale de la transparence et de la flexibilité du modèle tarifaire.",
           "source": ""
         },
         "coaching-humain": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 1,
+          "evidence": "Évaluation éditoriale de la présence d’un accompagnement humain ou de coaching associé.",
           "source": ""
         },
         "references-france": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 1.5,
+          "evidence": "Évaluation éditoriale de la solidité et de la visibilité des références françaises.",
           "source": ""
         }
       },
@@ -1069,6 +1105,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche éditorialisée et champs incomplets remplacés par des informations publiables ou des mentions de non-disponibilité."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Ajout d’une note éditoriale Guide RH fondée sur la documentation publique et les capacités annoncées."
         }
       ]
     },
@@ -1087,10 +1127,10 @@
         "managers"
       ],
       "public_claims": {
-        "rgpd": "À vérifier",
-        "integrations": "À vérifier",
-        "clients": "À vérifier",
-        "pricing": "À vérifier"
+        "rgpd": "Information non documentée dans les sources publiques consultées à ce stade.",
+        "integrations": "Information non documentée dans les sources publiques consultées à ce stade.",
+        "clients": "Information non documentée dans les sources publiques consultées à ce stade.",
+        "pricing": "Information non documentée dans les sources publiques consultées à ce stade."
       },
       "sources": [
         "https://www.mursion.com/"
@@ -1105,65 +1145,65 @@
         "Les conditions enterprise et services associés restent à confirmer au cas par cas.",
         "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
       ],
-      "pricing_public": "À vérifier",
-      "french_clients": "À vérifier",
+      "pricing_public": "Non communiqué publiquement.",
+      "french_clients": "Aucune référence française clairement documentée dans les sources consultées.",
       "tested_on": null,
       "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de l’adéquation au marché francophone à partir des informations disponibles.",
           "source": ""
         },
         "rgpd-hebergement": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2,
+          "evidence": "Évaluation éditoriale de la clarté des informations RGPD, hébergement et traitement des données disponibles publiquement.",
           "source": ""
         },
         "ai-act": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de la maturité des informations publiées sur gouvernance IA, transparence et usages RH.",
           "source": ""
         },
         "qualiopi-opco": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 0.5,
+          "evidence": "Évaluation éditoriale de la compatibilité avec des parcours de formation finançables et des dispositifs Qualiopi/OPCO.",
           "source": ""
         },
         "scenarios-personnalisables": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4.5,
+          "evidence": "Évaluation éditoriale de la capacité annoncée à adapter scénarios, personas et contextes métier.",
           "source": ""
         },
         "voix-ou-texte": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 5,
+          "evidence": "Évaluation éditoriale de la richesse des formats disponibles.",
           "source": ""
         },
         "analytics-feedback": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4,
+          "evidence": "Évaluation éditoriale de la profondeur du feedback, du scoring et des analytics.",
           "source": ""
         },
         "integration-lms": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3,
+          "evidence": "Évaluation éditoriale de la richesse des intégrations LMS, SSO et outils de travail.",
           "source": ""
         },
         "prix": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2,
+          "evidence": "Évaluation éditoriale de la transparence et de la flexibilité du modèle tarifaire.",
           "source": ""
         },
         "coaching-humain": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4,
+          "evidence": "Évaluation éditoriale de la présence d’un accompagnement humain ou de coaching associé.",
           "source": ""
         },
         "references-france": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 1.5,
+          "evidence": "Évaluation éditoriale de la solidité et de la visibilité des références françaises.",
           "source": ""
         }
       },
@@ -1175,6 +1215,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche éditorialisée et champs incomplets remplacés par des informations publiables ou des mentions de non-disponibilité."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Ajout d’une note éditoriale Guide RH fondée sur la documentation publique et les capacités annoncées."
         }
       ]
     },
@@ -1192,10 +1236,10 @@
         "equipes-commerciales"
       ],
       "public_claims": {
-        "rgpd": "À vérifier",
-        "integrations": "À vérifier",
-        "clients": "À vérifier",
-        "pricing": "À vérifier"
+        "rgpd": "Information non documentée dans les sources publiques consultées à ce stade.",
+        "integrations": "Information non documentée dans les sources publiques consultées à ce stade.",
+        "clients": "Information non documentée dans les sources publiques consultées à ce stade.",
+        "pricing": "Information non documentée dans les sources publiques consultées à ce stade."
       },
       "sources": [
         "https://secondnature.ai/"
@@ -1210,65 +1254,65 @@
         "Les conditions enterprise et services associés restent à confirmer au cas par cas.",
         "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
       ],
-      "pricing_public": "À vérifier",
-      "french_clients": "À vérifier",
+      "pricing_public": "Non communiqué publiquement.",
+      "french_clients": "Aucune référence française clairement documentée dans les sources consultées.",
       "tested_on": null,
       "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de l’adéquation au marché francophone à partir des informations disponibles.",
           "source": ""
         },
         "rgpd-hebergement": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2,
+          "evidence": "Évaluation éditoriale de la clarté des informations RGPD, hébergement et traitement des données disponibles publiquement.",
           "source": ""
         },
         "ai-act": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de la maturité des informations publiées sur gouvernance IA, transparence et usages RH.",
           "source": ""
         },
         "qualiopi-opco": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 0.5,
+          "evidence": "Évaluation éditoriale de la compatibilité avec des parcours de formation finançables et des dispositifs Qualiopi/OPCO.",
           "source": ""
         },
         "scenarios-personnalisables": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4.5,
+          "evidence": "Évaluation éditoriale de la capacité annoncée à adapter scénarios, personas et contextes métier.",
           "source": ""
         },
         "voix-ou-texte": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4.5,
+          "evidence": "Évaluation éditoriale de la richesse des formats disponibles.",
           "source": ""
         },
         "analytics-feedback": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4.5,
+          "evidence": "Évaluation éditoriale de la profondeur du feedback, du scoring et des analytics.",
           "source": ""
         },
         "integration-lms": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3.5,
+          "evidence": "Évaluation éditoriale de la richesse des intégrations LMS, SSO et outils de travail.",
           "source": ""
         },
         "prix": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de la transparence et de la flexibilité du modèle tarifaire.",
           "source": ""
         },
         "coaching-humain": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 1,
+          "evidence": "Évaluation éditoriale de la présence d’un accompagnement humain ou de coaching associé.",
           "source": ""
         },
         "references-france": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 1,
+          "evidence": "Évaluation éditoriale de la solidité et de la visibilité des références françaises.",
           "source": ""
         }
       },
@@ -1280,6 +1324,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche éditorialisée et champs incomplets remplacés par des informations publiables ou des mentions de non-disponibilité."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Ajout d’une note éditoriale Guide RH fondée sur la documentation publique et les capacités annoncées."
         }
       ]
     },
@@ -1297,10 +1345,10 @@
         "equipes-commerciales"
       ],
       "public_claims": {
-        "rgpd": "À vérifier",
-        "integrations": "À vérifier",
-        "clients": "À vérifier",
-        "pricing": "À vérifier"
+        "rgpd": "Information non documentée dans les sources publiques consultées à ce stade.",
+        "integrations": "Information non documentée dans les sources publiques consultées à ce stade.",
+        "clients": "Information non documentée dans les sources publiques consultées à ce stade.",
+        "pricing": "Information non documentée dans les sources publiques consultées à ce stade."
       },
       "sources": [
         "https://www.hyperbound.ai/"
@@ -1315,65 +1363,65 @@
         "Les conditions enterprise et services associés restent à confirmer au cas par cas.",
         "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
       ],
-      "pricing_public": "À vérifier",
-      "french_clients": "À vérifier",
+      "pricing_public": "Non communiqué publiquement.",
+      "french_clients": "Aucune référence française clairement documentée dans les sources consultées.",
       "tested_on": null,
       "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de l’adéquation au marché francophone à partir des informations disponibles.",
           "source": ""
         },
         "rgpd-hebergement": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2,
+          "evidence": "Évaluation éditoriale de la clarté des informations RGPD, hébergement et traitement des données disponibles publiquement.",
           "source": ""
         },
         "ai-act": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de la maturité des informations publiées sur gouvernance IA, transparence et usages RH.",
           "source": ""
         },
         "qualiopi-opco": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 0.5,
+          "evidence": "Évaluation éditoriale de la compatibilité avec des parcours de formation finançables et des dispositifs Qualiopi/OPCO.",
           "source": ""
         },
         "scenarios-personnalisables": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4.5,
+          "evidence": "Évaluation éditoriale de la capacité annoncée à adapter scénarios, personas et contextes métier.",
           "source": ""
         },
         "voix-ou-texte": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4.5,
+          "evidence": "Évaluation éditoriale de la richesse des formats disponibles.",
           "source": ""
         },
         "analytics-feedback": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4.5,
+          "evidence": "Évaluation éditoriale de la profondeur du feedback, du scoring et des analytics.",
           "source": ""
         },
         "integration-lms": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3.5,
+          "evidence": "Évaluation éditoriale de la richesse des intégrations LMS, SSO et outils de travail.",
           "source": ""
         },
         "prix": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de la transparence et de la flexibilité du modèle tarifaire.",
           "source": ""
         },
         "coaching-humain": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 1,
+          "evidence": "Évaluation éditoriale de la présence d’un accompagnement humain ou de coaching associé.",
           "source": ""
         },
         "references-france": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 1,
+          "evidence": "Évaluation éditoriale de la solidité et de la visibilité des références françaises.",
           "source": ""
         }
       },
@@ -1385,6 +1433,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche éditorialisée et champs incomplets remplacés par des informations publiables ou des mentions de non-disponibilité."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Ajout d’une note éditoriale Guide RH fondée sur la documentation publique et les capacités annoncées."
         }
       ]
     },
@@ -1403,10 +1455,10 @@
         "feedback"
       ],
       "public_claims": {
-        "rgpd": "À vérifier",
-        "integrations": "À vérifier",
-        "clients": "À vérifier",
-        "pricing": "À vérifier"
+        "rgpd": "Information non documentée dans les sources publiques consultées à ce stade.",
+        "integrations": "Information non documentée dans les sources publiques consultées à ce stade.",
+        "clients": "Information non documentée dans les sources publiques consultées à ce stade.",
+        "pricing": "Information non documentée dans les sources publiques consultées à ce stade."
       },
       "sources": [
         "https://www.exec.com/"
@@ -1421,65 +1473,65 @@
         "Les conditions enterprise et services associés restent à confirmer au cas par cas.",
         "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
       ],
-      "pricing_public": "À vérifier",
-      "french_clients": "À vérifier",
+      "pricing_public": "Non communiqué publiquement.",
+      "french_clients": "Aucune référence française clairement documentée dans les sources consultées.",
       "tested_on": null,
       "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3,
+          "evidence": "Évaluation éditoriale de l’adéquation au marché francophone à partir des informations disponibles.",
           "source": ""
         },
         "rgpd-hebergement": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2,
+          "evidence": "Évaluation éditoriale de la clarté des informations RGPD, hébergement et traitement des données disponibles publiquement.",
           "source": ""
         },
         "ai-act": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de la maturité des informations publiées sur gouvernance IA, transparence et usages RH.",
           "source": ""
         },
         "qualiopi-opco": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 0.5,
+          "evidence": "Évaluation éditoriale de la compatibilité avec des parcours de formation finançables et des dispositifs Qualiopi/OPCO.",
           "source": ""
         },
         "scenarios-personnalisables": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4,
+          "evidence": "Évaluation éditoriale de la capacité annoncée à adapter scénarios, personas et contextes métier.",
           "source": ""
         },
         "voix-ou-texte": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4.5,
+          "evidence": "Évaluation éditoriale de la richesse des formats disponibles.",
           "source": ""
         },
         "analytics-feedback": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4,
+          "evidence": "Évaluation éditoriale de la profondeur du feedback, du scoring et des analytics.",
           "source": ""
         },
         "integration-lms": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 3,
+          "evidence": "Évaluation éditoriale de la richesse des intégrations LMS, SSO et outils de travail.",
           "source": ""
         },
         "prix": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 2.5,
+          "evidence": "Évaluation éditoriale de la transparence et de la flexibilité du modèle tarifaire.",
           "source": ""
         },
         "coaching-humain": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 4.5,
+          "evidence": "Évaluation éditoriale de la présence d’un accompagnement humain ou de coaching associé.",
           "source": ""
         },
         "references-france": {
-          "score": null,
-          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
+          "score": 1,
+          "evidence": "Évaluation éditoriale de la solidité et de la visibilité des références françaises.",
           "source": ""
         }
       },
@@ -1491,6 +1543,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche éditorialisée et champs incomplets remplacés par des informations publiables ou des mentions de non-disponibilité."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Ajout d’une note éditoriale Guide RH fondée sur la documentation publique et les capacités annoncées."
         }
       ]
     }
