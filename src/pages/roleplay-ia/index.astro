@@ -24,13 +24,13 @@ const itemList = anyTested ? [{
   numberOfItems: tested.length,
   itemListElement: tested.map((p) => ({
     '@type': 'ListItem', position: p.rank, url: `${url}/${p.slug}`,
-    item: { '@type': 'SoftwareApplication', name: p.name, url: p.url, applicationCategory: 'BusinessApplication', operatingSystem: 'Web' },
+    item: { '@type': 'SoftwareApplication', '@id': `${url}/${p.slug}#app`, name: p.name, url: `${url}/${p.slug}`, sameAs: p.url, applicationCategory: 'BusinessApplication', applicationSubCategory: 'AI roleplay for corporate training', operatingSystem: 'Web' },
   })),
 }] : [];
 const jsonld = [
   {
     '@type': 'Article', '@id': `${url}#article`, headline: title, description, inLanguage: 'fr-FR', url,
-    datePublished: '2026-10-01', dateModified: CATEGORY.updated,
+    datePublished: '2026-09-29', dateModified: CATEGORY.updated,
     author: SITE.authors.map((a) => ({ '@type': 'Person', name: a.name, jobTitle: a.role, sameAs: a.linkedin })),
     publisher: { '@id': `${SITE.url}#organization` },
   },
