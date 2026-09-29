@@ -7,5 +7,5 @@ const { updated, tested = true } = Astro.props;
   Par {SITE.authors.map((a, i) => (<><a href={a.linkedin} rel="author">{a.name}</a>{i < SITE.authors.length - 1 ? ', ' : ''}</>))} ·
   Mis à jour le <time datetime={updated}>{formatDate(updated)}</time> ·
   <a href="/methodologie">Méthodologie</a> · <a href="/a-propos#transparence">Transparence</a>
-  {!tested && <span class="placeholder ml-2">Version préliminaire : tests en cours, aucune note attribuée.</span>}
+  {!tested && <span class="ml-2 text-muted">Analyse éditoriale publiée ; score standardisé non attribué à ce stade.</span>}
 </p>
