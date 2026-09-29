@@ -10,7 +10,7 @@ const jsonld = SITE.authors.map((a) => ({ '@type': 'Person', name: a.name, jobTi
   <p class="mt-4 text-lg">Guide RH analyse et compare les outils d'intelligence artificielle utilisés pour développer les compétences en entreprise : roleplay IA aujourd'hui, coaching IA et autres catégories ensuite. Le site s'adresse aux DRH, responsables formation et managers qui doivent choisir un outil sans le tester eux-mêmes.</p>
 
   <h2>Qui édite le site</h2>
-  <p>{SITE.publisher.legalName}, {SITE.publisher.address}. SIREN {SITE.publisher.siren}. SIRET {SITE.publisher.siret}. Contact : <a href={`mailto:${SITE.publisher.email}`}>{SITE.publisher.email}</a>.</p>
+  <p>{SITE.publisher.legalName}, {SITE.publisher.address}. SIREN {SITE.publisher.siren}. SIRET {SITE.publisher.siret}. Contact : <a href={`mailto:${SITE.publisher.email}`}>{SITE.publisher.email}</a>. Suivre <a href={SITE.publisher.linkedin_company} rel="me noopener">Guide RH sur LinkedIn</a>.</p>
 
   <h2>Les auteurs</h2>
   <ul class="list">{SITE.authors.map((a) => (<li id={a.id}><a href={a.linkedin} rel="author me">{a.name}</a> — {a.role}</li>))}</ul>
