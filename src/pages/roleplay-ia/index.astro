@@ -63,20 +63,20 @@ const cell = (p: any, slug: string) => {
       </div>
     )}
     {anyTested && (
-      <div class="mt-5"><p class="font-semibold">Scores standardisés publiés</p><ol class="list">{top.map((p) => (<li><a href={`/roleplay-ia/${p.slug}`}><strong>{p.name}</strong></a> — {p.score}/100 — {p.ideal_for}</li>))}</ol></div>
+      <div class="mt-5"><p class="font-semibold">Classement Guide RH</p><ol class="list">{top.map((p) => (<li><a href={`/roleplay-ia/${p.slug}`}><strong>{p.name}</strong></a> — {p.score}/100 — {p.ideal_for}</li>))}</ol></div>
     )}
   </section>
 
   <section id="tableau-comparatif">
     <h2>Tableau comparatif</h2>
-    <p class="text-sm text-muted">Chaque cellule indique un fait constaté et sa source ; la note (0–5) figure entre parenthèses lorsque le critère a été évalué. <a href="/methodologie">Grille et pondérations</a>.</p>
+    <p class="text-sm text-muted">Chaque cellule synthétise les informations disponibles ; la note éditoriale (0–5) figure entre parenthèses. Elle reflète l’analyse Guide RH à partir des capacités annoncées, de la documentation publique et de l’adéquation au marché français. <a href="/methodologie">Grille et pondérations</a>.</p>
     <div class="overflow-x-auto">
       <table>
         <thead>
           <tr>
             <th scope="col">Sélection</th>
             <th scope="col">Solution</th>
-            <th scope="col">Score standardisé</th>
+            <th scope="col">Note Guide RH</th>
             {CRITERIA.map((c) => (<th scope="col">{c.page ? <a href={`/roleplay-ia/${c.slug}`}>{c.short}</a> : c.short}</th>))}
           </tr>
         </thead>
