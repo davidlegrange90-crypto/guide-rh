@@ -19,6 +19,8 @@ export const USE_CASES = [
   { slug: 'relation-client', label: 'Relation client', term: 'formation relation client' },
   { slug: 'onboarding', label: 'Onboarding des nouveaux managers', term: 'onboarding managers' },
   { slug: 'recrutement', label: 'Entretiens de recrutement', term: 'formation recruteurs' },
+  { slug: 'certification', label: 'Certification des compétences', term: 'certification roleplay IA' },
+  { slug: 'ramp-up', label: 'Accélérer le ramp-up', term: 'ramp-up commercial onboarding IA' },
 ];
 
 /** Weighted score on 100; null when no criterion has been scored. */
