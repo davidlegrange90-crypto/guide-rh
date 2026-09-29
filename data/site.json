@@ -1,0 +1,24 @@
+{
+  "name": "Guide RH",
+  "tagline": "Le banc d'essai indépendant des outils IA pour le développement des talents",
+  "url": "https://guide-rh.com",
+  "language": "fr-FR",
+  "publisher": {
+    "legalName": "[À COMPLÉTER : raison sociale de l'agence éditrice]",
+    "address": "[À COMPLÉTER : adresse]",
+    "siren": "[À COMPLÉTER]",
+    "email": "contact@guide-rh.com",
+    "linkedin": "[À COMPLÉTER : URL LinkedIn de l'agence]"
+  },
+  "funding": "[À COMPLÉTER : qui finance le site. Exemple : « Guide RH est édité et financé par [Agence]. » Si un éditeur de solution comparée contribue au financement, l'indiquer ici nommément.]",
+  "authors": [
+    {
+      "id": "auteur-1",
+      "name": "[À COMPLÉTER : nom]",
+      "role": "[À COMPLÉTER : fonction, ex. consultante L&D, 12 ans en direction formation]",
+      "linkedin": "[À COMPLÉTER : URL LinkedIn]"
+    }
+  ],
+  "review_cadence": "Chaque comparatif est revu au moins une fois par trimestre, et à chaque changement majeur signalé par un éditeur.",
+  "test_cadence_note": "Les tests sont réalisés en français, avec les mêmes scénarios pour toutes les solutions."
+}

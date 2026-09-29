@@ -1,0 +1,151 @@
+---
+import Base from '../../layouts/Base.astro';
+import Byline from '../../components/Byline.astro';
+import Transparence from '../../components/Transparence.astro';
+import Faq from '../../components/Faq.astro';
+import ScoreBadge from '../../components/ScoreBadge.astro';
+import { SITE, CATEGORY, CRITERIA, USE_CASES, rankedProviders, isTested, hasPlaceholder, formatDate } from '../../lib/data';
+import { FAQ_ROLEPLAY } from '../../lib/faq-roleplay';
+
+const providers = rankedProviders();
+const tested = providers.filter((p) => p.score !== null);
+const anyTested = tested.length > 0;
+const top = tested.slice(0, 5);
+const year = new Date().getFullYear();
+const title = `Roleplay IA : comparatif des solutions de jeu de rôle IA pour la formation en entreprise (${year})`;
+const description = `Comparatif indépendant des solutions de roleplay IA (jeu de rôle IA, simulation conversationnelle) pour former managers, commerciaux et conseillers : ${providers.length} solutions évaluées sur 11 critères, dont RGPD, Qualiopi et intégration LMS.`;
+const url = `${SITE.url}/roleplay-ia`;
+
+const itemList = anyTested ? [{
+  '@type': 'ItemList',
+  name: 'Classement des solutions de roleplay IA pour la formation en entreprise',
+  itemListOrder: 'https://schema.org/ItemListOrderDescending',
+  numberOfItems: tested.length,
+  itemListElement: tested.map((p) => ({
+    '@type': 'ListItem', position: p.rank, url: `${url}/${p.slug}`,
+    item: { '@type': 'SoftwareApplication', name: p.name, url: p.url, applicationCategory: 'BusinessApplication', operatingSystem: 'Web' },
+  })),
+}] : [];
+const jsonld = [
+  {
+    '@type': 'Article', '@id': `${url}#article`, headline: title, description, inLanguage: 'fr-FR', url,
+    datePublished: '2026-10-01', dateModified: CATEGORY.updated,
+    author: SITE.authors.map((a) => ({ '@type': 'Person', name: a.name, jobTitle: a.role, sameAs: a.linkedin })),
+    publisher: { '@id': `${SITE.url}#organization` },
+  },
+  ...itemList,
+  { '@type': 'FAQPage', mainEntity: FAQ_ROLEPLAY.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a.replace(/<[^>]+>/g, '') } })) },
+];
+const cell = (p: any, slug: string) => {
+  const s = p.scores[slug];
+  const ev = s?.evidence ?? '';
+  return { score: s?.score, ev, src: s?.source, ph: hasPlaceholder(ev) };
+};
+---
+<Base {title} {description} canonical={url} {jsonld} breadcrumbs={[{ name: 'Roleplay IA', url }]}>
+  <h1>{title}</h1>
+  <Byline updated={CATEGORY.updated} tested={anyTested} />
+
+  <p class="mt-6 text-lg">
+    Les solutions de roleplay IA permettent aux collaborateurs de s'entraîner à des conversations professionnelles (feedback, conflit, négociation, vente) face à un personnage simulé par l'IA, puis de recevoir un retour immédiat. Nous avons évalué {providers.length} plateformes disponibles en français selon onze critères, dont l'hébergement des données, les scénarios personnalisables et le financement OPCO.
+  </p>
+
+  <section id="en-bref">
+    <h2>En bref</h2>
+    {anyTested ? (
+      <ol class="list">
+        {top.map((p) => (<li><a href={`/roleplay-ia/${p.slug}`}><strong>{p.name}</strong></a> — {p.score}/100 — {p.ideal_for}</li>))}
+      </ol>
+    ) : (
+      <p class="placeholder inline-block">Aucune note n'a encore été attribuée : les tests sont en cours. Les fiches ci-dessous présentent les informations publiques de chaque éditeur, à vérifier. Le classement apparaîtra une fois les tests terminés.</p>
+    )}
+  </section>
+
+  <section id="tableau-comparatif">
+    <h2>Tableau comparatif</h2>
+    <p class="text-sm text-muted">Chaque cellule indique un fait constaté et sa source ; la note (0–5) figure entre parenthèses lorsque le critère a été évalué. <a href="/methodologie">Grille et pondérations</a>.</p>
+    <div class="overflow-x-auto">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Rang</th>
+            <th scope="col">Solution</th>
+            <th scope="col">Note</th>
+            {CRITERIA.map((c) => (<th scope="col">{c.page ? <a href={`/roleplay-ia/${c.slug}`}>{c.short}</a> : c.short}</th>))}
+          </tr>
+        </thead>
+        <tbody>
+          {providers.map((p) => (
+            <tr>
+              <td>{p.rank ?? '—'}</td>
+              <th scope="row"><a href={`/roleplay-ia/${p.slug}`}>{p.name}</a><br /><span class="text-xs text-muted">{p.country}</span></th>
+              <td><ScoreBadge score={p.score} scored={p.scored} total={CRITERIA.length} /></td>
+              {CRITERIA.map((c) => { const x = cell(p, c.slug); return (
+                <td class:list={[x.ph && 'placeholder']}>
+                  {x.ev}{typeof x.score === 'number' && <> ({x.score})</>}
+                  {x.src && <> <a href={x.src} rel="noopener" class="text-xs">[source]</a></>}
+                </td>
+              ); })}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="fiches">
+    <h2>Les solutions, une par une</h2>
+    {providers.map((p) => (
+      <article class="mt-6 rounded border border-line bg-white p-4" id={p.slug}>
+        <h3 class="mt-0 flex items-center gap-3">{p.rank && <span class="text-muted">#{p.rank}</span>}<a href={`/roleplay-ia/${p.slug}`}>{p.name}</a> <ScoreBadge score={p.score} scored={p.scored} total={CRITERIA.length} /></h3>
+        <p>{p.description}</p>
+        <dl class="mt-3 grid gap-x-6 gap-y-2 text-sm sm:grid-cols-2">
+          <div><dt class="font-semibold">Idéal pour</dt><dd class:list={[hasPlaceholder(p.ideal_for) && 'placeholder']}>{p.ideal_for}</dd></div>
+          <div><dt class="font-semibold">Formats</dt><dd>{p.formats.length ? p.formats.join(', ') : 'À vérifier'}</dd></div>
+          <div><dt class="font-semibold">Cas d'usage</dt><dd>{p.use_cases.length ? p.use_cases.map((u) => USE_CASES.find((x) => x.slug === u)?.label ?? u).join(', ') : 'À vérifier'}</dd></div>
+          <div><dt class="font-semibold">Prix publiés</dt><dd>{p.pricing_public}</dd></div>
+          <div><dt class="font-semibold">Références françaises déclarées</dt><dd>{p.french_clients || 'Aucune vérifiable'}</dd></div>
+          <div><dt class="font-semibold">Testé le</dt><dd>{p.tested_on ? formatDate(p.tested_on) : <span class="placeholder">Pas encore testé</span>}</dd></div>
+          <div class="sm:col-span-2"><dt class="font-semibold">Lien avec Guide RH</dt><dd class:list={[hasPlaceholder(p.disclosure) && 'placeholder']}>{p.disclosure}</dd></div>
+        </dl>
+        <p class="text-sm"><a href={`/roleplay-ia/${p.slug}`}>Fiche complète, points forts, limites et droit de réponse →</a></p>
+      </article>
+    ))}
+  </section>
+
+  <section id="cas-usage">
+    <h2>Quelle solution selon votre cas d'usage ?</h2>
+    {USE_CASES.map((u) => { const list = providers.filter((p) => (p.use_cases as string[]).includes(u.slug)); return (
+      <div class="mt-5">
+        <h3><a href={`/roleplay-ia/${u.slug}`}>{u.label}</a></h3>
+        <p>{list.length
+          ? <>Solutions qui couvrent ce cas : {list.map((p, i) => (<><a href={`/roleplay-ia/${p.slug}`}>{p.name}</a>{i < list.length - 1 ? ', ' : ''}</>))}. <span class="placeholder">[À COMPLÉTER APRÈS TEST : deux phrases indiquant laquelle convient le mieux et pourquoi.]</span></>
+          : <span class="placeholder">[À COMPLÉTER : aucune solution du panel ne déclare couvrir ce cas ; indiquer les solutions testées sur ce scénario.]</span>}</p>
+      </div>
+    ); })}
+  </section>
+
+  <section id="comment-choisir">
+    <h2>Comment choisir une solution de roleplay IA</h2>
+    <ol class="list">
+      <li><strong>Partez du cas d'usage</strong>, pas de l'outil : quelle conversation vos collaborateurs doivent-ils mieux mener dans six mois ?</li>
+      <li><strong>Testez le français</strong> sur un vrai scénario métier : accents, tournures, réactions du personnage aux réponses inattendues.</li>
+      <li><strong>Vérifiez la donnée</strong> : où sont stockées les sessions, quels modèles IA les traitent, combien de temps elles sont conservées, qui y accède.</li>
+      <li><strong>Regardez le feedback</strong>, pas le score : est-il argumenté, relié à des critères explicites, actionnable ?</li>
+      <li><strong>Demandez un éditeur de scénarios</strong> si vos situations sont spécifiques ; un catalogue fermé s'use vite.</li>
+      <li><strong>Cadrez l'usage des résultats</strong> avec le CSE et la DPO avant le pilote : résultats privés, information des salariés, supervision humaine.</li>
+      <li><strong>Comparez le coût total</strong> : licence, création de scénarios, accompagnement, intégration LMS.</li>
+    </ol>
+  </section>
+
+  <Faq items={FAQ_ROLEPLAY} />
+  <Transparence />
+
+  <section id="sources" class="text-sm">
+    <h2>Sources</h2>
+    <ul class="list">
+      {providers.map((p) => (<li>{p.name} : {p.sources.map((s, i) => (<><a href={s} rel="noopener">{new URL(s).hostname}</a>{i < p.sources.length - 1 ? ', ' : ''}</>))} (consulté le {formatDate(CATEGORY.updated)})</li>))}
+    </ul>
+    <p>Historique des changements de ce comparatif : <a href="/journal">journal des mises à jour</a>.</p>
+  </section>
+</Base>

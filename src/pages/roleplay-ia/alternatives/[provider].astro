@@ -1,0 +1,53 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Byline from '../../../components/Byline.astro';
+import Transparence from '../../../components/Transparence.astro';
+import ScoreBadge from '../../../components/ScoreBadge.astro';
+import { SITE, CATEGORY, CRITERIA, USE_CASES, rankedProviders } from '../../../lib/data';
+
+export function getStaticPaths() {
+  return rankedProviders().map((p) => ({ params: { provider: p.slug }, props: { p } }));
+}
+const { p } = Astro.props;
+const all = rankedProviders().filter((x) => x.slug !== p.slug);
+const shared = all.filter((x) => x.use_cases.some((u: string) => (p.use_cases as string[]).includes(u)));
+const list = (shared.length ? shared : all).slice(0, 8);
+const french = list.filter((x) => !x.international);
+const url = `${SITE.url}/roleplay-ia/alternatives/${p.slug}`;
+const title = `Alternatives à ${p.name} : ${list.length} solutions de roleplay IA comparées`;
+const description = `Vous cherchez une alternative à ${p.name} pour le roleplay IA en formation ? ${list.length} solutions comparées sur le français, le RGPD, les scénarios, le feedback et le prix${french.length ? `, dont ${french.length} éditeurs français` : ''}.`;
+const jsonld = [
+  { '@type': 'Article', headline: title, description, url, inLanguage: 'fr-FR', datePublished: '2026-10-01', dateModified: CATEGORY.updated,
+    author: SITE.authors.map((a) => ({ '@type': 'Person', name: a.name, sameAs: a.linkedin })), publisher: { '@id': `${SITE.url}#organization` } },
+  { '@type': 'ItemList', name: title, itemListElement: list.map((x, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/roleplay-ia/${x.slug}`, name: x.name })) },
+];
+---
+<Base {title} {description} canonical={url} {jsonld} breadcrumbs={[{ name: 'Roleplay IA', url: `${SITE.url}/roleplay-ia` }, { name: p.name, url: `${SITE.url}/roleplay-ia/${p.slug}` }, { name: 'Alternatives', url }]}>
+  <h1>Alternatives à {p.name} pour le roleplay IA</h1>
+  <Byline updated={CATEGORY.updated} tested={p.score !== null} />
+  <p class="mt-6 text-lg">{p.name} ({p.country}) est {p.description.charAt(0).toLowerCase() + p.description.slice(1)} Les {list.length} solutions ci-dessous couvrent des cas d'usage comparables{french.length ? <>, dont {french.length} éditeurs français avec une offre en français natif</> : ''}. Elles sont classées selon la note globale de notre <a href="/roleplay-ia">comparatif</a>.</p>
+
+  <table>
+    <thead><tr><th scope="col">Solution</th><th scope="col">Pays</th><th scope="col">Note</th><th scope="col">Formats</th><th scope="col">Cas d'usage</th><th scope="col">Prix publiés</th></tr></thead>
+    <tbody>
+      {list.map((x) => (
+        <tr>
+          <th scope="row"><a href={`/roleplay-ia/${x.slug}`}>{x.name}</a></th>
+          <td>{x.country}</td>
+          <td><ScoreBadge score={x.score} scored={x.scored} total={CRITERIA.length} /></td>
+          <td>{x.formats.join(', ') || 'À vérifier'}</td>
+          <td>{x.use_cases.map((u: string) => USE_CASES.find((c) => c.slug === u)?.label ?? u).join(', ') || 'À vérifier'}</td>
+          <td>{x.pricing_public}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+
+  <h2>Pourquoi chercher une alternative à {p.name} ?</h2>
+  <p class="placeholder inline-block">[À COMPLÉTER APRÈS TEST : les limites constatées de {p.name} qui motivent le plus souvent la recherche d'une alternative (prix, langue, hébergement, formats), en deux à quatre phrases factuelles.]</p>
+
+  <h2>Comment comparer</h2>
+  <p>Testez les solutions présélectionnées sur le même scénario, en français, avec les personnes qui les utiliseront. Vérifiez l'hébergement des données et la conservation des sessions, la qualité du feedback et la possibilité de créer vos propres scénarios. Notre <a href="/methodologie">grille d'évaluation</a> peut servir de cahier des charges.</p>
+
+  <Transparence />
+</Base>

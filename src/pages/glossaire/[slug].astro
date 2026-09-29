@@ -1,0 +1,19 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE, CATEGORY } from '../../lib/data';
+import { GLOSSAIRE } from '../../lib/glossaire';
+export function getStaticPaths() { return GLOSSAIRE.map((g) => ({ params: { slug: g.slug }, props: { g } })); }
+const { g } = Astro.props;
+const url = `${SITE.url}/glossaire/${g.slug}`;
+const related = g.related.map((r) => GLOSSAIRE.find((x) => x.slug === r)).filter(Boolean);
+const jsonld = [
+  { '@type': 'DefinedTerm', name: g.term, description: g.def, url, inDefinedTermSet: `${SITE.url}/glossaire` },
+  { '@type': 'Article', headline: `${g.term} : définition`, description: g.def, url, inLanguage: 'fr-FR', datePublished: '2026-10-01', dateModified: CATEGORY.updated, publisher: { '@id': `${SITE.url}#organization` } },
+];
+---
+<Base title={`${g.term} : définition et usage en formation`} description={g.def} canonical={url} {jsonld} breadcrumbs={[{ name: 'Glossaire', url: `${SITE.url}/glossaire` }, { name: g.term, url }]}>
+  <h1>{g.term}</h1>
+  <p class="mt-4 text-lg"><strong>Définition.</strong> {g.def}</p>
+  <div class="prose-fr" set:html={g.body} />
+  {related.length > 0 && <p class="mt-6 text-sm">Voir aussi : {related.map((r, i) => (<><a href={`/glossaire/${r!.slug}`}>{r!.term}</a>{i < related.length - 1 ? ', ' : ''}</>))}.</p>}
+</Base>

@@ -1,0 +1,42 @@
+---
+import Base from '../layouts/Base.astro';
+import Byline from './Byline.astro';
+import Transparence from './Transparence.astro';
+import { SITE, CATEGORY, CRITERIA, rankedProviders, hasPlaceholder } from '../lib/data';
+import type { CriterionPage } from '../lib/content-roleplay';
+
+interface Props { c: CriterionPage }
+const { c } = Astro.props;
+const crit = CRITERIA.find((x) => x.slug === c.slug)!;
+const list = rankedProviders();
+const url = `${SITE.url}/roleplay-ia/${c.slug}`;
+const anyScored = list.some((p) => typeof (p.scores as any)[c.slug]?.score === 'number');
+const jsonld = [
+  { '@type': 'Article', headline: c.title, description: c.description, url, inLanguage: 'fr-FR', datePublished: '2026-10-01', dateModified: CATEGORY.updated,
+    author: SITE.authors.map((a) => ({ '@type': 'Person', name: a.name, jobTitle: a.role, sameAs: a.linkedin })), publisher: { '@id': `${SITE.url}#organization` } },
+];
+const ph = (s: string) => s.replace(/\[À (COMPLÉTER|VÉRIFIER)[^\]]*\]/g, (m) => `<span class="placeholder">${m}</span>`);
+---
+<Base title={c.title} description={c.description} canonical={url} {jsonld} breadcrumbs={[{ name: 'Roleplay IA', url: `${SITE.url}/roleplay-ia` }, { name: crit.label, url }]}>
+  <h1>{c.title}</h1>
+  <Byline updated={CATEGORY.updated} tested={anyScored} />
+  <p class="mt-6 text-lg" set:html={ph(c.answer)} />
+
+  <section>
+    <h2>Comment nous notons ce critère</h2>
+    <p>{crit.description} Poids dans la note globale : <strong>{crit.weight}</strong> sur 100. <a href="/methodologie">Voir toute la grille</a>.</p>
+  </section>
+
+  <section>
+    <h2>Solution par solution</h2>
+    <table>
+      <thead><tr><th scope="col">Solution</th><th scope="col">Note /5</th><th scope="col">Ce que nous avons constaté</th><th scope="col">Source</th></tr></thead>
+      <tbody>{list.map((p) => { const s = (p.scores as any)[c.slug]; return (
+        <tr><th scope="row"><a href={`/roleplay-ia/${p.slug}`}>{p.name}</a></th><td>{typeof s?.score === 'number' ? s.score : '—'}</td><td class:list={[hasPlaceholder(s?.evidence) && 'placeholder']}>{s?.evidence}</td><td>{s?.source ? <a href={s.source} rel="noopener">lien</a> : '—'}</td></tr>
+      ); })}</tbody>
+    </table>
+  </section>
+
+  {c.sections.map((s) => (<section><h2>{s.h}</h2><div class="prose-fr" set:html={ph(s.body)} /></section>))}
+  <Transparence />
+</Base>

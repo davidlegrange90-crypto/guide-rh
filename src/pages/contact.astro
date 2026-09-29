@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../lib/data';
+const url = `${SITE.url}/contact`;
+---
+<Base title="Contact et droit de réponse" description="Contacter Guide RH : signaler une erreur, exercer un droit de réponse, demander l'ajout d'une solution au panel." canonical={url} breadcrumbs={[{ name: 'Contact', url }]}>
+  <h1>Contact et droit de réponse</h1>
+  <p class="mt-4">Écrivez-nous à <a href={`mailto:${SITE.publisher.email}`}>{SITE.publisher.email}</a>.</p>
+  <h2>Vous êtes un éditeur</h2>
+  <ul class="list">
+    <li><strong>Erreur factuelle</strong> sur votre fiche : indiquez la phrase concernée et la source qui la corrige. Nous corrigeons sous dix jours ouvrés et datons la correction.</li>
+    <li><strong>Droit de réponse</strong> : envoyez un texte de 1 000 signes maximum ; il est publié tel quel sur votre fiche, sous la rubrique « Droit de réponse de l'éditeur ».</li>
+    <li><strong>Demande d'inclusion</strong> dans le panel : indiquez votre solution et un contact ; vous recevrez le questionnaire commun.</li>
+  </ul>
+  <h2>Vous êtes lecteur</h2>
+  <p>Signalez une erreur, une page obsolète ou une question à laquelle le comparatif ne répond pas.</p>
+</Base>

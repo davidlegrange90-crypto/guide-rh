@@ -1,0 +1,19 @@
+---
+import ProviderPage from '../../components/ProviderPage.astro';
+import UseCasePage from '../../components/UseCasePage.astro';
+import CriterionPage from '../../components/CriterionPage.astro';
+import { rankedProviders } from '../../lib/data';
+import { USE_CASE_PAGES, CRITERION_PAGES } from '../../lib/content-roleplay';
+
+export function getStaticPaths() {
+  return [
+    ...rankedProviders().map((p) => ({ params: { slug: p.slug }, props: { kind: 'provider', p } })),
+    ...USE_CASE_PAGES.map((u) => ({ params: { slug: u.slug }, props: { kind: 'usecase', u } })),
+    ...CRITERION_PAGES.map((c) => ({ params: { slug: c.slug }, props: { kind: 'criterion', c } })),
+  ];
+}
+const { kind, p, u, c } = Astro.props as any;
+---
+{kind === 'provider' && <ProviderPage p={p} />}
+{kind === 'usecase' && <UseCasePage u={u} />}
+{kind === 'criterion' && <CriterionPage c={c} />}

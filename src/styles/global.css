@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 { @apply text-3xl font-semibold tracking-tight leading-tight; }
+  h2 { @apply mt-10 text-2xl font-semibold tracking-tight; }
+  h3 { @apply mt-6 text-lg font-semibold; }
+  p { @apply mt-3 leading-relaxed; }
+  a { @apply text-accent; }
+  ul.list { @apply mt-3 list-disc pl-6 space-y-1; }
+  ol.list { @apply mt-3 list-decimal pl-6 space-y-1; }
+  table { @apply mt-4 w-full border-collapse text-sm; }
+  th { @apply border border-line bg-white px-2 py-2 text-left align-top font-semibold; }
+  td { @apply border border-line px-2 py-2 align-top; }
+}
+.prose-fr h2 { @apply mt-10 text-2xl font-semibold; }
+.prose-fr h3 { @apply mt-6 text-lg font-semibold; }
+.prose-fr p { @apply mt-3 leading-relaxed; }
+.prose-fr ul { @apply mt-3 list-disc pl-6 space-y-1; }
+.prose-fr ol { @apply mt-3 list-decimal pl-6 space-y-1; }
+.prose-fr table { @apply mt-4 w-full border-collapse text-sm; }
+.prose-fr th { @apply border border-line bg-white px-2 py-2 text-left font-semibold; }
+.prose-fr td { @apply border border-line px-2 py-2 align-top; }
+.prose-fr blockquote { @apply mt-4 border-l-4 border-line pl-4 text-muted; }
+.placeholder { @apply rounded bg-amber-50 px-1 text-amber-800; }

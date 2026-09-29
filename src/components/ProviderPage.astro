@@ -1,0 +1,100 @@
+---
+import Base from '../layouts/Base.astro';
+import Byline from './Byline.astro';
+import Transparence from './Transparence.astro';
+import ScoreBadge from './ScoreBadge.astro';
+import { SITE, CATEGORY, CRITERIA, USE_CASES, rankedProviders, hasPlaceholder, formatDate } from '../lib/data';
+
+interface Props { p: ReturnType<typeof rankedProviders>[number] }
+const { p } = Astro.props;
+const all = rankedProviders();
+const others = all.filter((x) => x.slug !== p.slug && x.use_cases.some((u: string) => (p.use_cases as string[]).includes(u))).slice(0, 4);
+const url = `${SITE.url}/roleplay-ia/${p.slug}`;
+const title = `${p.name} : avis, test et alternatives pour le roleplay IA en formation`;
+const description = `${p.name} évalué sur 11 critères (français, RGPD, scénarios, feedback, LMS, prix, coaching humain). ${p.description}`;
+const lastChange = p.changelog?.[p.changelog.length - 1]?.date ?? CATEGORY.updated;
+
+const jsonld: any[] = [
+  { '@type': 'SoftwareApplication', '@id': `${url}#app`, name: p.name, url: p.url, description: p.description, applicationCategory: 'BusinessApplication', operatingSystem: 'Web' },
+  { '@type': 'Article', headline: title, description, url, inLanguage: 'fr-FR', datePublished: '2026-10-01', dateModified: lastChange,
+    author: SITE.authors.map((a) => ({ '@type': 'Person', name: a.name, jobTitle: a.role, sameAs: a.linkedin })), publisher: { '@id': `${SITE.url}#organization` } },
+];
+if (p.score !== null) {
+  jsonld.push({ '@type': 'Review', itemReviewed: { '@id': `${url}#app` }, author: { '@id': `${SITE.url}#organization` }, datePublished: p.tested_on,
+    reviewRating: { '@type': 'Rating', ratingValue: p.score, bestRating: 100, worstRating: 0 }, reviewBody: p.test_notes });
+}
+---
+<Base {title} {description} canonical={url} {jsonld} breadcrumbs={[{ name: 'Roleplay IA', url: `${SITE.url}/roleplay-ia` }, { name: p.name, url }]}>
+  <h1>{p.name} : test, avis et alternatives</h1>
+  <Byline updated={lastChange} tested={p.score !== null} />
+
+  <p class="mt-6 text-lg">{p.description} {p.rank ? <>Classée <strong>{p.rank}<sup>e</sup></strong> sur {all.filter((x) => x.score !== null).length} solutions testées, avec une note de <strong>{p.score}/100</strong>.</> : <span class="placeholder">Cette solution n'a pas encore été testée ; les informations ci-dessous sont celles publiées par l'éditeur.</span>}</p>
+
+  <dl class="mt-4 grid gap-x-6 gap-y-2 text-sm sm:grid-cols-2">
+    <div><dt class="font-semibold">Éditeur</dt><dd><a href={p.url} rel={hasPlaceholder(p.disclosure) || p.disclosure.startsWith('Aucun') ? 'noopener' : 'noopener nofollow sponsored'}>{p.url}</a> · {p.country}</dd></div>
+    <div><dt class="font-semibold">Note globale</dt><dd><ScoreBadge score={p.score} scored={p.scored} total={CRITERIA.length} /> {p.score !== null && <span class="text-muted">({p.scored} critères sur {CRITERIA.length} évalués)</span>}</dd></div>
+    <div><dt class="font-semibold">Idéal pour</dt><dd class:list={[hasPlaceholder(p.ideal_for) && 'placeholder']}>{p.ideal_for}</dd></div>
+    <div><dt class="font-semibold">Formats</dt><dd>{p.formats.length ? p.formats.join(', ') : 'À vérifier'}</dd></div>
+    <div><dt class="font-semibold">Cas d'usage couverts</dt><dd>{p.use_cases.length ? p.use_cases.map((u: string) => { const uc = USE_CASES.find((x) => x.slug === u); return uc ? <a href={`/roleplay-ia/${uc.slug}`}>{uc.label}</a> : u; }).reduce((acc: any[], el, i) => i ? [...acc, ', ', el] : [el], []) : 'À vérifier'}</dd></div>
+    <div><dt class="font-semibold">Prix publiés</dt><dd>{p.pricing_public}</dd></div>
+    <div><dt class="font-semibold">Références clients françaises</dt><dd>{p.french_clients || 'Aucune vérifiable'}</dd></div>
+    <div><dt class="font-semibold">Testé le</dt><dd>{p.tested_on ? formatDate(p.tested_on) : <span class="placeholder">Pas encore testé</span>}</dd></div>
+    <div class="sm:col-span-2"><dt class="font-semibold">Lien avec Guide RH</dt><dd class:list={[hasPlaceholder(p.disclosure) && 'placeholder']}>{p.disclosure}</dd></div>
+  </dl>
+
+  <section id="criteres">
+    <h2>Évaluation critère par critère</h2>
+    <table>
+      <thead><tr><th scope="col">Critère</th><th scope="col">Poids</th><th scope="col">Note /5</th><th scope="col">Ce que nous avons constaté</th><th scope="col">Source</th></tr></thead>
+      <tbody>
+        {CRITERIA.map((c) => { const s = (p.scores as any)[c.slug]; return (
+          <tr>
+            <th scope="row">{c.page ? <a href={`/roleplay-ia/${c.slug}`}>{c.label}</a> : c.label}</th>
+            <td>{c.weight}</td>
+            <td>{typeof s?.score === 'number' ? s.score : '—'}</td>
+            <td class:list={[hasPlaceholder(s?.evidence) && 'placeholder']}>{s?.evidence}</td>
+            <td>{s?.source ? <a href={s.source} rel="noopener">lien</a> : '—'}</td>
+          </tr>
+        ); })}
+      </tbody>
+    </table>
+  </section>
+
+  <section id="points-forts-limites" class="grid gap-6 sm:grid-cols-2">
+    <div><h2>Points forts</h2><ul class="list">{p.strengths.map((s: string) => (<li class:list={[hasPlaceholder(s) && 'placeholder']}>{s}</li>))}</ul></div>
+    <div><h2>Limites</h2><ul class="list">{p.limits.map((s: string) => (<li class:list={[hasPlaceholder(s) && 'placeholder']}>{s}</li>))}</ul></div>
+  </section>
+
+  <section id="declarations-editeur">
+    <h2>Ce que déclare l'éditeur (non vérifié)</h2>
+    <dl class="text-sm">
+      {Object.entries(p.public_claims).map(([k, v]) => (<div class="mt-2"><dt class="inline font-semibold capitalize">{k} : </dt><dd class="inline">{v as string}</dd></div>))}
+    </dl>
+  </section>
+
+  <section id="test">
+    <h2>Comment nous l'avons testé</h2>
+    <p class:list={[hasPlaceholder(p.test_notes) && 'placeholder']}>{p.test_notes}</p>
+    <p class="text-sm text-muted">Protocole commun à toutes les solutions : <a href="/methodologie#protocole">méthodologie</a>.</p>
+  </section>
+
+  <section id="droit-de-reponse">
+    <h2>Droit de réponse de l'éditeur</h2>
+    {p.right_of_reply ? <blockquote class="mt-3 border-l-4 border-line pl-4">{p.right_of_reply}</blockquote> : <p class="text-muted">Aucun droit de réponse reçu à ce jour. L'éditeur peut nous écrire via la page <a href="/contact">contact</a> ; sa réponse est publiée ici sans modification.</p>}
+  </section>
+
+  {others.length > 0 && (
+    <section id="alternatives">
+      <h2>Alternatives à {p.name}</h2>
+      <p>Solutions du comparatif couvrant les mêmes cas d'usage : {others.map((o, i) => (<><a href={`/roleplay-ia/${o.slug}`}>{o.name}</a>{i < others.length - 1 ? ', ' : ''}</>))}. Voir la page <a href={`/roleplay-ia/alternatives/${p.slug}`}>alternatives à {p.name}</a>.</p>
+    </section>
+  )}
+
+  <section id="historique" class="text-sm">
+    <h2>Historique de cette fiche</h2>
+    <ul class="list">{p.changelog.map((c: any) => (<li><time datetime={c.date}>{formatDate(c.date)}</time> — {c.note}</li>))}</ul>
+  </section>
+
+  <Transparence />
+  <p class="mt-8 text-sm"><a href="/roleplay-ia">← Retour au comparatif des solutions de roleplay IA</a></p>
+</Base>

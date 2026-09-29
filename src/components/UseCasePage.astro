@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+import Byline from './Byline.astro';
+import Transparence from './Transparence.astro';
+import Faq from './Faq.astro';
+import ScoreBadge from './ScoreBadge.astro';
+import { SITE, CATEGORY, CRITERIA, USE_CASES, providersForUseCase } from '../lib/data';
+import type { UseCasePage } from '../lib/content-roleplay';
+
+interface Props { u: UseCasePage }
+const { u } = Astro.props;
+const meta = USE_CASES.find((x) => x.slug === u.slug)!;
+const list = providersForUseCase(u.slug);
+const url = `${SITE.url}/roleplay-ia/${u.slug}`;
+const anyTested = list.some((p) => p.score !== null);
+const jsonld: any[] = [
+  { '@type': 'Article', headline: u.title, description: u.description, url, inLanguage: 'fr-FR', datePublished: '2026-10-01', dateModified: CATEGORY.updated,
+    author: SITE.authors.map((a) => ({ '@type': 'Person', name: a.name, jobTitle: a.role, sameAs: a.linkedin })), publisher: { '@id': `${SITE.url}#organization` } },
+];
+if (u.faq.length) jsonld.push({ '@type': 'FAQPage', mainEntity: u.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a.replace(/<[^>]+>/g, '') } })) });
+const ph = (s: string) => s.replace(/\[À (COMPLÉTER|VÉRIFIER)[^\]]*\]/g, (m) => `<span class="placeholder">${m}</span>`);
+---
+<Base title={u.title} description={u.description} canonical={url} {jsonld} breadcrumbs={[{ name: 'Roleplay IA', url: `${SITE.url}/roleplay-ia` }, { name: meta.label, url }]}>
+  <h1>{u.title}</h1>
+  <Byline updated={CATEGORY.updated} tested={anyTested} />
+  <p class="mt-6 text-lg" set:html={ph(u.answer)} />
+
+  <section>
+    <h2>Solutions qui couvrent ce cas d'usage</h2>
+    {list.length ? (
+      <table>
+        <thead><tr><th scope="col">Solution</th><th scope="col">Pays</th><th scope="col">Note globale</th><th scope="col">Formats</th><th scope="col">Idéal pour</th></tr></thead>
+        <tbody>{list.map((p) => (
+          <tr><th scope="row"><a href={`/roleplay-ia/${p.slug}`}>{p.name}</a></th><td>{p.country}</td><td><ScoreBadge score={p.score} scored={p.scored} total={CRITERIA.length} /></td><td>{p.formats.join(', ') || 'À vérifier'}</td><td set:html={ph(p.ideal_for)} /></tr>
+        ))}</tbody>
+      </table>
+    ) : <p class="placeholder inline-block">Aucune solution du panel ne déclare couvrir ce cas d'usage pour l'instant.</p>}
+    <p class="text-sm text-muted">Le classement complet et la grille de notation sont sur la page <a href="/roleplay-ia">comparatif roleplay IA</a>.</p>
+  </section>
+
+  {u.sections.map((s) => (<section><h2>{s.h}</h2><div class="prose-fr" set:html={ph(s.body)} /></section>))}
+  {u.faq.length > 0 && <Faq items={u.faq.map((f) => ({ q: f.q, a: ph(f.a) }))} />}
+  <Transparence />
+</Base>

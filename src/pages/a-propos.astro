@@ -1,0 +1,30 @@
+---
+import Base from '../layouts/Base.astro';
+import Transparence from '../components/Transparence.astro';
+import { SITE } from '../lib/data';
+const url = `${SITE.url}/a-propos`;
+const jsonld = SITE.authors.map((a) => ({ '@type': 'Person', name: a.name, jobTitle: a.role, sameAs: a.linkedin, worksFor: { '@id': `${SITE.url}#organization` } }));
+---
+<Base title="À propos de Guide RH : qui nous sommes, comment nous sommes financés" description="Guide RH est un banc d'essai indépendant des outils IA pour le développement des talents : éditeur, auteurs, financement, politique éditoriale et de correction." canonical={url} {jsonld} breadcrumbs={[{ name: 'À propos', url }]}>
+  <h1>À propos</h1>
+  <p class="mt-4 text-lg">Guide RH teste et compare les outils d'intelligence artificielle utilisés pour développer les compétences en entreprise : roleplay IA aujourd'hui, coaching IA et autres catégories ensuite. Le site s'adresse aux DRH, responsables formation et managers qui doivent choisir un outil sans le tester eux-mêmes.</p>
+
+  <h2>Qui édite le site</h2>
+  <p>{SITE.publisher.legalName}, {SITE.publisher.address}. SIREN {SITE.publisher.siren}. Contact : <a href={`mailto:${SITE.publisher.email}`}>{SITE.publisher.email}</a>.</p>
+
+  <h2>Les auteurs</h2>
+  <ul class="list">{SITE.authors.map((a) => (<li><a href={a.linkedin} rel="author">{a.name}</a> — {a.role}</li>))}</ul>
+
+  <h2>Politique éditoriale</h2>
+  <ul class="list">
+    <li>Nous ne publions que des notes issues de tests que nous avons réalisés nous-mêmes, selon la <a href="/methodologie">méthodologie</a>.</li>
+    <li>Nous n'acceptons ni rémunération pour figurer dans un comparatif, ni pour y être mieux classé.</li>
+    <li>Nous distinguons toujours ce que déclare un éditeur de ce que nous avons vérifié.</li>
+    <li>Nous corrigeons les erreurs signalées et datons chaque correction dans le <a href="/journal">journal</a>.</li>
+  </ul>
+
+  <h2>Comment nous contactons les éditeurs</h2>
+  <p>Chaque éditeur du panel reçoit le même questionnaire et un accès à sa fiche avant publication pour signaler des erreurs factuelles. Il dispose d'un droit de réponse, publié tel quel. Aucun éditeur ne valide ni ne modifie les notes.</p>
+
+  <Transparence />
+</Base>

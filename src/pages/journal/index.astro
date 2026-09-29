@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { SITE, formatDate } from '../../lib/data';
+const entries = (await getCollection('journal')).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const url = `${SITE.url}/journal`;
+---
+<Base title="Journal des mises à jour" description="Chaque changement apporté aux comparatifs Guide RH, daté : nouvelles solutions, notes modifiées, corrections, droits de réponse." canonical={url} breadcrumbs={[{ name: 'Journal', url }]}>
+  <h1>Journal des mises à jour</h1>
+  <p class="mt-4">Chaque modification de classement, de note ou de fiche est consignée ici, avec sa date. Flux <a href="/journal/rss.xml">RSS</a>.</p>
+  <table>
+    <thead><tr><th scope="col">Date</th><th scope="col">Changement</th><th scope="col">Pages</th></tr></thead>
+    <tbody>{await Promise.all(entries.map(async (e) => { const { Content } = await e.render(); return (
+      <tr><td><time datetime={e.data.date.toISOString().slice(0,10)}>{formatDate(e.data.date.toISOString())}</time></td><td><strong>{e.data.title}</strong><div class="prose-fr text-sm"><Content /></div></td><td>{(e.data.pages ?? []).map((p) => (<a href={p} class="block">{p}</a>))}</td></tr>
+    ); }))}</tbody>
+  </table>
+</Base>

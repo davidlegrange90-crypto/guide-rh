@@ -1,0 +1,7 @@
+---
+interface Props { score: number | null; scored: number; total: number }
+const { score, scored, total } = Astro.props;
+---
+{score === null
+  ? <span class="rounded bg-gray-100 px-2 py-0.5 text-xs text-muted">Non noté</span>
+  : <span class="rounded bg-accent/10 px-2 py-0.5 text-sm font-semibold text-accent" title={`${scored} critères sur ${total} évalués`}>{score}/100</span>}

@@ -1,0 +1,95 @@
+{
+  "category": "roleplay-ia",
+  "label": "Roleplay IA",
+  "scale": "Chaque critère est noté de 0 à 5. La note globale est la moyenne pondérée des critères, ramenée sur 100. Un critère non évalué (score null) est exclu du calcul et affiché comme tel.",
+  "criteria": [
+    {
+      "slug": "langue-francaise",
+      "label": "Langue française native",
+      "short": "Français",
+      "weight": 15,
+      "description": "Qualité du français dans les dialogues, la voix et le feedback. 5 = français naturel, accents et tournures professionnelles ; 0 = traduction automatique visible ou anglais seulement.",
+      "page": false
+    },
+    {
+      "slug": "rgpd-hebergement",
+      "label": "RGPD et hébergement France/UE",
+      "short": "RGPD / UE",
+      "weight": 12,
+      "description": "Localisation des données, sous-traitants IA, DPA disponible, durée de conservation des enregistrements. 5 = hébergement UE documenté, DPA public, modèles IA sans réutilisation des données ; 0 = information indisponible.",
+      "page": true
+    },
+    {
+      "slug": "ai-act",
+      "label": "Conformité AI Act",
+      "short": "AI Act",
+      "weight": 6,
+      "description": "Transparence sur l'usage de l'IA, information des salariés, absence de scoring RH automatisé à finalité d'évaluation individuelle sans supervision humaine. 5 = documentation publiée et engagement écrit ; 0 = aucune information.",
+      "page": true
+    },
+    {
+      "slug": "qualiopi-opco",
+      "label": "Qualiopi / financement OPCO",
+      "short": "Qualiopi",
+      "weight": 6,
+      "description": "Certification Qualiopi de l'éditeur ou d'un partenaire formation, et retours d'expérience de prise en charge OPCO. 5 = Qualiopi + prises en charge documentées ; 0 = non finançable.",
+      "page": true
+    },
+    {
+      "slug": "scenarios-personnalisables",
+      "label": "Scénarios personnalisables",
+      "short": "Scénarios",
+      "weight": 12,
+      "description": "Capacité à créer des scénarios à partir des cas métier du client, sans passer par l'éditeur. 5 = éditeur de scénarios en autonomie, personnages et objectifs paramétrables ; 0 = catalogue fermé.",
+      "page": false
+    },
+    {
+      "slug": "voix-ou-texte",
+      "label": "Voix ou texte",
+      "short": "Formats",
+      "weight": 8,
+      "description": "Modes d'interaction disponibles : texte, voix, avatar, vidéo. 5 = voix naturelle en français avec latence faible et option texte ; 0 = texte seul.",
+      "page": true
+    },
+    {
+      "slug": "analytics-feedback",
+      "label": "Analytics et feedback",
+      "short": "Feedback",
+      "weight": 12,
+      "description": "Qualité du feedback après chaque session (critères comportementaux explicites, exemples, plan d'action) et tableaux de bord pour les RH. 5 = feedback détaillé et exploitable, suivi de progression ; 0 = score brut sans explication.",
+      "page": false
+    },
+    {
+      "slug": "integration-lms",
+      "label": "Intégration LMS (SCORM/xAPI)",
+      "short": "LMS",
+      "weight": 7,
+      "description": "SCORM, xAPI, LTI, SSO, intégrations Teams/Slack. 5 = SCORM + xAPI + SSO documentés ; 0 = aucune intégration.",
+      "page": true
+    },
+    {
+      "slug": "prix",
+      "label": "Modèle de prix",
+      "short": "Prix",
+      "weight": 8,
+      "description": "Transparence et adéquation du prix aux volumes d'une entreprise française. 5 = grille publique, engagement flexible ; 0 = devis opaque et engagement long imposé.",
+      "page": true
+    },
+    {
+      "slug": "coaching-humain",
+      "label": "Coaching humain associé",
+      "short": "Coaching",
+      "weight": 6,
+      "description": "Possibilité de compléter la pratique IA par un coach ou un formateur humain, dans le même parcours. 5 = coaching humain intégré ; 0 = aucun.",
+      "page": false
+    },
+    {
+      "slug": "references-france",
+      "label": "Références clients françaises",
+      "short": "Références",
+      "weight": 8,
+      "description": "Clients français nommés et vérifiables, cas clients publiés. 5 = plusieurs grands comptes français avec cas publiés ; 0 = aucune référence vérifiable.",
+      "page": false
+    }
+  ]
+}

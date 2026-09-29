@@ -1,0 +1,11 @@
+---
+import { SITE, formatDate } from '../lib/data';
+interface Props { updated: string; tested?: boolean }
+const { updated, tested = true } = Astro.props;
+---
+<p class="mt-2 text-sm text-muted">
+  Par {SITE.authors.map((a, i) => (<><a href={a.linkedin} rel="author">{a.name}</a>{i < SITE.authors.length - 1 ? ', ' : ''}</>))} ·
+  Mis à jour le <time datetime={updated}>{formatDate(updated)}</time> ·
+  <a href="/methodologie">Méthodologie</a> · <a href="/a-propos#transparence">Transparence</a>
+  {!tested && <span class="placeholder ml-2">Version préliminaire : tests en cours, aucune note attribuée.</span>}
+</p>

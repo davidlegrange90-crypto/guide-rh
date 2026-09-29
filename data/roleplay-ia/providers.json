@@ -1,0 +1,1498 @@
+{
+  "category": "roleplay-ia",
+  "updated": "2026-09-29",
+  "providers": [
+    {
+      "slug": "coachello",
+      "name": "Coachello",
+      "url": "https://coachello.ai/fr/",
+      "country": "France",
+      "international": false,
+      "description": "Plateforme de coaching professionnel combinant roleplay IA et coaching humain 1:1, orientée développement des managers.",
+      "formats": [
+        "texte",
+        "voix"
+      ],
+      "use_cases": [
+        "managers",
+        "feedback",
+        "gestion-des-conflits",
+        "entretien-annuel"
+      ],
+      "public_claims": {
+        "rgpd": "Conformité RGPD, ISO 27001 et AI Act annoncées sur le site",
+        "integrations": "Slack, Microsoft Teams",
+        "clients": "Non nommés sur la page consultée",
+        "pricing": "Non publié"
+      },
+      "sources": [
+        "https://coachello.ai/fr/blog/ai-roleplay-training/"
+      ],
+      "disclosure": "[À COMPLÉTER : préciser ici tout lien commercial ou financier entre l'éditeur du site et Coachello. Si aucun : « Aucun lien commercial. »]",
+      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "strengths": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "limits": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "pricing_public": "Non publié",
+      "french_clients": "Non nommés sur la page consultée",
+      "tested_on": null,
+      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "right_of_reply": "",
+      "scores": {
+        "langue-francaise": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "rgpd-hebergement": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "ai-act": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "qualiopi-opco": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "scenarios-personnalisables": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "voix-ou-texte": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "analytics-feedback": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "integration-lms": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "prix": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "coaching-humain": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "references-france": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        }
+      },
+      "changelog": [
+        {
+          "date": "2026-09-29",
+          "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        }
+      ]
+    },
+    {
+      "slug": "face-up",
+      "name": "Face Up",
+      "url": "https://face-up.fr/",
+      "country": "France / Belgique",
+      "international": false,
+      "description": "Simulateur conversationnel IA pour la vente, la relation client et le management, avec avatars et voix.",
+      "formats": [
+        "voix",
+        "avatar"
+      ],
+      "use_cases": [
+        "equipes-commerciales",
+        "relation-client",
+        "managers"
+      ],
+      "public_claims": {
+        "rgpd": "Hébergement UE, RGPD, AI Act annoncés",
+        "integrations": "SCORM 1.2/2004, LTI 1.3, SSO SAML/OIDC ; Moodle, Docebo, 360Learning, Rise Up, Didask, TalentLMS, LearnUpon",
+        "clients": "Lefebvre Dalloz, Supermarché Match, Cegos, Crédit Agricole, Generali, URGO Medical (déclarés)",
+        "pricing": "Non publié",
+        "qualiopi": "Certification Qualiopi annoncée"
+      },
+      "sources": [
+        "https://face-up.fr/"
+      ],
+      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
+      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "strengths": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "limits": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "pricing_public": "Non publié",
+      "french_clients": "Lefebvre Dalloz, Supermarché Match, Cegos, Crédit Agricole, Generali, URGO Medical (déclarés)",
+      "tested_on": null,
+      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "right_of_reply": "",
+      "scores": {
+        "langue-francaise": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "rgpd-hebergement": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "ai-act": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "qualiopi-opco": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "scenarios-personnalisables": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "voix-ou-texte": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "analytics-feedback": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "integration-lms": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "prix": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "coaching-humain": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "references-france": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        }
+      },
+      "changelog": [
+        {
+          "date": "2026-09-29",
+          "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        }
+      ]
+    },
+    {
+      "slug": "reality-academy",
+      "name": "Reality Academy",
+      "url": "https://www.reality-academy.fr/roleplay-ia",
+      "country": "France",
+      "international": false,
+      "description": "Simulations conversationnelles IA avec avatars 3D pour le management, la vente, la diversité et la prévention des RPS.",
+      "formats": [
+        "texte",
+        "voix",
+        "avatar"
+      ],
+      "use_cases": [
+        "managers",
+        "equipes-commerciales",
+        "relation-client"
+      ],
+      "public_claims": {
+        "rgpd": "Non précisé sur la page consultée",
+        "integrations": "SCORM, intégrable dans tout LMS",
+        "clients": "AON, L'Oréal, Caterpillar, BNP Paribas, SNCF (déclarés)",
+        "pricing": "Non publié",
+        "qualiopi": "Qualiopi n° 11756139875 (déclaré)"
+      },
+      "sources": [
+        "https://www.reality-academy.fr/roleplay-ia"
+      ],
+      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
+      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "strengths": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "limits": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "pricing_public": "Non publié",
+      "french_clients": "AON, L'Oréal, Caterpillar, BNP Paribas, SNCF (déclarés)",
+      "tested_on": null,
+      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "right_of_reply": "",
+      "scores": {
+        "langue-francaise": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "rgpd-hebergement": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "ai-act": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "qualiopi-opco": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "scenarios-personnalisables": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "voix-ou-texte": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "analytics-feedback": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "integration-lms": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "prix": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "coaching-humain": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "references-france": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        }
+      },
+      "changelog": [
+        {
+          "date": "2026-09-29",
+          "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        }
+      ]
+    },
+    {
+      "slug": "practicio",
+      "name": "Practicio",
+      "url": "https://www.practicio.ai/",
+      "country": "France",
+      "international": false,
+      "description": "Entraînement des managers aux conversations à fort enjeu (feedback, conflit, négociation, changement) par simulations avec feedback immédiat.",
+      "formats": [
+        "texte",
+        "vidéo"
+      ],
+      "use_cases": [
+        "managers",
+        "feedback",
+        "gestion-des-conflits",
+        "entretien-annuel"
+      ],
+      "public_claims": {
+        "rgpd": "Non précisé sur la page consultée",
+        "integrations": "Déploiement dans LMS/LXP",
+        "clients": "AFP, Action Logement, Crédit Agricole, Groupama, CHU de Rennes, Clarins, Galeries Lafayette, IFP Énergies nouvelles, Veolia, Ministère de l'Intérieur (déclarés)",
+        "pricing": "Non publié"
+      },
+      "sources": [
+        "https://www.practicio.ai/"
+      ],
+      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
+      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "strengths": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "limits": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "pricing_public": "Non publié",
+      "french_clients": "AFP, Action Logement, Crédit Agricole, Groupama, CHU de Rennes, Clarins, Galeries Lafayette, IFP Énergies nouvelles, Veolia, Ministère de l'Intérieur (déclarés)",
+      "tested_on": null,
+      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "right_of_reply": "",
+      "scores": {
+        "langue-francaise": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "rgpd-hebergement": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "ai-act": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "qualiopi-opco": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "scenarios-personnalisables": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "voix-ou-texte": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "analytics-feedback": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "integration-lms": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "prix": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "coaching-humain": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "references-france": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        }
+      },
+      "changelog": [
+        {
+          "date": "2026-09-29",
+          "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        }
+      ]
+    },
+    {
+      "slug": "super-sales",
+      "name": "Super Sales",
+      "url": "https://www.super-sales.fr/",
+      "country": "France",
+      "international": false,
+      "description": "Simulateur d'appels de vente IA avec avatars générés à partir de profils LinkedIn et scoring automatique.",
+      "formats": [
+        "voix",
+        "texte"
+      ],
+      "use_cases": [
+        "equipes-commerciales"
+      ],
+      "public_claims": {
+        "rgpd": "Hébergement Europe, RGPD annoncés",
+        "integrations": "Non précisé",
+        "clients": "Types de clients cités (SaaS B2B, fintech, télécom), pas de noms",
+        "pricing": "Grille publique : gratuit (3 simulations/mois), Pro 49 €/utilisateur/mois, Enterprise à partir de 99 €/utilisateur/mois (septembre 2026)"
+      },
+      "sources": [
+        "https://www.super-sales.fr/"
+      ],
+      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
+      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "strengths": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "limits": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "pricing_public": "Grille publique : gratuit (3 simulations/mois), Pro 49 €/utilisateur/mois, Enterprise à partir de 99 €/utilisateur/mois (septembre 2026)",
+      "french_clients": "Types de clients cités (SaaS B2B, fintech, télécom), pas de noms",
+      "tested_on": null,
+      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "right_of_reply": "",
+      "scores": {
+        "langue-francaise": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "rgpd-hebergement": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "ai-act": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "qualiopi-opco": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "scenarios-personnalisables": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "voix-ou-texte": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "analytics-feedback": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "integration-lms": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "prix": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "coaching-humain": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "references-france": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        }
+      },
+      "changelog": [
+        {
+          "date": "2026-09-29",
+          "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        }
+      ]
+    },
+    {
+      "slug": "edflex",
+      "name": "Edflex",
+      "url": "https://www.edflex.com/blog/ia-roleplay",
+      "country": "France",
+      "international": false,
+      "description": "Roleplays IA proposés au sein d'une plateforme de contenus de formation.",
+      "formats": [],
+      "use_cases": [],
+      "public_claims": {
+        "rgpd": "Non précisé",
+        "integrations": "LMS, Teams, Outlook",
+        "clients": "Non nommés sur la page consultée",
+        "pricing": "Non publié"
+      },
+      "sources": [
+        "https://www.edflex.com/blog/ia-roleplay"
+      ],
+      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
+      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "strengths": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "limits": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "pricing_public": "Non publié",
+      "french_clients": "Non nommés sur la page consultée",
+      "tested_on": null,
+      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "right_of_reply": "",
+      "scores": {
+        "langue-francaise": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "rgpd-hebergement": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "ai-act": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "qualiopi-opco": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "scenarios-personnalisables": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "voix-ou-texte": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "analytics-feedback": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "integration-lms": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "prix": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "coaching-humain": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "references-france": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        }
+      },
+      "changelog": [
+        {
+          "date": "2026-09-29",
+          "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        }
+      ]
+    },
+    {
+      "slug": "meltingspot",
+      "name": "MeltingSpot (Mizou)",
+      "url": "https://meltingspot.io/fr/",
+      "country": "France",
+      "international": false,
+      "description": "Moteur de roleplay IA (issu de l'acquisition de Mizou) intégré à une plateforme d'apprentissage, utilisable seul ou avec le Learning Agent.",
+      "formats": [],
+      "use_cases": [],
+      "public_claims": {
+        "rgpd": "Non précisé",
+        "integrations": "Non précisé",
+        "clients": "Non nommés",
+        "pricing": "Non publié"
+      },
+      "sources": [
+        "https://meltingspot.io/fr/blog/meilleurs-logiciels-roleplay-ia-formation"
+      ],
+      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
+      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "strengths": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "limits": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "pricing_public": "Non publié",
+      "french_clients": "Non nommés",
+      "tested_on": null,
+      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "right_of_reply": "",
+      "scores": {
+        "langue-francaise": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "rgpd-hebergement": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "ai-act": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "qualiopi-opco": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "scenarios-personnalisables": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "voix-ou-texte": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "analytics-feedback": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "integration-lms": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "prix": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "coaching-humain": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "references-france": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        }
+      },
+      "changelog": [
+        {
+          "date": "2026-09-29",
+          "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        }
+      ]
+    },
+    {
+      "slug": "ringover-pitch-room",
+      "name": "Ringover Pitch Room",
+      "url": "https://www.ringover.fr/blog/roleplay-ia",
+      "country": "France",
+      "international": false,
+      "description": "Module d'entraînement au pitch et aux objections face à une IA, au sein de la suite de téléphonie Ringover.",
+      "formats": [
+        "voix"
+      ],
+      "use_cases": [
+        "equipes-commerciales"
+      ],
+      "public_claims": {
+        "rgpd": "Non précisé",
+        "integrations": "Suite Ringover",
+        "clients": "Non nommés",
+        "pricing": "Non publié"
+      },
+      "sources": [
+        "https://www.ringover.fr/blog/roleplay-ia"
+      ],
+      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
+      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "strengths": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "limits": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "pricing_public": "Non publié",
+      "french_clients": "Non nommés",
+      "tested_on": null,
+      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "right_of_reply": "",
+      "scores": {
+        "langue-francaise": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "rgpd-hebergement": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "ai-act": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "qualiopi-opco": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "scenarios-personnalisables": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "voix-ou-texte": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "analytics-feedback": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "integration-lms": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "prix": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "coaching-humain": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "references-france": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        }
+      },
+      "changelog": [
+        {
+          "date": "2026-09-29",
+          "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        }
+      ]
+    },
+    {
+      "slug": "uptale",
+      "name": "Uptale",
+      "url": "https://www.uptale.io/fr/platform/roleplay-ai/",
+      "country": "France",
+      "international": false,
+      "description": "Roleplay IA pour les soft skills, issu d'une plateforme de formation immersive (VR/360°).",
+      "formats": [],
+      "use_cases": [],
+      "public_claims": {
+        "rgpd": "À vérifier",
+        "integrations": "À vérifier",
+        "clients": "À vérifier",
+        "pricing": "Non publié"
+      },
+      "sources": [
+        "https://www.uptale.io/fr/platform/roleplay-ai/"
+      ],
+      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
+      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "strengths": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "limits": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "pricing_public": "Non publié",
+      "french_clients": "À vérifier",
+      "tested_on": null,
+      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "right_of_reply": "",
+      "scores": {
+        "langue-francaise": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "rgpd-hebergement": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "ai-act": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "qualiopi-opco": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "scenarios-personnalisables": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "voix-ou-texte": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "analytics-feedback": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "integration-lms": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "prix": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "coaching-humain": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "references-france": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        }
+      },
+      "changelog": [
+        {
+          "date": "2026-09-29",
+          "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        }
+      ]
+    },
+    {
+      "slug": "muchbetter-ai",
+      "name": "muchbetter.ai",
+      "url": "https://muchbetter.ai/fr/",
+      "country": "France",
+      "international": false,
+      "description": "Simulations IA pour les équipes commerciales et de relation client.",
+      "formats": [],
+      "use_cases": [
+        "relation-client",
+        "equipes-commerciales"
+      ],
+      "public_claims": {
+        "rgpd": "À vérifier",
+        "integrations": "À vérifier",
+        "clients": "Cas Concentrix rapporté par RelationclientMag",
+        "pricing": "Non publié"
+      },
+      "sources": [
+        "https://www.relationclientmag.fr/outsourcing-1254/concentrix-forme-ses-conseillers-grace-a-lia-de-muchbetter-ai-36373"
+      ],
+      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
+      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "strengths": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "limits": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "pricing_public": "Non publié",
+      "french_clients": "Cas Concentrix rapporté par RelationclientMag",
+      "tested_on": null,
+      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "right_of_reply": "",
+      "scores": {
+        "langue-francaise": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "rgpd-hebergement": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "ai-act": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "qualiopi-opco": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "scenarios-personnalisables": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "voix-ou-texte": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "analytics-feedback": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "integration-lms": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "prix": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "coaching-humain": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "references-france": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        }
+      },
+      "changelog": [
+        {
+          "date": "2026-09-29",
+          "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        }
+      ]
+    },
+    {
+      "slug": "yoodli",
+      "name": "Yoodli",
+      "url": "https://yoodli.ai/",
+      "country": "États-Unis",
+      "international": true,
+      "description": "Plateforme de roleplay IA et d'analyse de la communication, orientée vente et prise de parole.",
+      "formats": [
+        "voix"
+      ],
+      "use_cases": [
+        "equipes-commerciales"
+      ],
+      "public_claims": {
+        "rgpd": "À vérifier",
+        "integrations": "À vérifier",
+        "clients": "À vérifier",
+        "pricing": "À vérifier"
+      },
+      "sources": [
+        "https://yoodli.ai/"
+      ],
+      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
+      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "strengths": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "limits": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "pricing_public": "À vérifier",
+      "french_clients": "À vérifier",
+      "tested_on": null,
+      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "right_of_reply": "",
+      "scores": {
+        "langue-francaise": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "rgpd-hebergement": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "ai-act": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "qualiopi-opco": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "scenarios-personnalisables": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "voix-ou-texte": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "analytics-feedback": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "integration-lms": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "prix": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "coaching-humain": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "references-france": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        }
+      },
+      "changelog": [
+        {
+          "date": "2026-09-29",
+          "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        }
+      ]
+    },
+    {
+      "slug": "mursion",
+      "name": "Mursion",
+      "url": "https://www.mursion.com/",
+      "country": "États-Unis",
+      "international": true,
+      "description": "Simulations avec avatars pilotés par des humains et IA, pour le leadership et les soft skills.",
+      "formats": [
+        "avatar",
+        "voix"
+      ],
+      "use_cases": [
+        "managers"
+      ],
+      "public_claims": {
+        "rgpd": "À vérifier",
+        "integrations": "À vérifier",
+        "clients": "À vérifier",
+        "pricing": "À vérifier"
+      },
+      "sources": [
+        "https://www.mursion.com/"
+      ],
+      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
+      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "strengths": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "limits": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "pricing_public": "À vérifier",
+      "french_clients": "À vérifier",
+      "tested_on": null,
+      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "right_of_reply": "",
+      "scores": {
+        "langue-francaise": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "rgpd-hebergement": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "ai-act": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "qualiopi-opco": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "scenarios-personnalisables": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "voix-ou-texte": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "analytics-feedback": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "integration-lms": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "prix": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "coaching-humain": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "references-france": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        }
+      },
+      "changelog": [
+        {
+          "date": "2026-09-29",
+          "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        }
+      ]
+    },
+    {
+      "slug": "second-nature",
+      "name": "Second Nature",
+      "url": "https://secondnature.ai/",
+      "country": "Israël / États-Unis",
+      "international": true,
+      "description": "Roleplay IA conversationnel pour la formation commerciale.",
+      "formats": [
+        "voix"
+      ],
+      "use_cases": [
+        "equipes-commerciales"
+      ],
+      "public_claims": {
+        "rgpd": "À vérifier",
+        "integrations": "À vérifier",
+        "clients": "À vérifier",
+        "pricing": "À vérifier"
+      },
+      "sources": [
+        "https://secondnature.ai/"
+      ],
+      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
+      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "strengths": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "limits": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "pricing_public": "À vérifier",
+      "french_clients": "À vérifier",
+      "tested_on": null,
+      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "right_of_reply": "",
+      "scores": {
+        "langue-francaise": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "rgpd-hebergement": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "ai-act": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "qualiopi-opco": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "scenarios-personnalisables": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "voix-ou-texte": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "analytics-feedback": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "integration-lms": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "prix": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "coaching-humain": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "references-france": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        }
+      },
+      "changelog": [
+        {
+          "date": "2026-09-29",
+          "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        }
+      ]
+    },
+    {
+      "slug": "hyperbound",
+      "name": "Hyperbound",
+      "url": "https://www.hyperbound.ai/",
+      "country": "États-Unis",
+      "international": true,
+      "description": "Simulations d'appels de prospection et de découverte pour les équipes commerciales.",
+      "formats": [
+        "voix"
+      ],
+      "use_cases": [
+        "equipes-commerciales"
+      ],
+      "public_claims": {
+        "rgpd": "À vérifier",
+        "integrations": "À vérifier",
+        "clients": "À vérifier",
+        "pricing": "À vérifier"
+      },
+      "sources": [
+        "https://www.hyperbound.ai/"
+      ],
+      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
+      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "strengths": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "limits": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "pricing_public": "À vérifier",
+      "french_clients": "À vérifier",
+      "tested_on": null,
+      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "right_of_reply": "",
+      "scores": {
+        "langue-francaise": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "rgpd-hebergement": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "ai-act": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "qualiopi-opco": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "scenarios-personnalisables": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "voix-ou-texte": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "analytics-feedback": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "integration-lms": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "prix": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "coaching-humain": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "references-france": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        }
+      },
+      "changelog": [
+        {
+          "date": "2026-09-29",
+          "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        }
+      ]
+    },
+    {
+      "slug": "exec",
+      "name": "Exec",
+      "url": "https://www.exec.com/",
+      "country": "États-Unis",
+      "international": true,
+      "description": "Roleplay IA centré sur le management et les compétences comportementales.",
+      "formats": [
+        "voix"
+      ],
+      "use_cases": [
+        "managers",
+        "feedback"
+      ],
+      "public_claims": {
+        "rgpd": "À vérifier",
+        "integrations": "À vérifier",
+        "clients": "À vérifier",
+        "pricing": "À vérifier"
+      },
+      "sources": [
+        "https://www.exec.com/"
+      ],
+      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
+      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "strengths": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "limits": [
+        "[À COMPLÉTER APRÈS TEST]"
+      ],
+      "pricing_public": "À vérifier",
+      "french_clients": "À vérifier",
+      "tested_on": null,
+      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "right_of_reply": "",
+      "scores": {
+        "langue-francaise": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "rgpd-hebergement": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "ai-act": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "qualiopi-opco": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "scenarios-personnalisables": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "voix-ou-texte": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "analytics-feedback": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "integration-lms": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "prix": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "coaching-humain": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        },
+        "references-france": {
+          "score": null,
+          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "source": ""
+        }
+      },
+      "changelog": [
+        {
+          "date": "2026-09-29",
+          "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        }
+      ]
+    }
+  ]
+}

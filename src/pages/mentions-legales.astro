@@ -1,0 +1,16 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../lib/data';
+const url = `${SITE.url}/mentions-legales`;
+---
+<Base title="Mentions légales" description="Éditeur, hébergeur et données personnelles du site Guide RH." canonical={url} breadcrumbs={[{ name: 'Mentions légales', url }]}>
+  <h1>Mentions légales</h1>
+  <h2>Éditeur</h2>
+  <p>{SITE.publisher.legalName}, {SITE.publisher.address}. SIREN {SITE.publisher.siren}. Directeur de la publication : [À COMPLÉTER]. Contact : {SITE.publisher.email}.</p>
+  <h2>Hébergement</h2>
+  <p>Cloudflare, Inc., 101 Townsend St, San Francisco, CA 94107, États-Unis (Cloudflare Pages). Les pages sont servies depuis le réseau Cloudflare, y compris depuis des points de présence en France.</p>
+  <h2>Données personnelles</h2>
+  <p>Le site ne dépose pas de cookies et n'utilise pas de traceur nécessitant un consentement. La mesure d'audience utilise Cloudflare Web Analytics, sans cookie ni identifiant individuel. Les e-mails reçus via la page contact sont conservés le temps du traitement de la demande.</p>
+  <h2>Propriété intellectuelle</h2>
+  <p>Les textes et grilles d'évaluation sont la propriété de l'éditeur. Les courtes citations avec lien vers la page source sont autorisées. Les marques citées appartiennent à leurs propriétaires.</p>
+</Base>
