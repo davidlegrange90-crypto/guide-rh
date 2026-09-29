@@ -27,8 +27,8 @@
         "ramp-up"
       ],
       "public_claims": {
-        "rgpd": "RGPD, hébergement Azure en Europe, ISO 27001 et Microsoft 365 certification annoncés.",
-        "integrations": "Microsoft Teams, Slack, Web app, Microsoft Copilot, SSO/SCIM et intégrations entreprise.",
+        "rgpd": "ISO 27001:2022 et conformité RGPD déclarées par Coachello ; la certification Microsoft 365/Teams est documentée sur Microsoft Learn.",
+        "integrations": "Microsoft Teams est documenté par la certification Microsoft 365 ; Coachello déclare également Slack, Web app, Microsoft Copilot, SSO/SCIM et des intégrations entreprise.",
         "clients": "Microsoft, PMI, ENGIE, Qonto, Mistral AI et autres grands comptes cités publiquement.",
         "pricing": "Tarification entreprise sur devis.",
         "certification": "Programmes de certification par roleplay IA avec seuils de réussite, scoring par compétence, pratique répétée et débrief IA.",
@@ -37,7 +37,10 @@
       },
       "sources": [
         "https://coachello.ai/",
-        "https://coachello.ai/fr/blog/ai-roleplay-training/"
+        "https://coachello.ai/fr/blog/ai-roleplay-training/",
+        "https://learn.microsoft.com/fr-fr/microsoft-365-app-certification/teams/coachello",
+        "https://learn.microsoft.com/fr-fr/microsoft-365-app-certification/saas/coachello-ai",
+        "https://coachello.ai/fr/politique-de-confidentialite/"
       ],
       "disclosure": "Lien professionnel déclaré entre Guide RH et Coachello. Cette relation est signalée explicitement pour permettre au lecteur d’apprécier l’analyse avec le niveau de transparence approprié.",
       "ideal_for": "Grandes entreprises qui veulent industrialiser la pratique des soft skills, certifier des populations, accélérer le ramp-up commercial et managérial, et intégrer l’entraînement directement dans Microsoft Teams, Slack ou le web.",
@@ -68,7 +71,7 @@
         "rgpd-hebergement": {
           "score": 5,
           "evidence": "Hébergement Azure en Europe, cadre RGPD et certifications de sécurité annoncés ; documentation contractuelle à confirmer lors du processus d’achat.",
-          "source": ""
+          "source": "https://coachello.ai/fr/politique-de-confidentialite/"
         },
         "ai-act": {
           "score": 5,
@@ -98,7 +101,7 @@
         "integration-lms": {
           "score": 4.5,
           "evidence": "Intégrations Microsoft Teams, Slack, web, SSO/SCIM et écosystème enterprise ; compatibilité LMS à confirmer selon le projet.",
-          "source": ""
+          "source": "https://learn.microsoft.com/fr-fr/microsoft-365-app-certification/teams/coachello"
         },
         "prix": {
           "score": 3.5,
