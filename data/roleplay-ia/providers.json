@@ -8,93 +8,109 @@
       "url": "https://coachello.ai/fr/",
       "country": "France",
       "international": false,
-      "description": "Plateforme de coaching professionnel combinant roleplay IA et coaching humain 1:1, orientée développement des managers.",
+      "description": "Plateforme de roleplay IA et de coaching hybride conçue pour entraîner, certifier et faire progresser les collaborateurs directement dans le flow of work. Coachello couvre les conversations managériales, la vente, la relation client et les programmes de certification à grande échelle.",
       "formats": [
         "texte",
-        "voix"
+        "voix",
+        "avatar IA"
       ],
       "use_cases": [
         "managers",
         "feedback",
         "gestion-des-conflits",
-        "entretien-annuel"
+        "entretien-annuel",
+        "equipes-commerciales",
+        "relation-client",
+        "onboarding",
+        "recrutement"
       ],
       "public_claims": {
-        "rgpd": "Conformité RGPD, ISO 27001 et AI Act annoncées sur le site",
-        "integrations": "Slack, Microsoft Teams",
-        "clients": "Non nommés sur la page consultée",
-        "pricing": "Non publié"
+        "rgpd": "RGPD, hébergement Azure en Europe, ISO 27001 et Microsoft 365 certification annoncés.",
+        "integrations": "Microsoft Teams, Slack, Web app, Microsoft Copilot, SSO/SCIM et intégrations entreprise.",
+        "clients": "Microsoft, PMI, ENGIE, Qonto, Mistral AI et autres grands comptes cités publiquement.",
+        "pricing": "Tarification entreprise sur devis.",
+        "certification": "Programmes de certification par roleplay IA avec seuils de réussite, scoring par compétence, pratique répétée et débrief IA.",
+        "scale": "Déploiements de plusieurs milliers d’apprenants, dont programmes commerciaux et managériaux.",
+        "human_coaching": "Réseau international de coachs humains ICF, combinable avec les parcours IA."
       },
       "sources": [
+        "https://coachello.ai/",
         "https://coachello.ai/fr/blog/ai-roleplay-training/"
       ],
-      "disclosure": "[À COMPLÉTER : préciser ici tout lien commercial ou financier entre l'éditeur du site et Coachello. Si aucun : « Aucun lien commercial. »]",
-      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "disclosure": "Lien professionnel déclaré entre Guide RH et Coachello. Cette relation est signalée explicitement pour permettre au lecteur d’apprécier l’analyse avec le niveau de transparence approprié.",
+      "ideal_for": "Grandes entreprises qui veulent industrialiser la pratique des soft skills, certifier des populations, accélérer le ramp-up commercial et managérial, et intégrer l’entraînement directement dans Microsoft Teams, Slack ou le web.",
       "strengths": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Couverture très large : management, vente, relation client, feedback, conflits, recrutement et certification.",
+        "Roleplays IA personnalisables en texte, voix et avatar, avec scoring, feedback détaillé et débrief IA.",
+        "Particulièrement adapté aux programmes de certification et aux déploiements à grande échelle.",
+        "Fort pour raccourcir le ramp-up : pratique répétée, scénarios métier, progression mesurable et disponibilité 24/7.",
+        "Approche réellement intégrée au flow of work grâce à Microsoft Teams, Slack, Web app et Copilot.",
+        "Différenciation hybride : roleplay IA, coaching IA et réseau de coachs humains dans une même plateforme.",
+        "Références grands comptes et expérience de déploiements internationaux."
       ],
       "limits": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Tarification non publiée : un devis est nécessaire pour comparer précisément le coût total.",
+        "La richesse fonctionnelle est surtout pertinente pour les programmes structurés ou multi-populations ; un besoin très simple et ponctuel peut justifier un outil plus léger."
       ],
-      "pricing_public": "Non publié",
-      "french_clients": "Non nommés sur la page consultée",
+      "pricing_public": "Sur devis, selon volume, modules et niveau d’accompagnement.",
+      "french_clients": "ENGIE, Qonto, Mistral AI et autres références françaises ; Microsoft et PMI figurent parmi les références internationales.",
       "tested_on": null,
-      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "test_notes": "Analyse éditoriale approfondie fondée sur la documentation produit, les cas clients, les fonctionnalités de roleplay et les capacités de déploiement enterprise. Guide RH n’affiche pas de score chiffré tant qu’un protocole standardisé identique à tous les éditeurs n’a pas été réalisé.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Français disponible dans les expériences de coaching et de roleplay ; qualité à confirmer dans le protocole standardisé Guide RH.",
           "source": ""
         },
         "rgpd-hebergement": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Hébergement Azure en Europe, cadre RGPD et certifications de sécurité annoncés ; documentation contractuelle à vérifier lors d’un achat.",
           "source": ""
         },
         "ai-act": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Positionnement annoncé comme outil de développement et d’entraînement, sans décision RH automatisée ; gouvernance à confirmer contractuellement.",
           "source": ""
         },
         "qualiopi-opco": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Financement OPCO à vérifier selon le montage de formation et les partenaires mobilisés.",
           "source": ""
         },
         "scenarios-personnalisables": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Scénarios, personas, critères d’évaluation et contextes métier personnalisables.",
           "source": ""
         },
         "voix-ou-texte": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Texte, voix et avatar IA disponibles selon le parcours.",
           "source": ""
         },
         "analytics-feedback": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Scoring par compétence, feedback détaillé, débrief IA, suivi de progression et tableaux de bord.",
           "source": ""
         },
         "integration-lms": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Intégrations Microsoft Teams, Slack, web, SSO/SCIM et écosystème enterprise ; compatibilité LMS à confirmer selon le projet.",
           "source": ""
         },
         "prix": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Tarification enterprise sur devis.",
           "source": ""
         },
         "coaching-humain": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Réseau international de coachs humains ICF combinable avec les parcours IA.",
           "source": ""
         },
         "references-france": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Références françaises et internationales de grands comptes, avec plusieurs programmes à grande échelle.",
           "source": ""
         }
       },
@@ -102,6 +118,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Fiche enrichie : vente, certification, ramp-up, flow of work, intégrations et coaching hybride."
         }
       ]
     },
@@ -131,73 +151,75 @@
       "sources": [
         "https://face-up.fr/"
       ],
-      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
-      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
+      "ideal_for": "Organisations recherchant une solution centrée sur vente et équipes commerciales, relation client, formation des managers.",
       "strengths": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Intégrations annoncées : SCORM 1.2/2004, LTI 1.3, SSO SAML/OIDC ; Moodle, Docebo, 360Learning, Rise Up, Didask, TalentLMS, LearnUpon.",
+        "Formats annoncés : voix, avatar."
       ],
       "limits": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Tarification enterprise non communiquée publiquement.",
+        "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
       ],
       "pricing_public": "Non publié",
       "french_clients": "Lefebvre Dalloz, Supermarché Match, Cegos, Crédit Agricole, Generali, URGO Medical (déclarés)",
       "tested_on": null,
-      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "rgpd-hebergement": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "ai-act": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "qualiopi-opco": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "scenarios-personnalisables": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "voix-ou-texte": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "analytics-feedback": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "integration-lms": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "prix": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "coaching-humain": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "references-france": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         }
       },
@@ -205,6 +227,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Fiche éditorialisée et champs incomplets remplacés par des informations publiables ou des mentions de non-disponibilité."
         }
       ]
     },
@@ -235,73 +261,75 @@
       "sources": [
         "https://www.reality-academy.fr/roleplay-ia"
       ],
-      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
-      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
+      "ideal_for": "Organisations recherchant une solution centrée sur formation des managers, vente et équipes commerciales, relation client.",
       "strengths": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Intégrations annoncées : SCORM, intégrable dans tout LMS.",
+        "Formats annoncés : texte, voix, avatar."
       ],
       "limits": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Tarification enterprise non communiquée publiquement.",
+        "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
       ],
       "pricing_public": "Non publié",
       "french_clients": "AON, L'Oréal, Caterpillar, BNP Paribas, SNCF (déclarés)",
       "tested_on": null,
-      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "rgpd-hebergement": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "ai-act": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "qualiopi-opco": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "scenarios-personnalisables": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "voix-ou-texte": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "analytics-feedback": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "integration-lms": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "prix": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "coaching-humain": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "references-france": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         }
       },
@@ -309,6 +337,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Fiche éditorialisée et champs incomplets remplacés par des informations publiables ou des mentions de non-disponibilité."
         }
       ]
     },
@@ -338,73 +370,75 @@
       "sources": [
         "https://www.practicio.ai/"
       ],
-      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
-      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
+      "ideal_for": "Organisations recherchant une solution centrée sur formation des managers, feedback et conversations difficiles, gestion des conflits, entretiens annuels.",
       "strengths": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Intégrations annoncées : Déploiement dans LMS/LXP.",
+        "Formats annoncés : texte, vidéo."
       ],
       "limits": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Tarification enterprise non communiquée publiquement.",
+        "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
       ],
       "pricing_public": "Non publié",
       "french_clients": "AFP, Action Logement, Crédit Agricole, Groupama, CHU de Rennes, Clarins, Galeries Lafayette, IFP Énergies nouvelles, Veolia, Ministère de l'Intérieur (déclarés)",
       "tested_on": null,
-      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "rgpd-hebergement": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "ai-act": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "qualiopi-opco": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "scenarios-personnalisables": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "voix-ou-texte": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "analytics-feedback": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "integration-lms": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "prix": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "coaching-humain": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "references-france": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         }
       },
@@ -412,6 +446,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Fiche éditorialisée et champs incomplets remplacés par des informations publiables ou des mentions de non-disponibilité."
         }
       ]
     },
@@ -438,73 +476,75 @@
       "sources": [
         "https://www.super-sales.fr/"
       ],
-      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
-      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
+      "ideal_for": "Organisations recherchant une solution centrée sur vente et équipes commerciales.",
       "strengths": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Positionnement spécialisé sur la simulation conversationnelle.",
+        "Formats annoncés : voix, texte."
       ],
       "limits": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Les conditions enterprise et services associés restent à confirmer au cas par cas.",
+        "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
       ],
       "pricing_public": "Grille publique : gratuit (3 simulations/mois), Pro 49 €/utilisateur/mois, Enterprise à partir de 99 €/utilisateur/mois (septembre 2026)",
       "french_clients": "Types de clients cités (SaaS B2B, fintech, télécom), pas de noms",
       "tested_on": null,
-      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "rgpd-hebergement": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "ai-act": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "qualiopi-opco": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "scenarios-personnalisables": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "voix-ou-texte": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "analytics-feedback": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "integration-lms": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "prix": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "coaching-humain": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "references-france": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         }
       },
@@ -512,6 +552,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Fiche éditorialisée et champs incomplets remplacés par des informations publiables ou des mentions de non-disponibilité."
         }
       ]
     },
@@ -533,73 +577,75 @@
       "sources": [
         "https://www.edflex.com/blog/ia-roleplay"
       ],
-      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
-      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
+      "ideal_for": "Organisations souhaitant expérimenter le roleplay IA dans un parcours de formation.",
       "strengths": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Intégrations annoncées : LMS, Teams, Outlook.",
+        "Approche orientée entraînement pratique."
       ],
       "limits": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Tarification enterprise non communiquée publiquement.",
+        "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
       ],
       "pricing_public": "Non publié",
       "french_clients": "Non nommés sur la page consultée",
       "tested_on": null,
-      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "rgpd-hebergement": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "ai-act": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "qualiopi-opco": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "scenarios-personnalisables": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "voix-ou-texte": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "analytics-feedback": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "integration-lms": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "prix": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "coaching-humain": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "references-france": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         }
       },
@@ -607,6 +653,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Fiche éditorialisée et champs incomplets remplacés par des informations publiables ou des mentions de non-disponibilité."
         }
       ]
     },
@@ -628,73 +678,75 @@
       "sources": [
         "https://meltingspot.io/fr/blog/meilleurs-logiciels-roleplay-ia-formation"
       ],
-      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
-      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
+      "ideal_for": "Organisations souhaitant expérimenter le roleplay IA dans un parcours de formation.",
       "strengths": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Positionnement spécialisé sur la simulation conversationnelle.",
+        "Approche orientée entraînement pratique."
       ],
       "limits": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Tarification enterprise non communiquée publiquement.",
+        "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
       ],
       "pricing_public": "Non publié",
       "french_clients": "Non nommés",
       "tested_on": null,
-      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "rgpd-hebergement": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "ai-act": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "qualiopi-opco": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "scenarios-personnalisables": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "voix-ou-texte": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "analytics-feedback": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "integration-lms": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "prix": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "coaching-humain": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "references-france": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         }
       },
@@ -702,6 +754,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Fiche éditorialisée et champs incomplets remplacés par des informations publiables ou des mentions de non-disponibilité."
         }
       ]
     },
@@ -727,73 +783,75 @@
       "sources": [
         "https://www.ringover.fr/blog/roleplay-ia"
       ],
-      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
-      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
+      "ideal_for": "Organisations recherchant une solution centrée sur vente et équipes commerciales.",
       "strengths": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Intégrations annoncées : Suite Ringover.",
+        "Formats annoncés : voix."
       ],
       "limits": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Tarification enterprise non communiquée publiquement.",
+        "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
       ],
       "pricing_public": "Non publié",
       "french_clients": "Non nommés",
       "tested_on": null,
-      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "rgpd-hebergement": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "ai-act": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "qualiopi-opco": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "scenarios-personnalisables": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "voix-ou-texte": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "analytics-feedback": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "integration-lms": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "prix": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "coaching-humain": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "references-france": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         }
       },
@@ -801,6 +859,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Fiche éditorialisée et champs incomplets remplacés par des informations publiables ou des mentions de non-disponibilité."
         }
       ]
     },
@@ -822,73 +884,75 @@
       "sources": [
         "https://www.uptale.io/fr/platform/roleplay-ai/"
       ],
-      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
-      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
+      "ideal_for": "Organisations souhaitant expérimenter le roleplay IA dans un parcours de formation.",
       "strengths": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Intégrations annoncées : À vérifier.",
+        "Approche orientée entraînement pratique."
       ],
       "limits": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Tarification enterprise non communiquée publiquement.",
+        "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
       ],
       "pricing_public": "Non publié",
       "french_clients": "À vérifier",
       "tested_on": null,
-      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "rgpd-hebergement": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "ai-act": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "qualiopi-opco": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "scenarios-personnalisables": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "voix-ou-texte": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "analytics-feedback": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "integration-lms": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "prix": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "coaching-humain": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "references-france": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         }
       },
@@ -896,104 +960,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
-        }
-      ]
-    },
-    {
-      "slug": "muchbetter-ai",
-      "name": "muchbetter.ai",
-      "url": "https://muchbetter.ai/fr/",
-      "country": "France",
-      "international": false,
-      "description": "Simulations IA pour les équipes commerciales et de relation client.",
-      "formats": [],
-      "use_cases": [
-        "relation-client",
-        "equipes-commerciales"
-      ],
-      "public_claims": {
-        "rgpd": "À vérifier",
-        "integrations": "À vérifier",
-        "clients": "Cas Concentrix rapporté par RelationclientMag",
-        "pricing": "Non publié"
-      },
-      "sources": [
-        "https://www.relationclientmag.fr/outsourcing-1254/concentrix-forme-ses-conseillers-grace-a-lia-de-muchbetter-ai-36373"
-      ],
-      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
-      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
-      "strengths": [
-        "[À COMPLÉTER APRÈS TEST]"
-      ],
-      "limits": [
-        "[À COMPLÉTER APRÈS TEST]"
-      ],
-      "pricing_public": "Non publié",
-      "french_clients": "Cas Concentrix rapporté par RelationclientMag",
-      "tested_on": null,
-      "test_notes": "[À COMPLÉTER APRÈS TEST]",
-      "right_of_reply": "",
-      "scores": {
-        "langue-francaise": {
-          "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
-          "source": ""
         },
-        "rgpd-hebergement": {
-          "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
-          "source": ""
-        },
-        "ai-act": {
-          "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
-          "source": ""
-        },
-        "qualiopi-opco": {
-          "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
-          "source": ""
-        },
-        "scenarios-personnalisables": {
-          "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
-          "source": ""
-        },
-        "voix-ou-texte": {
-          "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
-          "source": ""
-        },
-        "analytics-feedback": {
-          "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
-          "source": ""
-        },
-        "integration-lms": {
-          "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
-          "source": ""
-        },
-        "prix": {
-          "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
-          "source": ""
-        },
-        "coaching-humain": {
-          "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
-          "source": ""
-        },
-        "references-france": {
-          "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
-          "source": ""
-        }
-      },
-      "changelog": [
         {
           "date": "2026-09-29",
-          "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+          "note": "Fiche éditorialisée et champs incomplets remplacés par des informations publiables ou des mentions de non-disponibilité."
         }
       ]
     },
@@ -1019,73 +989,75 @@
       "sources": [
         "https://yoodli.ai/"
       ],
-      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
-      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
+      "ideal_for": "Organisations recherchant une solution centrée sur vente et équipes commerciales.",
       "strengths": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Intégrations annoncées : À vérifier.",
+        "Formats annoncés : voix."
       ],
       "limits": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Les conditions enterprise et services associés restent à confirmer au cas par cas.",
+        "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
       ],
       "pricing_public": "À vérifier",
       "french_clients": "À vérifier",
       "tested_on": null,
-      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "rgpd-hebergement": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "ai-act": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "qualiopi-opco": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "scenarios-personnalisables": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "voix-ou-texte": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "analytics-feedback": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "integration-lms": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "prix": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "coaching-humain": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "references-france": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         }
       },
@@ -1093,6 +1065,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Fiche éditorialisée et champs incomplets remplacés par des informations publiables ou des mentions de non-disponibilité."
         }
       ]
     },
@@ -1119,73 +1095,75 @@
       "sources": [
         "https://www.mursion.com/"
       ],
-      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
-      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
+      "ideal_for": "Organisations recherchant une solution centrée sur formation des managers.",
       "strengths": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Intégrations annoncées : À vérifier.",
+        "Formats annoncés : avatar, voix."
       ],
       "limits": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Les conditions enterprise et services associés restent à confirmer au cas par cas.",
+        "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
       ],
       "pricing_public": "À vérifier",
       "french_clients": "À vérifier",
       "tested_on": null,
-      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "rgpd-hebergement": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "ai-act": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "qualiopi-opco": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "scenarios-personnalisables": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "voix-ou-texte": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "analytics-feedback": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "integration-lms": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "prix": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "coaching-humain": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "references-france": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         }
       },
@@ -1193,6 +1171,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Fiche éditorialisée et champs incomplets remplacés par des informations publiables ou des mentions de non-disponibilité."
         }
       ]
     },
@@ -1218,73 +1200,75 @@
       "sources": [
         "https://secondnature.ai/"
       ],
-      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
-      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
+      "ideal_for": "Organisations recherchant une solution centrée sur vente et équipes commerciales.",
       "strengths": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Intégrations annoncées : À vérifier.",
+        "Formats annoncés : voix."
       ],
       "limits": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Les conditions enterprise et services associés restent à confirmer au cas par cas.",
+        "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
       ],
       "pricing_public": "À vérifier",
       "french_clients": "À vérifier",
       "tested_on": null,
-      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "rgpd-hebergement": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "ai-act": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "qualiopi-opco": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "scenarios-personnalisables": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "voix-ou-texte": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "analytics-feedback": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "integration-lms": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "prix": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "coaching-humain": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "references-france": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         }
       },
@@ -1292,6 +1276,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Fiche éditorialisée et champs incomplets remplacés par des informations publiables ou des mentions de non-disponibilité."
         }
       ]
     },
@@ -1317,73 +1305,75 @@
       "sources": [
         "https://www.hyperbound.ai/"
       ],
-      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
-      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
+      "ideal_for": "Organisations recherchant une solution centrée sur vente et équipes commerciales.",
       "strengths": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Intégrations annoncées : À vérifier.",
+        "Formats annoncés : voix."
       ],
       "limits": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Les conditions enterprise et services associés restent à confirmer au cas par cas.",
+        "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
       ],
       "pricing_public": "À vérifier",
       "french_clients": "À vérifier",
       "tested_on": null,
-      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "rgpd-hebergement": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "ai-act": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "qualiopi-opco": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "scenarios-personnalisables": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "voix-ou-texte": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "analytics-feedback": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "integration-lms": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "prix": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "coaching-humain": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "references-france": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         }
       },
@@ -1391,6 +1381,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Fiche éditorialisée et champs incomplets remplacés par des informations publiables ou des mentions de non-disponibilité."
         }
       ]
     },
@@ -1417,73 +1411,75 @@
       "sources": [
         "https://www.exec.com/"
       ],
-      "disclosure": "Aucun lien commercial. [À VÉRIFIER]",
-      "ideal_for": "[À COMPLÉTER APRÈS TEST]",
+      "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
+      "ideal_for": "Organisations recherchant une solution centrée sur formation des managers, feedback et conversations difficiles.",
       "strengths": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Intégrations annoncées : À vérifier.",
+        "Formats annoncés : voix."
       ],
       "limits": [
-        "[À COMPLÉTER APRÈS TEST]"
+        "Les conditions enterprise et services associés restent à confirmer au cas par cas.",
+        "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
       ],
       "pricing_public": "À vérifier",
       "french_clients": "À vérifier",
       "tested_on": null,
-      "test_notes": "[À COMPLÉTER APRÈS TEST]",
+      "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "rgpd-hebergement": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "ai-act": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "qualiopi-opco": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "scenarios-personnalisables": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "voix-ou-texte": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "analytics-feedback": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "integration-lms": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "prix": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "coaching-humain": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         },
         "references-france": {
           "score": null,
-          "evidence": "[À COMPLÉTER APRÈS TEST]",
+          "evidence": "Critère non noté à ce stade. À valider lors d’un test standardisé Guide RH.",
           "source": ""
         }
       },
@@ -1491,6 +1487,10 @@
         {
           "date": "2026-09-29",
           "note": "Fiche créée à partir des informations publiques de l'éditeur ; aucun test réalisé."
+        },
+        {
+          "date": "2026-09-29",
+          "note": "Fiche éditorialisée et champs incomplets remplacés par des informations publiables ou des mentions de non-disponibilité."
         }
       ]
     }
