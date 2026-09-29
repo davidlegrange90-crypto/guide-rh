@@ -1,6 +1,6 @@
 # Guide RH — site de comparatifs
 
-Site statique (Astro + Tailwind) déployé sur Cloudflare Pages. Le contenu éditorial vit dans `/data` et `/src/lib`, les gabarits dans `/src`. Aucune note n'est écrite dans un gabarit : tout vient des fichiers de données.
+Site statique (Astro + Tailwind) déployé sur Vercel. Le contenu éditorial vit dans `/data` et `/src/lib`, les gabarits dans `/src`. Aucune note n'est écrite dans un gabarit : tout vient des fichiers de données.
 
 ## Démarrer
 
@@ -11,7 +11,7 @@ npm run build      # génère /dist
 npm run check:content   # bloque si des champs publiés contiennent encore [À COMPLÉTER]
 ```
 
-## Déployer sur Vercel
+## Déploiement Vercel
 
 1. Importez le dépôt GitHub dans Vercel. Framework : Astro, build command `npm run build`, output `dist`.
 2. Attachez `guide-rh.com` au projet Vercel et configurez `www.guide-rh.com` en redirection permanente vers l’apex.
