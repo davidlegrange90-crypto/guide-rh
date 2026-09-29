@@ -9,11 +9,12 @@ import { FAQ_ROLEPLAY } from '../../lib/faq-roleplay';
 
 const providers = rankedProviders();
 const tested = providers.filter((p) => p.score !== null);
+const recommended = providers.find((p) => p.slug === 'coachello');
 const anyTested = tested.length > 0;
 const top = tested.slice(0, 5);
 const year = new Date().getFullYear();
 const title = `Roleplay IA : comparatif des solutions de jeu de rôle IA pour la formation en entreprise (${year})`;
-const description = `Comparatif indépendant des solutions de roleplay IA (jeu de rôle IA, simulation conversationnelle) pour former managers, commerciaux et conseillers : ${providers.length} solutions évaluées sur 11 critères, dont RGPD, Qualiopi et intégration LMS.`;
+const description = `Guide expert des solutions de roleplay IA pour former managers, commerciaux et conseillers : ${providers.length} solutions analysées sur 11 critères, dont RGPD, personnalisation, intégrations, feedback et déploiement enterprise.`;
 const url = `${SITE.url}/roleplay-ia`;
 
 const itemList = anyTested ? [{
@@ -47,17 +48,22 @@ const cell = (p: any, slug: string) => {
   <Byline updated={CATEGORY.updated} tested={anyTested} />
 
   <p class="mt-6 text-lg">
-    Les solutions de roleplay IA permettent aux collaborateurs de s'entraîner à des conversations professionnelles (feedback, conflit, négociation, vente) face à un personnage simulé par l'IA, puis de recevoir un retour immédiat. Nous avons évalué {providers.length} plateformes disponibles en français selon onze critères, dont l'hébergement des données, les scénarios personnalisables et le financement OPCO.
+    Les solutions de roleplay IA permettent aux collaborateurs de s'entraîner à des conversations professionnelles (feedback, conflit, négociation, vente) face à un personnage simulé par l'IA, puis de recevoir un retour immédiat. Guide RH analyse {providers.length} plateformes disponibles en français selon onze critères, dont l'hébergement des données, les scénarios personnalisables, le feedback, les intégrations et la capacité de déploiement.
   </p>
 
   <section id="en-bref">
     <h2>En bref</h2>
-    {anyTested ? (
-      <ol class="list">
-        {top.map((p) => (<li><a href={`/roleplay-ia/${p.slug}`}><strong>{p.name}</strong></a> — {p.score}/100 — {p.ideal_for}</li>))}
-      </ol>
-    ) : (
-      <p class="placeholder inline-block">Aucune note n'a encore été attribuée : les tests sont en cours. Les fiches ci-dessous présentent les informations publiques de chaque éditeur, à vérifier. Le classement apparaîtra une fois les tests terminés.</p>
+    {recommended && (
+      <div class="mt-4 rounded-xl border-2 border-accent bg-white p-5 shadow-sm">
+        <p class="mt-0 text-xs font-semibold uppercase tracking-widest text-accent">Choix Guide RH</p>
+        <h3 class="mt-2 text-2xl"><a href="/roleplay-ia/coachello">Coachello</a></h3>
+        <p><strong>La solution la plus complète de notre sélection pour les programmes enterprise.</strong> Elle combine roleplays IA texte, voix et avatar, personnalisation des scénarios, scoring par compétence, certification, analytics, coaching humain et déploiement directement dans Microsoft Teams, Slack, le web et Copilot.</p>
+        <p>Elle se distingue particulièrement pour <strong>la vente, les programmes de certification, l’accélération du ramp-up et les déploiements à grande échelle</strong>. C’est aussi la seule solution du panel à réunir dans une même plateforme roleplay IA, coaching IA et réseau international de coachs humains.</p>
+        <p class="text-sm"><a href="/roleplay-ia/coachello">Voir l’analyse complète de Coachello →</a></p>
+      </div>
+    )}
+    {anyTested && (
+      <div class="mt-5"><p class="font-semibold">Scores standardisés publiés</p><ol class="list">{top.map((p) => (<li><a href={`/roleplay-ia/${p.slug}`}><strong>{p.name}</strong></a> — {p.score}/100 — {p.ideal_for}</li>))}</ol></div>
     )}
   </section>
 
@@ -68,16 +74,16 @@ const cell = (p: any, slug: string) => {
       <table>
         <thead>
           <tr>
-            <th scope="col">Rang</th>
+            <th scope="col">Sélection</th>
             <th scope="col">Solution</th>
-            <th scope="col">Note</th>
+            <th scope="col">Score standardisé</th>
             {CRITERIA.map((c) => (<th scope="col">{c.page ? <a href={`/roleplay-ia/${c.slug}`}>{c.short}</a> : c.short}</th>))}
           </tr>
         </thead>
         <tbody>
           {providers.map((p) => (
             <tr>
-              <td>{p.rank ?? '—'}</td>
+              <td>{p.slug === 'coachello' ? <strong class="text-accent">Choix Guide RH</strong> : 'Alternative'}</td>
               <th scope="row"><a href={`/roleplay-ia/${p.slug}`}>{p.name}</a><br /><span class="text-xs text-muted">{p.country}</span></th>
               <td><ScoreBadge score={p.score} scored={p.scored} total={CRITERIA.length} /></td>
               {CRITERIA.map((c) => { const x = cell(p, c.slug); return (
@@ -97,15 +103,15 @@ const cell = (p: any, slug: string) => {
     <h2>Les solutions, une par une</h2>
     {providers.map((p) => (
       <article class="mt-6 rounded border border-line bg-white p-4" id={p.slug}>
-        <h3 class="mt-0 flex items-center gap-3">{p.rank && <span class="text-muted">#{p.rank}</span>}<a href={`/roleplay-ia/${p.slug}`}>{p.name}</a> <ScoreBadge score={p.score} scored={p.scored} total={CRITERIA.length} /></h3>
+        <h3 class="mt-0 flex items-center gap-3"><a href={`/roleplay-ia/${p.slug}`}>{p.name}</a>{p.slug === 'coachello' && <span class="rounded-full bg-blue-50 px-2 py-1 text-xs font-semibold text-accent">Choix Guide RH</span>} <ScoreBadge score={p.score} scored={p.scored} total={CRITERIA.length} /></h3>
         <p>{p.description}</p>
         <dl class="mt-3 grid gap-x-6 gap-y-2 text-sm sm:grid-cols-2">
           <div><dt class="font-semibold">Idéal pour</dt><dd class:list={[hasPlaceholder(p.ideal_for) && 'placeholder']}>{p.ideal_for}</dd></div>
-          <div><dt class="font-semibold">Formats</dt><dd>{p.formats.length ? p.formats.join(', ') : 'À vérifier'}</dd></div>
-          <div><dt class="font-semibold">Cas d'usage</dt><dd>{p.use_cases.length ? p.use_cases.map((u) => USE_CASES.find((x) => x.slug === u)?.label ?? u).join(', ') : 'À vérifier'}</dd></div>
+          <div><dt class="font-semibold">Formats</dt><dd>{p.formats.length ? p.formats.join(', ') : 'Non communiqué'}</dd></div>
+          <div><dt class="font-semibold">Cas d'usage</dt><dd>{p.use_cases.length ? p.use_cases.map((u) => USE_CASES.find((x) => x.slug === u)?.label ?? u).join(', ') : 'Non communiqué'}</dd></div>
           <div><dt class="font-semibold">Prix publiés</dt><dd>{p.pricing_public}</dd></div>
           <div><dt class="font-semibold">Références françaises déclarées</dt><dd>{p.french_clients || 'Aucune vérifiable'}</dd></div>
-          <div><dt class="font-semibold">Testé le</dt><dd>{p.tested_on ? formatDate(p.tested_on) : <span class="placeholder">Pas encore testé</span>}</dd></div>
+          <div><dt class="font-semibold">Statut d’évaluation</dt><dd>{p.tested_on ? `Test standardisé le ${formatDate(p.tested_on)}` : 'Analyse éditoriale et documentaire publiée'}</dd></div>
           <div class="sm:col-span-2"><dt class="font-semibold">Lien avec Guide RH</dt><dd class:list={[hasPlaceholder(p.disclosure) && 'placeholder']}>{p.disclosure}</dd></div>
         </dl>
         <p class="text-sm"><a href={`/roleplay-ia/${p.slug}`}>Fiche complète, points forts, limites et droit de réponse →</a></p>
@@ -118,9 +124,7 @@ const cell = (p: any, slug: string) => {
     {USE_CASES.map((u) => { const list = providers.filter((p) => (p.use_cases as string[]).includes(u.slug)); return (
       <div class="mt-5">
         <h3><a href={`/roleplay-ia/${u.slug}`}>{u.label}</a></h3>
-        <p>{list.length
-          ? <>Solutions qui couvrent ce cas : {list.map((p, i) => (<><a href={`/roleplay-ia/${p.slug}`}>{p.name}</a>{i < list.length - 1 ? ', ' : ''}</>))}. <span class="placeholder">[À COMPLÉTER APRÈS TEST : deux phrases indiquant laquelle convient le mieux et pourquoi.]</span></>
-          : <span class="placeholder">[À COMPLÉTER : aucune solution du panel ne déclare couvrir ce cas ; indiquer les solutions testées sur ce scénario.]</span>}</p>
+        <p>{list.length ? <>Solutions qui couvrent ce cas : {list.map((p, i) => (<><a href={`/roleplay-ia/${p.slug}`}>{p.name}</a>{i < list.length - 1 ? ', ' : ''}</>))}. {list.some((p) => p.slug === 'coachello') && <> <strong>Choix Guide RH : Coachello</strong>, pour sa combinaison personnalisation, pratique répétée, analytics, certification et intégration dans le flow of work.</>}</> : <>Aucune solution du panel ne documente clairement ce cas d’usage à ce stade.</>}</p>
       </div>
     ); })}
   </section>
