@@ -19,13 +19,39 @@ const org = {
   url: SITE.url,
   legalName: SITE.publisher.legalName,
   email: SITE.publisher.email,
-  sameAs: [SITE.publisher.linkedin],
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: SITE.publisher.address,
+    addressLocality: 'Paris',
+    postalCode: '75009',
+    addressCountry: 'FR',
+  },
+  identifier: [
+    { '@type': 'PropertyValue', propertyID: 'SIREN', value: SITE.publisher.siren },
+    { '@type': 'PropertyValue', propertyID: 'SIRET', value: SITE.publisher.siret },
+  ],
 };
-const website = { '@type': 'WebSite', '@id': `${SITE.url}#website`, name: SITE.name, url: SITE.url, inLanguage: 'fr-FR', publisher: { '@id': `${SITE.url}#organization` } };
+const authors = SITE.authors.map((a) => ({
+  '@type': 'Person',
+  '@id': `${SITE.url}/a-propos#${a.id}`,
+  name: a.name,
+  jobTitle: a.role,
+  url: `${SITE.url}/a-propos#${a.id}`,
+  sameAs: [a.linkedin],
+  worksFor: { '@id': `${SITE.url}#organization` },
+}));
+const website = {
+  '@type': 'WebSite',
+  '@id': `${SITE.url}#website`,
+  name: SITE.name,
+  url: SITE.url,
+  inLanguage: 'fr-FR',
+  publisher: { '@id': `${SITE.url}#organization` },
+};
 const crumbs = breadcrumbs.length
   ? [{ '@type': 'BreadcrumbList', itemListElement: [{ name: 'Accueil', url: SITE.url }, ...breadcrumbs].map((b, i) => ({ '@type': 'ListItem', position: i + 1, name: b.name, item: b.url })) }]
   : [];
-const graph = { '@context': 'https://schema.org', '@graph': [org, website, ...crumbs, ...jsonld] };
+const graph = { '@context': 'https://schema.org', '@graph': [org, ...authors, website, ...crumbs, ...jsonld] };
 ---
 <!doctype html>
 <html lang="fr">
