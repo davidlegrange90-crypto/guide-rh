@@ -30,6 +30,7 @@ const org = {
     { '@type': 'PropertyValue', propertyID: 'SIREN', value: SITE.publisher.siren },
     { '@type': 'PropertyValue', propertyID: 'SIRET', value: SITE.publisher.siret },
   ],
+  sameAs: [SITE.publisher.linkedin_company],
 };
 const authors = SITE.authors.map((a) => ({
   '@type': 'Person',
@@ -103,7 +104,7 @@ const graph = { '@context': 'https://schema.org', '@graph': [org, ...authors, we
         <p><strong class="text-ink">{SITE.name}</strong> — {SITE.tagline}.</p>
         <p class="mt-2">Édité par {SITE.publisher.legalName}. {SITE.funding}</p>
         <p class="mt-2">
-          <a href="/methodologie" class="underline">Méthodologie</a> · <a href="/a-propos" class="underline">À propos et transparence</a> · <a href="/contact" class="underline">Contact et droit de réponse</a> · <a href="/mentions-legales" class="underline">Mentions légales</a> · <a href="/journal" class="underline">Journal des mises à jour</a>
+          <a href="/methodologie" class="underline">Méthodologie</a> · <a href="/a-propos" class="underline">À propos et transparence</a> · <a href="/contact" class="underline">Contact et droit de réponse</a> · <a href="/mentions-legales" class="underline">Mentions légales</a> · <a href="/journal" class="underline">Journal des mises à jour</a> · <a href={SITE.publisher.linkedin_company} class="underline" rel="me noopener">LinkedIn Guide RH</a>
         </p>
       </div>
     </footer>
