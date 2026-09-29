@@ -32,7 +32,7 @@ const ph = (s: string) => s.replace(/\[À (COMPLÉTER|VÉRIFIER)[^\]]*\]/g, (m) 
     <h2>Solutions qui couvrent ce cas d'usage</h2>
     {list.length ? (
       <table>
-        <thead><tr><th scope="col">Solution</th><th scope="col">Pays</th><th scope="col">Note globale</th><th scope="col">Formats</th><th scope="col">Idéal pour</th></tr></thead>
+        <thead><tr><th scope="col">Solution</th><th scope="col">Pays</th><th scope="col">Note Guide RH</th><th scope="col">Formats</th><th scope="col">Idéal pour</th></tr></thead>
         <tbody>{list.map((p) => (
           <tr><th scope="row"><a href={`/roleplay-ia/${p.slug}`}>{p.name}</a></th><td>{p.country}</td><td><ScoreBadge score={p.score} scored={p.scored} total={CRITERIA.length} /></td><td>{p.formats.join(', ') || 'Non communiqué'}</td><td set:html={ph(p.ideal_for)} /></tr>
         ))}</tbody>
