@@ -13,7 +13,7 @@ const jsonld = SITE.authors.map((a) => ({ '@type': 'Person', name: a.name, jobTi
   <p>{SITE.publisher.legalName}, {SITE.publisher.address}. SIREN {SITE.publisher.siren}. SIRET {SITE.publisher.siret}. Contact : <a href={`mailto:${SITE.publisher.email}`}>{SITE.publisher.email}</a>.</p>
 
   <h2>Les auteurs</h2>
-  <ul class="list">{SITE.authors.map((a) => (<li><a href={a.linkedin} rel="author">{a.name}</a> — {a.role}</li>))}</ul>
+  <ul class="list">{SITE.authors.map((a) => (<li id={a.id}><a href={a.linkedin} rel="author me">{a.name}</a> — {a.role}</li>))}</ul>
 
   <h2>Politique éditoriale</h2>
   <ul class="list">
