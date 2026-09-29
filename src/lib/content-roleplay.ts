@@ -113,6 +113,36 @@ export const USE_CASE_PAGES: UseCasePage[] = [
       { q: "Le roleplay IA peut-il servir aux candidats ?", a: "Oui, des simulateurs d'entretien d'embauche existent pour les candidats (France Travail, APEC, éditeurs privés). Cette page traite de la formation des recruteurs, pas des candidats." },
     ],
   },
+  {
+    slug: 'certification',
+    title: 'Certification des compétences avec le roleplay IA : comment construire un programme fiable',
+    description: 'Utiliser le roleplay IA pour certifier des compétences commerciales ou managériales : seuils de réussite, rubriques, répétition, analytics et points de vigilance.',
+    answer: "Le roleplay IA peut transformer une certification de compétences en épreuve pratique : l'apprenant mène une conversation simulée, reçoit un score selon une grille explicite et peut recommencer avant l'évaluation finale. Pour être crédible, le programme doit séparer entraînement et certification, utiliser des critères observables, fixer un seuil de réussite à l'avance et conserver une supervision humaine sur les décisions importantes.",
+    sections: [
+      { h: 'Ce qu\'une certification par roleplay IA doit mesurer', body: "<ul><li>Des comportements observables : découverte, écoute, structure, traitement des objections, formulation du feedback.</li><li>Une grille identique pour tous les participants.</li><li>Un seuil de réussite défini avant le lancement.</li><li>Une distinction claire entre sessions d'entraînement et tentative de certification.</li></ul>" },
+      { h: 'Pourquoi le roleplay IA est adapté à la certification à grande échelle', body: "Le principal avantage est la cohérence : chaque participant peut être confronté à un scénario comparable et évalué avec la même rubrique. Cela réduit la dépendance à la disponibilité des formateurs et permet de déployer des campagnes de certification à plusieurs centaines ou milliers de personnes. Il faut néanmoins auditer régulièrement les critères, les scénarios et les écarts éventuels entre populations." },
+      { h: 'Solutions documentant cet usage', body: "Coachello documente des programmes de certification par roleplay IA. Yoodli publie des cas de certification de pitch à grande échelle, notamment chez Google Cloud. Second Nature présente également la certification commerciale comme un cas d'usage de sa plateforme. Vérifiez pour chaque projet la configuration des seuils, la gouvernance des résultats et la possibilité d'un contrôle humain." },
+    ],
+    faq: [
+      { q: 'Peut-on certifier automatiquement un salarié uniquement sur un score IA ?', a: "Pour une certification interne de développement, un score peut servir de repère. Pour une décision ayant un impact RH important, Guide RH recommande une validation humaine et une gouvernance explicite des critères." },
+      { q: 'Faut-il autoriser plusieurs tentatives ?', a: "Oui si l'objectif est pédagogique. Une bonne architecture sépare des tentatives d'entraînement illimitées d'une tentative finale ou d'une fenêtre de certification clairement définie." },
+    ],
+  },
+  {
+    slug: 'ramp-up',
+    title: 'Accélérer le ramp-up commercial avec le roleplay IA',
+    description: "Comment le roleplay IA raccourcit le temps de montée en compétence des nouveaux commerciaux : onboarding, répétition, certification et mesure de progression.",
+    answer: "Le roleplay IA accélère le ramp-up en remplaçant une partie de l'apprentissage passif par de la pratique répétée : pitch, découverte, objections, négociation et conversations propres au produit. Les nouveaux commerciaux peuvent s'entraîner dès les premières semaines, recevoir un feedback immédiat et recommencer sans monopoliser un manager. Pour mesurer l'effet réel, suivez le temps jusqu'au niveau attendu, le nombre de répétitions et la progression sur une grille de compétences stable.",
+    sections: [
+      { h: 'Où intégrer le roleplay dans un parcours de ramp-up', body: "<ol><li><strong>Semaine 1 :</strong> pitch produit et message de valeur.</li><li><strong>Semaine 2 :</strong> découverte et qualification.</li><li><strong>Semaine 3 :</strong> objections fréquentes et concurrence.</li><li><strong>Semaine 4 :</strong> scénario complet avec certification ou validation manager.</li></ol>" },
+      { h: 'Les métriques utiles', body: "<ul><li>Temps jusqu'au premier niveau de compétence attendu.</li><li>Nombre de sessions avant réussite.</li><li>Progression par compétence plutôt qu'un score global.</li><li>Taux de complétion du parcours.</li><li>Écart entre nouveaux arrivants et commerciaux expérimentés sur la même rubrique.</li></ul>" },
+      { h: 'Solutions documentant cet usage', body: "Coachello positionne le roleplay IA sur l'accélération du ramp-up commercial et managérial. Hyperbound publie spécifiquement sur la réduction du ramp-up des nouvelles recrues commerciales. Second Nature met en avant le ramp-up et l'onboarding commercial, et Yoodli positionne ses roleplays sur le sales onboarding et le GTM enablement. Comparez surtout la qualité du français, la personnalisation à vos contenus et l'intégration au parcours existant." },
+    ],
+    faq: [
+      { q: 'Le roleplay IA remplace-t-il le coaching du manager pendant le ramp-up ?', a: "Non. Il automatise la répétition et le feedback de premier niveau. Le manager reste utile pour prioriser les situations, contextualiser les résultats et accompagner les écarts les plus importants." },
+      { q: 'Quelle est la meilleure métrique de ramp-up ?', a: "Le délai jusqu'à un niveau de compétence défini à l'avance est plus utile qu'un simple nombre de sessions. Il peut ensuite être rapproché des indicateurs opérationnels de l'équipe." },
+    ],
+  },
 ];
 
 export type CriterionPage = { slug: string; title: string; description: string; answer: string; sections: Section[] };
