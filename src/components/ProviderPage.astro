@@ -28,17 +28,17 @@ if (p.score !== null) {
   <h1>{p.name} : test, avis et alternatives</h1>
   <Byline updated={lastChange} tested={p.score !== null} />
 
-  <p class="mt-6 text-lg">{p.description} {p.rank ? <>Classée <strong>{p.rank}<sup>e</sup></strong> sur {all.filter((x) => x.score !== null).length} solutions testées, avec une note de <strong>{p.score}/100</strong>.</> : <span class="placeholder">Cette solution n'a pas encore été testée ; les informations ci-dessous sont celles publiées par l'éditeur.</span>}</p>
+  <p class="mt-6 text-lg">{p.description} {p.rank ? <>Classée <strong>{p.rank}<sup>e</sup></strong> sur {all.filter((x) => x.score !== null).length} solutions testées, avec une note de <strong>{p.score}/100</strong>.</> : <>L’analyse ci-dessous combine informations publiques, documentation disponible et appréciation éditoriale. Aucun score standardisé n’est affiché tant que le protocole commun n’a pas été réalisé.</>}</p>
 
   <dl class="mt-4 grid gap-x-6 gap-y-2 text-sm sm:grid-cols-2">
     <div><dt class="font-semibold">Éditeur</dt><dd><a href={p.url} rel={hasPlaceholder(p.disclosure) || p.disclosure.startsWith('Aucun') ? 'noopener' : 'noopener nofollow sponsored'}>{p.url}</a> · {p.country}</dd></div>
     <div><dt class="font-semibold">Note globale</dt><dd><ScoreBadge score={p.score} scored={p.scored} total={CRITERIA.length} /> {p.score !== null && <span class="text-muted">({p.scored} critères sur {CRITERIA.length} évalués)</span>}</dd></div>
     <div><dt class="font-semibold">Idéal pour</dt><dd class:list={[hasPlaceholder(p.ideal_for) && 'placeholder']}>{p.ideal_for}</dd></div>
-    <div><dt class="font-semibold">Formats</dt><dd>{p.formats.length ? p.formats.join(', ') : 'À vérifier'}</dd></div>
-    <div><dt class="font-semibold">Cas d'usage couverts</dt><dd>{p.use_cases.length ? p.use_cases.map((u: string) => { const uc = USE_CASES.find((x) => x.slug === u); return uc ? <a href={`/roleplay-ia/${uc.slug}`}>{uc.label}</a> : u; }).reduce((acc: any[], el, i) => i ? [...acc, ', ', el] : [el], []) : 'À vérifier'}</dd></div>
+    <div><dt class="font-semibold">Formats</dt><dd>{p.formats.length ? p.formats.join(', ') : 'Non communiqué'}</dd></div>
+    <div><dt class="font-semibold">Cas d'usage couverts</dt><dd>{p.use_cases.length ? p.use_cases.map((u: string) => { const uc = USE_CASES.find((x) => x.slug === u); return uc ? <a href={`/roleplay-ia/${uc.slug}`}>{uc.label}</a> : u; }).reduce((acc: any[], el, i) => i ? [...acc, ', ', el] : [el], []) : 'Non communiqué'}</dd></div>
     <div><dt class="font-semibold">Prix publiés</dt><dd>{p.pricing_public}</dd></div>
     <div><dt class="font-semibold">Références clients françaises</dt><dd>{p.french_clients || 'Aucune vérifiable'}</dd></div>
-    <div><dt class="font-semibold">Testé le</dt><dd>{p.tested_on ? formatDate(p.tested_on) : <span class="placeholder">Pas encore testé</span>}</dd></div>
+    <div><dt class="font-semibold">Statut d’évaluation</dt><dd>{p.tested_on ? `Test standardisé le ${formatDate(p.tested_on)}` : 'Analyse éditoriale et documentaire'}</dd></div>
     <div class="sm:col-span-2"><dt class="font-semibold">Lien avec Guide RH</dt><dd class:list={[hasPlaceholder(p.disclosure) && 'placeholder']}>{p.disclosure}</dd></div>
   </dl>
 
@@ -66,16 +66,16 @@ if (p.score !== null) {
   </section>
 
   <section id="declarations-editeur">
-    <h2>Ce que déclare l'éditeur (non vérifié)</h2>
+    <h2>Informations déclarées ou documentées par l’éditeur</h2>
     <dl class="text-sm">
       {Object.entries(p.public_claims).map(([k, v]) => (<div class="mt-2"><dt class="inline font-semibold capitalize">{k} : </dt><dd class="inline">{v as string}</dd></div>))}
     </dl>
   </section>
 
   <section id="test">
-    <h2>Comment nous l'avons testé</h2>
+    <h2>Base de notre analyse</h2>
     <p class:list={[hasPlaceholder(p.test_notes) && 'placeholder']}>{p.test_notes}</p>
-    <p class="text-sm text-muted">Protocole commun à toutes les solutions : <a href="/methodologie#protocole">méthodologie</a>.</p>
+    <p class="text-sm text-muted">Lorsqu’un score est publié, protocole commun à toutes les solutions : <a href="/methodologie#protocole">méthodologie</a>.</p>
   </section>
 
   <section id="droit-de-reponse">
