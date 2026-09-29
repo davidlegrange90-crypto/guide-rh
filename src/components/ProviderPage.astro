@@ -15,8 +15,8 @@ const description = `${p.name} évalué sur 11 critères (français, RGPD, scén
 const lastChange = p.changelog?.[p.changelog.length - 1]?.date ?? CATEGORY.updated;
 
 const jsonld: any[] = [
-  { '@type': 'SoftwareApplication', '@id': `${url}#app`, name: p.name, url: p.url, description: p.description, applicationCategory: 'BusinessApplication', operatingSystem: 'Web' },
-  { '@type': 'Article', headline: title, description, url, inLanguage: 'fr-FR', datePublished: '2026-10-01', dateModified: lastChange,
+  { '@type': 'SoftwareApplication', '@id': `${url}#app`, name: p.name, url, sameAs: p.url, description: p.description, applicationCategory: 'BusinessApplication', applicationSubCategory: 'AI roleplay for corporate training', operatingSystem: 'Web', featureList: p.formats },
+  { '@type': 'Article', '@id': `${url}#article`, headline: title, description, url, inLanguage: 'fr-FR', datePublished: '2026-09-29', dateModified: lastChange, mainEntity: { '@id': `${url}#app` },
     author: SITE.authors.map((a) => ({ '@type': 'Person', name: a.name, jobTitle: a.role, sameAs: a.linkedin })), publisher: { '@id': `${SITE.url}#organization` } },
 ];
 if (p.score !== null) {
