@@ -22,7 +22,9 @@
         "equipes-commerciales",
         "relation-client",
         "onboarding",
-        "recrutement"
+        "recrutement",
+        "certification",
+        "ramp-up"
       ],
       "public_claims": {
         "rgpd": "RGPD, hébergement Azure en Europe, ISO 27001 et Microsoft 365 certification annoncés.",
@@ -1014,7 +1016,9 @@
         "voix"
       ],
       "use_cases": [
-        "equipes-commerciales"
+        "equipes-commerciales",
+        "certification",
+        "ramp-up"
       ],
       "public_claims": {
         "rgpd": "Information non documentée dans les sources publiques consultées à ce stade.",
@@ -1233,7 +1237,9 @@
         "voix"
       ],
       "use_cases": [
-        "equipes-commerciales"
+        "equipes-commerciales",
+        "certification",
+        "ramp-up"
       ],
       "public_claims": {
         "rgpd": "Information non documentée dans les sources publiques consultées à ce stade.",
@@ -1242,7 +1248,8 @@
         "pricing": "Information non documentée dans les sources publiques consultées à ce stade."
       },
       "sources": [
-        "https://secondnature.ai/"
+        "https://secondnature.ai/",
+        "https://secondnature.ai/certification-programs-with-sales-impact/"
       ],
       "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
       "ideal_for": "Organisations recherchant une solution centrée sur vente et équipes commerciales.",
@@ -1342,7 +1349,8 @@
         "voix"
       ],
       "use_cases": [
-        "equipes-commerciales"
+        "equipes-commerciales",
+        "ramp-up"
       ],
       "public_claims": {
         "rgpd": "Information non documentée dans les sources publiques consultées à ce stade.",
@@ -1351,7 +1359,8 @@
         "pricing": "Information non documentée dans les sources publiques consultées à ce stade."
       },
       "sources": [
-        "https://www.hyperbound.ai/"
+        "https://www.hyperbound.ai/",
+        "https://www.hyperbound.ai/blog/ai-roleplay-sales-ramp"
       ],
       "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
       "ideal_for": "Organisations recherchant une solution centrée sur vente et équipes commerciales.",
