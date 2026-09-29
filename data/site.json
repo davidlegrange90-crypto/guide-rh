@@ -1,22 +1,23 @@
 {
   "name": "Guide RH",
-  "tagline": "Le banc d'essai indépendant des outils IA pour le développement des talents",
+  "tagline": "Le guide expert des outils RH, modèles et bonnes pratiques",
   "url": "https://guide-rh.com",
   "language": "fr-FR",
   "publisher": {
-    "legalName": "[À COMPLÉTER : raison sociale de l'agence éditrice]",
-    "address": "[À COMPLÉTER : adresse]",
-    "siren": "[À COMPLÉTER]",
+    "legalName": "Guide-RH.com SAS",
+    "address": "Pl. de l'Opéra, 75009 Paris",
+    "siren": "100 764 695",
+    "siret": "100 764 695 00019",
     "email": "contact@guide-rh.com",
-    "linkedin": "[À COMPLÉTER : URL LinkedIn de l'agence]"
+    "linkedin": "https://www.linkedin.com/in/david-le-grange-3a2b07237/"
   },
-  "funding": "[À COMPLÉTER : qui finance le site. Exemple : « Guide RH est édité et financé par [Agence]. » Si un éditeur de solution comparée contribue au financement, l'indiquer ici nommément.]",
+  "funding": "Guide RH est édité par Guide-RH.com SAS. Les éventuels liens professionnels ou commerciaux avec les solutions présentées sont indiqués sur les fiches concernées.",
   "authors": [
     {
-      "id": "auteur-1",
-      "name": "[À COMPLÉTER : nom]",
-      "role": "[À COMPLÉTER : fonction, ex. consultante L&D, 12 ans en direction formation]",
-      "linkedin": "[À COMPLÉTER : URL LinkedIn]"
+      "id": "david-legrange",
+      "name": "David Legrange",
+      "role": "Expert RH et learning, spécialisé dans les technologies de développement des compétences et les usages de l’IA en formation",
+      "linkedin": "https://www.linkedin.com/in/david-le-grange-3a2b07237/"
     }
   ],
   "review_cadence": "Chaque comparatif est revu au moins une fois par trimestre, et à chaque changement majeur signalé par un éditeur.",
