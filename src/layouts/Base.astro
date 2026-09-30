@@ -69,7 +69,7 @@ const graph = { '@context': 'https://schema.org', '@graph': [org, ...authors, we
     <meta property="og:locale" content="fr_FR" />
     <meta property="og:site_name" content={SITE.name} />
     <link rel="alternate" type="application/rss+xml" title={`${SITE.name} — journal des mises à jour`} href="/journal/rss.xml" />
-    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     <script type="application/ld+json" set:html={JSON.stringify(graph)} />
   </head>
   <body class="bg-paper text-ink antialiased">
