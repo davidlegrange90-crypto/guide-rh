@@ -35,4 +35,4 @@ Allow: /
 User-agent: MistralAI-User
 Allow: /
 
-Sitemap: https://guide-rh.com/sitemap-index.xml
+Sitemap: https://guide-rh.com/sitemap.xml
