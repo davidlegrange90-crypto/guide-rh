@@ -17,11 +17,11 @@ export const FAQ_ROLEPLAY = [
   },
   {
     q: "Quelle alternative française à Yoodli ou Mursion ?",
-    a: "Plusieurs éditeurs français proposent du roleplay IA en français natif avec hébergement en Europe : [À COMPLÉTER APRÈS TEST : citer les solutions françaises les mieux notées et le critère qui les distingue]. Le comparatif ci-dessus permet de filtrer les solutions françaises et de comparer l'hébergement des données.",
+    a: "Le panel comprend notamment Coachello, Face Up, Reality Academy et Practicio. Comparez leurs fiches selon votre cas d’usage, les formats proposés, la personnalisation et les intégrations. Le pays de l’éditeur ne garantit ni le français natif ni l’hébergement en Europe : ces points doivent être confirmés sur un scénario en français et dans la documentation contractuelle.",
   },
   {
     q: "Combien coûte une solution de roleplay IA par collaborateur ?",
-    a: "Peu d'éditeurs publient leurs tarifs. Les grilles publiques observées en septembre 2026 vont de formules gratuites limitées à environ 50 à 100 € par utilisateur et par mois pour des équipes commerciales. Pour des déploiements à plusieurs centaines de managers, les éditeurs pratiquent des devis annuels par licence ou par volume de sessions. [À COMPLÉTER APRÈS TEST : fourchettes constatées lors des demandes de devis.]",
+    a: "Il n’existe pas de tarif unique comparable pour toutes les solutions. Consultez les prix publiés sur chaque fiche et demandez un devis pour le même périmètre : nombre d’utilisateurs, durée, volume de sessions, création de scénarios, intégrations et accompagnement. Une offre individuelle en libre-service n’est pas directement comparable à un déploiement d’entreprise. Aucun prix sur devis n’est présenté comme un tarif public vérifié.",
   },
   {
     q: "Le roleplay IA est-il finançable par l'OPCO ?",
@@ -45,6 +45,6 @@ export const FAQ_ROLEPLAY = [
   },
   {
     q: "Comment ce comparatif est-il financé et qui le rédige ?",
-    a: "Guide RH est édité par une agence indépendante des éditeurs comparés ; tout lien commercial est indiqué sur la fiche concernée. Les auteurs sont nommés, les tests sont réalisés avec les mêmes scénarios pour toutes les solutions et la grille de notation est publique. Voir la <a href=\"/methodologie\">méthodologie</a> et la section <a href=\"/a-propos#transparence\">transparence</a>.",
+    a: "Guide RH est édité par Guide-RH.com SAS et les analyses sont signées par David Legrange. Les liens professionnels ou commerciaux déclarés figurent sur les fiches concernées ; un lien professionnel avec Coachello est déclaré sur sa fiche. Les notes sont des appréciations éditoriales fondées sur la documentation disponible, distinctes des avis clients et des tests standardisés. Voir la <a href=\"/methodologie\">méthodologie</a> et la section <a href=\"/a-propos#transparence\">transparence</a> pour les informations publiées sur le financement et les relations avec les éditeurs.",
   },
 ];

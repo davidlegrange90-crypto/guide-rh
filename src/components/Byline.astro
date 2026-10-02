@@ -1,11 +1,11 @@
 ---
 import { SITE, formatDate } from '../lib/data';
 interface Props { updated: string; tested?: boolean }
-const { updated, tested = true } = Astro.props;
+const { updated, tested = false } = Astro.props;
 ---
 <p class="mt-2 text-sm text-muted">
-  Par {SITE.authors.map((a, i) => (<><a href={a.linkedin} rel="author">{a.name}</a>{i < SITE.authors.length - 1 ? ', ' : ''}</>))} ·
+  Par {SITE.authors.map((a, i) => (<><a href={`/a-propos#${a.id}`} rel="author">{a.name}</a>{i < SITE.authors.length - 1 ? ', ' : ''}</>))} ·
   Mis à jour le <time datetime={updated}>{formatDate(updated)}</time> ·
   <a href="/methodologie">Méthodologie</a> · <a href="/a-propos#transparence">Transparence</a>
-  {!tested && <span class="ml-2 text-muted">Analyse éditoriale publiée ; score standardisé non attribué à ce stade.</span>}
+  <span class="ml-2 text-muted">{tested ? 'Test standardisé documenté sur la fiche.' : 'Analyse éditoriale et documentaire. Les notes Guide RH ne sont pas des avis clients.'}</span>
 </p>

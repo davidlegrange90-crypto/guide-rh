@@ -10,23 +10,24 @@ const { p } = Astro.props;
 const all = rankedProviders();
 const others = all.filter((x) => x.slug !== p.slug && x.use_cases.some((u: string) => (p.use_cases as string[]).includes(u))).slice(0, 4);
 const url = `${SITE.url}/roleplay-ia/${p.slug}`;
-const title = `${p.name} : avis, test et alternatives pour le roleplay IA en formation`;
-const description = `${p.name} évalué sur 11 critères (français, RGPD, scénarios, feedback, LMS, prix, coaching humain). ${p.description}`;
-const lastChange = p.changelog?.[p.changelog.length - 1]?.date ?? CATEGORY.updated;
+const title = `${p.name} : avis, fonctionnalités et alternatives | Guide RH`;
+const description = `${p.name} : analyse documentaire sur 11 critères, note éditoriale, points forts, limites, prix publiés et alternatives pour la formation en entreprise.`;
+const lastChange = [p.changelog?.[p.changelog.length - 1]?.date ?? CATEGORY.updated, '2026-10-02'].sort().at(-1)!;
 
 const jsonld: any[] = [
   { '@type': 'SoftwareApplication', '@id': `${url}#app`, name: p.name, url, sameAs: p.url, description: p.description, applicationCategory: 'BusinessApplication', applicationSubCategory: 'AI roleplay for corporate training', operatingSystem: 'Web', featureList: p.formats },
   { '@type': 'Article', '@id': `${url}#article`, headline: title, description, url, inLanguage: 'fr-FR', datePublished: '2026-09-29', dateModified: lastChange, mainEntity: { '@id': `${url}#app` },
-    author: SITE.authors.map((a) => ({ '@type': 'Person', name: a.name, jobTitle: a.role, sameAs: a.linkedin })), publisher: { '@id': `${SITE.url}#organization` } },
+    author: SITE.authors.map((a) => ({ '@id': `${SITE.url}/a-propos#${a.id}` })), publisher: { '@id': `${SITE.url}#organization` }, mainEntityOfPage: url },
 ];
 if (p.score !== null) {
-  jsonld.push({ '@type': 'Review', itemReviewed: { '@id': `${url}#app` }, author: { '@id': `${SITE.url}#organization` }, datePublished: lastChange,
+  jsonld.push({ '@type': 'Review', '@id': `${url}#review`, name: `Évaluation éditoriale de ${p.name} par Guide RH`, itemReviewed: { '@id': `${url}#app`, '@type': 'SoftwareApplication', name: p.name }, author: { '@id': `${SITE.url}/a-propos#${SITE.authors[0].id}` }, datePublished: '2026-09-29', dateModified: lastChange,
     reviewRating: { '@type': 'Rating', ratingValue: p.score, bestRating: 100, worstRating: 0 }, reviewBody: p.test_notes });
+  jsonld[0].review = { '@id': `${url}#review` };
 }
 ---
 <Base {title} {description} canonical={url} {jsonld} breadcrumbs={[{ name: 'Roleplay IA', url: `${SITE.url}/roleplay-ia` }, { name: p.name, url }]}>
-  <h1>{p.name} : test, avis et alternatives</h1>
-  <Byline updated={lastChange} tested={p.score !== null} />
+  <h1>{p.name} : avis, fonctionnalités et alternatives</h1>
+  <Byline updated={lastChange} tested={Boolean(p.tested_on)} />
 
   <p class="mt-6 text-lg">{p.description} {p.rank ? <>Classée <strong>{p.rank}<sup>e</sup></strong> sur {all.filter((x) => x.score !== null).length} solutions analysées, avec une note Guide RH de <strong>{p.score}/100</strong>.</> : <>L’analyse ci-dessous combine informations publiques, documentation disponible et appréciation éditoriale. La note Guide RH est une appréciation éditoriale fondée sur les capacités documentées et l’adéquation aux besoins des entreprises françaises.</>}</p>
 
@@ -75,7 +76,9 @@ if (p.score !== null) {
   <section id="test">
     <h2>Base de notre analyse</h2>
     <p class:list={[hasPlaceholder(p.test_notes) && 'placeholder']}>{p.test_notes}</p>
-    <p class="text-sm text-muted">Lorsqu’un score est publié, protocole commun à toutes les solutions : <a href="/methodologie#protocole">méthodologie</a>.</p>
+    <p class="text-sm text-muted">La note repose sur la <a href="/methodologie#grille">grille éditoriale publique</a>. Un score ne signifie pas qu’un test standardisé a été réalisé. Voir le <a href="/methodologie#protocole">protocole proposé pour les tests</a>.</p>
+    <h3>Sources de la fiche</h3>
+    <ul class="list">{p.sources.map((source: string) => <li><a href={source} rel="noopener">{source}</a></li>)}</ul>
   </section>
 
   <section id="droit-de-reponse">
@@ -92,7 +95,7 @@ if (p.score !== null) {
 
   <section id="historique" class="text-sm">
     <h2>Historique de cette fiche</h2>
-    <ul class="list">{p.changelog.map((c: any) => (<li><time datetime={c.date}>{formatDate(c.date)}</time> — {c.note}</li>))}</ul>
+    <ul class="list">{p.changelog.map((c: any) => (<li><time datetime={c.date}>{formatDate(c.date)}</time> — {c.note}</li>))}<li><time datetime="2026-10-02">2 octobre 2026</time> : clarification du statut documentaire, des notes et des métadonnées. <a href="/journal">Journal des mises à jour</a>.</li></ul>
   </section>
 
   <Transparence />

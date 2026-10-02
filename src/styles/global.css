@@ -10,7 +10,8 @@
   a { @apply text-accent; }
   ul.list { @apply mt-3 list-disc pl-6 space-y-1; }
   ol.list { @apply mt-3 list-decimal pl-6 space-y-1; }
-  table { @apply mt-4 w-full border-collapse text-sm; }
+  table { @apply mt-4 block max-w-full overflow-x-auto w-full border-collapse text-sm; }
+  td, dd, p { overflow-wrap: anywhere; }
   th { @apply border border-line bg-white px-2 py-2 text-left align-top font-semibold; }
   td { @apply border border-line px-2 py-2 align-top; }
 }

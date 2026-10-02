@@ -8,7 +8,7 @@ const url = `${SITE.url}/glossaire/${g.slug}`;
 const related = g.related.map((r) => GLOSSAIRE.find((x) => x.slug === r)).filter(Boolean);
 const jsonld = [
   { '@type': 'DefinedTerm', name: g.term, description: g.def, url, inDefinedTermSet: `${SITE.url}/glossaire` },
-  { '@type': 'Article', headline: `${g.term} : définition`, description: g.def, url, inLanguage: 'fr-FR', datePublished: '2026-10-01', dateModified: CATEGORY.updated, publisher: { '@id': `${SITE.url}#organization` } },
+  { '@type': 'Article', '@id': `${url}#article`, headline: `${g.term} : définition`, description: g.def, url, inLanguage: 'fr-FR', datePublished: '2026-10-01', dateModified: CATEGORY.updated < '2026-10-01' ? '2026-10-01' : CATEGORY.updated, author: SITE.authors.map((a) => ({ '@id': `${SITE.url}/a-propos#${a.id}` })), publisher: { '@id': `${SITE.url}#organization` }, mainEntityOfPage: url },
 ];
 ---
 <Base title={`${g.term} : définition et usage en formation`} description={g.def} canonical={url} {jsonld} breadcrumbs={[{ name: 'Glossaire', url: `${SITE.url}/glossaire` }, { name: g.term, url }]}>

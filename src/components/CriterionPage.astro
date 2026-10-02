@@ -21,7 +21,7 @@ const ph = (s: string) => s.replace(/\[À (COMPLÉTER|VÉRIFIER)[^\]]*\]/g, (m) 
 ---
 <Base title={c.title} description={c.description} canonical={url} {jsonld} breadcrumbs={[{ name: 'Roleplay IA', url: `${SITE.url}/roleplay-ia` }, { name: crit.label, url }]}>
   <h1>{c.title}</h1>
-  <Byline updated={CATEGORY.updated} tested={anyScored} />
+  <Byline updated={CATEGORY.updated} />
   <p class="mt-6 text-lg" set:html={ph(c.answer)} />
 
   <section>

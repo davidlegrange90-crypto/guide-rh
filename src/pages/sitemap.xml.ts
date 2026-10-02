@@ -16,6 +16,7 @@ export function GET() {
   ];
 
   const providerPages = rankedProviders().map((p) => `/roleplay-ia/${p.slug}`);
+  const alternativePages = rankedProviders().map((p) => `/roleplay-ia/alternatives/${p.slug}`);
   const useCasePages = USE_CASES.map((u) => `/roleplay-ia/${u.slug}`);
   const criterionPages = CRITERIA.filter((c) => c.page).map((c) => `/roleplay-ia/${c.slug}`);
   const glossaryPages = GLOSSAIRE.map((g) => `/glossaire/${g.slug}`);
@@ -23,6 +24,7 @@ export function GET() {
   const urls = Array.from(new Set([
     ...staticPages,
     ...providerPages,
+    ...alternativePages,
     ...useCasePages,
     ...criterionPages,
     ...glossaryPages,

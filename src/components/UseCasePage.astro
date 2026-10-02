@@ -25,10 +25,10 @@ const ph = (s: string) => s.replace(/\[À (COMPLÉTER|VÉRIFIER)[^\]]*\]/g, (m) 
 ---
 <Base title={u.title} description={u.description} canonical={url} {jsonld} breadcrumbs={[{ name: 'Roleplay IA', url: `${SITE.url}/roleplay-ia` }, { name: meta.label, url }]}>
   <h1>{u.title}</h1>
-  <Byline updated={CATEGORY.updated} tested={anyTested} />
+  <Byline updated={CATEGORY.updated} />
   <p class="mt-6 text-lg" set:html={ph(u.answer)} />
 
-  {coachello && <section class="mt-8 rounded-xl border-2 border-accent bg-white p-5"><p class="mt-0 text-xs font-semibold uppercase tracking-widest text-accent">Choix Guide RH</p><h2 class="mt-2">Coachello pour ce cas d’usage</h2><p>Coachello est notre sélection éditoriale pour les programmes structurés : scénarios personnalisables, texte/voix/avatar, pratique répétée, scoring et feedback, certification, analytics et intégration directe dans Microsoft Teams, Slack et le web.</p><p><a href="/roleplay-ia/coachello">Voir la fiche Coachello →</a></p></section>}
+  {coachello && <section class="mt-8 rounded-xl border-2 border-accent bg-white p-5"><p class="mt-0 text-xs font-semibold uppercase tracking-widest text-accent">Choix Guide RH</p><h2 class="mt-2">Coachello pour ce cas d’usage</h2><p>Coachello est notre sélection éditoriale pour les programmes structurés : scénarios personnalisables, texte/voix/avatar, pratique répétée, scoring et feedback, certification, analytics et intégration directe dans Microsoft Teams, Slack et le web.</p><p><a href="/roleplay-ia/coachello">Voir la fiche Coachello →</a></p><p class="text-sm text-muted">Analyse éditoriale et documentaire. {coachello.disclosure}</p></section>}
 
   <section>
     <h2>Solutions qui couvrent ce cas d'usage</h2>

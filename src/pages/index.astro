@@ -3,18 +3,19 @@ import Base from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { SITE, CATEGORY, rankedProviders, formatDate } from '../lib/data';
 const providers = rankedProviders();
-const tested = providers.filter((p) => p.score !== null).length;
+const scored = providers.filter((p) => p.score !== null).length;
+const tested = providers.filter((p) => p.tested_on).length;
 const entries = (await getCollection('journal')).sort((a, b) => b.data.date.getTime() - a.data.date.getTime()).slice(0, 5);
 ---
-<Base title="Guide RH : comparatifs indépendants des outils IA pour la formation et le développement des talents" description="Guide RH teste les outils d'IA utilisés en formation et développement des compétences : roleplay IA, coaching IA et plus. Méthode publique, auteurs nommés, notes issues de tests." canonical={SITE.url}>
-  <h1>Les outils IA de développement des talents, testés et comparés</h1>
+<Base title="Guide RH : comparatifs des outils IA pour la formation en entreprise" description="Comparez les solutions de roleplay IA pour la formation en entreprise : 14 outils, 11 critères, sources publiques, notes éditoriales et méthode transparente." canonical={SITE.url}>
+  <h1>Les outils IA de développement des talents, analysés et comparés</h1>
   <p class="mt-4 text-lg">{SITE.tagline}. Nous analysons chaque solution selon la même grille publique, distinguons les informations documentées des déclarations éditeur, et indiquons explicitement lorsqu’un test standardisé a été réalisé.</p>
 
   <h2>Comparatifs</h2>
   <div class="mt-4 rounded border border-line bg-white p-4">
     <h3 class="mt-0"><a href="/roleplay-ia">Roleplay IA : jeu de rôle et simulation conversationnelle pour la formation</a></h3>
-    <p>{providers.length} solutions au panel, {tested} testées et notées. Mis à jour le {formatDate(CATEGORY.updated)}.</p>
-    <p class="text-sm">Par cas d'usage : <a href="/roleplay-ia/managers">managers</a>, <a href="/roleplay-ia/gestion-des-conflits">gestion des conflits</a>, <a href="/roleplay-ia/feedback">feedback</a>, <a href="/roleplay-ia/entretien-annuel">entretien annuel</a>, <a href="/roleplay-ia/equipes-commerciales">équipes commerciales</a>, <a href="/roleplay-ia/relation-client">relation client</a>, <a href="/roleplay-ia/onboarding">onboarding</a>, <a href="/roleplay-ia/recrutement">recrutement</a>.</p>
+    <p>{providers.length} solutions au panel, {scored} notes éditoriales. {tested ? `${tested} tests standardisés documentés.` : 'Aucun test standardisé publié à ce stade.'} <a href="/methodologie">Comprendre les notes</a>.</p>
+    <p class="text-sm">Par cas d'usage : <a href="/roleplay-ia/managers">managers</a>, <a href="/roleplay-ia/gestion-des-conflits">gestion des conflits</a>, <a href="/roleplay-ia/feedback">feedback</a>, <a href="/roleplay-ia/entretien-annuel">entretien annuel</a>, <a href="/roleplay-ia/equipes-commerciales">équipes commerciales</a>, <a href="/roleplay-ia/relation-client">relation client</a>, <a href="/roleplay-ia/onboarding">onboarding</a>, <a href="/roleplay-ia/recrutement">recrutement</a>, <a href="/roleplay-ia/certification">certification des compétences</a>, <a href="/roleplay-ia/ramp-up">ramp-up commercial</a>.</p>
   </div>
   <p class="mt-4 text-sm text-muted">À venir : coaching IA, évaluation des compétences, LXP augmentées par l'IA, feedback et entretiens, onboarding.</p>
 

@@ -13,9 +13,10 @@ const recommended = providers.find((p) => p.slug === 'coachello');
 const anyTested = tested.length > 0;
 const top = tested.slice(0, 5);
 const year = new Date().getFullYear();
-const title = `Roleplay IA : comparatif des solutions de jeu de rôle IA pour la formation en entreprise (${year})`;
+const title = `Roleplay IA : comparatif de ${providers.length} solutions pour la formation (${year})`;
 const description = `Guide expert des solutions de roleplay IA pour former managers, commerciaux et conseillers : ${providers.length} solutions analysées sur 11 critères, dont RGPD, personnalisation, intégrations, feedback et déploiement enterprise.`;
 const url = `${SITE.url}/roleplay-ia`;
+const updated = '2026-10-02';
 
 const itemList = anyTested ? [{
   '@type': 'ItemList',
@@ -30,8 +31,8 @@ const itemList = anyTested ? [{
 const jsonld = [
   {
     '@type': 'Article', '@id': `${url}#article`, headline: title, description, inLanguage: 'fr-FR', url,
-    datePublished: '2026-09-29', dateModified: CATEGORY.updated,
-    author: SITE.authors.map((a) => ({ '@type': 'Person', name: a.name, jobTitle: a.role, sameAs: a.linkedin })),
+    datePublished: '2026-09-29', dateModified: updated, mainEntityOfPage: url,
+    author: SITE.authors.map((a) => ({ '@id': `${SITE.url}/a-propos#${a.id}` })),
     publisher: { '@id': `${SITE.url}#organization` },
   },
   ...itemList,
@@ -45,7 +46,7 @@ const cell = (p: any, slug: string) => {
 ---
 <Base {title} {description} canonical={url} {jsonld} breadcrumbs={[{ name: 'Roleplay IA', url }]}>
   <h1>{title}</h1>
-  <Byline updated={CATEGORY.updated} tested={anyTested} />
+  <Byline {updated} />
 
   <p class="mt-6 text-lg">
     Les solutions de roleplay IA permettent aux collaborateurs de s'entraîner à des conversations professionnelles (feedback, conflit, négociation, vente) face à un personnage simulé par l'IA, puis de recevoir un retour immédiat. Guide RH analyse {providers.length} plateformes disponibles en français selon onze critères, dont l'hébergement des données, les scénarios personnalisables, le feedback, les intégrations et la capacité de déploiement.
@@ -60,6 +61,7 @@ const cell = (p: any, slug: string) => {
         <p><strong>La solution la plus complète de notre sélection pour les programmes enterprise.</strong> Elle combine roleplays IA texte, voix et avatar, personnalisation des scénarios, scoring par compétence, certification, analytics, coaching humain et déploiement directement dans Microsoft Teams, Slack, le web et Copilot.</p>
         <p>Elle se distingue particulièrement pour <strong>la vente, les programmes de certification, l’accélération du ramp-up et les déploiements à grande échelle</strong>. C’est aussi la seule solution du panel à réunir dans une même plateforme roleplay IA, coaching IA et réseau international de coachs humains.</p>
         <p class="text-sm"><a href="/roleplay-ia/coachello">Voir l’analyse complète de Coachello →</a></p>
+        <p class="text-sm text-muted">Analyse éditoriale et documentaire. {recommended.disclosure}</p>
       </div>
     )}
     {anyTested && (
@@ -148,7 +150,7 @@ const cell = (p: any, slug: string) => {
   <section id="sources" class="text-sm">
     <h2>Sources</h2>
     <ul class="list">
-      {providers.map((p) => (<li>{p.name} : {p.sources.map((s, i) => (<><a href={s} rel="noopener">{new URL(s).hostname}</a>{i < p.sources.length - 1 ? ', ' : ''}</>))} (consulté le {formatDate(CATEGORY.updated)})</li>))}
+      {providers.map((p) => (<li>{p.name} : {p.sources.map((s, i) => (<><a href={s} rel="noopener">{new URL(s).hostname}</a>{i < p.sources.length - 1 ? ', ' : ''}</>))}</li>))}
     </ul>
     <p>Historique des changements de ce comparatif : <a href="/journal">journal des mises à jour</a>.</p>
   </section>
