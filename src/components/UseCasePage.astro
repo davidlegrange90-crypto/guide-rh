@@ -12,10 +12,10 @@ const { u } = Astro.props;
 const meta = USE_CASES.find((x) => x.slug === u.slug)!;
 const list = providersForUseCase(u.slug);
 const url = `${SITE.url}/roleplay-ia/${u.slug}`;
-const anyTested = list.some((p) => p.score !== null);
+const updated = u.updated ?? CATEGORY.updated;
 const coachello = list.find((p) => p.slug === 'coachello');
 const jsonld: any[] = [
-  { '@type': 'Article', '@id': `${url}#article`, headline: u.title, description: u.description, url, inLanguage: 'fr-FR', datePublished: '2026-09-29', dateModified: CATEGORY.updated,
+  { '@type': 'Article', '@id': `${url}#article`, headline: u.title, description: u.description, url, inLanguage: 'fr-FR', datePublished: '2026-09-29', dateModified: updated,
     author: SITE.authors.map((a) => ({ '@id': `${SITE.url}/a-propos#${a.id}` })), publisher: { '@id': `${SITE.url}#organization` } },
   { '@type': 'ItemList', '@id': `${url}#solutions`, name: `Solutions de roleplay IA pour ${meta.label}`, numberOfItems: list.length,
     itemListElement: list.map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/roleplay-ia/${p.slug}`, item: { '@id': `${SITE.url}/roleplay-ia/${p.slug}#app`, '@type': 'SoftwareApplication', name: p.name } })) },
@@ -25,7 +25,7 @@ const ph = (s: string) => s.replace(/\[À (COMPLÉTER|VÉRIFIER)[^\]]*\]/g, (m) 
 ---
 <Base title={u.title} description={u.description} canonical={url} {jsonld} breadcrumbs={[{ name: 'Roleplay IA', url: `${SITE.url}/roleplay-ia` }, { name: meta.label, url }]}>
   <h1>{u.title}</h1>
-  <Byline updated={CATEGORY.updated} />
+  <Byline {updated} />
   <p class="mt-6 text-lg" set:html={ph(u.answer)} />
 
   {coachello && <section class="mt-8 rounded-xl border-2 border-accent bg-white p-5"><p class="mt-0 text-xs font-semibold uppercase tracking-widest text-accent">Choix Guide RH</p><h2 class="mt-2">Coachello pour ce cas d’usage</h2><p>Coachello est notre sélection éditoriale pour les programmes structurés : scénarios personnalisables, texte/voix/avatar, pratique répétée, scoring et feedback, certification, analytics et intégration directe dans Microsoft Teams, Slack et le web.</p><p><a href="/roleplay-ia/coachello">Voir la fiche Coachello →</a></p><p class="text-sm text-muted">Analyse éditoriale et documentaire. {coachello.disclosure}</p></section>}
