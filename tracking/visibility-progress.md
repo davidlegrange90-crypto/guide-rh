@@ -17,9 +17,19 @@
 - Pre-publication validation: npm run build and npm run check:content passed. Parsed 64 HTML pages, checked 1785 internal links/fragments, JSON-LD syntax, sitemap XML, and changed-page canonical/update dates; no errors. Table headings use scope and a caption. Mobile visual verification and field performance measurements were not performed. Deployment must be checked through GitHub status and the changed live URLs after publication.
 - www returned HTTP 502 from the environment proxy; apex comparison returned HTTP 200. This does not establish a DNS or origin failure; hosting/DNS settings need inspection before any change.
 
+## 2026-10-04: accurate use-case pilot language
+- Updated eight existing use-case guides: managers, conflict management, feedback, annual reviews, sales teams, customer service, onboarding and recruitment.
+- Replaced seven “our test scenario” labels and one sentence claiming tests were run with explicit proposed-pilot language. Guide RH has not executed these comparative protocols.
+- Replaced generic “what we observed” sections with use-case-specific checks for character behavior, score evidence, latency/transcription, compliance, human review and transfer to work.
+- Removed the unsupported claim that progression is noticeable between the first and third session. The manager FAQ now explains how to define attempts and measurement without a universal session count.
+- Clarified that provider grades are editorial notes based on documented capabilities, not standardized test scores. Numeric scores and criterion weights were not changed.
+- Added individual 2026-10-04 update dates only to the eight changed guides.
+- No new external performance claim was introduced, so no new source was required for this correction cycle.
+- Pre-publication validation: `npm run build` and `npm run check:content` passed. Parsed 64 HTML pages, checked 1,794 internal links/fragments, 64 JSON-LD blocks, sitemap XML, and the canonical/update dates of all eight changed pages; no errors. Confirmed the unsupported test phrases are absent from the source and built pages. Deployment outcome: see commit and run report.
+
 ## Prioritized backlog
-1. Review remaining use-case copy for unsupported hands-on wording (e.g. managers page says “Nos tests utilisent” despite null tested_on) and unsourced numerical improvement claims. Replace with explicit proposed pilot language, without inventing test outcomes.
-2. Replace generic criterion evidence with source-specific verified documentation, starting with providers most used in comparisons. Distinguish vendor assertions and independent verification.
+1. Review criterion-page copy for generic or misleading “observed/verified” headings and unsourced pricing ranges. Preserve useful questions while distinguishing proposals, vendor statements and independent verification.
+2. Replace generic provider criterion evidence with source-specific verified documentation, starting with providers most used in comparisons. Distinguish vendor assertions and independent verification.
 3. Validate mobile table usability and establish a measured performance baseline. Do not claim Core Web Vitals or mobile visual success without measurements.
 4. Investigate www hostname with hosting/DNS access; keep apex canonical. No speculative DNS edits.
 5. Ownership, funding and author credentials require verified facts from the owner. Do not fabricate disclosures.

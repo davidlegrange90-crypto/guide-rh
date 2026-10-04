@@ -6,29 +6,31 @@ export type UseCasePage = { slug: string; title: string; description: string; an
 export const USE_CASE_PAGES: UseCasePage[] = [
   {
     slug: 'managers',
+    updated: '2026-10-04',
     title: 'Roleplay IA pour former les managers : quelle solution choisir ?',
     description: 'Comment le roleplay IA complète une formation management : entretiens difficiles, recadrage, délégation. Solutions comparées, protocole de test et points de vigilance.',
-    answer: "Le roleplay IA permet à un manager de répéter un entretien de recadrage, une annonce difficile ou un point de délégation face à un collaborateur simulé, avant de le vivre en réel. Pour ce cas d'usage, les critères qui pèsent le plus sont la qualité du feedback comportemental, la personnalisation des scénarios aux situations de l'entreprise et la possibilité d'associer un coach humain. Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les éléments documentés publiquement des scores standardisés.",
+    answer: "Le roleplay IA permet à un manager de répéter un entretien de recadrage, une annonce difficile ou un point de délégation face à un collaborateur simulé, avant de le vivre en réel. Pour ce cas d'usage, les critères qui pèsent le plus sont la qualité du feedback comportemental, la personnalisation des scénarios aux situations de l'entreprise et la possibilité d'associer un coach humain. Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les capacités documentées des notes éditoriales ; aucun test standardisé n'est revendiqué.",
     sections: [
       { h: 'Pourquoi les formations management ont besoin de pratique', body: "Une formation management transmet des cadres (feedback, écoute, gestion des émotions) que les managers savent réciter mais peinent à appliquer sous pression. La pratique répétée est ce qui fait passer du savoir au réflexe. Les jeux de rôle en salle offrent une ou deux répétitions ; le roleplay IA en offre autant que nécessaire, en privé." },
-      { h: 'Scénarios types pour les managers', body: "<ul><li>Recadrer un collaborateur sur un comportement, sans le braquer.</li><li>Annoncer une décision impopulaire (réorganisation, refus d'augmentation).</li><li>Déléguer un dossier à un collaborateur réticent.</li><li>Mener un entretien de retour après un arrêt long.</li><li>Réagir à un désaccord frontal en réunion d'équipe.</li></ul><p>Nos tests utilisent le scénario « recadrage d'un retard récurrent » pour toutes les solutions : il mobilise écoute, fermeté et recherche de solution.</p>" },
-      { h: 'Ce que nous avons observé', body: 'Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les éléments documentés publiquement des scores standardisés.' },
+      { h: 'Scénarios types pour les managers', body: "<ul><li>Recadrer un collaborateur sur un comportement, sans le braquer.</li><li>Annoncer une décision impopulaire (réorganisation, refus d'augmentation).</li><li>Déléguer un dossier à un collaborateur réticent.</li><li>Mener un entretien de retour après un arrêt long.</li><li>Réagir à un désaccord frontal en réunion d'équipe.</li></ul><p>Pour comparer les solutions pendant un pilote, Guide RH propose le scénario « recadrage d'un retard récurrent » : il mobilise écoute, fermeté et recherche de solution. Cette proposition ne signifie pas qu'un test comparatif a déjà été réalisé.</p>" },
+      { h: 'Ce qu’il faut vérifier pendant le pilote', body: "<ul><li>Le personnage résiste-t-il sans devenir caricatural ?</li><li>Le feedback cite-t-il des passages précis de la conversation ?</li><li>Deux managers qui adoptent des approches différentes mais acceptables peuvent-ils réussir ?</li><li>Le responsable du programme peut-il modifier la grille sans intervention de l'éditeur ?</li></ul><p>Documentez les versions du scénario et de la grille, puis faites relire un échantillon par un formateur ou un coach. Guide RH n'a pas encore exécuté ce protocole sur les solutions du comparatif.</p>" },
       { h: "Points de vigilance", body: "<ul><li>Les scores d'un manager ne doivent pas remonter à sa hiérarchie sans son accord : sinon l'outil devient un dispositif d'évaluation, avec les obligations qui vont avec (information du CSE, <a href=\"/roleplay-ia/ai-act\">AI Act</a>).</li><li>Un personnage IA trop conciliant ne prépare à rien ; vérifiez qu'il résiste, s'énerve ou se ferme de façon crédible.</li><li>Prévoyez un temps de débrief humain (pairs, coach, formateur) pour les situations complexes.</li></ul>" },
     ],
     faq: [
       { q: 'Le roleplay IA remplace-t-il la formation management ?', a: "Non. Il remplace la partie « exercice » que les formations n'ont jamais eu le temps de faire correctement. Les cadres, les échanges entre pairs et le regard d'un formateur restent nécessaires." },
-      { q: 'Combien de sessions faut-il pour progresser ?', a: "Les éditeurs observent une progression sensible entre la première et la troisième session sur un même scénario. Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les éléments documentés publiquement des scores standardisés." },
+      { q: 'Combien de sessions faut-il pour progresser ?', a: "Il n'existe pas de nombre universel démontré pour ces solutions. Prévoyez plusieurs tentatives sur un même scénario, mais mesurez séparément la familiarisation avec l'outil, la progression sur la grille et le transfert en situation réelle. Fixez la durée du pilote et le critère d'arrêt avant son lancement." },
     ],
   },
   {
     slug: 'gestion-des-conflits',
+    updated: '2026-10-04',
     title: "Formation gestion des conflits : s'entraîner avec le roleplay IA",
     description: "Le roleplay IA appliqué à la gestion des conflits en entreprise : désaccords d'équipe, tensions avec un collaborateur, médiation. Solutions comparées et scénarios de test.",
-    answer: "Une formation gestion des conflits apprend à nommer le désaccord, écouter la position de l'autre et chercher une issue acceptable. Le roleplay IA permet de s'y entraîner face à un interlocuteur qui s'agace, se ferme ou attaque, sans risque pour la relation réelle. Les solutions les plus adaptées proposent des personnages à intensité émotionnelle réglable et un feedback sur la désescalade. Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les éléments documentés publiquement des scores standardisés.",
+    answer: "Une formation gestion des conflits apprend à nommer le désaccord, écouter la position de l'autre et chercher une issue acceptable. Le roleplay IA permet de s'y entraîner face à un interlocuteur qui s'agace, se ferme ou attaque, sans risque pour la relation réelle. Les solutions les plus adaptées proposent des personnages à intensité émotionnelle réglable et un feedback sur la désescalade. Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les capacités documentées des notes éditoriales ; aucun test standardisé n'est revendiqué.",
     sections: [
       { h: 'Ce qu\'un bon scénario de conflit doit contenir', body: "<ul><li>Un enjeu concret (répartition de la charge, décision contestée, comportement blessant).</li><li>Un personnage qui réagit à ce que dit l'apprenant, et non un script linéaire.</li><li>Une montée en tension possible si l'apprenant s'y prend mal.</li><li>Un feedback qui distingue le fond (la solution trouvée) et la forme (le ton, l'écoute, les mots qui ont apaisé ou envenimé).</li></ul>" },
-      { h: 'Notre scénario de test', body: "« Deux membres de votre équipe se reprochent mutuellement un retard de livraison. Vous recevez l'un d'eux, convaincu d'avoir raison. » Nous jouons la même séquence sur chaque solution et notons la crédibilité des réactions, la latence, la qualité du français et le contenu du feedback." },
-      { h: 'Ce que nous avons observé', body: 'Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les éléments documentés publiquement des scores standardisés.' },
+      { h: 'Scénario proposé pour un pilote', body: "« Deux membres de votre équipe se reprochent mutuellement un retard de livraison. Vous recevez l'un d'eux, convaincu d'avoir raison. » Utilisez le même contexte, le même niveau de tension et la même grille sur chaque solution. Guide RH propose ce protocole mais ne l'a pas encore exécuté sur les solutions du comparatif." },
+      { h: 'Ce qu’il faut vérifier pendant le pilote', body: "Notez séparément la crédibilité des réactions, la latence, la qualité du français et le feedback. Vérifiez surtout si le personnage réagit aux formulations de l'apprenant, si une escalade peut être désamorcée et si le feedback explique quels mots ont aggravé ou apaisé l'échange." },
     ],
     faq: [
       { q: "Le roleplay IA convient-il aux conflits graves (harcèlement, discrimination) ?", a: "Non. Ces situations relèvent de procédures et d'acteurs spécialisés (RH, référents, médecine du travail). Le roleplay IA sert aux tensions du quotidien managérial." },
@@ -36,27 +38,29 @@ export const USE_CASE_PAGES: UseCasePage[] = [
   },
   {
     slug: 'feedback',
+    updated: '2026-10-04',
     title: "S'entraîner au feedback difficile avec le roleplay IA",
     description: 'Donner un feedback négatif sans démotiver : comment le roleplay IA aide les managers à pratiquer, et quelles solutions le font bien.',
-    answer: "Donner un feedback difficile est la compétence managériale la plus demandée en formation et la moins pratiquée. Le roleplay IA permet de répéter la formulation (faits, impact, demande), d'encaisser la réaction du collaborateur simulé et de recevoir un retour immédiat sur la clarté et le ton. Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les éléments documentés publiquement des scores standardisés.",
+    answer: "Le roleplay IA permet de répéter un feedback difficile : formuler les faits et leur impact, faire une demande, puis répondre à la réaction du collaborateur simulé. La qualité dépend de la crédibilité du personnage, de la grille utilisée et des justifications associées au score. Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les capacités documentées des notes éditoriales ; aucun test standardisé n'est revendiqué.",
     sections: [
       { h: 'Les modèles de feedback que les outils évaluent', body: "La plupart des solutions s'appuient sur des grilles classiques (faits observables, impact, demande de changement, écoute de la réponse). Vérifiez que la grille est explicite et adaptable à votre culture managériale, et qu'elle ne se réduit pas à un score global." },
-      { h: 'Notre scénario de test', body: "« Un collaborateur senior a présenté au client un livrable comportant des erreurs que vous aviez signalées. Vous le recevez le lendemain. »" },
-      { h: 'Ce que nous avons observé', body: 'Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les éléments documentés publiquement des scores standardisés.' },
+      { h: 'Scénario proposé pour un pilote', body: "« Un collaborateur senior a présenté au client un livrable comportant des erreurs que vous aviez signalées. Vous le recevez le lendemain. » Guide RH propose ce scénario pour comparer les solutions ; aucun résultat de test n'est revendiqué." },
+      { h: 'Ce qu’il faut vérifier pendant le pilote', body: "Vérifiez si la grille distingue les faits, leur impact, la demande formulée et l'écoute de la réponse. Introduisez volontairement une généralisation (« toujours », « jamais ») et une formulation factuelle pour voir si le feedback les différencie. Demandez à un formateur de relire les justifications, pas seulement le score global." },
     ],
     faq: [
-      { q: 'Le roleplay IA aide-t-il aussi à recevoir un feedback ?', a: "Certaines solutions proposent l'inverse : le personnage IA donne un feedback au collaborateur qui s'entraîne à le recevoir. Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les éléments documentés publiquement des scores standardisés." },
+      { q: 'Le roleplay IA aide-t-il aussi à recevoir un feedback ?', a: "Certaines solutions proposent l'inverse : le personnage IA donne un feedback au collaborateur qui s'entraîne à le recevoir. Vérifiez en démonstration si le scénario permet réellement d'inverser les rôles et si le feedback évalue l'écoute, la reformulation et la réponse du participant." },
     ],
   },
   {
     slug: 'entretien-annuel',
+    updated: '2026-10-04',
     title: "Préparer les managers à l'entretien annuel avec le roleplay IA",
     description: "Entretiens annuels et professionnels : s'entraîner à fixer des objectifs, évaluer et gérer les désaccords sur la notation grâce au roleplay IA.",
-    answer: "L'entretien annuel est le moment où un manager doit à la fois évaluer, écouter et projeter. Le roleplay IA permet de s'entraîner aux passages délicats : annoncer une évaluation en dessous des attentes, répondre à une demande d'augmentation, refuser une mobilité. Il ne remplace pas la préparation du fond (objectifs, faits), mais la partie conversationnelle. Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les éléments documentés publiquement des scores standardisés.",
+    answer: "L'entretien annuel est le moment où un manager doit à la fois évaluer, écouter et projeter. Le roleplay IA permet de s'entraîner aux passages délicats : annoncer une évaluation en dessous des attentes, répondre à une demande d'augmentation, refuser une mobilité. Il ne remplace pas la préparation du fond (objectifs, faits), mais la partie conversationnelle. Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les capacités documentées des notes éditoriales ; aucun test standardisé n'est revendiqué.",
     sections: [
       { h: 'Ce que le roleplay IA prépare, et ce qu\'il ne prépare pas', body: "Il prépare la conduite de l'échange. Il ne prépare ni la collecte des faits de l'année ni la cohérence des évaluations au sein de l'équipe, qui relèvent du processus RH. Les meilleures solutions permettent d'injecter le contexte réel (poste, objectifs, historique) dans le scénario." },
-      { h: 'Notre scénario de test', body: "« Une collaboratrice attend une promotion que vous ne pouvez pas lui accorder cette année. Elle ouvre l'entretien en le disant. »" },
-      { h: 'Ce que nous avons observé', body: 'Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les éléments documentés publiquement des scores standardisés.' },
+      { h: 'Scénario proposé pour un pilote', body: "« Une collaboratrice attend une promotion que vous ne pouvez pas lui accorder cette année. Elle ouvre l'entretien en le disant. » Guide RH propose ce scénario pour comparer les réactions des personnages et la qualité du feedback ; aucun test n'a encore été réalisé." },
+      { h: 'Ce qu’il faut vérifier pendant le pilote', body: "Contrôlez si le personnage peut contester l'évaluation avec des arguments cohérents, si le manager est invité à s'appuyer sur des faits et si l'outil évite de suggérer des promesses qu'il ne peut tenir. Les données réelles d'un salarié ne sont pas nécessaires pour ce pilote : utilisez un dossier fictif mais complet." },
     ],
     faq: [
       { q: "Peut-on utiliser le roleplay IA pour l'entretien professionnel obligatoire ?", a: "Oui pour s'entraîner à le mener ; le contenu réglementaire (parcours, formation, évolution) reste à préparer par ailleurs." },
@@ -64,13 +68,14 @@ export const USE_CASE_PAGES: UseCasePage[] = [
   },
   {
     slug: 'equipes-commerciales',
+    updated: '2026-10-04',
     title: 'Roleplay IA pour la formation commerciale : objections, découverte, closing',
     description: "Formation commerciale et roleplay IA : simulateurs d'appels, traitement des objections, pitch. Solutions françaises et internationales comparées.",
-    answer: "La vente est le cas d'usage le plus mature du roleplay IA : appels de prospection, découverte, traitement des objections, pitch. Les simulateurs vocaux permettent d'enchaîner des dizaines d'appels avec des prospects simulés et de recevoir un scoring détaillé. Pour une équipe française, le critère décisif est la qualité du français à l'oral et la personnalisation des personnages à vos personas clients. Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les éléments documentés publiquement des scores standardisés.",
+    answer: "La vente est un cas d'usage fréquent du roleplay IA : appels de prospection, découverte, traitement des objections et pitch. Les éditeurs proposent des simulateurs vocaux pour répéter ces conversations et recevoir un scoring. Pour une équipe française, vérifiez la qualité du français à l'oral, la latence et la personnalisation des personnages à vos clients cibles. Les fiches solution distinguent les capacités documentées des notes éditoriales ; aucun test standardisé n'est revendiqué.",
     sections: [
       { h: 'Scénarios types', body: "<ul><li>Appel à froid avec un décideur pressé.</li><li>Découverte des besoins d'un prospect qui en dit peu.</li><li>Objections prix, concurrent, « pas le moment ».</li><li>Négociation de fin de cycle.</li></ul>" },
-      { h: 'Notre scénario de test', body: "« Vous appelez un DRH d'une ETI qui a téléchargé un livre blanc il y a trois semaines. Il décroche, agacé. » Même scénario, même persona, sur chaque solution vocale." },
-      { h: 'Ce que nous avons observé', body: 'Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les éléments documentés publiquement des scores standardisés.' },
+      { h: 'Scénario proposé pour un pilote', body: "« Vous appelez un DRH d'une ETI qui a téléchargé un livre blanc il y a trois semaines. Il décroche, agacé. » Utilisez le même persona, les mêmes informations produit et les mêmes objections sur chaque solution vocale. Guide RH propose ce protocole mais ne l'a pas encore exécuté." },
+      { h: 'Ce qu’il faut vérifier pendant le pilote', body: "Mesurez la latence et les erreurs de transcription dans un environnement comparable. Testez une bonne découverte, un pitch prématuré et une réponse inventée pour voir si le feedback les distingue. Vérifiez que les critères correspondent à votre méthode commerciale et que les exemples cités proviennent bien de la conversation." },
     ],
     faq: [
       { q: 'Faut-il un simulateur vocal ou un roleplay écrit pour les commerciaux ?', a: "Pour la prospection téléphonique et la visio, le vocal est indispensable. Pour la préparation d'un rendez-vous ou d'un e-mail de relance, l'écrit suffit et coûte moins cher." },
@@ -78,12 +83,13 @@ export const USE_CASE_PAGES: UseCasePage[] = [
   },
   {
     slug: 'relation-client',
+    updated: '2026-10-04',
     title: 'Former les conseillers relation client avec le roleplay IA',
     description: "Roleplay IA pour les centres de contact et la relation client : clients mécontents, réclamations, rétention. Solutions comparées.",
-    answer: "Dans la relation client, le roleplay IA sert à entraîner les conseillers aux appels difficiles (client mécontent, réclamation, menace de résiliation) et à homogénéiser les pratiques d'une équipe qui tourne vite. Les critères qui comptent : le volume de sessions possible par conseiller, l'intégration au parcours d'onboarding et la conformité des scripts au cadre réglementaire du secteur. Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les éléments documentés publiquement des scores standardisés.",
+    answer: "Dans la relation client, le roleplay IA sert à entraîner les conseillers aux appels difficiles : client mécontent, réclamation ou menace de résiliation. Les critères qui comptent sont le volume de sessions possible par conseiller, l'intégration au parcours d'onboarding et la conformité des scripts au cadre réglementaire du secteur. Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les capacités documentées des notes éditoriales ; aucun test standardisé n'est revendiqué.",
     sections: [
-      { h: 'Notre scénario de test', body: "« Un client appelle pour la troisième fois au sujet d'un prélèvement contesté. Il menace de résilier et de publier un avis. »" },
-      { h: 'Ce que nous avons observé', body: 'Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les éléments documentés publiquement des scores standardisés.' },
+      { h: 'Scénario proposé pour un pilote', body: "« Un client appelle pour la troisième fois au sujet d'un prélèvement contesté. Il menace de résilier et de publier un avis. » Guide RH propose ce scénario pour un pilote ; il ne correspond pas à un test déjà réalisé." },
+      { h: 'Ce qu’il faut vérifier pendant le pilote', body: "Vérifiez si le personnage conserve l'historique du problème, si le conseiller doit reformuler avant de proposer une solution et si le feedback repère une promesse hors procédure. Ajoutez vos règles sectorielles au brief, puis faites valider un échantillon des réponses par le responsable qualité." },
     ],
     faq: [
       { q: 'Le roleplay IA peut-il évaluer les conseillers en production ?', a: "Ce n'est pas son rôle, et l'usage des scores à des fins d'évaluation individuelle change le cadre juridique (information du CSE, AI Act). Il sert à l'entraînement." },
@@ -91,23 +97,25 @@ export const USE_CASE_PAGES: UseCasePage[] = [
   },
   {
     slug: 'onboarding',
+    updated: '2026-10-04',
     title: "Roleplay IA pour l'onboarding des nouveaux managers",
     description: "Intégrer le roleplay IA dans un parcours d'onboarding manager : premières conversations, prise de poste, premiers 90 jours.",
-    answer: "Un nouveau manager fait face en quelques semaines à des conversations qu'il n'a jamais menées : premier point individuel, première remarque à faire, première demande refusée. Le roleplay IA intégré au parcours d'onboarding permet de les répéter avant de les vivre. Le critère décisif est l'intégration au LMS ou au parcours existant, pour que l'entraînement arrive au bon moment. Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les éléments documentés publiquement des scores standardisés.",
+    answer: "Un nouveau manager fait face en quelques semaines à des conversations qu'il n'a jamais menées : premier point individuel, première remarque à faire, première demande refusée. Le roleplay IA intégré au parcours d'onboarding permet de les répéter avant de les vivre. Le critère décisif est l'intégration au LMS ou au parcours existant, pour que l'entraînement arrive au bon moment. Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les capacités documentées des notes éditoriales ; aucun test standardisé n'est revendiqué.",
     sections: [
       { h: 'Où placer le roleplay IA dans les 90 premiers jours', body: "<ul><li>Semaine 1 : premier entretien individuel avec chaque membre de l'équipe.</li><li>Semaine 3 : première remarque sur un comportement.</li><li>Mois 2 : refuser une demande (congés, télétravail, budget).</li><li>Mois 3 : premier point d'étape avec sa propre hiérarchie.</li></ul>" },
-      { h: 'Ce que nous avons observé', body: 'Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les éléments documentés publiquement des scores standardisés.' },
+      { h: 'Ce qu’il faut vérifier pendant le pilote', body: "Vérifiez que les scénarios apparaissent au moment prévu dans le parcours, qu'un nouveau manager comprend la consigne sans aide et que le feedback renvoie aux principes transmis en formation. Comparez le taux de démarrage, le taux d'achèvement et le temps de revue des responsables, sans présenter ces indicateurs d'usage comme une preuve de transfert en poste." },
     ],
     faq: [],
   },
   {
     slug: 'recrutement',
+    updated: '2026-10-04',
     title: "Former les recruteurs et managers à l'entretien de recrutement avec le roleplay IA",
     description: "Roleplay IA pour l'entretien de recrutement côté recruteur : questions structurées, non-discrimination, évaluation des réponses.",
-    answer: "Côté recruteur, le roleplay IA sert à s'entraîner à mener un entretien structuré : poser les mêmes questions à tous, creuser une réponse vague, éviter les questions discriminatoires, conclure proprement. Il s'adresse aux managers qui recrutent occasionnellement autant qu'aux recruteurs. À ne pas confondre avec les simulateurs d'entretien destinés aux candidats, très présents sur le web. Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les éléments documentés publiquement des scores standardisés.",
+    answer: "Côté recruteur, le roleplay IA sert à s'entraîner à mener un entretien structuré : poser les mêmes questions à tous, creuser une réponse vague, éviter les questions discriminatoires, conclure proprement. Il s'adresse aux managers qui recrutent occasionnellement autant qu'aux recruteurs. À ne pas confondre avec les simulateurs d'entretien destinés aux candidats. Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les capacités documentées des notes éditoriales ; aucun test standardisé n'est revendiqué.",
     sections: [
-      { h: 'Notre scénario de test', body: "« Vous recevez un candidat dont le CV présente un trou de deux ans. Vous devez l'aborder sans question interdite et évaluer une compétence clé par une question comportementale. »" },
-      { h: 'Ce que nous avons observé', body: 'Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les éléments documentés publiquement des scores standardisés.' },
+      { h: 'Scénario proposé pour un pilote', body: "« Vous recevez un candidat dont le CV présente un trou de deux ans. Vous devez l'aborder sans question interdite et évaluer une compétence clé par une question comportementale. » Guide RH propose ce scénario pour un pilote ; aucun résultat comparatif n'est revendiqué." },
+      { h: 'Ce qu’il faut vérifier pendant le pilote', body: "Testez une question factuelle sur le parcours, une question discriminatoire et une question comportementale structurée. Vérifiez que le feedback les distingue clairement, explique le risque et ne produit pas lui-même d'inférence sensible sur le candidat. Faites valider la grille par les équipes RH et juridiques avant diffusion." },
     ],
     faq: [
       { q: "Le roleplay IA peut-il servir aux candidats ?", a: "Oui, des simulateurs d'entretien d'embauche existent pour les candidats (France Travail, APEC, éditeurs privés). Cette page traite de la formation des recruteurs, pas des candidats." },
