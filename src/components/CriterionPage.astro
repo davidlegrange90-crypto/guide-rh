@@ -10,9 +10,10 @@ const { c } = Astro.props;
 const crit = CRITERIA.find((x) => x.slug === c.slug)!;
 const list = rankedProviders();
 const url = `${SITE.url}/roleplay-ia/${c.slug}`;
+const updated = c.updated ?? CATEGORY.updated;
 const anyScored = list.some((p) => typeof (p.scores as any)[c.slug]?.score === 'number');
 const jsonld = [
-  { '@type': 'Article', '@id': `${url}#article`, headline: c.title, description: c.description, url, inLanguage: 'fr-FR', datePublished: '2026-09-29', dateModified: CATEGORY.updated,
+  { '@type': 'Article', '@id': `${url}#article`, headline: c.title, description: c.description, url, inLanguage: 'fr-FR', datePublished: '2026-09-29', dateModified: updated,
     author: SITE.authors.map((a) => ({ '@id': `${SITE.url}/a-propos#${a.id}` })), publisher: { '@id': `${SITE.url}#organization` } },
   { '@type': 'ItemList', '@id': `${url}#solutions`, name: `Comparaison des solutions sur le critère ${crit.label}`, numberOfItems: list.length,
     itemListElement: list.map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/roleplay-ia/${p.slug}`, item: { '@id': `${SITE.url}/roleplay-ia/${p.slug}#app`, '@type': 'SoftwareApplication', name: p.name } })) },
@@ -21,7 +22,7 @@ const ph = (s: string) => s.replace(/\[À (COMPLÉTER|VÉRIFIER)[^\]]*\]/g, (m) 
 ---
 <Base title={c.title} description={c.description} canonical={url} {jsonld} breadcrumbs={[{ name: 'Roleplay IA', url: `${SITE.url}/roleplay-ia` }, { name: crit.label, url }]}>
   <h1>{c.title}</h1>
-  <Byline updated={CATEGORY.updated} />
+  <Byline {updated} />
   <p class="mt-6 text-lg" set:html={ph(c.answer)} />
 
   <section>

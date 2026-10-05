@@ -27,8 +27,25 @@
 - No new external performance claim was introduced, so no new source was required for this correction cycle.
 - Pre-publication validation: `npm run build` and `npm run check:content` passed. Parsed 64 HTML pages, checked 1,794 internal links/fragments, 64 JSON-LD blocks, sitemap XML, and the canonical/update dates of all eight changed pages; no errors. Confirmed the unsupported test phrases are absent from the source and built pages. Deployment outcome: see commit and run report.
 
+## 2026-10-05: RGPD, AI Act and Qualiopi accuracy
+- Updated three criterion guides using current official sources: CNIL, European Commission, EUR-Lex and the French Ministry of Labour.
+- RGPD: replaced the categorical AIPD statement with the risk-based test, added a documentary verification checklist and clarified that the comparison is not an independent compliance audit.
+- AI Act: separated training-only use from employment-decision use, added the 2 February 2025 AI-literacy date, 2 August 2026 transparency date and 2 December 2027 Annex III high-risk date, and added intended-use controls.
+- Qualiopi/OPCO: removed categorical software-funding language. Clarified that Qualiopi concerns provider quality processes and is required for relevant publicly or jointly funded actions, but does not guarantee OPCO approval.
+- Added page-specific 2026-10-05 modification dates. Numeric provider scores and criterion weights were not changed.
+- Sources consulted 2026-10-05:
+  - https://www.cnil.fr/fr/ce-quil-faut-savoir-sur-lanalyse-dimpact-relative-la-protection-des-donnees-aipd
+  - https://cnil.fr/fr/realiser-une-analyse-dimpact-si-necessaire
+  - https://eur-lex.europa.eu/legal-content/EN/TXT/?exec=1ba4582&uri=CELEX%3A32024R1689
+  - https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers
+  - https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems
+  - https://digital-strategy.ec.europa.eu/en/policies/guidelines-ai-high-risk-systems
+  - https://travail-emploi.gouv.fr/IMG/pdf/guide_de_lecture_qualiopi_v9_du_8_janvier_2024.pdf
+  - https://travail-emploi.gouv.fr/les-operateurs-de-competences-opco
+- Pre-publication validation: `npm run build` and `npm run check:content` passed. Parsed 64 HTML pages, checked 1,797 internal links/fragments, 64 JSON-LD blocks, sitemap XML, and canonical/update/content markers for the three changed pages; no errors. Confirmed the outdated categorical AIPD and software-funding claims are absent. Deployment outcome: see commit and run report.
+
 ## Prioritized backlog
-1. Review criterion-page copy for generic or misleading “observed/verified” headings and unsourced pricing ranges. Preserve useful questions while distinguishing proposals, vendor statements and independent verification.
+1. Review the integration, voice and pricing criterion pages for generic “observed” headings and the unsourced 50–100 € range. Preserve useful questions while separating proposals, vendor statements and independent verification.
 2. Replace generic provider criterion evidence with source-specific verified documentation, starting with providers most used in comparisons. Distinguish vendor assertions and independent verification.
 3. Validate mobile table usability and establish a measured performance baseline. Do not claim Core Web Vitals or mobile visual success without measurements.
 4. Investigate www hostname with hosting/DNS access; keep apex canonical. No speculative DNS edits.
