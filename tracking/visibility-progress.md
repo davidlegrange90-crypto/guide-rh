@@ -44,14 +44,25 @@
   - https://travail-emploi.gouv.fr/les-operateurs-de-competences-opco
 - Pre-publication validation: `npm run build` and `npm run check:content` passed. Parsed 64 HTML pages, checked 1,797 internal links/fragments, 64 JSON-LD blocks, sitemap XML, and canonical/update/content markers for the three changed pages; no errors. Confirmed the outdated categorical AIPD and software-funding claims are absent. Deployment outcome: see commit and run report.
 
+## 2026-10-06: integration, voice and pricing protocols
+- Updated the LMS integration guide to distinguish links, SCORM, LTI 1.3/LTI Advantage, xAPI, SSO and provisioning. Added a six-step end-to-end acceptance test.
+- Updated the voice guide with a reproducible French-language pilot protocol and a text/voice/avatar decision table. Removed the unsupported universal two-second latency threshold.
+- Removed the unsourced 50–100 € general price range and avoided replacing it with invented figures. Added normalized quote assumptions, pricing-unit checks and a total-contract-cost worksheet.
+- Added accessible captions and scoped table headers to new comparison tables.
+- Added page-specific 2026-10-06 modification dates. Numeric provider scores and criterion weights were not changed.
+- Sources consulted 2026-10-06:
+  - https://www.1edtech.org/standards/lti
+  - https://standards.1edtech.org/lti/guides/implementation_guide/implementation-guide
+  - https://adlnet.gov/assets/uploads/xAPI_v1.0.1-2013-10-01.pdf
+- Pre-publication validation: `npm run build` and `npm run check:content` passed. Parsed 64 HTML pages, checked 1,802 internal links/fragments, 64 JSON-LD blocks, sitemap XML, and canonical/update/content/table markers for the three changed pages; no errors. Confirmed the unsupported price range and latency cutoff are absent. Deployment outcome: see commit and run report.
+
 ## Prioritized backlog
-1. Review the integration, voice and pricing criterion pages for generic “observed” headings and the unsourced 50–100 € range. Preserve useful questions while separating proposals, vendor statements and independent verification.
-2. Replace generic provider criterion evidence with source-specific verified documentation, starting with providers most used in comparisons. Distinguish vendor assertions and independent verification.
-3. Validate mobile table usability and establish a measured performance baseline. Do not claim Core Web Vitals or mobile visual success without measurements.
-4. Investigate www hostname with hosting/DNS access; keep apex canonical. No speculative DNS edits.
-5. Ownership, funding and author credentials require verified facts from the owner. Do not fabricate disclosures.
-6. Search Console/Bing/analytics access needed to measure indexing, search queries, qualified visits and outbound provider clicks. No traffic or ranking result measured yet.
-7. Plan actual product benchmarks only with product access and recorded identical scenarios/rubrics. Do not report proposed tests as executed.
+1. Replace generic provider criterion evidence with source-specific verified documentation, starting with providers most used in comparisons. Distinguish vendor assertions and independent verification.
+2. Validate mobile table usability and establish a measured performance baseline. Do not claim Core Web Vitals or mobile visual success without measurements.
+3. Investigate www hostname with hosting/DNS access; keep apex canonical. No speculative DNS edits.
+4. Ownership, funding and author credentials require verified facts from the owner. Do not fabricate disclosures.
+5. Search Console/Bing/analytics access needed to measure indexing, search queries, qualified visits and outbound provider clicks. No traffic or ranking result measured yet.
+6. Plan actual product benchmarks only with product access and recorded identical scenarios/rubrics. Do not report proposed tests as executed.
 
 ## Operating rules
 Read current main and this log before editing. Choose meaningful bounded improvements, not a daily page quota. Build/content checks must pass; validate changed links and structured data; push without force and verify deployment/live pages. Record verified results separately from hypotheses and pending checks. No paid services or outreach authorized.
