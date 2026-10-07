@@ -56,8 +56,28 @@
   - https://adlnet.gov/assets/uploads/xAPI_v1.0.1-2013-10-01.pdf
 - Pre-publication validation: `npm run build` and `npm run check:content` passed. Parsed 64 HTML pages, checked 1,802 internal links/fragments, 64 JSON-LD blocks, sitemap XML, and canonical/update/content/table markers for the three changed pages; no errors. Confirmed the unsupported price range and latency cutoff are absent. Deployment outcome: see commit and run report.
 
+## 2026-10-07: source-specific provider evidence
+- Replaced generic criterion text with source-specific evidence on three provider profiles: Face Up, Reality Academy and Yoodli.
+- Added 22 criterion-level source links in total: 8 for Face Up, 8 for Reality Academy and 6 for Yoodli. Before this cycle, none of these three profiles had a criterion-level source link.
+- Face Up: documented voice/avatar formats, scenario creation, skill feedback, SCORM/LTI/SSO claims, the editor's EU-hosting/RGPD statements and the currently published launch offer.
+- Reality Academy: documented made-to-measure scenarios, voice/keyboard modes, feedback, SCORM delivery, Qualiopi/OPCO claims, and the editor's detailed hosting, encryption, subprocessor and AI-governance statements.
+- Yoodli: documented current formats, language selection, configurable roleplays, feedback, LMS/CRM/Teams/Slack integrations, SSO/SCIM and vendor security claims.
+- Clearly labelled unverified vendor declarations and repeated where product quality, contract scope or technical details still require verification. No hands-on tests were claimed.
+- Updated the comparison and profile modification dates and added a journal entry. Numeric scores, criterion weights and rankings were not changed.
+- Sources consulted 2026-10-07:
+  - https://face-up.fr/
+  - https://face-up.fr/solution/roleplays
+  - https://face-up.fr/tarifs
+  - https://www.reality-academy.fr/roleplay-ia
+  - https://www.reality-academy.fr/blog/eu-ai-act-formation-ia-conformite
+  - https://yoodli.ai/platform/roleplays
+  - https://yoodli.ai/platform/coach
+  - https://support.yoodli.ai/en/articles/9550461-yoodli-overview
+  - https://support.yoodli.ai/en/articles/9628260-customizing-practice
+- Pre-publication validation: `npm run build` and `npm run check:content` passed. Parsed 64 HTML pages, checked 2,204 internal links/fragments, 64 JSON-LD blocks, 64 sitemap URLs, canonical tags and the changed-page content/date markers; no errors. Confirmed 22 criterion-level sources were added and every provider score remained unchanged. Deployment outcome: see commit and run report.
+
 ## Prioritized backlog
-1. Replace generic provider criterion evidence with source-specific verified documentation, starting with providers most used in comparisons. Distinguish vendor assertions and independent verification.
+1. Continue replacing generic provider criterion evidence with source-specific documentation. Next candidates: Practicio, Super Sales and Edflex. Distinguish vendor assertions and independent verification.
 2. Validate mobile table usability and establish a measured performance baseline. Do not claim Core Web Vitals or mobile visual success without measurements.
 3. Investigate www hostname with hosting/DNS access; keep apex canonical. No speculative DNS edits.
 4. Ownership, funding and author credentials require verified facts from the owner. Do not fabricate disclosures.
