@@ -76,8 +76,26 @@
   - https://support.yoodli.ai/en/articles/9628260-customizing-practice
 - Pre-publication validation: `npm run build` and `npm run check:content` passed. Parsed 64 HTML pages, checked 2,204 internal links/fragments, 64 JSON-LD blocks, 64 sitemap URLs, canonical tags and the changed-page content/date markers; no errors. Confirmed 22 criterion-level sources were added and every provider score remained unchanged. Deployment outcome: see commit and run report.
 
+## 2026-10-08: Practicio and Super Sales documentation
+- Started from fresh main a74a3e0845880184a533193b4146d8be626d72ff. Preserved the owner's two global AI comparison buttons and single canonical sitemap changes.
+- Replaced generic evidence for all 11 criteria on each of two existing profiles. Added 17 criterion-level source links: Practicio 10, Super Sales 7; identified missing documentation explicitly.
+- Practicio: corrected the listed format to voice, documented offer boundaries, and separated vendor security declarations from independently verified compliance. Super Sales: clarified simulation quotas and documentary limitations. No scores, weights, test dates or relationship disclosures changed.
+- Reworded the shared provider-table heading as documentary evidence and checks, removing language suggesting hands-on observations. Added a dated journal entry and comparison update date.
+- Sources consulted 2026-10-08:
+  - https://www.practicio.ai/
+  - https://www.practicio.ai/plateforme
+  - https://www.practicio.ai/tarifs
+  - https://www.practicio.ai/securite-des-donnees
+  - https://www.super-sales.fr/
+- Also inspected https://www.edflex.com/blog/ia-roleplay for the next cycle; its product-specific roleplay documentation needs review before changing that profile.
+- Validation: npm run build and npm run check:content passed after the journal addition. Parsed 64 HTML pages, 1,809 internal links, 64 JSON-LD blocks and all 64 unique sitemap URLs; checked canonical equality, sitemap coverage, fragments, one H1 per page, changed dates/content and preservation of every numerical score and tested_on field. No errors. Table headers retain scope attributes. No layout changes, mobile visual audit or field performance measurement performed.
+- Pre-publication live checks: both profiles and sitemap.xml returned HTTP 200 with apex canonical URLs. www returned HTTP 502 from this environment; this does not establish an origin or DNS defect. No DNS changes made.
+- Traffic reporting windows (Europe/Paris): last complete day 2026-10-07, comparison 2026-10-06; rolling 2026-10-01–2026-10-07, comparison 2026-09-24–2026-09-30. No measured visitors, pageviews, top pages/referrers, AI referrals or request-log data accessible; unavailable is not zero. Definitions, bot verification, success/block breakdown and audit-traffic exclusion cannot be established without the provider data.
+- Access blocker: Vercel GET project guide-rh under scope davidlegrange90-5664/team_DogQuXCMTVI6mYpMCOQUOD5G returned 403 forbidden. No Vercel CLI available for a credential fallback. Project/team analytics and hosting/edge request-log access (or a dated export) are needed. No Search Console/Bing/analytics dataset accessible. Do not infer training, indexing or recommendations from crawler access.
+- Publication and deployment: verified changes prepared for a guarded fast-forward to main; check GitHub commit statuses and affected live URLs after publication. The run report records that outcome.
+
 ## Prioritized backlog
-1. Continue replacing generic provider criterion evidence with source-specific documentation. Next candidates: Practicio, Super Sales and Edflex. Distinguish vendor assertions and independent verification.
+1. Continue replacing generic provider criterion evidence with source-specific documentation. Next candidates: Edflex, Ringover Pitch Room and Uptale. Distinguish vendor assertions and independent verification.
 2. Validate mobile table usability and establish a measured performance baseline. Do not claim Core Web Vitals or mobile visual success without measurements.
 3. Investigate www hostname with hosting/DNS access; keep apex canonical. No speculative DNS edits.
 4. Ownership, funding and author credentials require verified facts from the owner. Do not fabricate disclosures.

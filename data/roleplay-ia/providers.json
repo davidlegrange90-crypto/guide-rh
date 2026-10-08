@@ -1,6 +1,6 @@
 {
   "category": "roleplay-ia",
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "providers": [
     {
       "slug": "coachello",
@@ -380,8 +380,7 @@
       "international": false,
       "description": "Entraînement des managers aux conversations à fort enjeu (feedback, conflit, négociation, changement) par simulations avec feedback immédiat.",
       "formats": [
-        "texte",
-        "vidéo"
+        "voix"
       ],
       "use_cases": [
         "managers",
@@ -390,25 +389,28 @@
         "entretien-annuel"
       ],
       "public_claims": {
-        "rgpd": "Non précisé sur la page consultée",
-        "integrations": "Déploiement dans LMS/LXP",
+        "rgpd": "Hébergement France et absence de réutilisation pour entraîner les modèles déclarés ; documents de sécurité à demander.",
+        "integrations": "SCORM et SSO annoncés dans la formule Entreprise.",
         "clients": "AFP, Action Logement, Crédit Agricole, Groupama, CHU de Rennes, Clarins, Galeries Lafayette, IFP Énergies nouvelles, Veolia, Ministère de l'Intérieur (déclarés)",
-        "pricing": "Non publié"
+        "pricing": "Pilote mensuel jusqu’à 20 personnes ; Entreprise annuelle avec pack de simulations et prix dégressif par utilisateur. Montants sur devis (consulté le 8 octobre 2026)."
       },
       "sources": [
-        "https://www.practicio.ai/"
+        "https://www.practicio.ai/",
+        "https://www.practicio.ai/plateforme",
+        "https://www.practicio.ai/tarifs",
+        "https://www.practicio.ai/securite-des-donnees"
       ],
       "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
       "ideal_for": "Organisations recherchant une solution centrée sur formation des managers, feedback et conversations difficiles, gestion des conflits, entretiens annuels.",
       "strengths": [
-        "Intégrations annoncées : Déploiement dans LMS/LXP.",
-        "Formats annoncés : texte, vidéo."
+        "Simulations orales et retours par compétence annoncés.",
+        "SCORM et SSO annoncés en formule Entreprise."
       ],
       "limits": [
-        "Tarification enterprise non communiquée publiquement.",
+        "Chiffrer les simulations incluses, le sur-mesure et les options d’accompagnement dans le devis.",
         "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
       ],
-      "pricing_public": "Non publié",
+      "pricing_public": "Pilote mensuel jusqu’à 20 personnes ; Entreprise annuelle avec pack de simulations et prix dégressif par utilisateur. Montants sur devis (consulté le 8 octobre 2026).",
       "french_clients": "AFP, Action Logement, Crédit Agricole, Groupama, CHU de Rennes, Clarins, Galeries Lafayette, IFP Énergies nouvelles, Veolia, Ministère de l'Intérieur (déclarés)",
       "tested_on": null,
       "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
@@ -416,58 +418,58 @@
       "scores": {
         "langue-francaise": {
           "score": 5,
-          "evidence": "Évaluation éditoriale de l’adéquation au marché francophone à partir des informations disponibles.",
-          "source": ""
+          "evidence": "Le site présente des situations en français et annonce plus de 15 langues. Qualité orale à vérifier en pilote.",
+          "source": "https://www.practicio.ai/plateforme"
         },
         "rgpd-hebergement": {
           "score": 3,
-          "evidence": "Évaluation éditoriale de la clarté des informations RGPD, hébergement et traitement des données disponibles publiquement.",
-          "source": ""
+          "evidence": "L’éditeur déclare AWS Paris/Azure France Central et aucune réutilisation pour entraîner les modèles. Demander le PAS, le PIA et les sous-traitants ; Guide RH ne les a pas audités.",
+          "source": "https://www.practicio.ai/securite-des-donnees"
         },
         "ai-act": {
           "score": 3,
-          "evidence": "Évaluation éditoriale de la maturité des informations publiées sur gouvernance IA, transparence et usages RH.",
-          "source": ""
+          "evidence": "Practicio cite l’AI Act comme cadre appliqué, pas comme certification. Les certifications des hébergeurs ne certifient pas le produit.",
+          "source": "https://www.practicio.ai/securite-des-donnees"
         },
         "qualiopi-opco": {
           "score": 3,
-          "evidence": "Évaluation éditoriale de la compatibilité avec des parcours de formation finançables et des dispositifs Qualiopi/OPCO.",
+          "evidence": "Les pages consultées ne documentent pas une certification Qualiopi ni un accord de financement OPCO pour cette offre. À confirmer avant achat.",
           "source": ""
         },
         "scenarios-personnalisables": {
           "score": 4.5,
-          "evidence": "Évaluation éditoriale de la capacité annoncée à adapter scénarios, personas et contextes métier.",
-          "source": ""
+          "evidence": "Bibliothèque et création depuis vos situations, interlocuteurs et référentiel annoncées. Faire valider un scénario représentatif.",
+          "source": "https://www.practicio.ai/"
         },
         "voix-ou-texte": {
           "score": 3.5,
-          "evidence": "Évaluation éditoriale de la richesse des formats disponibles.",
-          "source": ""
+          "evidence": "La page produit décrit une conversation à la voix avec un interlocuteur virtuel. Les modes texte/vidéo ne sont pas confirmés sur cette page.",
+          "source": "https://www.practicio.ai/plateforme"
         },
         "analytics-feedback": {
           "score": 4,
-          "evidence": "Évaluation éditoriale de la profondeur du feedback, du scoring et des analytics.",
-          "source": ""
+          "evidence": "Profil par compétence, suivi par scénario, tableaux de bord et exports annoncés. Vérifier les droits d’accès et la calibration du feedback.",
+          "source": "https://www.practicio.ai/plateforme"
         },
         "integration-lms": {
           "score": 4,
-          "evidence": "Évaluation éditoriale de la richesse des intégrations LMS, SSO et outils de travail.",
-          "source": ""
+          "evidence": "La grille réserve SCORM et SSO à Entreprise. Faire préciser les remontées LMS et le protocole SSO au devis.",
+          "source": "https://www.practicio.ai/tarifs"
         },
         "prix": {
           "score": 2.5,
-          "evidence": "Évaluation éditoriale de la transparence et de la flexibilité du modèle tarifaire.",
-          "source": ""
+          "evidence": "Pilote mensuel et Entreprise annuelle avec pack de simulations ; aucun montant affiché. Demander un coût total à volume identique.",
+          "source": "https://www.practicio.ai/tarifs"
         },
         "coaching-humain": {
           "score": 2,
-          "evidence": "Évaluation éditoriale de la présence d’un accompagnement humain ou de coaching associé.",
-          "source": ""
+          "evidence": "Configuration initiale incluse ; ateliers, webinar et accompagnement dédié optionnels. Cela ne garantit pas un coaching individuel inclus.",
+          "source": "https://www.practicio.ai/tarifs"
         },
         "references-france": {
           "score": 5,
-          "evidence": "Évaluation éditoriale de la solidité et de la visibilité des références françaises.",
-          "source": ""
+          "evidence": "Logos et exemples AP-HP, Galeries Lafayette et RATP Dev publiés par l’éditeur. Guide RH n’a pas confirmé ces références auprès des clients.",
+          "source": "https://www.practicio.ai/"
         }
       },
       "changelog": [
@@ -482,6 +484,10 @@
         {
           "date": "2026-09-29",
           "note": "Ajout d’une note éditoriale Guide RH fondée sur la documentation publique et les capacités annoncées."
+        },
+        {
+          "date": "2026-10-08",
+          "note": "Sources par critère actualisées ; format vocal et périmètre des offres clarifiés. Notes inchangées ; aucun test produit réalisé."
         }
       ]
     },
@@ -500,10 +506,10 @@
         "equipes-commerciales"
       ],
       "public_claims": {
-        "rgpd": "Hébergement Europe, RGPD annoncés",
+        "rgpd": "Europe et conformité RGPD déclarées ; pièces contractuelles à vérifier.",
         "integrations": "Non précisé",
-        "clients": "Types de clients cités (SaaS B2B, fintech, télécom), pas de noms",
-        "pricing": "Grille publique : gratuit (3 simulations/mois), Pro 49 €/utilisateur/mois, Enterprise à partir de 99 €/utilisateur/mois (septembre 2026)"
+        "clients": "Secteurs cités, sans entreprises nommées vérifiables sur la page.",
+        "pricing": "Starter gratuit (3 simulations/mois), Pro 49 €/utilisateur/mois (10 simulations), Entreprise dès 99 €/utilisateur/mois (consulté le 8 octobre 2026)."
       },
       "sources": [
         "https://www.super-sales.fr/"
@@ -518,66 +524,66 @@
         "Les conditions enterprise et services associés restent à confirmer au cas par cas.",
         "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
       ],
-      "pricing_public": "Grille publique : gratuit (3 simulations/mois), Pro 49 €/utilisateur/mois, Enterprise à partir de 99 €/utilisateur/mois (septembre 2026)",
-      "french_clients": "Types de clients cités (SaaS B2B, fintech, télécom), pas de noms",
+      "pricing_public": "Starter gratuit (3 simulations/mois), Pro 49 €/utilisateur/mois (10 simulations), Entreprise dès 99 €/utilisateur/mois (consulté le 8 octobre 2026).",
+      "french_clients": "Secteurs cités, sans entreprises nommées vérifiables sur la page.",
       "tested_on": null,
       "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
           "score": 5,
-          "evidence": "Évaluation éditoriale de l’adéquation au marché francophone à partir des informations disponibles.",
-          "source": ""
+          "evidence": "Interface, simulations et coaching en français annoncés. Qualité à tester.",
+          "source": "https://www.super-sales.fr/"
         },
         "rgpd-hebergement": {
           "score": 4,
-          "evidence": "Évaluation éditoriale de la clarté des informations RGPD, hébergement et traitement des données disponibles publiquement.",
-          "source": ""
+          "evidence": "Hébergement européen et RGPD déclarés. Demander DPA, sous-traitants et conservation ; aucune conformité auditée par Guide RH.",
+          "source": "https://www.super-sales.fr/"
         },
         "ai-act": {
           "score": 3,
-          "evidence": "Évaluation éditoriale de la maturité des informations publiées sur gouvernance IA, transparence et usages RH.",
+          "evidence": "La page ne documente pas le périmètre AI Act de cette offre. Demander sa documentation.",
           "source": ""
         },
         "qualiopi-opco": {
           "score": 1,
-          "evidence": "Évaluation éditoriale de la compatibilité avec des parcours de formation finançables et des dispositifs Qualiopi/OPCO.",
+          "evidence": "Aucun justificatif Qualiopi/OPCO identifié sur la page consultée. Faire confirmer tout financement.",
           "source": ""
         },
         "scenarios-personnalisables": {
           "score": 4.5,
-          "evidence": "Évaluation éditoriale de la capacité annoncée à adapter scénarios, personas et contextes métier.",
-          "source": ""
+          "evidence": "Personas depuis LinkedIn et scénarios personnalisés annoncés. Vérifier droits d’utilisation et fidélité du persona.",
+          "source": "https://www.super-sales.fr/"
         },
         "voix-ou-texte": {
           "score": 4.5,
-          "evidence": "Évaluation éditoriale de la richesse des formats disponibles.",
-          "source": ""
+          "evidence": "Conversations vocales ou écrites annoncées. Réactivité non testée par Guide RH.",
+          "source": "https://www.super-sales.fr/"
         },
         "analytics-feedback": {
           "score": 4,
-          "evidence": "Évaluation éditoriale de la profondeur du feedback, du scoring et des analytics.",
-          "source": ""
+          "evidence": "Scoring STCS sur 12 dimensions, transcription et conseils annoncés. Vérifier calibration et export.",
+          "source": "https://www.super-sales.fr/"
         },
         "integration-lms": {
           "score": 2.5,
-          "evidence": "Évaluation éditoriale de la richesse des intégrations LMS, SSO et outils de travail.",
+          "evidence": "La page consultée ne précise pas de protocole LMS/SSO. Demander une démonstration technique.",
           "source": ""
         },
         "prix": {
           "score": 5,
-          "evidence": "Évaluation éditoriale de la transparence et de la flexibilité du modèle tarifaire.",
-          "source": ""
+          "evidence": "Quotas différents selon l’offre : comparer simulations incluses, dépassements et conditions contractuelles.",
+          "source": "https://www.super-sales.fr/"
         },
         "coaching-humain": {
           "score": 1,
-          "evidence": "Évaluation éditoriale de la présence d’un accompagnement humain ou de coaching associé.",
+          "evidence": "Le coaching décrit est automatisé ; aucune séance humaine incluse documentée.",
           "source": ""
         },
         "references-france": {
           "score": 2.5,
-          "evidence": "Évaluation éditoriale de la solidité et de la visibilité des références françaises.",
-          "source": ""
+          "evidence": "Témoignages attribués à des personnes abrégées et secteurs ; entreprises clientes non vérifiées.",
+          "source": "https://www.super-sales.fr/"
         }
       },
       "changelog": [
@@ -592,6 +598,10 @@
         {
           "date": "2026-09-29",
           "note": "Ajout d’une note éditoriale Guide RH fondée sur la documentation publique et les capacités annoncées."
+        },
+        {
+          "date": "2026-10-08",
+          "note": "Sources par critère ajoutées ; quotas tarifaires et limites documentaires clarifiés. Notes inchangées ; aucun test produit réalisé."
         }
       ]
     },
