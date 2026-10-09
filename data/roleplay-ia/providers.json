@@ -1,6 +1,6 @@
 {
   "category": "roleplay-ia",
-  "updated": "2026-10-08",
+  "updated": "2026-10-09",
   "providers": [
     {
       "slug": "coachello",
@@ -608,91 +608,104 @@
     {
       "slug": "edflex",
       "name": "Edflex",
-      "url": "https://www.edflex.com/blog/ia-roleplay",
+      "url": "https://www.edflex.com/roleplays",
       "country": "France",
       "international": false,
       "description": "Roleplays IA proposés au sein d'une plateforme de contenus de formation.",
-      "formats": [],
-      "use_cases": [],
+      "formats": [
+        "texte",
+        "voix"
+      ],
+      "use_cases": [
+        "managers",
+        "gestion-des-conflits",
+        "equipes-commerciales",
+        "relation-client"
+      ],
       "public_claims": {
-        "rgpd": "Non précisé",
-        "integrations": "LMS, Teams, Outlook",
-        "clients": "Non nommés sur la page consultée",
+        "rgpd": "Edflex déclare un hébergement exclusivement européen sur AWS et une pseudonymisation avant traitement par les fournisseurs d’IA ; pièces contractuelles à vérifier.",
+        "integrations": "Intégrations LMS/LXP, SIRH, Teams, Slack et SSO annoncées pour la plateforme ; périmètre roleplay à confirmer.",
+        "clients": "EDF publie un cas client mentionnant l’usage des roleplays IA Edflex.",
         "pricing": "Non publié"
       },
       "sources": [
-        "https://www.edflex.com/blog/ia-roleplay"
+        "https://www.edflex.com/roleplays",
+        "https://www.edflex.com/blog/nouveautes-edflex-2026-episode-1",
+        "https://www.edflex.com/integrations",
+        "https://www.edflex.com/coach-ia-formation",
+        "https://www.edflex.com/clients/edf-rationalisation-formation-digitale-et-engagement"
       ],
       "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
-      "ideal_for": "Organisations souhaitant expérimenter le roleplay IA dans un parcours de formation.",
+      "ideal_for": "Organisations souhaitant intégrer des exercices texte ou voix à une plateforme de contenus et à leur écosystème de formation.",
       "strengths": [
-        "Intégrations annoncées : LMS, Teams, Outlook.",
-        "Approche orientée entraînement pratique."
+        "Catalogue de scénarios et roleplays personnalisables annoncés.",
+        "Feedback instantané et rapport PDF par session annoncés.",
+        "Intégrations LMS/LXP, SIRH et outils de travail documentées au niveau de la plateforme."
       ],
       "limits": [
-        "Tarification enterprise non communiquée publiquement.",
-        "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
+        "Tarification non communiquée publiquement.",
+        "Vérifier en pilote les langues, la latence, la calibration du feedback et les connecteurs réellement disponibles pour les roleplays."
       ],
       "pricing_public": "Non publié",
-      "french_clients": "Non nommés sur la page consultée",
+      "french_clients": "EDF est cité dans un cas client Edflex décrivant l’intégration de roleplays IA.",
       "tested_on": null,
       "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
           "score": 5,
-          "evidence": "Évaluation éditoriale de l’adéquation au marché francophone à partir des informations disponibles.",
-          "source": ""
+          "evidence": "La page française annonce plus de 20 langues pour l’offre et présente les roleplays en français. La qualité de reconnaissance et de restitution n’a pas été testée par Guide RH.",
+          "source": "https://www.edflex.com/roleplays"
         },
         "rgpd-hebergement": {
           "score": 3,
-          "evidence": "Évaluation éditoriale de la clarté des informations RGPD, hébergement et traitement des données disponibles publiquement.",
-          "source": ""
+          "evidence": "Edflex déclare un hébergement européen sur AWS, une pseudonymisation avant traitement et l’absence d’entraînement fournisseur. Demander DPA, sous-traitants et durées de conservation ; Guide RH n’a pas audité ces déclarations.",
+          "source": "https://www.edflex.com/coach-ia-formation"
         },
         "ai-act": {
           "score": 3,
-          "evidence": "Évaluation éditoriale de la maturité des informations publiées sur gouvernance IA, transparence et usages RH.",
-          "source": ""
+          "evidence": "L’éditeur qualifie ses coachs IA de « low-risk ». Cette auto-classification ne remplace pas l’analyse de l’usage prévu par l’acheteur ni la documentation contractuelle.",
+          "source": "https://www.edflex.com/coach-ia-formation"
         },
         "qualiopi-opco": {
           "score": 3,
-          "evidence": "Évaluation éditoriale de la compatibilité avec des parcours de formation finançables et des dispositifs Qualiopi/OPCO.",
+          "evidence": "Les pages produit consultées ne démontrent pas qu’un achat de licences roleplay est finançable par un OPCO. Demander l’entité porteuse, la prestation éligible et l’accord du financeur.",
           "source": ""
         },
         "scenarios-personnalisables": {
           "score": 2.5,
-          "evidence": "Évaluation éditoriale de la capacité annoncée à adapter scénarios, personas et contextes métier.",
-          "source": ""
+          "evidence": "Edflex annonce des centaines de scénarios, des ajouts mensuels et des roleplays personnalisables assignables à des groupes cibles. Faire valider un scénario métier représentatif.",
+          "source": "https://www.edflex.com/roleplays"
         },
         "voix-ou-texte": {
           "score": 2.5,
-          "evidence": "Évaluation éditoriale de la richesse des formats disponibles.",
-          "source": ""
+          "evidence": "L’éditeur documente des interactions écrites ou orales. Aucun test Guide RH de latence, transcription ou comportement conversationnel n’a été réalisé.",
+          "source": "https://www.edflex.com/roleplays"
         },
         "analytics-feedback": {
           "score": 3,
-          "evidence": "Évaluation éditoriale de la profondeur du feedback, du scoring et des analytics.",
-          "source": ""
+          "evidence": "Depuis mai 2026, Edflex annonce un rapport PDF par session avec score global, détail par critère et feedback personnalisé. Vérifier la calibration, les exports administrateur et les droits de partage.",
+          "source": "https://www.edflex.com/blog/nouveautes-edflex-2026-episode-1"
         },
         "integration-lms": {
           "score": 4.5,
-          "evidence": "Évaluation éditoriale de la richesse des intégrations LMS, SSO et outils de travail.",
-          "source": ""
+          "evidence": "La plateforme liste des intégrations LMS/LXP, SIRH, Teams, Slack et SSO. Demander une démonstration du lancement des roleplays et de la remontée des résultats dans le système cible.",
+          "source": "https://www.edflex.com/integrations"
         },
         "prix": {
           "score": 2.5,
-          "evidence": "Évaluation éditoriale de la transparence et de la flexibilité du modèle tarifaire.",
+          "evidence": "Aucun montant public identifié pour les roleplays. Demander le coût total, les volumes de sessions, la personnalisation, les connecteurs et l’accompagnement inclus.",
           "source": ""
         },
         "coaching-humain": {
           "score": 1.5,
-          "evidence": "Évaluation éditoriale de la présence d’un accompagnement humain ou de coaching associé.",
+          "evidence": "Les pages consultées décrivent un feedback et des conseils fournis par l’IA ; aucune séance de coaching humain incluse n’y est documentée.",
           "source": ""
         },
         "references-france": {
           "score": 3,
-          "evidence": "Évaluation éditoriale de la solidité et de la visibilité des références françaises.",
-          "source": ""
+          "evidence": "Un cas client publié par Edflex indique qu’EDF intègre les roleplays IA. Guide RH n’a pas vérifié cette référence directement auprès d’EDF.",
+          "source": "https://www.edflex.com/clients/edf-rationalisation-formation-digitale-et-engagement"
         }
       },
       "changelog": [
@@ -707,6 +720,10 @@
         {
           "date": "2026-09-29",
           "note": "Ajout d’une note éditoriale Guide RH fondée sur la documentation publique et les capacités annoncées."
+        },
+        {
+          "date": "2026-10-09",
+          "note": "Formats, cas d’usage, intégrations, feedback et déclarations de sécurité actualisés depuis les pages officielles ; notes inchangées et aucun test produit réalisé."
         }
       ]
     },

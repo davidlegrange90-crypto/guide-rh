@@ -94,8 +94,25 @@
 - Access blocker: Vercel GET project guide-rh under scope davidlegrange90-5664/team_DogQuXCMTVI6mYpMCOQUOD5G returned 403 forbidden. No Vercel CLI available for a credential fallback. Project/team analytics and hosting/edge request-log access (or a dated export) are needed. No Search Console/Bing/analytics dataset accessible. Do not infer training, indexing or recommendations from crawler access.
 - Publication and deployment: verified changes prepared for a guarded fast-forward to main; check GitHub commit statuses and affected live URLs after publication. The run report records that outcome.
 
+## 2026-10-09: Edflex product documentation
+- Started from fresh main 879087f0b7febdd3e92de5d4815207fdd929b41b.
+- Updated the existing Edflex profile from its dedicated roleplay, product-update, integration, security and EDF case-study pages. Added text and voice formats plus four documented use cases: managers, conflict management, sales and customer service.
+- Replaced generic evidence across all 11 criteria and added eight criterion-level source links. Clarified PDF session reports, platform-level integrations and vendor security claims; identified pricing, Qualiopi/OPCO, human coaching and product-specific integration scope as points requiring evidence.
+- Added an Edflex journal entry and updated the comparison date. No scores, criterion weights, test dates or commercial disclosures changed. No hands-on test or independent security audit claimed.
+- Sources consulted 2026-10-09:
+  - https://www.edflex.com/roleplays
+  - https://www.edflex.com/blog/nouveautes-edflex-2026-episode-1
+  - https://www.edflex.com/integrations
+  - https://www.edflex.com/coach-ia-formation
+  - https://www.edflex.com/clients/edf-rationalisation-formation-digitale-et-engagement
+- Validation: npm run build and npm run check:content passed. Parsed 64 HTML pages, 1,841 internal links/fragments, 64 JSON-LD blocks and 64 unique sitemap URLs; checked canonical equality, sitemap coverage, one H1 per page, changed content/dates, Edflex links from all four use-case pages, and preservation of every numerical score and tested_on field. No errors. No layout change or field performance measurement was made.
+- Pre-publication live checks: the Edflex profile and sitemap returned HTTP 200 with apex canonical URLs. www returned HTTP 502 from this environment; this remains inconclusive and no DNS change was made.
+- Traffic reporting windows (Europe/Paris): last complete day 2026-10-08, comparison 2026-10-07; rolling 2026-10-02–2026-10-08, comparison 2026-09-25–2026-10-01. Measured visitors, pageviews, top pages/referrers, AI referrals, crawler and user-triggered assistant requests remain unavailable, not zero. Bot identity, successful/blocked requests, requested pages, last-seen times and audit-traffic exclusions cannot be established without request-level data.
+- Access blocker confirmed 2026-10-09: both Vercel project lookup and grouped production runtime-log access returned HTTP 403 for project guide-rh under team_DogQuXCMTVI6mYpMCOQUOD5G / scope davidlegrange90-5664. No Vercel CLI credentials are available as fallback. Needed: project/team analytics plus hosting/edge request-log permission or dated exports; Search Console/Bing data also remains unavailable. A crawl would not prove model training, indexing, citations or recommendations.
+- Publication and deployment: prepared for guarded fast-forward to main; the run report records GitHub status, Vercel deployment and affected live-page verification.
+
 ## Prioritized backlog
-1. Continue replacing generic provider criterion evidence with source-specific documentation. Next candidates: Edflex, Ringover Pitch Room and Uptale. Distinguish vendor assertions and independent verification.
+1. Continue replacing generic provider criterion evidence with source-specific documentation. Next candidates: Ringover Pitch Room, Uptale and MeltingSpot. Distinguish vendor assertions and independent verification.
 2. Validate mobile table usability and establish a measured performance baseline. Do not claim Core Web Vitals or mobile visual success without measurements.
 3. Investigate www hostname with hosting/DNS access; keep apex canonical. No speculative DNS edits.
 4. Ownership, funding and author credentials require verified facts from the owner. Do not fabricate disclosures.
