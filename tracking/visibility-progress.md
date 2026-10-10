@@ -111,8 +111,25 @@
 - Access blocker confirmed 2026-10-09: both Vercel project lookup and grouped production runtime-log access returned HTTP 403 for project guide-rh under team_DogQuXCMTVI6mYpMCOQUOD5G / scope davidlegrange90-5664. No Vercel CLI credentials are available as fallback. Needed: project/team analytics plus hosting/edge request-log permission or dated exports; Search Console/Bing data also remains unavailable. A crawl would not prove model training, indexing, citations or recommendations.
 - Publication and deployment: prepared for guarded fast-forward to main; the run report records GitHub status, Vercel deployment and affected live-page verification.
 
+## 2026-10-10: Ringover Pitch Room documentation
+- Started from fresh main 00a4cadb4f6ee5b91f97c91cf77920743ee75109.
+- Updated the existing Ringover Pitch Room profile using Ringover's product pages, announcement, DPA and current AI terms. Added documented service-client and recruitment use cases alongside sales.
+- Replaced generic evidence across all 11 criteria and added seven criterion-level source links. Documented scenario controls, live advice, post-session reports, Empower integrations and the published AI-subprocessor locations and transfer mechanism. Missing Pitch Room pricing, LMS, Qualiopi/OPCO, human-coaching and named client evidence is stated explicitly.
+- Added a Ringover journal entry and updated the comparison date. No scores, weights, test dates or commercial disclosures changed. No hands-on test or compliance audit claimed.
+- Sources consulted 2026-10-10:
+  - https://www.ringover.fr/plateforme-coaching
+  - https://www.ringover.fr/simulation-entretien-de-vente
+  - https://www.ringover.fr/actualites/ringover-pitch-room-ia-simulation-vente
+  - https://www.ringover.fr/accord-traitement-donnees
+  - https://www.ringover.fr/cgv
+- Validation: npm run build and npm run check:content passed. Parsed 64 HTML pages, 1,852 internal links/fragments, 64 JSON-LD blocks and 64 unique sitemap URLs; checked canonicals, sitemap coverage, one H1 per page, changed content/dates, Ringover links from all three use-case pages, and preservation of every numerical score and tested_on field. No errors. No layout change or field performance measurement was made.
+- Pre-publication live checks: Ringover profile and sitemap returned HTTP 200 with apex canonical URLs. www returned HTTP 502 from this environment; this remains inconclusive and no DNS change was made.
+- Traffic reporting windows (Europe/Paris): last complete day 2026-10-09, comparison 2026-10-08; rolling 2026-10-03–2026-10-09, comparison 2026-09-26–2026-10-02. Measured visitors, pageviews, top pages/referrers, AI referrals, crawler and user-triggered assistant requests remain unavailable, not zero. Bot identity, successful/blocked requests, requested pages, last-seen times and audit-traffic exclusions cannot be established without request-level data.
+- Access blocker confirmed 2026-10-10: Vercel project lookup and grouped production runtime-log access again returned HTTP 403 for project guide-rh under team_DogQuXCMTVI6mYpMCOQUOD5G / scope davidlegrange90-5664. No Vercel CLI credentials are available as fallback. Needed: project/team analytics plus hosting/edge request-log permission or dated exports; Search Console/Bing data also remains unavailable. A crawl would not prove model training, indexing, citations or recommendations.
+- Publication and deployment: prepared for guarded fast-forward to main; the run report records GitHub status, Vercel deployment and affected live-page verification.
+
 ## Prioritized backlog
-1. Continue replacing generic provider criterion evidence with source-specific documentation. Next candidates: Ringover Pitch Room, Uptale and MeltingSpot. Distinguish vendor assertions and independent verification.
+1. Continue replacing generic provider criterion evidence with source-specific documentation. Next candidates: Uptale, MeltingSpot and Exec. Distinguish vendor assertions and independent verification.
 2. Validate mobile table usability and establish a measured performance baseline. Do not claim Core Web Vitals or mobile visual success without measurements.
 3. Investigate www hostname with hosting/DNS access; keep apex canonical. No speculative DNS edits.
 4. Ownership, funding and author credentials require verified facts from the owner. Do not fabricate disclosures.

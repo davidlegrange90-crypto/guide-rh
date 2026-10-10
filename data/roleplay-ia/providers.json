@@ -1,6 +1,6 @@
 {
   "category": "roleplay-ia",
-  "updated": "2026-10-09",
+  "updated": "2026-10-10",
   "providers": [
     {
       "slug": "coachello",
@@ -835,94 +835,101 @@
     {
       "slug": "ringover-pitch-room",
       "name": "Ringover Pitch Room",
-      "url": "https://www.ringover.fr/blog/roleplay-ia",
+      "url": "https://www.ringover.fr/plateforme-coaching",
       "country": "France",
       "international": false,
-      "description": "Module d'entraînement au pitch et aux objections face à une IA, au sein de la suite de téléphonie Ringover.",
+      "description": "Module vocal de simulation et de coaching IA de la plateforme Empower, pour les appels de vente et autres conversations professionnelles.",
       "formats": [
         "voix"
       ],
       "use_cases": [
-        "equipes-commerciales"
+        "equipes-commerciales",
+        "relation-client",
+        "recrutement"
       ],
       "public_claims": {
-        "rgpd": "Non précisé",
-        "integrations": "Suite Ringover",
-        "clients": "Non nommés",
+        "rgpd": "DPA public avec mesures de sécurité, sous-traitants IA et mécanismes de transfert ; périmètre Pitch Room à confirmer contractuellement.",
+        "integrations": "Empower, CRM, téléphonie et logiciels de performance commerciale annoncés ; pas d’intégration LMS documentée sur les pages consultées.",
+        "clients": "Aucun cas client Pitch Room nommé dans les sources consultées.",
         "pricing": "Non publié"
       },
       "sources": [
-        "https://www.ringover.fr/blog/roleplay-ia"
+        "https://www.ringover.fr/plateforme-coaching",
+        "https://www.ringover.fr/simulation-entretien-de-vente",
+        "https://www.ringover.fr/actualites/ringover-pitch-room-ia-simulation-vente",
+        "https://www.ringover.fr/accord-traitement-donnees",
+        "https://www.ringover.fr/cgv"
       ],
       "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
-      "ideal_for": "Organisations recherchant une solution centrée sur vente et équipes commerciales.",
+      "ideal_for": "Équipes commerciales, service client ou recrutement qui souhaitent entraîner des conversations vocales et exploiter les résultats dans l’écosystème Empower.",
       "strengths": [
-        "Intégrations annoncées : Suite Ringover.",
-        "Formats annoncés : voix."
+        "Personas, scénarios, difficulté et critères d’évaluation personnalisables annoncés.",
+        "Conseils en temps réel et rapport d’analyse post-session annoncés.",
+        "Connexion aux données d’appels et aux outils commerciaux via Empower annoncée."
       ],
       "limits": [
-        "Tarification enterprise non communiquée publiquement.",
-        "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
+        "Tarification et conditions d’accès à Pitch Room non communiquées publiquement.",
+        "Vérifier la transcription, la latence, la calibration des conseils, les droits managers et les flux de données sur un pilote."
       ],
       "pricing_public": "Non publié",
-      "french_clients": "Non nommés",
+      "french_clients": "Aucun cas client Pitch Room français nommé dans les sources consultées.",
       "tested_on": null,
       "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
           "score": 5,
-          "evidence": "Évaluation éditoriale de l’adéquation au marché francophone à partir des informations disponibles.",
-          "source": ""
+          "evidence": "La page produit et les scénarios sont présentés en français. La qualité de reconnaissance vocale et de restitution en français n’a pas été testée par Guide RH.",
+          "source": "https://www.ringover.fr/plateforme-coaching"
         },
         "rgpd-hebergement": {
           "score": 3,
-          "evidence": "Évaluation éditoriale de la clarté des informations RGPD, hébergement et traitement des données disponibles publiquement.",
-          "source": ""
+          "evidence": "Le DPA liste Google Cloud en UE, Azure en France par défaut et OpenAI LLC aux États-Unis avec clauses contractuelles types. Demander les sous-traitants et localisations applicables à Pitch Room ; Guide RH n’a pas audité ces mesures.",
+          "source": "https://www.ringover.fr/accord-traitement-donnees"
         },
         "ai-act": {
           "score": 2.5,
-          "evidence": "Évaluation éditoriale de la maturité des informations publiées sur gouvernance IA, transparence et usages RH.",
-          "source": ""
+          "evidence": "Les CGV décrivent le suivi des performances IA, une option de refus et des responsabilités du client, mais les pages consultées ne publient pas d’analyse AI Act spécifique à Pitch Room.",
+          "source": "https://www.ringover.fr/cgv"
         },
         "qualiopi-opco": {
           "score": 1,
-          "evidence": "Évaluation éditoriale de la compatibilité avec des parcours de formation finançables et des dispositifs Qualiopi/OPCO.",
+          "evidence": "Aucun justificatif Qualiopi ni accord de financement OPCO identifié pour Pitch Room dans les pages consultées. Faire confirmer toute prise en charge avant achat.",
           "source": ""
         },
         "scenarios-personnalisables": {
           "score": 4,
-          "evidence": "Évaluation éditoriale de la capacité annoncée à adapter scénarios, personas et contextes métier.",
-          "source": ""
+          "evidence": "Ringover annonce la personnalisation des scénarios, personas, difficultés, objectifs, critères d’évaluation et bases de connaissances. Faire valider un scénario métier représentatif.",
+          "source": "https://www.ringover.fr/plateforme-coaching"
         },
         "voix-ou-texte": {
           "score": 4,
-          "evidence": "Évaluation éditoriale de la richesse des formats disponibles.",
-          "source": ""
+          "evidence": "Pitch Room est documenté comme une simulation d’appels vocaux. Aucun mode texte ou avatar n’est confirmé sur les pages consultées, et Guide RH n’a pas testé la latence.",
+          "source": "https://www.ringover.fr/actualites/ringover-pitch-room-ia-simulation-vente"
         },
         "analytics-feedback": {
           "score": 3.5,
-          "evidence": "Évaluation éditoriale de la profondeur du feedback, du scoring et des analytics.",
-          "source": ""
+          "evidence": "L’éditeur annonce des conseils en temps réel, puis un rapport sur les points forts, axes d’amélioration et progrès. Demander la grille, les exports et les droits d’accès managers.",
+          "source": "https://www.ringover.fr/plateforme-coaching"
         },
         "integration-lms": {
           "score": 3.5,
-          "evidence": "Évaluation éditoriale de la richesse des intégrations LMS, SSO et outils de travail.",
-          "source": ""
+          "evidence": "Empower annonce des connexions aux CRM, à la téléphonie et aux logiciels de performance commerciale. Les pages consultées ne documentent pas de connecteur LMS pour Pitch Room.",
+          "source": "https://www.ringover.fr/simulation-entretien-de-vente"
         },
         "prix": {
           "score": 2.5,
-          "evidence": "Évaluation éditoriale de la transparence et de la flexibilité du modèle tarifaire.",
+          "evidence": "Aucun prix Pitch Room identifié publiquement. Demander les licences Empower requises, les volumes de simulation, la personnalisation et les services inclus.",
           "source": ""
         },
         "coaching-humain": {
           "score": 1,
-          "evidence": "Évaluation éditoriale de la présence d’un accompagnement humain ou de coaching associé.",
+          "evidence": "Les pages consultées décrivent un coaching IA et un suivi par les managers ; aucune séance de coaching humain fournie par Ringover n’y est documentée.",
           "source": ""
         },
         "references-france": {
           "score": 3,
-          "evidence": "Évaluation éditoriale de la solidité et de la visibilité des références françaises.",
+          "evidence": "Ringover publie des références pour sa plateforme globale, mais aucun cas client Pitch Room français nommé n’a été identifié dans les sources consultées.",
           "source": ""
         }
       },
@@ -938,6 +945,10 @@
         {
           "date": "2026-09-29",
           "note": "Ajout d’une note éditoriale Guide RH fondée sur la documentation publique et les capacités annoncées."
+        },
+        {
+          "date": "2026-10-10",
+          "note": "Scénarios, cas d’usage, feedback, intégrations et informations contractuelles sur les données actualisés depuis les pages Ringover ; notes inchangées et aucun test produit réalisé."
         }
       ]
     },
