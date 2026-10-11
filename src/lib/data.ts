@@ -56,5 +56,10 @@ export function providersForUseCase(slug: string) {
 
 export function formatDate(iso: string | null | undefined) {
   if (!iso) return null;
-  return new Date(iso).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
+  return new Date(iso).toLocaleDateString('fr-FR', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'UTC'
+  });
 }

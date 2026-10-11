@@ -128,8 +128,26 @@
 - Access blocker confirmed 2026-10-10: Vercel project lookup and grouped production runtime-log access again returned HTTP 403 for project guide-rh under team_DogQuXCMTVI6mYpMCOQUOD5G / scope davidlegrange90-5664. No Vercel CLI credentials are available as fallback. Needed: project/team analytics plus hosting/edge request-log permission or dated exports; Search Console/Bing data also remains unavailable. A crawl would not prove model training, indexing, citations or recommendations.
 - Publication and deployment: prepared for guarded fast-forward to main; the run report records GitHub status, Vercel deployment and affected live-page verification.
 
+## 2026-10-11: Uptale product documentation and stable publication dates
+- Started from fresh main 58e01487d6ac49fca9ba777d6a440a12ef60b337.
+- Updated the existing Uptale profile from its current Roleplay IA, platform, AI, Factory and Monoprix case-study pages. Added voice, AI-avatar and video formats plus four documented use cases: managers, feedback, sales and customer service.
+- Replaced generic evidence across all 11 criteria and added 10 criterion-level source links. Documented live feedback, final reports, SCORM/xAPI/LTI/SSO, Azure OpenAI and European-hosting declarations, published Factory packs and the roleplay-specific Monoprix case. Product-level versus platform-level scope is stated explicitly.
+- Corrected date rendering so date-only editorial records use UTC and no longer display the preceding day in some build environments.
+- Added an Uptale journal entry and updated the comparison date. No scores, criterion weights, test dates or commercial disclosures changed. No hands-on test, independent security audit or independent verification of case-study outcomes claimed.
+- Sources consulted 2026-10-11:
+  - https://www.uptale.io/fr/platform/roleplay-ai/
+  - https://www.uptale.io/fr/platform/plateforme/
+  - https://www.uptale.io/en/resources/artificial-intelligence-uptale/
+  - https://www.uptale.io/fr/platform/service-uptale-factory
+  - https://www.uptale.io/fr/content/cas-client/monoprix-6-points-de-nps-grace-a-lia-conversationnelle/
+- Validation: `npm run build` and `npm run check:content` passed. Parsed 64 HTML pages, 1,879 internal links/fragments, 64 JSON-LD blocks and 64 unique sitemap URLs; checked canonical equality, sitemap coverage, one H1 per page, corrected 2026-10-11 rendering, changed markers, Uptale links from all four use-case pages, and preservation of every numerical score and `tested_on` field. No errors. No layout change, mobile visual audit or field performance measurement was made.
+- Pre-publication live checks: the existing Uptale profile and `sitemap.xml` returned HTTP 200 with the apex hostname. `www` again returned HTTP 502 from this environment; this remains inconclusive and no DNS change was made.
+- Traffic reporting windows (Europe/Paris): last complete day 2026-10-10, comparison 2026-10-09; rolling 2026-10-04–2026-10-10, comparison 2026-09-27–2026-10-03. Measured visitors, pageviews, top pages/referrers, AI referrals, crawler and user-triggered assistant requests remain unavailable, not zero. Bot identity, successful/blocked requests, requested pages, last-seen times and audit-traffic exclusions cannot be established without request-level data.
+- Access blocker confirmed 2026-10-11: the connected Vercel account lists no teams, while both project lookup and grouped production runtime-log access return HTTP 403 for project `guide-rh` under team `team_DogQuXCMTVI6mYpMCOQUOD5G` / scope `davidlegrange90-5664`. No Vercel CLI credential is available as fallback. Needed: reconnect or authorize the connector to that team, then grant project analytics and request-log access; Search Console/Bing data also remains unavailable. A crawl would not prove model training, indexing, citations or recommendations.
+- Publication and deployment: prepared for guarded fast-forward to main; the run report records GitHub status, Vercel deployment and affected live-page verification.
+
 ## Prioritized backlog
-1. Continue replacing generic provider criterion evidence with source-specific documentation. Next candidates: Uptale, MeltingSpot and Exec. Distinguish vendor assertions and independent verification.
+1. Continue replacing generic provider criterion evidence with source-specific documentation. Next candidates: MeltingSpot and Exec. Distinguish vendor assertions and independent verification.
 2. Validate mobile table usability and establish a measured performance baseline. Do not claim Core Web Vitals or mobile visual success without measurements.
 3. Investigate www hostname with hosting/DNS access; keep apex canonical. No speculative DNS edits.
 4. Ownership, funding and author credentials require verified facts from the owner. Do not fabricate disclosures.
