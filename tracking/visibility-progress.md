@@ -146,8 +146,27 @@
 - Access blocker confirmed 2026-10-11: the connected Vercel account lists no teams, while both project lookup and grouped production runtime-log access return HTTP 403 for project `guide-rh` under team `team_DogQuXCMTVI6mYpMCOQUOD5G` / scope `davidlegrange90-5664`. No Vercel CLI credential is available as fallback. Needed: reconnect or authorize the connector to that team, then grant project analytics and request-log access; Search Console/Bing data also remains unavailable. A crawl would not prove model training, indexing, citations or recommendations.
 - Publication and deployment: prepared for guarded fast-forward to main; the run report records GitHub status, Vercel deployment and affected live-page verification.
 
+## 2026-10-12: MeltingSpot Roleplay documentation
+- Started from fresh main 31d10de203c76f42df4a366e4d4a18aa43363550.
+- Updated the existing MeltingSpot (Mizou) profile from the current Roleplay product, Learning Agent, quote, onboarding, manager-training and acquisition pages. Added text, voice and video formats plus eight documented use cases spanning managers, conflict, feedback, reviews, sales, service, onboarding and ramp-up.
+- Replaced generic evidence across all 11 criteria and added nine criterion-level source links. Documented prompt-based scenario creation, automatic evaluation, instant feedback, in-app delivery, general LMS/CRM claims, EU-hosting and encryption declarations, active-user pricing and the limits of logo-only references. Missing technical integration details and product-specific case studies are stated explicitly.
+- Added a MeltingSpot journal entry and updated the comparison date. No scores, criterion weights, test dates or commercial disclosures changed. No hands-on test, independent security audit or customer-result verification claimed.
+- Sources consulted 2026-10-12:
+  - https://meltingspot.io/en/products/roleplay
+  - https://meltingspot.io/fr
+  - https://meltingspot.io/fr/get-a-quote
+  - https://meltingspot.io/fr/blog/roleplay-ia-formation
+  - https://meltingspot.io/fr/blog/roleplay-onboarding-nouveaux-arrivants
+  - https://meltingspot.io/en/blog/manager-training-roleplay
+  - https://meltingspot.io/en/blog/best-ai-roleplay-training-software
+- Validation: `npm run build` and `npm run check:content` passed. Parsed 64 HTML pages, 1,922 internal links/fragments, 64 JSON-LD blocks and 64 unique sitemap URLs; checked canonical equality, sitemap coverage, one H1 per page, changed markers, MeltingSpot links from all eight use-case pages, and preservation of every numerical score and `tested_on` field. No errors. No layout change, mobile visual audit or field performance measurement was made.
+- Pre-publication live checks: the existing MeltingSpot profile and `sitemap.xml` returned HTTP 200 with the apex hostname. `www` again returned HTTP 502 from this environment; this remains inconclusive and no DNS change was made.
+- Traffic reporting windows (Europe/Paris): last complete day 2026-10-11, comparison 2026-10-10; rolling 2026-10-05–2026-10-11, comparison 2026-09-28–2026-10-04. Measured visitors, pageviews, top pages/referrers, AI referrals, crawler and user-triggered assistant requests remain unavailable, not zero. Bot identity, successful/blocked requests, requested pages, last-seen times and audit-traffic exclusions cannot be established without request-level data.
+- Access blocker confirmed 2026-10-12: the connected Vercel account lists no teams, while project lookup and grouped production runtime-log access return HTTP 403 for project `guide-rh` under team `team_DogQuXCMTVI6mYpMCOQUOD5G` / scope `davidlegrange90-5664`. No Vercel CLI credential is available as fallback. Needed: reconnect or authorize the connector to that team, then grant project analytics and request-log access; Search Console/Bing data also remains unavailable. A crawl would not prove model training, indexing, citations or recommendations.
+- Publication and deployment: prepared for guarded fast-forward to main; the run report records GitHub status, Vercel deployment and affected live-page verification.
+
 ## Prioritized backlog
-1. Continue replacing generic provider criterion evidence with source-specific documentation. Next candidates: MeltingSpot and Exec. Distinguish vendor assertions and independent verification.
+1. Continue replacing generic provider criterion evidence with source-specific documentation. Next candidate: Exec. Distinguish vendor assertions and independent verification.
 2. Validate mobile table usability and establish a measured performance baseline. Do not claim Core Web Vitals or mobile visual success without measurements.
 3. Investigate www hostname with hosting/DNS access; keep apex canonical. No speculative DNS edits.
 4. Ownership, funding and author credentials require verified facts from the owner. Do not fabricate disclosures.

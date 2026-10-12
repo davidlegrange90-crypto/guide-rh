@@ -1,6 +1,6 @@
 {
   "category": "roleplay-ia",
-  "updated": "2026-10-11",
+  "updated": "2026-10-12",
   "providers": [
     {
       "slug": "coachello",
@@ -730,91 +730,112 @@
     {
       "slug": "meltingspot",
       "name": "MeltingSpot (Mizou)",
-      "url": "https://meltingspot.io/fr/",
+      "url": "https://meltingspot.io/en/products/roleplay",
       "country": "France",
       "international": false,
-      "description": "Moteur de roleplay IA (issu de l'acquisition de Mizou) intégré à une plateforme d'apprentissage, utilisable seul ou avec le Learning Agent.",
-      "formats": [],
-      "use_cases": [],
+      "description": "Moteur de simulations IA issu de l’acquisition de Mizou, utilisable seul ou diffusé dans les outils de travail par le Learning Agent MeltingSpot.",
+      "formats": [
+        "texte",
+        "voix",
+        "vidéo"
+      ],
+      "use_cases": [
+        "managers",
+        "gestion-des-conflits",
+        "feedback",
+        "entretien-annuel",
+        "equipes-commerciales",
+        "relation-client",
+        "onboarding",
+        "ramp-up"
+      ],
       "public_claims": {
-        "rgpd": "Non précisé",
-        "integrations": "Non précisé",
-        "clients": "Non nommés",
-        "pricing": "Non publié"
+        "rgpd": "MeltingSpot déclare un hébergement des données dans l’Union européenne, un chiffrement au repos et en transit, une conformité RGPD et un DPA disponible. Les régions, sous-traitants et durées restent à confirmer contractuellement.",
+        "integrations": "Le Roleplay peut être diffusé dans les outils métier par le Learning Agent. MeltingSpot annonce une connexion au LMS et des remontées vers le CRM ou les plateformes analytics, sans protocole technique propre au Roleplay détaillé.",
+        "clients": "La page Roleplay affiche notamment Bpifrance, Nestlé, Engel & Völkers et Hilti, sans préciser pour chaque logo le produit, le périmètre ou les résultats.",
+        "pricing": "Tarification sur devis fondée sur les utilisateurs actifs mensuels, les crédits IA et l’accompagnement ; aucun montant public identifié."
       },
       "sources": [
-        "https://meltingspot.io/fr/blog/meilleurs-logiciels-roleplay-ia-formation"
+        "https://meltingspot.io/en/products/roleplay",
+        "https://meltingspot.io/fr",
+        "https://meltingspot.io/fr/get-a-quote",
+        "https://meltingspot.io/fr/blog/roleplay-ia-formation",
+        "https://meltingspot.io/fr/blog/roleplay-onboarding-nouveaux-arrivants",
+        "https://meltingspot.io/en/blog/manager-training-roleplay",
+        "https://meltingspot.io/en/blog/best-ai-roleplay-training-software"
       ],
       "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
-      "ideal_for": "Organisations souhaitant expérimenter le roleplay IA dans un parcours de formation.",
+      "ideal_for": "Organisations qui veulent créer rapidement des simulations multiformat et les proposer directement dans les logiciels de travail, notamment aux managers, équipes commerciales, support et nouveaux arrivants.",
       "strengths": [
-        "Positionnement spécialisé sur la simulation conversationnelle.",
-        "Approche orientée entraînement pratique."
+        "Génération de scénarios depuis une consigne, avec texte, audio ou vidéo annoncés.",
+        "Évaluation automatique et feedback immédiat après chaque session annoncés.",
+        "Diffusion contextuelle dans les outils métier via le Learning Agent annoncée."
       ],
       "limits": [
-        "Tarification enterprise non communiquée publiquement.",
-        "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
+        "Aucun montant public : demander le calcul des utilisateurs actifs, les crédits IA inclus, les dépassements et l’accompagnement.",
+        "Les pages consultées ne documentent pas SCORM, xAPI, LTI, SSO ou SCIM pour le Roleplay ; vérifier les flux LMS et les exports.",
+        "Valider sur pilote la qualité du français, la latence, les critères d’évaluation et la stabilité des personnages."
       ],
-      "pricing_public": "Non publié",
-      "french_clients": "Non nommés",
+      "pricing_public": "Sur devis, selon les utilisateurs actifs mensuels, les crédits IA et l’accompagnement ; aucun montant public identifié.",
+      "french_clients": "Bpifrance figure parmi les logos de la page Roleplay, mais aucun cas client français détaillant un déploiement de ce produit n’a été identifié.",
       "tested_on": null,
       "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
           "score": 5,
-          "evidence": "Évaluation éditoriale de l’adéquation au marché francophone à partir des informations disponibles.",
-          "source": ""
+          "evidence": "MeltingSpot publie une interface et une documentation éditoriale en français. Guide RH n’a pas testé la qualité des conversations, de la transcription ou du feedback en français.",
+          "source": "https://meltingspot.io/fr/blog/roleplay-ia-formation"
         },
         "rgpd-hebergement": {
           "score": 3,
-          "evidence": "Évaluation éditoriale de la clarté des informations RGPD, hébergement et traitement des données disponibles publiquement.",
-          "source": ""
+          "evidence": "L’éditeur déclare un hébergement européen, un chiffrement au repos et en transit, une conformité RGPD et un DPA disponible. Demander les régions, sous-traitants, transferts et durées applicables au Roleplay.",
+          "source": "https://meltingspot.io/fr"
         },
         "ai-act": {
           "score": 2.5,
-          "evidence": "Évaluation éditoriale de la maturité des informations publiées sur gouvernance IA, transparence et usages RH.",
-          "source": ""
+          "evidence": "Les pages consultées décrivent des usages de formation et des mesures générales de sécurité, mais aucune analyse AI Act ni gouvernance spécifique des évaluations Roleplay n’a été identifiée.",
+          "source": "https://meltingspot.io/en/products/roleplay"
         },
         "qualiopi-opco": {
           "score": 2,
-          "evidence": "Évaluation éditoriale de la compatibilité avec des parcours de formation finançables et des dispositifs Qualiopi/OPCO.",
+          "evidence": "Aucun justificatif Qualiopi ni garantie de financement OPCO du Roleplay n’a été identifié dans les sources consultées. Faire confirmer l’organisme porteur et l’éligibilité du parcours.",
           "source": ""
         },
         "scenarios-personnalisables": {
           "score": 3.5,
-          "evidence": "Évaluation éditoriale de la capacité annoncée à adapter scénarios, personas et contextes métier.",
-          "source": ""
+          "evidence": "MeltingSpot annonce la génération d’une simulation à partir d’une description en langage naturel et des personnages adaptés à de multiples conversations. Demander les contrôles disponibles sur le persona, les objectifs et la grille.",
+          "source": "https://meltingspot.io/en/products/roleplay"
         },
         "voix-ou-texte": {
           "score": 2.5,
-          "evidence": "Évaluation éditoriale de la richesse des formats disponibles.",
-          "source": ""
+          "evidence": "La page produit annonce des simulations en texte, audio ou vidéo. Guide RH n’a pas vérifié la disponibilité exacte de chaque mode, la latence, la transcription ni les appareils pris en charge.",
+          "source": "https://meltingspot.io/en/products/roleplay"
         },
         "analytics-feedback": {
           "score": 3,
-          "evidence": "Évaluation éditoriale de la profondeur du feedback, du scoring et des analytics.",
-          "source": ""
+          "evidence": "Chaque session est annoncée comme évaluée automatiquement avec feedback immédiat, suivi de la progression et axes d’amélioration. Demander la grille, les exports, l’historique et les vues managers.",
+          "source": "https://meltingspot.io/en/products/roleplay"
         },
         "integration-lms": {
           "score": 2.5,
-          "evidence": "Évaluation éditoriale de la richesse des intégrations LMS, SSO et outils de travail.",
-          "source": ""
+          "evidence": "MeltingSpot annonce une connexion au LMS, une diffusion dans les outils métier et des remontées vers CRM ou analytics. Les pages consultées ne précisent pas SCORM, xAPI, LTI, SSO ou SCIM pour le Roleplay.",
+          "source": "https://meltingspot.io/fr"
         },
         "prix": {
           "score": 2.5,
-          "evidence": "Évaluation éditoriale de la transparence et de la flexibilité du modèle tarifaire.",
-          "source": ""
+          "evidence": "Le devis est annoncé comme fondé sur les utilisateurs actifs mensuels, les crédits IA et l’accompagnement. Aucun montant, minimum, dépassement ou prix propre au Roleplay n’est publié.",
+          "source": "https://meltingspot.io/fr/get-a-quote"
         },
         "coaching-humain": {
           "score": 1,
-          "evidence": "Évaluation éditoriale de la présence d’un accompagnement humain ou de coaching associé.",
+          "evidence": "Les sources consultées décrivent du coaching par IA et un poste d’accompagnement dans le devis, mais aucun coaching humain individuel fourni aux apprenants.",
           "source": ""
         },
         "references-france": {
           "score": 2.5,
-          "evidence": "Évaluation éditoriale de la solidité et de la visibilité des références françaises.",
-          "source": ""
+          "evidence": "Bpifrance figure parmi les logos de la page Roleplay. Aucun cas client français détaillant le périmètre, l’usage et les résultats de ce produit n’a été identifié.",
+          "source": "https://meltingspot.io/en/products/roleplay"
         }
       },
       "changelog": [
@@ -829,6 +850,10 @@
         {
           "date": "2026-09-29",
           "note": "Ajout d’une note éditoriale Guide RH fondée sur la documentation publique et les capacités annoncées."
+        },
+        {
+          "date": "2026-10-12",
+          "note": "Produit Roleplay, formats, cas d’usage, feedback, diffusion dans les outils, hébergement déclaré et modèle de prix documentés depuis les sources MeltingSpot ; notes inchangées et aucun test produit réalisé."
         }
       ]
     },
