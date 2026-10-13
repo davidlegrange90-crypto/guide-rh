@@ -165,8 +165,30 @@
 - Access blocker confirmed 2026-10-12: the connected Vercel account lists no teams, while project lookup and grouped production runtime-log access return HTTP 403 for project `guide-rh` under team `team_DogQuXCMTVI6mYpMCOQUOD5G` / scope `davidlegrange90-5664`. No Vercel CLI credential is available as fallback. Needed: reconnect or authorize the connector to that team, then grant project analytics and request-log access; Search Console/Bing data also remains unavailable. A crawl would not prove model training, indexing, citations or recommendations.
 - Publication and deployment: prepared for guarded fast-forward to main; the run report records GitHub status, Vercel deployment and affected live-page verification.
 
+## 2026-10-13: Exec product documentation
+- Started from fresh main `fdaffb1bfa92343ebcb07b7c4e1293e71236af88`.
+- Updated the existing Exec profile from the current AI Roleplays, Scenario Studio, multilingual, avatar, AI Coach, enterprise privacy, pricing, LTI and employee-training pages.
+- Added avatar/video formats and documented use cases spanning managers, difficult conversations, feedback, reviews, sales, customer service, onboarding, recruitment, certification and ramp-up.
+- Replaced generic evidence across all 11 criteria and added nine criterion-level source links. Documented French-language roleplays, scenario/rubric controls, scorecards, LTI 1.3, published plan limits, human coaching and vendor security statements. Missing French customer evidence, Qualiopi/OPCO proof, hosting location, subprocessors, transfer safeguards and product quality evidence are stated explicitly.
+- Added an Exec journal entry and updated the comparison date. No scores, criterion weights, test dates or commercial disclosures changed. No hands-on test, independent security audit or verification of testimonials claimed.
+- Sources consulted 2026-10-13:
+  - https://www.exec.com/ai-roleplays
+  - https://www.exec.com/demos/scenario-studio-overview
+  - https://www.exec.com/news/multilingual-scenario-studio
+  - https://www.exec.com/news/ai-avatars-for-roleplays
+  - https://www.exec.com/news/ai-coach
+  - https://www.exec.com/enterprise-privacy
+  - https://www.exec.com/pricing
+  - https://www.exec.com/news/roleplays-inside-your-lms
+  - https://www.exec.com/solutions/employee-training
+- Validation: `npm run build` and `npm run check:content` passed. Parsed 64 HTML pages, 1,957 internal links/fragments, 64 JSON-LD blocks and 64 unique sitemap URLs; checked canonical equality, sitemap coverage, one H1 per page, changed markers, Exec links from all ten documented use-case pages, and preservation of every numerical score and `tested_on` field. No errors. No layout change, mobile visual audit or field performance measurement was made.
+- Pre-publication live checks: the existing Exec profile and `sitemap.xml` returned HTTP 200 with the apex hostname. `www` again returned HTTP 502 from this environment; this remains inconclusive and no DNS change was made.
+- Traffic reporting windows (Europe/Paris): last complete day 2026-10-12, comparison 2026-10-11; rolling 2026-10-06–2026-10-12, comparison 2026-09-29–2026-10-05. Measured visitors, pageviews, top pages/referrers, AI referrals, crawler and user-triggered assistant requests remain unavailable, not zero. Bot identity, successful/blocked requests, requested pages, last-seen times and audit-traffic exclusions cannot be established without request-level data.
+- Access blocker confirmed 2026-10-13: the connected Vercel account lists no teams, while project lookup and production runtime-log access return HTTP 403 for project `guide-rh` under team `team_DogQuXCMTVI6mYpMCOQUOD5G` / scope `davidlegrange90-5664`. No Vercel CLI credential is available as fallback. Needed: reconnect or authorize the connector to that team, then grant project analytics and request-log access; Search Console/Bing data also remains unavailable. A crawl would not prove model training, indexing, citations or recommendations.
+- Publication and deployment: prepared for guarded fast-forward to main; the run report records GitHub status, Vercel deployment and affected live-page verification.
+
 ## Prioritized backlog
-1. Continue replacing generic provider criterion evidence with source-specific documentation. Next candidate: Exec. Distinguish vendor assertions and independent verification.
+1. Continue replacing generic provider criterion evidence with source-specific documentation. Next candidate: Mursion, followed by Second Nature and Hyperbound. Distinguish vendor assertions and independent verification.
 2. Validate mobile table usability and establish a measured performance baseline. Do not claim Core Web Vitals or mobile visual success without measurements.
 3. Investigate www hostname with hosting/DNS access; keep apex canonical. No speculative DNS edits.
 4. Ownership, funding and author credentials require verified facts from the owner. Do not fabricate disclosures.

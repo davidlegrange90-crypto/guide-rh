@@ -1,6 +1,6 @@
 {
   "category": "roleplay-ia",
-  "updated": "2026-10-12",
+  "updated": "2026-10-13",
   "providers": [
     {
       "slug": "coachello",
@@ -1563,92 +1563,112 @@
       "url": "https://www.exec.com/",
       "country": "États-Unis",
       "international": true,
-      "description": "Roleplay IA centré sur le management et les compétences comportementales.",
+      "description": "Plateforme de formation qui combine roleplays IA, parcours, analytics et coaching humain.",
       "formats": [
-        "voix"
+        "voix",
+        "avatar IA",
+        "vidéo"
       ],
       "use_cases": [
         "managers",
-        "feedback"
+        "gestion-des-conflits",
+        "feedback",
+        "entretien-annuel",
+        "equipes-commerciales",
+        "relation-client",
+        "onboarding",
+        "recrutement",
+        "certification",
+        "ramp-up"
       ],
       "public_claims": {
-        "rgpd": "Information non documentée dans les sources publiques consultées à ce stade.",
-        "integrations": "Information non documentée dans les sources publiques consultées à ce stade.",
-        "clients": "Information non documentée dans les sources publiques consultées à ce stade.",
-        "pricing": "Information non documentée dans les sources publiques consultées à ce stade."
+        "rgpd": "Exec déclare un chiffrement au repos et en transit, une isolation logique, des durées de conservation configurables et des certifications SOC 2 Type II et SOC 3. La page publique ne précise pas la localisation d’hébergement ni le périmètre RGPD applicable à un client français.",
+        "integrations": "L’éditeur documente LTI 1.3 pour lancer les roleplays depuis un LMS. La page tarifaire réserve aussi l’API, SSO/SCIM, les intégrations d’enregistreurs d’appels et les intégrations sur mesure à certains forfaits.",
+        "clients": "Des témoignages nommés sont publiés pour Private Health Management, Cockroach Labs et Axonius. Aucun cas client français détaillé n’a été identifié dans les sources consultées.",
+        "pricing": "Au 13 octobre 2026, la page tarifaire affiche un forfait gratuit, Starter à 20 $ par siège et par mois et Professional à 39 $ par siège et par mois, facturés annuellement, avec minimums de sièges ; Enterprise est sur devis."
       },
       "sources": [
-        "https://www.exec.com/"
+        "https://www.exec.com/ai-roleplays",
+        "https://www.exec.com/demos/scenario-studio-overview",
+        "https://www.exec.com/news/multilingual-scenario-studio",
+        "https://www.exec.com/news/ai-avatars-for-roleplays",
+        "https://www.exec.com/news/ai-coach",
+        "https://www.exec.com/enterprise-privacy",
+        "https://www.exec.com/pricing",
+        "https://www.exec.com/news/roleplays-inside-your-lms",
+        "https://www.exec.com/solutions/employee-training"
       ],
       "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
-      "ideal_for": "Organisations recherchant une solution centrée sur formation des managers, feedback et conversations difficiles.",
+      "ideal_for": "Organisations qui veulent relier pratique conversationnelle, certification, reporting et coaching humain dans une même plateforme.",
       "strengths": [
-        "Intégrations : information non documentée publiquement dans les sources consultées.",
-        "Formats annoncés : voix."
+        "Scénarios et critères d’évaluation personnalisables à partir des contenus de l’entreprise.",
+        "Roleplays vocaux en français, avatars vidéo, scorecards détaillées et répétition ciblée avec un coach IA.",
+        "LTI 1.3, API et contrôles Enterprise publiquement documentés, avec coaching humain disponible dans la même plateforme."
       ],
       "limits": [
-        "Les conditions enterprise et services associés restent à confirmer au cas par cas.",
-        "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
+        "Les déclarations de sécurité ne constituent pas un audit indépendant ; localisation des données, sous-traitants, transferts et DPA doivent être vérifiés avant achat.",
+        "Les limites de séances, minimums de sièges et fonctions incluses varient selon le forfait publié.",
+        "La qualité du français, des avatars, du feedback et de l’intégration LMS doit être validée sur un pilote avec vos scénarios."
       ],
-      "pricing_public": "Non communiqué publiquement.",
+      "pricing_public": "Gratuit ; Starter 20 $/siège/mois (minimum 5) ; Professional 39 $/siège/mois (minimum 15), facturation annuelle affichée ; Enterprise sur devis. Tarifs relevés le 13 octobre 2026, hors conversion et fiscalité.",
       "french_clients": "Aucune référence française clairement documentée dans les sources consultées.",
       "tested_on": null,
-      "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
+      "test_notes": "Analyse documentaire mise à jour le 13 octobre 2026 à partir des pages produit, démonstration, sécurité, tarification, intégration LMS et coaching de l’éditeur. Aucun test standardisé Guide RH ni audit de conformité n’a été réalisé.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
           "score": 3,
-          "evidence": "Évaluation éditoriale de l’adéquation au marché francophone à partir des informations disponibles.",
-          "source": ""
+          "evidence": "Exec annonce le français parmi huit langues ajoutées à l’anglais : personnage, écoute, réponse, voix d’introduction et débrief du coach IA fonctionnent dans la langue choisie. Qualité et accents restent à tester.",
+          "source": "https://www.exec.com/news/multilingual-scenario-studio"
         },
         "rgpd-hebergement": {
           "score": 2,
-          "evidence": "Évaluation éditoriale de la clarté des informations RGPD, hébergement et traitement des données disponibles publiquement.",
-          "source": ""
+          "evidence": "L’éditeur déclare chiffrement au repos et TLS 1.2+, isolation logique, rétention configurable et SOC 2 Type II/SOC 3. Hébergement, sous-traitants, transferts et garanties RGPD pour la France ne sont pas détaillés sur cette page.",
+          "source": "https://www.exec.com/enterprise-privacy"
         },
         "ai-act": {
           "score": 2.5,
-          "evidence": "Évaluation éditoriale de la maturité des informations publiées sur gouvernance IA, transparence et usages RH.",
-          "source": ""
+          "evidence": "Exec décrit tests de biais, sécurité, fiabilité, revue humaine et validation des scénarios. La documentation consultée ne fournit pas de dossier de conformité au règlement européen sur l’IA ni d’analyse par usage prévu.",
+          "source": "https://www.exec.com/enterprise-privacy"
         },
         "qualiopi-opco": {
           "score": 0.5,
-          "evidence": "Évaluation éditoriale de la compatibilité avec des parcours de formation finançables et des dispositifs Qualiopi/OPCO.",
+          "evidence": "Aucune preuve publique spécifique à Qualiopi, à un organisme de formation français ou à une prise en charge OPCO n’a été identifiée dans les sources consultées.",
           "source": ""
         },
         "scenarios-personnalisables": {
           "score": 4,
-          "evidence": "Évaluation éditoriale de la capacité annoncée à adapter scénarios, personas et contextes métier.",
-          "source": ""
+          "evidence": "Scenario Studio génère scénario, personnage et critères depuis le Knowledge Hub, des fichiers, une URL ou des documents connectés. Le contenu reste modifiable en langage naturel, avec durée, ligne d’ouverture, tentatives et seuil de réussite configurables.",
+          "source": "https://www.exec.com/demos/scenario-studio-overview"
         },
         "voix-ou-texte": {
           "score": 4.5,
-          "evidence": "Évaluation éditoriale de la richesse des formats disponibles.",
-          "source": ""
+          "evidence": "Le roleplay est une conversation vocale ; un avatar vidéo synchronisé peut être activé et le partage d’écran est documenté. Le débrief AI Coach accepte ensuite une conversation parlée ou écrite.",
+          "source": "https://www.exec.com/ai-roleplays"
         },
         "analytics-feedback": {
           "score": 4,
-          "evidence": "Évaluation éditoriale de la profondeur du feedback, du scoring et des analytics.",
-          "source": ""
+          "evidence": "Les scorecards affichent score global, synthèse, critères, extraits du transcript, suggestions et progression entre tentatives. Des tableaux de bord par personne, compétence, équipe et période sont annoncés.",
+          "source": "https://www.exec.com/demos/scenario-studio-overview"
         },
         "integration-lms": {
           "score": 3,
-          "evidence": "Évaluation éditoriale de la richesse des intégrations LMS, SSO et outils de travail.",
-          "source": ""
+          "evidence": "Exec documente LTI 1.3 : lancement dans le LMS, authentification via LTI et remontée des résultats. API, SSO/SCIM et intégrations sur mesure figurent aussi dans l’offre Enterprise publiée.",
+          "source": "https://www.exec.com/news/roleplays-inside-your-lms"
         },
         "prix": {
           "score": 2.5,
-          "evidence": "Évaluation éditoriale de la transparence et de la flexibilité du modèle tarifaire.",
-          "source": ""
+          "evidence": "La page affiche Gratuit, Starter à 20 $/siège/mois (minimum 5), Professional à 39 $/siège/mois (minimum 15), facturés annuellement, et Enterprise sur devis. Les quotas et fonctions diffèrent par forfait.",
+          "source": "https://www.exec.com/pricing"
         },
         "coaching-humain": {
           "score": 4.5,
-          "evidence": "Évaluation éditoriale de la présence d’un accompagnement humain ou de coaching associé.",
-          "source": ""
+          "evidence": "Exec présente des séances individuelles avec des coachs sélectionnés pour managers, dirigeants et hauts potentiels, distinctes du débrief AI Coach. Le périmètre, les crédits et la disponibilité en français sont à confirmer.",
+          "source": "https://www.exec.com/solutions/employee-training"
         },
         "references-france": {
           "score": 1,
-          "evidence": "Évaluation éditoriale de la solidité et de la visibilité des références françaises.",
+          "evidence": "Aucune étude de cas française détaillée et vérifiable n’a été identifiée. Les témoignages publics consultés concernent des organisations non françaises.",
           "source": ""
         }
       },
@@ -1664,6 +1684,10 @@
         {
           "date": "2026-09-29",
           "note": "Ajout d’une note éditoriale Guide RH fondée sur la documentation publique et les capacités annoncées."
+        },
+        {
+          "date": "2026-10-13",
+          "note": "Documentation des formats, langues, scénarios, feedback, sécurité, tarifs, LTI 1.3 et coaching humain à partir de sources officielles ; notes inchangées et aucun test produit revendiqué."
         }
       ]
     }
