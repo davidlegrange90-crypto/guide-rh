@@ -1,6 +1,6 @@
 {
   "category": "roleplay-ia",
-  "updated": "2026-10-13",
+  "updated": "2026-10-14",
   "providers": [
     {
       "slug": "coachello",
@@ -1230,92 +1230,107 @@
       "url": "https://www.mursion.com/",
       "country": "États-Unis",
       "international": true,
-      "description": "Simulations avec avatars pilotés par des humains et IA, pour le leadership et les soft skills.",
+      "description": "Simulations conversationnelles avec avatars, proposées en modalités entièrement IA ou animées par un professionnel, avec coaching et parcours de développement.",
       "formats": [
         "avatar",
         "voix"
       ],
       "use_cases": [
-        "managers"
+        "managers",
+        "gestion-des-conflits",
+        "feedback",
+        "entretien-annuel",
+        "relation-client"
       ],
       "public_claims": {
-        "rgpd": "Information non documentée dans les sources publiques consultées à ce stade.",
-        "integrations": "Information non documentée dans les sources publiques consultées à ce stade.",
-        "clients": "Information non documentée dans les sources publiques consultées à ce stade.",
-        "pricing": "Information non documentée dans les sources publiques consultées à ce stade."
+        "rgpd": "La notice du 1er mars 2026 indique un hébergement aux États-Unis et des transferts possibles vers d’autres pays. Un accord Enterprise, dont le DPA, peut régir les données client à la place de cette notice générale.",
+        "integrations": "Mursion documente SCORM 1.2/2004, remontée des complétions, SAML 2.0, OAuth 2.0/OIDC, création de comptes au premier accès et liens directs vers les scénarios.",
+        "clients": "Le site publie des cas Best Western, Ericsson et H&R Block. Ce sont des références et résultats présentés par l’éditeur, pas une validation indépendante ni une preuve de déploiement en France.",
+        "pricing": "Aucun barème public chiffré identifié dans les pages consultées ; demander un devis séparant simulations IA, séances animées et coaching."
       },
       "sources": [
-        "https://www.mursion.com/"
+        "https://www.mursion.com/platform/simulations/",
+        "https://www.mursion.com/platform/coaching/",
+        "https://www.mursion.com/platform/enterprise/",
+        "https://www.mursion.com/platform/enterprise/integrations/",
+        "https://www.mursion.com/privacynotice/",
+        "https://www.mursion.com/ai-commitment/",
+        "https://support.mursion.com/knowledge/mursions-code-of-conduct",
+        "https://support.mursion.com/knowledge/operating-hours",
+        "https://support.mursion.com/knowledge/what-browsers-are-supported-by-mursion"
       ],
       "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
-      "ideal_for": "Organisations recherchant une solution centrée sur formation des managers.",
+      "ideal_for": "Organisations voulant distinguer pratique autonome avec IA, simulations animées par un professionnel et coaching individuel dans un parcours.",
       "strengths": [
-        "Intégrations : information non documentée publiquement dans les sources consultées.",
-        "Formats annoncés : avatar, voix."
+        "Deux modalités documentées : avatars IA ou avatars animés par un Simulation Specialist.",
+        "Scénarios adaptés au contexte de l’organisation, réflexion guidée et suivi par cohortes.",
+        "SCORM, SSO, liens directs et coaching individuel documentés."
       ],
       "limits": [
-        "Les conditions enterprise et services associés restent à confirmer au cas par cas.",
-        "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
+        "Confirmer le français disponible pour chaque modalité : une traduction des conditions ne prouve pas la disponibilité d’un avatar IA ou d’un coach francophone.",
+        "La notice générale annonce un hébergement américain ; vérifier DPA, transferts, sous-traitants, rétention et configuration de chaque offre.",
+        "Les simulations humaines ont des horaires distincts du service IA 24/7 ; vérifier créneaux en France, réservation et coûts.",
+        "Valider les prérequis navigateur, webcam, microphone et réseau sur les postes réels avant le pilote."
       ],
-      "pricing_public": "Non communiqué publiquement.",
+      "pricing_public": "Aucun barème chiffré identifié dans les sources consultées le 14 octobre 2026. Devis à demander selon les modalités et volumes.",
       "french_clients": "Aucune référence française clairement documentée dans les sources consultées.",
       "tested_on": null,
-      "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
+      "test_notes": "Analyse documentaire mise à jour le 14 octobre 2026 à partir des pages officielles produit, coaching, intégrations, confidentialité et support. Aucun test produit, benchmark comparatif ni audit de conformité Guide RH réalisé.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
           "score": 2.5,
-          "evidence": "Évaluation éditoriale de l’adéquation au marché francophone à partir des informations disponibles.",
-          "source": ""
+          "evidence": "Le support propose des versions française et canadienne-française des conditions. La disponibilité de la simulation, des voix, du feedback et du coaching en français pour chaque modalité reste à confirmer.",
+          "source": "https://support.mursion.com/knowledge/mursions-code-of-conduct"
         },
         "rgpd-hebergement": {
           "score": 2,
-          "evidence": "Évaluation éditoriale de la clarté des informations RGPD, hébergement et traitement des données disponibles publiquement.",
-          "source": ""
+          "evidence": "La notice du 1er mars 2026 annonce des services hébergés aux États-Unis et des transferts possibles ; elle distingue le contrat Enterprise/DPA de la notice générale. Vérifier les garanties applicables au client français.",
+          "source": "https://www.mursion.com/privacynotice/"
         },
         "ai-act": {
           "score": 2.5,
-          "evidence": "Évaluation éditoriale de la maturité des informations publiées sur gouvernance IA, transparence et usages RH.",
-          "source": ""
+          "evidence": "Mursion déclare supervision humaine, revue des risques, évaluations et absence d’entraînement ou de fine-tuning sur les données de simulation. Cela ne constitue pas une preuve de conformité à l’AI Act pour tous les usages RH.",
+          "source": "https://www.mursion.com/ai-commitment/"
         },
         "qualiopi-opco": {
           "score": 0.5,
-          "evidence": "Évaluation éditoriale de la compatibilité avec des parcours de formation finançables et des dispositifs Qualiopi/OPCO.",
+          "evidence": "Aucune preuve spécifique de certification Qualiopi ou de prise en charge OPCO identifiée dans les sources consultées. Vérifier le prestataire de formation et le financement du parcours.",
           "source": ""
         },
         "scenarios-personnalisables": {
           "score": 4.5,
-          "evidence": "Évaluation éditoriale de la capacité annoncée à adapter scénarios, personas et contextes métier.",
-          "source": ""
+          "evidence": "L’offre Enterprise annonce des scénarios adaptés au contexte, à la langue et aux supports de l’organisation. Demander une démonstration des droits d’édition et du processus de validation.",
+          "source": "https://www.mursion.com/platform/enterprise/"
         },
         "voix-ou-texte": {
           "score": 5,
-          "evidence": "Évaluation éditoriale de la richesse des formats disponibles.",
-          "source": ""
+          "evidence": "Les simulations utilisent des avatars : un professionnel fournit voix et réponses en mode humain ; les avatars IA génèrent le dialogue en temps réel. Aucun mode de roleplay uniquement textuel n’est établi par ces sources.",
+          "source": "https://support.mursion.com/knowledge/mursions-code-of-conduct"
         },
         "analytics-feedback": {
           "score": 4,
-          "evidence": "Évaluation éditoriale de la profondeur du feedback, du scoring et des analytics.",
-          "source": ""
+          "evidence": "La plateforme annonce réflexion guidée après simulation, suivi individuel, tableaux de bord et reporting par cohorte. Le détail du scoring, les exports et leur calibration avec des évaluateurs humains restent à tester.",
+          "source": "https://www.mursion.com/platform/enterprise/"
         },
         "integration-lms": {
           "score": 3,
-          "evidence": "Évaluation éditoriale de la richesse des intégrations LMS, SSO et outils de travail.",
-          "source": ""
+          "evidence": "SCORM 1.2/2004, remontée des complétions, SAML 2.0, OAuth 2.0/OIDC et provisioning au premier accès sont documentés. Un lien direct ne prouve pas à lui seul la remontée de scores ; tester les données réellement transmises.",
+          "source": "https://www.mursion.com/platform/enterprise/integrations/"
         },
         "prix": {
           "score": 2,
-          "evidence": "Évaluation éditoriale de la transparence et de la flexibilité du modèle tarifaire.",
+          "evidence": "Aucun prix public chiffré trouvé dans les pages produit consultées. Demander le coût total par modalité, les volumes, les créneaux humains, le coaching, la personnalisation et les intégrations.",
           "source": ""
         },
         "coaching-humain": {
           "score": 4,
-          "evidence": "Évaluation éditoriale de la présence d’un accompagnement humain ou de coaching associé.",
-          "source": ""
+          "evidence": "Mursion Coaching documente matching, plan personnalisé, séances individuelles et revue des simulations. Le Simulation Specialist qui anime un avatar remplit un rôle différent du coach individuel.",
+          "source": "https://www.mursion.com/platform/coaching/"
         },
         "references-france": {
           "score": 1.5,
-          "evidence": "Évaluation éditoriale de la solidité et de la visibilité des références françaises.",
+          "evidence": "Aucune étude de cas française détaillée identifiée dans les sources consultées. Les cas internationaux publiés par l’éditeur ne permettent pas de conclure à un déploiement français.",
           "source": ""
         }
       },
@@ -1331,6 +1346,10 @@
         {
           "date": "2026-09-29",
           "note": "Ajout d’une note éditoriale Guide RH fondée sur la documentation publique et les capacités annoncées."
+        },
+        {
+          "date": "2026-10-14",
+          "note": "Clarification des simulations IA et humaines, coaching, données, intégrations et prérequis à partir des sources officielles ; notes inchangées, aucun test produit."
         }
       ]
     },

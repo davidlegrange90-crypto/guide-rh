@@ -187,8 +187,29 @@
 - Access blocker confirmed 2026-10-13: the connected Vercel account lists no teams, while project lookup and production runtime-log access return HTTP 403 for project `guide-rh` under team `team_DogQuXCMTVI6mYpMCOQUOD5G` / scope `davidlegrange90-5664`. No Vercel CLI credential is available as fallback. Needed: reconnect or authorize the connector to that team, then grant project analytics and request-log access; Search Console/Bing data also remains unavailable. A crawl would not prove model training, indexing, citations or recommendations.
 - Publication and deployment: prepared for guarded fast-forward to main; the run report records GitHub status, Vercel deployment and affected live-page verification.
 
+## 2026-10-14: Mursion delivery models and buying checks
+- Started from fresh main f670773855eb7b412c585f297c5fa8058b7491ef. Read repository instructions and prior progress; inspected live profile HTML.
+- Distinguished AI-powered avatars, Simulation Specialist-led avatars and individual coaching. Replaced generic evidence across 11 criteria with specific documentation or explicit missing-evidence statements; added eight criterion-level sources.
+- Added documented conflict, feedback, annual-review and customer-service use cases. Clarified modality-specific French availability, scheduling, device/network prerequisites, SCORM/SSO, US hosting under the general privacy notice, Enterprise/DPA scope and vendor AI governance statements. No vendor result figures reproduced.
+- Added journal and comparison update date. All scores, tested_on fields and relationship disclosures unchanged. No hands-on test or independent compliance audit claimed.
+- Sources consulted 2026-10-14:
+  - https://www.mursion.com/platform/simulations/
+  - https://www.mursion.com/platform/coaching/
+  - https://www.mursion.com/platform/enterprise/
+  - https://www.mursion.com/platform/enterprise/integrations/
+  - https://www.mursion.com/privacynotice/
+  - https://www.mursion.com/ai-commitment/
+  - https://support.mursion.com/knowledge/mursions-code-of-conduct
+  - https://support.mursion.com/knowledge/operating-hours
+  - https://support.mursion.com/knowledge/what-browsers-are-supported-by-mursion
+- Validation: npm run build and npm run check:content passed. Parsed 64 HTML pages, 1,976 internal links/fragments, 64 JSON-LD blocks and all 64 unique sitemap URLs. Verified canonical equality, one H1 per page, sitemap coverage, use-case backlinks, numerical score/test/disclosure preservation and git diff --check. No layout change or mobile visual/field-performance measurement made.
+- www returned HTTP 502 from this environment; inconclusive, no DNS changes.
+- Traffic windows, Europe/Paris: last complete day 2026-10-13 versus 2026-10-12; rolling 2026-10-07–2026-10-13 versus 2026-09-30–2026-10-06. Visitors, pageviews, top pages/referrers, AI referrals, AI crawler and user-triggered assistant requests unavailable, not zero. Metric definitions, identity verification, successful/blocked requests, pages, last seen and audit exclusions cannot be established.
+- Access: connected Vercel account lists no teams; project lookup and production runtime logs return 403 under team_DogQuXCMTVI6mYpMCOQUOD5G / davidlegrange90-5664. No vercel CLI available. Needs project analytics and hosting/edge request-log read permission or dated exports. Search Console/Bing/Cloudflare AI Crawl Control unavailable. Crawl does not prove training, indexing, citation or recommendation.
+- Publication: guarded fast-forward prepared; monitor GitHub Vercel status and affected live URLs. Outcome in run report.
+
 ## Prioritized backlog
-1. Continue replacing generic provider criterion evidence with source-specific documentation. Next candidate: Mursion, followed by Second Nature and Hyperbound. Distinguish vendor assertions and independent verification.
+1. Continue replacing generic provider criterion evidence with source-specific documentation. Next candidate: Second Nature, followed by Hyperbound. Distinguish vendor assertions and independent verification.
 2. Validate mobile table usability and establish a measured performance baseline. Do not claim Core Web Vitals or mobile visual success without measurements.
 3. Investigate www hostname with hosting/DNS access; keep apex canonical. No speculative DNS edits.
 4. Ownership, funding and author credentials require verified facts from the owner. Do not fabricate disclosures.
