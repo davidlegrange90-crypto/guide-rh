@@ -208,8 +208,23 @@
 - Access: connected Vercel account lists no teams; project lookup and production runtime logs return 403 under team_DogQuXCMTVI6mYpMCOQUOD5G / davidlegrange90-5664. No vercel CLI available. Needs project analytics and hosting/edge request-log read permission or dated exports. Search Console/Bing/Cloudflare AI Crawl Control unavailable. Crawl does not prove training, indexing, citation or recommendation.
 - Publication: guarded fast-forward prepared; monitor GitHub Vercel status and affected live URLs. Outcome in run report.
 
+## 2026-10-15: bounded Second Nature source review
+- Fresh main 77b4ab29adadadd48d468ed1bb0b10d8c0d61fb9; read README, CHECKLIST and current log. Existing live profile returned HTTP 200.
+- Replaced generic criterion evidence with specific accessible documentation or explicit unresolved checks. Added six criterion-level source links, French-language claim, scenario generation, feedback/dashboard, SCORM/LTI and Oracle NetSuite vendor-case context. Added managers, feedback, annual-review and customer-service use cases.
+- Source-access limitation: direct opens of main-domain product, enterprise, FAQ and news pages returned 403. Search-index snippets were inspected for discovery but not used to publish detailed security, format or contract claims. No access blocker bypass attempted.
+- Sources read 2026-10-15:
+  - https://lp.secondnature.ai/ai-role-play-sales-training
+  - https://lp.secondnature.ai/
+  - https://go.secondnature.ai/hubfs/case-studies/oracle_netsuite_case_study.pdf
+- No vendor outcome figures reproduced. No score, weight, tested_on, format or relationship disclosure changed. No hands-on test, benchmark or compliance audit claimed.
+- Validation: npm run check:content and npm run build passed. Checked 64 HTML pages, 1,995 internal links/fragments, 64 JSON-LD blocks, 64 unique sitemap URLs, canonical equality, one H1 per page, full sitemap coverage, seven use-case backlinks, changed markers and score/test/disclosure preservation. git diff --check passed. No layout change, mobile visual audit or measured performance baseline.
+- www returned HTTP 502; remains inconclusive, no DNS changes.
+- Traffic windows (Europe/Paris): 2026-10-14 versus 2026-10-13; rolling 2026-10-08–2026-10-14 versus 2026-10-01–2026-10-07. Visitors, pageviews, top pages/referrers, AI referrals, crawler and user-triggered assistant requests unavailable, not zero. Metric definitions, successful/blocked breakdown, bot verification, requested pages, last seen and audit exclusions unavailable.
+- Access: Vercel lists no teams; project and production runtime-log requests return 403 for guide-rh under team_DogQuXCMTVI6mYpMCOQUOD5G / davidlegrange90-5664. No vercel CLI available. Need project analytics and hosting/edge request-log read access or dated exports. Runtime application output would not alone establish static-page traffic. No Search Console/Bing/Cloudflare AI Crawl Control dataset available. Crawl is not evidence of training, indexing, citation or recommendation.
+- Publication prepared as guarded fast-forward; run report records GitHub Vercel status and live verification.
+
 ## Prioritized backlog
-1. Continue replacing generic provider criterion evidence with source-specific documentation. Next candidate: Second Nature, followed by Hyperbound. Distinguish vendor assertions and independent verification.
+1. Continue replacing generic provider criterion evidence with source-specific documentation. Next candidate: Hyperbound. Revisit Second Nature detailed security/formats when official pages are accessible. Distinguish vendor assertions and independent verification.
 2. Validate mobile table usability and establish a measured performance baseline. Do not claim Core Web Vitals or mobile visual success without measurements.
 3. Investigate www hostname with hosting/DNS access; keep apex canonical. No speculative DNS edits.
 4. Ownership, funding and author credentials require verified facts from the owner. Do not fabricate disclosures.

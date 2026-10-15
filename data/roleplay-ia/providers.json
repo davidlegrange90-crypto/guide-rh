@@ -1,6 +1,6 @@
 {
   "category": "roleplay-ia",
-  "updated": "2026-10-14",
+  "updated": "2026-10-15",
   "providers": [
     {
       "slug": "coachello",
@@ -1359,94 +1359,102 @@
       "url": "https://secondnature.ai/",
       "country": "Israël / États-Unis",
       "international": true,
-      "description": "Roleplay IA conversationnel pour la formation commerciale.",
+      "description": "Roleplays IA pour les équipes commerciales, le service client et les conversations managériales, avec génération de scénarios et feedback.",
       "formats": [
         "voix"
       ],
       "use_cases": [
         "equipes-commerciales",
         "certification",
-        "ramp-up"
+        "ramp-up",
+        "managers",
+        "feedback",
+        "entretien-annuel",
+        "relation-client"
       ],
       "public_claims": {
-        "rgpd": "Information non documentée dans les sources publiques consultées à ce stade.",
-        "integrations": "Information non documentée dans les sources publiques consultées à ce stade.",
-        "clients": "Information non documentée dans les sources publiques consultées à ce stade.",
-        "pricing": "Information non documentée dans les sources publiques consultées à ce stade."
+        "rgpd": "La documentation détaillée de sécurité n’a pas pu être relue directement lors de la revue du 15 octobre 2026. Hébergement, sous-traitants, transferts, DPA et garanties contractuelles restent à vérifier.",
+        "integrations": "La page Enterprise accessible annonce une intégration LMS via SCORM ou LTI. Versions, données remontées, SSO et périmètre par forfait doivent être confirmés.",
+        "clients": "Un cas Oracle NetSuite publié par Second Nature décrit un pilote puis un déploiement commercial. Les résultats restent des déclarations de l’éditeur, non vérifiées indépendamment par Guide RH.",
+        "pricing": "La page Enterprise propose de discuter des options tarifaires en démonstration, sans barème chiffré sur cette page."
       },
       "sources": [
-        "https://secondnature.ai/",
-        "https://secondnature.ai/certification-programs-with-sales-impact/"
+        "https://lp.secondnature.ai/ai-role-play-sales-training",
+        "https://lp.secondnature.ai/",
+        "https://go.secondnature.ai/hubfs/case-studies/oracle_netsuite_case_study.pdf"
       ],
       "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
-      "ideal_for": "Organisations recherchant une solution centrée sur vente et équipes commerciales.",
+      "ideal_for": "Équipes qui souhaitent créer des scénarios commerciaux et relier pratique, feedback et suivi managérial ; périmètre Enterprise à valider.",
       "strengths": [
-        "Intégrations : information non documentée publiquement dans les sources consultées.",
-        "Formats annoncés : voix."
+        "Français explicitement cité dans les langues de simulation annoncées.",
+        "Génération de scénarios depuis une description ou des contenus et tableaux de bord managers documentés.",
+        "SCORM/LTI et cas Oracle NetSuite publiquement documentés."
       ],
       "limits": [
-        "Les conditions enterprise et services associés restent à confirmer au cas par cas.",
-        "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
+        "Les pages produit, FAQ et Enterprise du domaine principal ont renvoyé 403 lors de la revue ; les détails de sécurité et d’offre n’ont pas pu être confirmés directement.",
+        "Vérifier le français réel, la pertinence du feedback et la calibration des scores sur des scénarios identiques avant achat.",
+        "Demander les versions SCORM/LTI, les données transmises au LMS, le coût total et les limites d’usage.",
+        "Le cas Oracle NetSuite est un document éditeur, sans validation indépendante des effets ni preuve de déploiement français."
       ],
-      "pricing_public": "Non communiqué publiquement.",
+      "pricing_public": "Aucun barème chiffré sur les pages accessibles consultées le 15 octobre 2026 ; options tarifaires à demander en démonstration.",
       "french_clients": "Aucune référence française clairement documentée dans les sources consultées.",
       "tested_on": null,
-      "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
+      "test_notes": "Revue documentaire du 15 octobre 2026 limitée aux deux pages officielles accessibles sur lp.secondnature.ai et au cas Oracle NetSuite publié par l’éditeur. Plusieurs pages du domaine principal renvoient 403. Aucun test produit ni audit de conformité Guide RH réalisé.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
           "score": 2.5,
-          "evidence": "Évaluation éditoriale de l’adéquation au marché francophone à partir des informations disponibles.",
-          "source": ""
+          "evidence": "La page commerciale cite le français parmi les langues de simulation proposées. Qualité des voix, accents, transcription et feedback en français à tester.",
+          "source": "https://lp.secondnature.ai/ai-role-play-sales-training"
         },
         "rgpd-hebergement": {
           "score": 2,
-          "evidence": "Évaluation éditoriale de la clarté des informations RGPD, hébergement et traitement des données disponibles publiquement.",
+          "evidence": "Les pages détaillées n’ont pas pu être relues directement lors de cette revue. Localisation des données, sous-traitants IA, transferts, rétention et DPA doivent être confirmés avant achat.",
           "source": ""
         },
         "ai-act": {
           "score": 2.5,
-          "evidence": "Évaluation éditoriale de la maturité des informations publiées sur gouvernance IA, transparence et usages RH.",
+          "evidence": "Les documents accessibles ne suffisent pas à établir la gouvernance et la conformité par usage prévu. Demander les limites d’utilisation des scores, la supervision humaine et la documentation applicable.",
           "source": ""
         },
         "qualiopi-opco": {
           "score": 0.5,
-          "evidence": "Évaluation éditoriale de la compatibilité avec des parcours de formation finançables et des dispositifs Qualiopi/OPCO.",
+          "evidence": "Aucune preuve spécifique Qualiopi ou de prise en charge OPCO dans les documents accessibles consultés. Vérifier l’organisme de formation et le financement du parcours.",
           "source": ""
         },
         "scenarios-personnalisables": {
           "score": 4.5,
-          "evidence": "Évaluation éditoriale de la capacité annoncée à adapter scénarios, personas et contextes métier.",
-          "source": ""
+          "evidence": "La page annonce la génération de roleplays depuis une description ou des contenus importés. Demander une démonstration du contrôle des personas, des critères et des versions.",
+          "source": "https://lp.secondnature.ai/ai-role-play-sales-training"
         },
         "voix-ou-texte": {
           "score": 4.5,
-          "evidence": "Évaluation éditoriale de la richesse des formats disponibles.",
+          "evidence": "Le format vocal déjà référencé reste inchangé. Les pages détaillant chat, vidéo et partage d’écran n’ont pas pu être relues directement ; leur disponibilité contractuelle reste à confirmer.",
           "source": ""
         },
         "analytics-feedback": {
           "score": 4.5,
-          "evidence": "Évaluation éditoriale de la profondeur du feedback, du scoring et des analytics.",
-          "source": ""
+          "evidence": "L’éditeur annonce feedback après chaque séance, suivi de progression, scores et tableaux de bord managers. Pertinence, stabilité et calibration humaine restent à vérifier.",
+          "source": "https://lp.secondnature.ai/ai-role-play-sales-training"
         },
         "integration-lms": {
           "score": 3.5,
-          "evidence": "Évaluation éditoriale de la richesse des intégrations LMS, SSO et outils de travail.",
-          "source": ""
+          "evidence": "SCORM et LTI sont annoncés sur la page Enterprise. Les versions, remontées de scores ou de complétion, contrôles d’accès et coûts ne sont pas détaillés sur cette page.",
+          "source": "https://lp.secondnature.ai/"
         },
         "prix": {
           "score": 2.5,
-          "evidence": "Évaluation éditoriale de la transparence et de la flexibilité du modèle tarifaire.",
-          "source": ""
+          "evidence": "La page Enterprise invite à discuter des options tarifaires pendant une démonstration, sans barème chiffré. Demander licences, quotas, personnalisation, intégration et accompagnement.",
+          "source": "https://lp.secondnature.ai/"
         },
         "coaching-humain": {
           "score": 1,
-          "evidence": "Évaluation éditoriale de la présence d’un accompagnement humain ou de coaching associé.",
-          "source": ""
+          "evidence": "Le cas Oracle NetSuite décrit un usage combinant feedback IA et coaching des managers du client. Il ne prouve pas qu’un réseau de coachs humains est inclus dans l’offre.",
+          "source": "https://go.secondnature.ai/hubfs/case-studies/oracle_netsuite_case_study.pdf"
         },
         "references-france": {
           "score": 1,
-          "evidence": "Évaluation éditoriale de la solidité et de la visibilité des références françaises.",
+          "evidence": "Le cas Oracle NetSuite documente un client international. Aucun déploiement français détaillé n’est établi par les sources accessibles consultées.",
           "source": ""
         }
       },
@@ -1462,6 +1470,10 @@
         {
           "date": "2026-09-29",
           "note": "Ajout d’une note éditoriale Guide RH fondée sur la documentation publique et les capacités annoncées."
+        },
+        {
+          "date": "2026-10-15",
+          "note": "Revue bornée aux pages officielles accessibles et au cas Oracle NetSuite : français, scénarios, feedback et LMS documentés ; accès partiel signalé, notes inchangées."
         }
       ]
     },
