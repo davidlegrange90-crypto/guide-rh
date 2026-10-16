@@ -223,8 +223,28 @@
 - Access: Vercel lists no teams; project and production runtime-log requests return 403 for guide-rh under team_DogQuXCMTVI6mYpMCOQUOD5G / davidlegrange90-5664. No vercel CLI available. Need project analytics and hosting/edge request-log read access or dated exports. Runtime application output would not alone establish static-page traffic. No Search Console/Bing/Cloudflare AI Crawl Control dataset available. Crawl is not evidence of training, indexing, citation or recommendation.
 - Publication prepared as guarded fast-forward; run report records GitHub Vercel status and live verification.
 
+## 2026-10-16: Hyperbound source-specific documentation
+- Fresh main 19dfcb01142838013f048fb82b970afcf88ea8fd; read repository instructions and progress. Existing profile HTTP 200.
+- Replaced generic evidence across all 11 criteria, adding eight criterion-level links. Documented French/French-Canadian, custom and multi-party roleplays, scorecards, Practice versus Perform, catalog integrations, per-user licensing and EU residency listed under add-ons. Added certification, onboarding, manager and customer-service use cases.
+- Vanta case kept as vendor-published reference without reproducing outcome figures. No independent result/security verification claimed. Trust Center returned no readable text; reports and DPA not inspected.
+- Sources read 2026-10-16:
+  - https://www.hyperbound.ai/
+  - https://www.hyperbound.ai/product/ai-sales-roleplays
+  - https://www.hyperbound.ai/product/ai-post-sales-roleplays
+  - https://www.hyperbound.ai/use-cases/onboarding-and-certifications
+  - https://www.hyperbound.ai/pricing
+  - https://www.hyperbound.ai/integrations
+  - https://www.hyperbound.ai/enterprise
+  - https://www.hyperbound.ai/case-studies/vanta
+- All numerical scores, weights, tested_on fields, formats and commercial disclosures unchanged. No hands-on test.
+- Validation: npm run check:content and npm run build passed; 64 HTML pages, 2,014 internal links/fragments, 64 JSON-LD blocks and 64 unique sitemap URLs. Verified canonical equality, one H1 per page, full sitemap coverage, six use-case backlinks, changed markers, score/test/format/disclosure preservation and git diff --check. No layout change, visual mobile audit or field-performance measurement.
+- www again returned HTTP 502 from environment; inconclusive, no DNS change.
+- Traffic windows Europe/Paris: 2026-10-15 versus 2026-10-14; rolling 2026-10-09–2026-10-15 versus 2026-10-02–2026-10-08. Visitors, pageviews, top pages/referrers, AI referrals, crawlers and user-triggered assistant requests unavailable, not zero. Metric definitions, coverage, verified bot identities, successful/blocked requests, requested pages, last seen and audit exclusions cannot be established.
+- Access unchanged: Vercel lists no teams; project lookup and runtime logs return 403 for guide-rh under team_DogQuXCMTVI6mYpMCOQUOD5G / davidlegrange90-5664. No CLI fallback installed. Need project Web Analytics and hosting/edge request-log read permission or dated exports. Runtime application logs alone would not establish static-page visits. Search Console/Bing/Cloudflare AI Crawl Control unavailable. Crawl does not prove model training, indexing, citations or recommendations.
+- Prepared guarded fast-forward; run report records deployment and live outcome.
+
 ## Prioritized backlog
-1. Continue replacing generic provider criterion evidence with source-specific documentation. Next candidate: Hyperbound. Revisit Second Nature detailed security/formats when official pages are accessible. Distinguish vendor assertions and independent verification.
+1. Review source coverage on remaining criteria, including Coachello without preferential treatment. Revisit Second Nature detailed security/formats when official pages are accessible; verify vendor security documents only with authorized access.
 2. Validate mobile table usability and establish a measured performance baseline. Do not claim Core Web Vitals or mobile visual success without measurements.
 3. Investigate www hostname with hosting/DNS access; keep apex canonical. No speculative DNS edits.
 4. Ownership, funding and author credentials require verified facts from the owner. Do not fabricate disclosures.

@@ -1,6 +1,6 @@
 {
   "category": "roleplay-ia",
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "providers": [
     {
       "slug": "coachello",
@@ -1483,93 +1483,106 @@
       "url": "https://www.hyperbound.ai/",
       "country": "États-Unis",
       "international": true,
-      "description": "Simulations d'appels de prospection et de découverte pour les équipes commerciales.",
+      "description": "Roleplays vocaux IA pour les conversations commerciales et après-vente, avec scorecards personnalisées et offre distincte d’analyse des appels réels.",
       "formats": [
         "voix"
       ],
       "use_cases": [
         "equipes-commerciales",
-        "ramp-up"
+        "ramp-up",
+        "certification",
+        "onboarding",
+        "managers",
+        "relation-client"
       ],
       "public_claims": {
-        "rgpd": "Information non documentée dans les sources publiques consultées à ce stade.",
-        "integrations": "Information non documentée dans les sources publiques consultées à ce stade.",
-        "clients": "Information non documentée dans les sources publiques consultées à ce stade.",
-        "pricing": "Information non documentée dans les sources publiques consultées à ce stade."
+        "rgpd": "Hyperbound déclare SOC 2 Type II, ISO 27001, chiffrement, SSO et support des exigences RGPD. La résidence des données dans l’UE figure dans les options complémentaires publiées ; périmètre, sous-traitants, transferts et DPA à vérifier.",
+        "integrations": "Le catalogue distingue CRM, LMS, enregistreurs d’appels, SAML/SSO et communication. Il cite notamment Salesforce, HubSpot, 360Learning, Cornerstone, Workramp, Entra, Okta et Teams.",
+        "clients": "Un cas Vanta est publié par Hyperbound. Il décrit la pratique des SDR et l’appui au coaching des managers ; résultats non vérifiés indépendamment par Guide RH et aucune preuve spécifique de déploiement français.",
+        "pricing": "La page distingue Free, Practice et Perform. Facturation par utilisateur et licences séparées Practice/Perform annoncées, sans montant public ; options complémentaires et périmètre à chiffrer."
       },
       "sources": [
         "https://www.hyperbound.ai/",
-        "https://www.hyperbound.ai/blog/ai-roleplay-sales-ramp"
+        "https://www.hyperbound.ai/product/ai-sales-roleplays",
+        "https://www.hyperbound.ai/product/ai-post-sales-roleplays",
+        "https://www.hyperbound.ai/use-cases/onboarding-and-certifications",
+        "https://www.hyperbound.ai/pricing",
+        "https://www.hyperbound.ai/integrations",
+        "https://www.hyperbound.ai/enterprise",
+        "https://www.hyperbound.ai/case-studies/vanta"
       ],
       "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
-      "ideal_for": "Organisations recherchant une solution centrée sur vente et équipes commerciales.",
+      "ideal_for": "Équipes commerciales souhaitant relier entraînement, certification interne et analyse des appels réels, avec licences et intégrations à préciser.",
       "strengths": [
-        "Intégrations : information non documentée publiquement dans les sources consultées.",
-        "Formats annoncés : voix."
+        "Français et français canadien explicitement annoncés.",
+        "Personas, objections et scorecards adaptés au processus commercial, avec scénarios multi-interlocuteurs.",
+        "Catalogue d’intégrations et séparation des offres Practice/Perform publiquement documentés."
       ],
       "limits": [
-        "Les conditions enterprise et services associés restent à confirmer au cas par cas.",
-        "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
+        "La résidence UE est listée comme option complémentaire ; elle ne prouve pas que tous les traitements et sous-traitants restent dans l’UE.",
+        "Confirmer versions et flux de l’intégration LMS : le catalogue ne précise pas à lui seul SCORM, LTI ou les données remontées.",
+        "Aucun prix chiffré public identifié ; demander licences, volumes, options, intégration et durée d’engagement.",
+        "Qualité du français, stabilité des scores et pertinence du feedback à valider par un pilote. Le cas Vanta ne prouve pas un effet généralisable."
       ],
-      "pricing_public": "Non communiqué publiquement.",
+      "pricing_public": "Free avec roleplays préconstruits ; Practice et Perform au prix personnalisé par utilisateur, sans montant affiché. Résidence UE, API d’export et services d’implémentation figurent parmi les options complémentaires. Relevé le 16 octobre 2026.",
       "french_clients": "Aucune référence française clairement documentée dans les sources consultées.",
       "tested_on": null,
-      "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
+      "test_notes": "Analyse documentaire du 16 octobre 2026 fondée sur les pages produit, après-vente, onboarding, tarifs, intégrations, Enterprise et le cas Vanta publiés par Hyperbound. Aucun test produit ni audit de conformité Guide RH réalisé.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
           "score": 2.5,
-          "evidence": "Évaluation éditoriale de l’adéquation au marché francophone à partir des informations disponibles.",
-          "source": ""
+          "evidence": "Le français et le français canadien sont cités dans les langues de pratique annoncées. Accents, vocabulaire métier, transcription et feedback doivent être validés en pilote.",
+          "source": "https://www.hyperbound.ai/"
         },
         "rgpd-hebergement": {
           "score": 2,
-          "evidence": "Évaluation éditoriale de la clarté des informations RGPD, hébergement et traitement des données disponibles publiquement.",
-          "source": ""
+          "evidence": "L’offre Enterprise déclare SOC 2 Type II, ISO 27001 et support des exigences RGPD. La résidence UE est listée comme option complémentaire, sans détail suffisant sur tous les traitements. Demander DPA, sous-traitants et garanties de transfert.",
+          "source": "https://www.hyperbound.ai/pricing"
         },
         "ai-act": {
           "score": 2.5,
-          "evidence": "Évaluation éditoriale de la maturité des informations publiées sur gouvernance IA, transparence et usages RH.",
+          "evidence": "Le périmètre de gouvernance et de conformité à l’AI Act n’est pas établi par les pages consultées. Définir l’usage développemental des scores, la supervision humaine et les limites d’utilisation RH avant déploiement.",
           "source": ""
         },
         "qualiopi-opco": {
           "score": 0.5,
-          "evidence": "Évaluation éditoriale de la compatibilité avec des parcours de formation finançables et des dispositifs Qualiopi/OPCO.",
+          "evidence": "Aucune preuve publique spécifique Qualiopi ou de prise en charge OPCO identifiée dans les sources consultées. Vérifier le prestataire de formation et le financement du parcours.",
           "source": ""
         },
         "scenarios-personnalisables": {
           "score": 4.5,
-          "evidence": "Évaluation éditoriale de la capacité annoncée à adapter scénarios, personas et contextes métier.",
-          "source": ""
+          "evidence": "L’éditeur documente personas, objections et scorecards adaptés au processus commercial, ainsi que des simulations multi-interlocuteurs. Vérifier les droits d’édition, les sources et le contrôle des versions.",
+          "source": "https://www.hyperbound.ai/product/ai-sales-roleplays"
         },
         "voix-ou-texte": {
           "score": 4.5,
-          "evidence": "Évaluation éditoriale de la richesse des formats disponibles.",
-          "source": ""
+          "evidence": "Les pages décrivent des simulations d’appels vocaux, des démos et présentations. Une interface de type visioconférence ne suffit pas à prouver un avatar vidéo ; aucun format supplémentaire n’est ajouté ici.",
+          "source": "https://www.hyperbound.ai/product/ai-sales-roleplays"
         },
         "analytics-feedback": {
           "score": 4.5,
-          "evidence": "Évaluation éditoriale de la profondeur du feedback, du scoring et des analytics.",
-          "source": ""
+          "evidence": "Scorecards, feedback après simulation, progression et rapports par équipe sont annoncés. Perform ajoute l’analyse des appels réels ; distinguer ses données des résultats d’entraînement.",
+          "source": "https://www.hyperbound.ai/enterprise"
         },
         "integration-lms": {
           "score": 3.5,
-          "evidence": "Évaluation éditoriale de la richesse des intégrations LMS, SSO et outils de travail.",
-          "source": ""
+          "evidence": "Le catalogue cite 360Learning, Cornerstone et Workramp, avec des catégories séparées CRM, SSO et communication. Versions, remontée de scores et flux exacts ne sont pas établis par cette liste.",
+          "source": "https://www.hyperbound.ai/integrations"
         },
         "prix": {
           "score": 2.5,
-          "evidence": "Évaluation éditoriale de la transparence et de la flexibilité du modèle tarifaire.",
-          "source": ""
+          "evidence": "Free propose des roleplays préconstruits ; Practice et Perform ont des licences par utilisateur distinctes. Aucun montant public affiché. Vérifier le coût des options, de la résidence UE et des services.",
+          "source": "https://www.hyperbound.ai/pricing"
         },
         "coaching-humain": {
           "score": 1,
-          "evidence": "Évaluation éditoriale de la présence d’un accompagnement humain ou de coaching associé.",
-          "source": ""
+          "evidence": "Le cas Vanta décrit des managers qui concentrent leur accompagnement sur les besoins identifiés. Cela ne démontre pas qu’un réseau de coachs humains externes est inclus dans l’offre.",
+          "source": "https://www.hyperbound.ai/case-studies/vanta"
         },
         "references-france": {
           "score": 1,
-          "evidence": "Évaluation éditoriale de la solidité et de la visibilité des références françaises.",
+          "evidence": "Le cas Vanta est une référence internationale publiée par l’éditeur. Aucun cas français détaillé n’a été identifié dans les sources consultées.",
           "source": ""
         }
       },
@@ -1585,6 +1598,10 @@
         {
           "date": "2026-09-29",
           "note": "Ajout d’une note éditoriale Guide RH fondée sur la documentation publique et les capacités annoncées."
+        },
+        {
+          "date": "2026-10-16",
+          "note": "Documentation des scénarios, français, scorecards, intégrations, offres et résidence UE optionnelle ; notes inchangées, aucun test produit."
         }
       ]
     },
