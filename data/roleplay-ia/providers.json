@@ -1,6 +1,6 @@
 {
   "category": "roleplay-ia",
-  "updated": "2026-10-16",
+  "updated": "2026-10-17",
   "providers": [
     {
       "slug": "coachello",
@@ -8,7 +8,7 @@
       "url": "https://coachello.ai/fr/",
       "country": "France",
       "international": false,
-      "description": "Plateforme de roleplay IA et de coaching hybride conçue pour entraîner, certifier et faire progresser les collaborateurs directement dans le flow of work. Coachello couvre les conversations managériales, la vente, la relation client et les programmes de certification à grande échelle.",
+      "description": "Plateforme associant roleplays IA et coaching humain, avec des scénarios de management, vente et relation client et une diffusion annoncée dans Teams, Slack et le web.",
       "formats": [
         "texte",
         "voix",
@@ -27,96 +27,96 @@
         "ramp-up"
       ],
       "public_claims": {
-        "rgpd": "ISO 27001:2022 et conformité RGPD déclarées par Coachello ; la certification Microsoft 365/Teams est documentée sur Microsoft Learn.",
-        "integrations": "Microsoft Teams est documenté par la certification Microsoft 365 ; Coachello déclare également Slack, Web app, Microsoft Copilot, SSO/SCIM et des intégrations entreprise.",
-        "clients": "Microsoft, PMI, ENGIE, Qonto, Mistral AI et autres grands comptes cités publiquement.",
-        "pricing": "Tarification entreprise sur devis.",
-        "certification": "Programmes de certification par roleplay IA avec seuils de réussite, scoring par compétence, pratique répétée et débrief IA.",
-        "scale": "Déploiements de plusieurs milliers d’apprenants, dont programmes commerciaux et managériaux.",
-        "human_coaching": "Réseau international de coachs humains ICF, combinable avec les parcours IA."
+        "rgpd": "Coachello déclare Azure Paris, ISO 27001:2022, chiffrement et absence d’entraînement sur les données client. Sa page sécurité mentionne aussi des sous-traitants possibles hors EEE. La fiche Microsoft consultée est une Publisher Attestation, pas à elle seule une preuve de certification Microsoft 365 actuelle.",
+        "integrations": "La page dédiée annonce Teams/Copilot, Slack, web, Google Workspace, SSO, SCORM pour la complétion, LTI pour le lancement et synchronisation SIRH. Versions et périmètre contractuel à confirmer.",
+        "clients": "La page roleplay publie des cas PMI, Microsoft et ENGIE. Les résultats sont présentés par Coachello et non vérifiés indépendamment par Guide RH ; distinguer programmes de coaching et roleplay.",
+        "pricing": "Licences ou offre sur mesure, sans barème chiffré pour le roleplay sur la page consultée.",
+        "certification": "Les scores et indicateurs de progression sont annoncés. Faire préciser les conditions d’un parcours de certification, ses seuils et sa validation humaine.",
+        "scale": "La plateforme annonce une diffusion à l’échelle ; capacité, déploiement et résultats doivent être établis pour le périmètre acheté.",
+        "human_coaching": "La page coachs annonce un réseau ICF PCC/MCC. Le tarif roleplay indique que les débriefs coach peuvent être optionnels."
       },
       "sources": [
-        "https://coachello.ai/",
-        "https://coachello.ai/fr/blog/ai-roleplay-training/",
-        "https://learn.microsoft.com/fr-fr/microsoft-365-app-certification/teams/coachello",
-        "https://learn.microsoft.com/fr-fr/microsoft-365-app-certification/saas/coachello-ai",
-        "https://coachello.ai/fr/politique-de-confidentialite/"
+        "https://coachello.ai/fr/roleplays-ia/",
+        "https://coachello.ai/fr/securite-donnees/",
+        "https://coachello.ai/fr/integrations/",
+        "https://coachello.ai/fr/financement-tarifs/",
+        "https://coachello.ai/fr/conformite-ai-act/",
+        "https://coachello.ai/fr/nos-coachs-professionnels/",
+        "https://learn.microsoft.com/en-us/microsoft-365-app-certification/teams/coachello-sas"
       ],
       "disclosure": "Lien professionnel déclaré entre Guide RH et Coachello. Cette relation est signalée explicitement pour permettre au lecteur d’apprécier l’analyse avec le niveau de transparence approprié.",
-      "ideal_for": "Grandes entreprises qui veulent industrialiser la pratique des soft skills, certifier des populations, accélérer le ramp-up commercial et managérial, et intégrer l’entraînement directement dans Microsoft Teams, Slack ou le web.",
+      "ideal_for": "Entreprises souhaitant associer pratique conversationnelle et coaching humain dans leurs parcours ; modules, accès et coûts à préciser.",
       "strengths": [
-        "Couverture très large : management, vente, relation client, feedback, conflits, recrutement et certification.",
-        "Roleplays IA personnalisables en texte, voix et avatar, avec scoring, feedback détaillé et débrief IA.",
-        "Particulièrement adapté aux programmes de certification et aux déploiements à grande échelle.",
-        "Fort pour raccourcir le ramp-up : pratique répétée, scénarios métier, progression mesurable et disponibilité 24/7.",
-        "Approche réellement intégrée au flow of work grâce à Microsoft Teams, Slack, Web app et Copilot.",
-        "Différenciation hybride : roleplay IA, coaching IA et réseau de coachs humains dans une même plateforme.",
-        "Références grands comptes et expérience de déploiements internationaux."
+        "Scénarios de management, vente et conversations difficiles publiquement documentés.",
+        "Texte, voix et avatar annoncés, avec débriefs et suivi de progression.",
+        "Intégrations Teams/Slack et LMS décrites par l’éditeur ; coaching humain disponible selon le programme."
       ],
       "limits": [
-        "Tarification non publiée : un devis est nécessaire pour comparer précisément le coût total.",
-        "La richesse fonctionnelle est surtout pertinente pour les programmes structurés ou multi-populations ; un besoin très simple et ponctuel peut justifier un outil plus léger."
+        "Tarifs roleplay non chiffrés publiquement : demander le coût total des licences, scénarios, formats, intégrations et débriefs humains.",
+        "Hébergement principal en France ne signifie pas absence de transferts hors EEE : demander le DPA, le registre des sous-traitants et les garanties appliquées.",
+        "La fiche Microsoft consultée contient une autoévaluation développeur datée du 1er octobre 2024. Son périmètre ancien ne permet pas de confirmer à lui seul toutes les fonctions ou certifications actuelles.",
+        "Qualité du français, stabilité du scoring et transfert des acquis à vérifier en pilote. Aucun effet sur le ramp-up n’est établi indépendamment par Guide RH."
       ],
-      "pricing_public": "Sur devis, selon volume, modules et niveau d’accompagnement.",
-      "french_clients": "ENGIE, Qonto, Mistral AI et autres références françaises ; Microsoft et PMI figurent parmi les références internationales.",
+      "pricing_public": "Licences et offres sur mesure, sans montant public sur la page tarifs roleplay consultée le 17 octobre 2026. Débriefs humains et intégrations à chiffrer.",
+      "french_clients": "ENGIE apparaît dans les cas publiés sur la page roleplay. Périmètre et résultats français à vérifier ; témoignages éditeur non audités par Guide RH.",
       "tested_on": null,
-      "test_notes": "Analyse éditoriale approfondie fondée sur la documentation produit, les cas clients, les fonctionnalités de roleplay et les capacités de déploiement enterprise. Guide RH n’affiche pas de score chiffré tant qu’un protocole standardisé identique à tous les éditeurs n’a pas été réalisé.",
+      "test_notes": "Revue documentaire du 17 octobre 2026 fondée sur les pages officielles produit, sécurité, intégrations, financement, gouvernance IA et coachs, et sur la fiche Microsoft consultée. Aucun test standardisé ni audit de conformité Guide RH réalisé. La note numérique reste une appréciation éditoriale documentaire, pas une mesure issue d’un test produit.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
           "score": 5,
-          "evidence": "Français disponible dans les expériences de coaching et de roleplay ; qualité à confirmer dans le protocole standardisé Guide RH.",
-          "source": ""
+          "evidence": "La documentation produit est proposée en français et annonce une couverture multilingue. Disponibilité des voix, accents, transcription et feedback en français à confirmer dans le périmètre acheté.",
+          "source": "https://coachello.ai/fr/roleplays-ia/"
         },
         "rgpd-hebergement": {
           "score": 5,
-          "evidence": "Hébergement Azure en Europe, cadre RGPD et certifications de sécurité annoncés ; documentation contractuelle à confirmer lors du processus d’achat.",
-          "source": "https://coachello.ai/fr/politique-de-confidentialite/"
+          "evidence": "L’éditeur déclare Azure Paris, ISO 27001:2022 et absence d’entraînement sur les données client, mais mentionne des sous-traitants possibles hors EEE. DPA, transferts, accès et rétention à vérifier.",
+          "source": "https://coachello.ai/fr/securite-donnees/"
         },
         "ai-act": {
           "score": 5,
-          "evidence": "Positionnement annoncé comme outil de développement et d’entraînement, sans décision RH automatisée ; gouvernance à confirmer contractuellement.",
-          "source": ""
+          "evidence": "Coachello déclare une finalité de développement, une information sur l’usage d’IA et une supervision humaine. Ce positionnement ne vaut pas audit de conformité ; contrôler les usages réels des scores.",
+          "source": "https://coachello.ai/fr/conformite-ai-act/"
         },
         "qualiopi-opco": {
           "score": 3.5,
-          "evidence": "Financement OPCO à confirmer selon le montage de formation et les partenaires mobilisés.",
-          "source": ""
+          "evidence": "L’éditeur présente un montage via parcours de formation et organisme Qualiopi. Aucune prise en charge automatique n’en découle : vérifier organisme, action et accord de l’OPCO.",
+          "source": "https://coachello.ai/fr/financement-tarifs/"
         },
         "scenarios-personnalisables": {
           "score": 5,
-          "evidence": "Scénarios, personas, critères d’évaluation et contextes métier personnalisables.",
-          "source": ""
+          "evidence": "La page décrit une bibliothèque et la création de programmes adaptés au contexte de l’entreprise. Droits d’édition, critères, personas et validation des versions à examiner en démonstration.",
+          "source": "https://coachello.ai/fr/roleplays-ia/"
         },
         "voix-ou-texte": {
           "score": 5,
-          "evidence": "Texte, voix et avatar IA disponibles selon le parcours.",
-          "source": ""
+          "evidence": "Texte, voix et avatar sont annoncés. Qualité et disponibilité par parcours restent à tester ; une page produit ne prouve pas les performances en conditions réelles.",
+          "source": "https://coachello.ai/fr/roleplays-ia/"
         },
         "analytics-feedback": {
           "score": 5,
-          "evidence": "Scoring par compétence, feedback détaillé, débrief IA, suivi de progression et tableaux de bord.",
-          "source": ""
+          "evidence": "Scores de compétence, débriefs, tendances d’engagement et progression individuelle ou collective sont annoncés. Calibration, stabilité et accès aux données doivent être vérifiés.",
+          "source": "https://coachello.ai/fr/roleplays-ia/"
         },
         "integration-lms": {
           "score": 4.5,
-          "evidence": "Intégrations Microsoft Teams, Slack, web, SSO/SCIM et écosystème enterprise ; compatibilité LMS à confirmer selon le projet.",
-          "source": "https://learn.microsoft.com/fr-fr/microsoft-365-app-certification/teams/coachello"
+          "evidence": "La page intégrations documente SCORM pour la complétion, LTI pour le lancement authentifié, Teams/Copilot, Slack et SSO. Versions et flux sont à tester ; la fiche Microsoft ancienne ne valide pas ces fonctions actuelles.",
+          "source": "https://coachello.ai/fr/integrations/"
         },
         "prix": {
           "score": 3.5,
-          "evidence": "Tarification enterprise sur devis.",
-          "source": ""
+          "evidence": "La page tarifs roleplay décrit licences et offre sur mesure sans montant affiché. Formats, scénarios, coaching humain et intégration font varier le coût.",
+          "source": "https://coachello.ai/fr/financement-tarifs/"
         },
         "coaching-humain": {
           "score": 5,
-          "evidence": "Réseau international de coachs humains ICF combinable avec les parcours IA.",
-          "source": ""
+          "evidence": "L’éditeur présente un réseau de coachs ICF PCC/MCC. Les débriefs humains sont optionnels dans certaines offres roleplay ; vérifier leur inclusion, langue et disponibilité.",
+          "source": "https://coachello.ai/fr/nos-coachs-professionnels/"
         },
         "references-france": {
           "score": 5,
-          "evidence": "Références françaises et internationales de grands comptes, avec plusieurs programmes à grande échelle.",
-          "source": ""
+          "evidence": "La page publie notamment un cas ENGIE et des cas Microsoft et PMI. Ce sont des présentations éditeur ; aucun résultat ou déploiement à grande échelle n’est vérifié indépendamment par Guide RH.",
+          "source": "https://coachello.ai/fr/roleplays-ia/"
         }
       },
       "changelog": [
@@ -131,6 +131,10 @@
         {
           "date": "2026-09-29",
           "note": "Ajout d’une note éditoriale Guide RH fondée sur la documentation publique et les capacités annoncées."
+        },
+        {
+          "date": "2026-10-17",
+          "note": "Revue des sources et formulations au même standard que le panel ; précision de l’autoévaluation Microsoft, des options de coaching et des limites de preuve ; notes et lien professionnel inchangés."
         }
       ]
     },

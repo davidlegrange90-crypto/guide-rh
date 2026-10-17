@@ -243,8 +243,28 @@
 - Access unchanged: Vercel lists no teams; project lookup and runtime logs return 403 for guide-rh under team_DogQuXCMTVI6mYpMCOQUOD5G / davidlegrange90-5664. No CLI fallback installed. Need project Web Analytics and hosting/edge request-log read permission or dated exports. Runtime application logs alone would not establish static-page visits. Search Console/Bing/Cloudflare AI Crawl Control unavailable. Crawl does not prove model training, indexing, citations or recommendations.
 - Prepared guarded fast-forward; run report records deployment and live outcome.
 
+## 2026-10-17: Coachello documentary parity and source precision
+- Fresh main ecec8137bd5ded3842bd363c65a190c5966ef6f7; read README, CHECKLIST and log. Live profile returned HTTP 200.
+- Reviewed Coachello under the same documentary standard as the panel, preserving its declared professional relationship and all numerical scores. Replaced promotional effectiveness assertions with documented capabilities, explicit vendor attribution and buying checks.
+- All 11 criteria now have source links (previously two). Corrected the contradictory sentence claiming no score was displayed. Clarified coaching debriefs may be optional, SCORM completion versus LTI launch, and possible non-EEA subprocessors despite primary Azure Paris hosting.
+- Replaced non-resolving Microsoft source paths with the actual public Teams app page. The page consulted identifies itself as Publisher Attestation with developer self-assessment dated 2024-10-01. This does not establish current Microsoft certification or all roleplay capabilities; no claim of certification revocation made.
+- Sources read 2026-10-17:
+  - https://coachello.ai/fr/roleplays-ia/
+  - https://coachello.ai/fr/securite-donnees/
+  - https://coachello.ai/fr/integrations/
+  - https://coachello.ai/fr/financement-tarifs/
+  - https://coachello.ai/fr/conformite-ai-act/
+  - https://coachello.ai/fr/nos-coachs-professionnels/
+  - https://learn.microsoft.com/en-us/microsoft-365-app-certification/teams/coachello-sas
+- Trust Center returned no readable text; no private certificate/DPA reviewed. General privacy page did not substantiate Azure by itself; product/security declarations attributed accordingly. No vendor outcome figures or private user-memory facts used.
+- Validation: npm run build and npm run check:content passed. Parsed 64 HTML pages, 2,017 internal links/fragments, 64 JSON-LD blocks and 64 unique sitemap URLs. Checked canonicals, one H1 per page, sitemap coverage, changed markers and removal of contradictory score text. All providers' numerical scores, tested_on, formats, use cases and disclosures preserved; all other provider objects unchanged. git diff --check passed. No layout change, mobile visual audit or field-performance measurement.
+- www returned HTTP 502 again; inconclusive, no DNS changes.
+- Traffic Europe/Paris: complete day 2026-10-16 versus 2026-10-15; rolling 2026-10-10–2026-10-16 versus 2026-10-03–2026-10-09. Visitors, pageviews, top pages/referrers, AI referrals, crawler and user-triggered requests unavailable, not zero. Metric definitions, bot identity, successful/blocked requests, pages, last seen and audit exclusions cannot be established.
+- Vercel lists no teams; guide-rh project and production runtime logs return 403 under team_DogQuXCMTVI6mYpMCOQUOD5G / davidlegrange90-5664. No CLI available. Need Web Analytics and hosting/edge request-log read access or dated exports. Runtime function output alone is not static-page traffic. Search Console/Bing/Cloudflare AI Crawl Control datasets unavailable. Crawl does not establish training, indexing, citations or recommendations.
+- Prepared guarded main update; run report records GitHub deployment and live verification outcome.
+
 ## Prioritized backlog
-1. Review source coverage on remaining criteria, including Coachello without preferential treatment. Revisit Second Nature detailed security/formats when official pages are accessible; verify vendor security documents only with authorized access.
+1. Improve existing alternatives-page buying guidance and source-derived update dates. Revisit Second Nature detailed security/formats when official pages are accessible; verify current certifications only with source evidence and authorized access.
 2. Validate mobile table usability and establish a measured performance baseline. Do not claim Core Web Vitals or mobile visual success without measurements.
 3. Investigate www hostname with hosting/DNS access; keep apex canonical. No speculative DNS edits.
 4. Ownership, funding and author credentials require verified facts from the owner. Do not fabricate disclosures.
