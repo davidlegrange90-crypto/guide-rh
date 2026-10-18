@@ -3,7 +3,7 @@ import Base from '../../../layouts/Base.astro';
 import Byline from '../../../components/Byline.astro';
 import Transparence from '../../../components/Transparence.astro';
 import ScoreBadge from '../../../components/ScoreBadge.astro';
-import { SITE, CATEGORY, CRITERIA, USE_CASES, rankedProviders } from '../../../lib/data';
+import { SITE, CRITERIA, USE_CASES, rankedProviders } from '../../../lib/data';
 
 export function getStaticPaths() {
   return rankedProviders().map((p) => ({ params: { provider: p.slug }, props: { p } }));
@@ -16,7 +16,10 @@ const french = list.filter((x) => !x.international);
 const url = `${SITE.url}/roleplay-ia/alternatives/${p.slug}`;
 const title = `Alternatives à ${p.name} : ${list.length} solutions de roleplay IA comparées`;
 const description = `Vous cherchez une alternative à ${p.name} pour le roleplay IA en formation ? ${list.length} solutions comparées sur le français, le RGPD, les scénarios, le feedback et le prix${french.length ? `, dont ${french.length} éditeurs français` : ''}.`;
-const updated = '2026-10-02';
+// The rendered page includes the original provider and every listed alternative.
+// Track their recorded changes, not the build date or an unrelated provider update.
+const updated = ['2026-10-18', ...[p, ...list].flatMap((x) => x.changelog.map((change: { date: string }) => change.date))].sort().at(-1)!;
+const commonUseCases = (x: typeof p) => x.use_cases.filter((slug: string) => p.use_cases.includes(slug));
 const jsonld = [
   { '@type': 'Article', '@id': `${url}#article`, headline: title, description, url, inLanguage: 'fr-FR', datePublished: '2026-10-01', dateModified: updated,
     author: SITE.authors.map((a) => ({ '@id': `${SITE.url}/a-propos#${a.id}` })), publisher: { '@id': `${SITE.url}#organization` }, mainEntityOfPage: url },
@@ -27,9 +30,11 @@ const jsonld = [
   <h1>Alternatives à {p.name} pour le roleplay IA</h1>
   <Byline {updated} />
   <p class="mt-6 text-lg">{p.name} ({p.country}) : {p.description} Les {list.length} solutions ci-dessous couvrent des cas d'usage comparables{french.length ? <>, dont {french.length} éditeurs français</> : ''}. Elles sont classées selon la note éditoriale globale de notre <a href="/roleplay-ia">comparatif</a>. Les formats, langues et conditions contractuelles sont à confirmer auprès de chaque éditeur.</p>
+  <p class="text-sm text-muted">{shared.length ? <>Sélection : au moins un cas d’usage référencé en commun avec {p.name}, puis les huit premières solutions au maximum dans l’ordre du comparatif.</> : <>Aucun cas d’usage commun n’est référencé : cette liste présente jusqu’à huit autres solutions du panel, à examiner selon votre besoin.</>} La note globale n’est pas une note d’adéquation à votre projet. Un cas d’usage référencé indique une capacité documentée ou annoncée, pas un test réussi par Guide RH.</p>
 
   <table>
-    <thead><tr><th scope="col">Solution</th><th scope="col">Pays</th><th scope="col">Note</th><th scope="col">Formats</th><th scope="col">Cas d'usage</th><th scope="col">Prix publiés</th></tr></thead>
+    <caption class="text-left text-sm text-muted">Alternatives documentaires à {p.name} : formats annoncés, usages communs référencés et prix publiés. Consultez chaque fiche pour ses sources et limites.</caption>
+    <thead><tr><th scope="col">Solution</th><th scope="col">Pays</th><th scope="col">Note éditoriale</th><th scope="col">Formats</th><th scope="col">Usages communs avec {p.name}</th><th scope="col">Prix publiés</th></tr></thead>
     <tbody>
       {list.map((x) => (
         <tr>
@@ -37,7 +42,7 @@ const jsonld = [
           <td>{x.country}</td>
           <td><ScoreBadge score={x.score} scored={x.scored} total={CRITERIA.length} /></td>
           <td>{x.formats.join(', ') || 'À vérifier'}</td>
-          <td>{x.use_cases.map((u: string) => USE_CASES.find((c) => c.slug === u)?.label ?? u).join(', ') || 'À vérifier'}</td>
+          <td>{commonUseCases(x).map((u: string) => USE_CASES.find((c) => c.slug === u)?.label ?? u).join(', ') || 'Aucun usage commun référencé'}</td>
           <td>{x.pricing_public}</td>
         </tr>
       ))}
@@ -52,6 +57,14 @@ const jsonld = [
 
   <h2>Comment comparer</h2>
   <p>Testez les solutions présélectionnées sur le même scénario, en français, avec les personnes qui les utiliseront. Vérifiez l'hébergement des données et la conservation des sessions, la qualité du feedback et la possibilité de créer vos propres scénarios. Notre <a href="/methodologie">grille d'évaluation</a> peut servir de cahier des charges.</p>
+  <h3>Quatre vérifications pour départager votre présélection</h3>
+  <ol class="list">
+    <li><a href="/roleplay-ia/voix-ou-texte">Français et formats</a> : faire jouer le même scénario, dans le format acheté, avec vos termes métier. Conserver les erreurs de transcription et les passages de feedback contestés.</li>
+    <li><a href="/roleplay-ia/rgpd-hebergement">Données et accès</a> : obtenir le DPA, les sous-traitants, les lieux de traitement, la rétention et la liste des personnes pouvant voir conversations et scores. Ne pas déduire ces garanties du seul pays de l’éditeur.</li>
+    <li><a href="/roleplay-ia/integration-lms">Intégration réelle</a> : vérifier connexion, lancement, complétion, éventuelle remontée du score et suppression d’un utilisateur dans votre environnement. Un logo de connecteur ne décrit pas ces flux.</li>
+    <li><a href="/roleplay-ia/prix">Devis comparable</a> : utiliser le même volume d’utilisateurs et de séances ; faire préciser scénarios sur mesure, formats, coaching humain, intégrations, engagement et conditions de sortie.</li>
+  </ol>
+  <p class="text-sm text-muted">Ces vérifications forment un protocole proposé, pas des tests déjà réalisés. Une information absente d’une fiche n’est pas la preuve qu’une fonction n’existe pas : demandez une preuve à l’éditeur.</p>
 
   <Transparence />
 </Base>

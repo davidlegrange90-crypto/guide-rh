@@ -263,8 +263,21 @@
 - Vercel lists no teams; guide-rh project and production runtime logs return 403 under team_DogQuXCMTVI6mYpMCOQUOD5G / davidlegrange90-5664. No CLI available. Need Web Analytics and hosting/edge request-log read access or dated exports. Runtime function output alone is not static-page traffic. Search Console/Bing/Cloudflare AI Crawl Control datasets unavailable. Crawl does not establish training, indexing, citations or recommendations.
 - Prepared guarded main update; run report records GitHub deployment and live verification outcome.
 
+## 2026-10-18: alternatives-page selection and buying guidance
+- Fresh main ea334665a1ff89b600dcbff64435b89e65f878c1. Read README, CHECKLIST and progress; inspected current alternatives template/data/styles and live Yoodli alternatives HTML (curl; web reader unavailable).
+- Improved the 14 existing alternatives pages without changing provider data or selection/ranking. Table now displays only referenced common use cases rather than all capabilities of each alternative. Added selection rule, eight-result limit, distinction between global editorial score and project fit, and explicit documentary/test caveat.
+- Added a descriptive table caption and four practical checks linking to existing French/format, data, integration and price guides. No new vendor facts, scores or prices introduced.
+- Replaced stale fixed 2026-10-02 date with latest of template revision (2026-10-18) and recorded changelog dates from the original provider and displayed alternatives. Same date used visibly and in Article JSON-LD; not based on build time or unrelated provider updates.
+- Primary guidance consulted 2026-10-18: https://developers.google.com/search/docs/appearance/publication-dates (visible and structured dates should be consistent and reflect the page update, not an unrelated event).
+- Validation: npm run check:content and npm run build passed. Parsed 64 HTML pages, 2,076 internal links/fragments, 64 JSON-LD blocks and all 64 unique sitemap URLs. Verified all 14 alternatives tables and 112 rows against data-derived selection and common-use-case intersection; ItemList names/order unchanged, dates agree, table caption and scoped headers present. Canonicals, one H1 per page, sitemap coverage and fragments passed. Provider data byte-equivalent in parsed JSON to main. git diff --check passed.
+- No CSS or table column count changed; mobile visual audit and field performance not measured. Caption/header semantics checked statically, not a full accessibility audit.
+- www returned HTTP 502 from environment; inconclusive, no DNS changes.
+- Traffic windows Europe/Paris: 2026-10-17 versus 2026-10-16; rolling 2026-10-11–2026-10-17 versus 2026-10-04–2026-10-10. Visitors, pageviews, top pages/referrers, AI referrals, crawlers and user-triggered assistant requests unavailable, not zero. Definitions/coverage, successful versus blocked requests, verified bot identities, requested pages, last seen and audit exclusions cannot be established.
+- Access check: Vercel lists no teams; guide-rh project lookup returns 403 for scope davidlegrange90-5664 / team_DogQuXCMTVI6mYpMCOQUOD5G. No CLI available. Need project Web Analytics and hosting/edge request-log read access, or dated exports. No Search Console, Bing or Cloudflare AI Crawl Control data accessible. Do not infer training, indexing, citations or recommendations from crawling.
+- Prepared guarded main update; run report records GitHub deployment and live verification.
+
 ## Prioritized backlog
-1. Improve existing alternatives-page buying guidance and source-derived update dates. Revisit Second Nature detailed security/formats when official pages are accessible; verify current certifications only with source evidence and authorized access.
+1. Revisit Second Nature detailed security/formats when official pages are accessible; verify current certifications only with source evidence and authorized access. Check source gaps and remaining mismatched use-case labels before expanding coverage.
 2. Validate mobile table usability and establish a measured performance baseline. Do not claim Core Web Vitals or mobile visual success without measurements.
 3. Investigate www hostname with hosting/DNS access; keep apex canonical. No speculative DNS edits.
 4. Ownership, funding and author credentials require verified facts from the owner. Do not fabricate disclosures.
