@@ -17,7 +17,7 @@ export const USE_CASES = [
   { slug: 'entretien-annuel', label: 'Entretien annuel', term: 'formation entretien annuel' },
   { slug: 'equipes-commerciales', label: 'Équipes commerciales', term: 'formation commerciale' },
   { slug: 'relation-client', label: 'Relation client', term: 'formation relation client' },
-  { slug: 'onboarding', label: 'Onboarding des nouveaux managers', term: 'onboarding managers' },
+  { slug: 'onboarding', label: 'Onboarding et prise de poste', term: 'onboarding managers et commerciaux' },
   { slug: 'recrutement', label: 'Entretiens de recrutement', term: 'formation recruteurs' },
   { slug: 'certification', label: 'Certification des compétences', term: 'certification roleplay IA' },
   { slug: 'ramp-up', label: 'Accélérer le ramp-up', term: 'ramp-up commercial onboarding IA' },

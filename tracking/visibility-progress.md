@@ -276,8 +276,22 @@
 - Access check: Vercel lists no teams; guide-rh project lookup returns 403 for scope davidlegrange90-5664 / team_DogQuXCMTVI6mYpMCOQUOD5G. No CLI available. Need project Web Analytics and hosting/edge request-log read access, or dated exports. No Search Console, Bing or Cloudflare AI Crawl Control data accessible. Do not infer training, indexing, citations or recommendations from crawling.
 - Prepared guarded main update; run report records GitHub deployment and live verification.
 
+## 2026-10-19: onboarding scope and role-specific buying checks
+- Fresh checkout of main 6de745e36e504f665f38d96e265df18214ca1cf4. Read README, CHECKLIST and full current progress; no AGENTS.md found. Live onboarding page returned HTTP 200 and still described only managers although its panel includes commercially focused onboarding solutions.
+- Broadened the shared label to “Onboarding et prise de poste”, keeping the existing URL, provider memberships, rankings and scores. Rewrote the existing guide to distinguish managerial and commercial paths explicitly, rather than imply every listed solution covers both.
+- Added two attributed vendor-documentation examples, role-specific proposed scenarios, a four-part buying/pilot checklist, internal links and two FAQ answers. Removed the implied fixed 90-day prescription in favor of an illustrative sequence without an optimal-duration claim. Preserved and recalled the professional Coachello disclosure. No tests or gains claimed.
+- Sources read 2026-10-19:
+  - https://www.hyperbound.ai/use-cases/onboarding-and-certifications
+  - https://coachello.ai/fr/roleplays-ia/
+- Yoodli candidate sales-onboarding URL was inaccessible to the web reader and not used as a source. No promotional vendor outcome figures reproduced.
+- Validation: npm run check:content and npm run build passed. Parsed 64 HTML pages, 2,147 internal links/fragments, 64 JSON-LD blocks and 64 unique sitemap URLs; all routes covered, canonical equality and one H1 per page. Onboarding visible/Article dates agree at 2026-10-19; new content/FAQ markers present and obsolete shared label absent throughout built HTML. All provider data and criterion weights unchanged. git diff --check passed. No CSS or component layout changes; no browser/mobile visual audit or field-performance measurement performed.
+- www returned HTTP 503 from this environment today, versus prior 502; availability remains inconclusive without hosting/DNS inspection. No DNS changes.
+- Traffic Europe/Paris: last complete day 2026-10-18 versus 2026-10-17; rolling 2026-10-12–2026-10-18 versus 2026-10-05–2026-10-11. Visitors, pageviews, top pages/referrers, AI referrals, crawler and user-triggered assistant requests unavailable, not zero. Provider metric definitions/coverage, verified bot identities, successful/blocked requests, pages requested, last seen and audit-traffic exclusions cannot be established.
+- Connected Vercel project lookup still returns 403 for guide-rh under davidlegrange90-5664 / team_DogQuXCMTVI6mYpMCOQUOD5G. No vercel CLI installed. Need project Web Analytics and hosting/edge request-log read access, or dated exports. No accessible Search Console/Bing/Cloudflare AI Crawl Control data. Runtime application output alone would not establish static-page traffic. Crawling does not establish training, indexing, citations or recommendations.
+- Publication prepared as guarded main fast-forward; deployment status and affected live URLs checked in run report.
+
 ## Prioritized backlog
-1. Revisit Second Nature detailed security/formats when official pages are accessible; verify current certifications only with source evidence and authorized access. Check source gaps and remaining mismatched use-case labels before expanding coverage.
+1. Revisit Second Nature detailed security/formats when official pages are accessible; verify current certifications only with source evidence and authorized access. Audit remaining provider use-case memberships against explicit sources; onboarding's shared label and guide now distinguish managerial from commercial scope, without changing memberships.
 2. Validate mobile table usability and establish a measured performance baseline. Do not claim Core Web Vitals or mobile visual success without measurements.
 3. Investigate www hostname with hosting/DNS access; keep apex canonical. No speculative DNS edits.
 4. Ownership, funding and author credentials require verified facts from the owner. Do not fabricate disclosures.
