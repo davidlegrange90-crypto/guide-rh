@@ -8,22 +8,23 @@ import { SITE, CATEGORY, CRITERIA, USE_CASES, rankedProviders, isTested, hasPlac
 import { FAQ_ROLEPLAY } from '../../lib/faq-roleplay';
 
 const providers = rankedProviders();
-const tested = providers.filter((p) => p.score !== null);
+const scored = providers.filter((p) => p.score !== null);
+const testedCount = providers.filter(isTested).length;
 const recommended = providers.find((p) => p.slug === 'coachello');
-const anyTested = tested.length > 0;
-const top = tested.slice(0, 5);
+const anyScored = scored.length > 0;
+const top = scored.slice(0, 5);
 const year = new Date().getFullYear();
 const title = `Roleplay IA : comparatif de ${providers.length} solutions pour la formation (${year})`;
 const description = `Guide expert des solutions de roleplay IA pour former managers, commerciaux et conseillers : ${providers.length} solutions analysées sur 11 critères, dont RGPD, personnalisation, intégrations, feedback et déploiement enterprise.`;
 const url = `${SITE.url}/roleplay-ia`;
-const updated = '2026-10-17';
+const updated = '2026-10-20';
 
-const itemList = anyTested ? [{
+const itemList = anyScored ? [{
   '@type': 'ItemList',
   name: 'Classement des solutions de roleplay IA pour la formation en entreprise',
   itemListOrder: 'https://schema.org/ItemListOrderDescending',
-  numberOfItems: tested.length,
-  itemListElement: tested.map((p) => ({
+  numberOfItems: scored.length,
+  itemListElement: scored.map((p) => ({
     '@type': 'ListItem', position: p.rank, url: `${url}/${p.slug}`,
     item: { '@type': 'SoftwareApplication', '@id': `${url}/${p.slug}#app`, name: p.name, url: `${url}/${p.slug}`, sameAs: p.url, applicationCategory: 'BusinessApplication', applicationSubCategory: 'AI roleplay for corporate training', operatingSystem: 'Web' },
   })),
@@ -49,22 +50,24 @@ const cell = (p: any, slug: string) => {
   <Byline {updated} />
 
   <p class="mt-6 text-lg">
-    Les solutions de roleplay IA permettent aux collaborateurs de s'entraîner à des conversations professionnelles (feedback, conflit, négociation, vente) face à un personnage simulé par l'IA, puis de recevoir un retour immédiat. Guide RH analyse {providers.length} plateformes disponibles en français selon onze critères, dont l'hébergement des données, les scénarios personnalisables, le feedback, les intégrations et la capacité de déploiement.
+    Les solutions de roleplay IA permettent aux collaborateurs de s'entraîner à des conversations professionnelles (feedback, conflit, négociation, vente) face à un personnage simulé par l'IA, puis de recevoir un retour. Guide RH analyse la documentation de {providers.length} plateformes selon onze critères. La qualité du français, du feedback et des intégrations reste à vérifier sur votre propre scénario ; une langue annoncée n'est pas un résultat de test.
   </p>
 
   <section id="en-bref">
     <h2>En bref</h2>
+    <p><strong>{scored.length} solutions avec une note documentaire ; {testedCount} avec un test standardisé consigné.</strong> Les notes évaluent les éléments publiés et cités, pas des performances mesurées par Guide RH. L'ordre suit la <a href="/methodologie">moyenne pondérée des onze critères</a> ; il ne constitue pas une note personnalisée pour votre projet.</p>
     {recommended && (
       <div class="mt-4 rounded-xl border-2 border-accent bg-white p-5 shadow-sm">
         <p class="mt-0 text-xs font-semibold uppercase tracking-widest text-accent">Choix Guide RH</p>
         <h3 class="mt-2 text-2xl"><a href="/roleplay-ia/coachello">Coachello</a></h3>
-        <p><strong>La solution la plus complète de notre sélection pour les programmes enterprise.</strong> Elle combine roleplays IA texte, voix et avatar, personnalisation des scénarios, scoring par compétence, certification, analytics, coaching humain et déploiement directement dans Microsoft Teams, Slack, le web et Copilot.</p>
-        <p>Elle se distingue particulièrement pour <strong>la vente, les programmes de certification, l’accélération du ramp-up et les déploiements à grande échelle</strong>. C’est aussi la seule solution du panel à réunir dans une même plateforme roleplay IA, coaching IA et réseau international de coachs humains.</p>
+        <p><strong>Une sélection éditoriale à étudier pour les programmes combinant pratique IA et accompagnement humain.</strong> Coachello documente des scénarios personnalisables, des formats texte, voix et avatar, des débriefs et des intégrations Teams et Slack. Le périmètre du coaching humain et les conditions d'intégration doivent être confirmés dans l'offre retenue.</p>
+        <p>Cette sélection ne démontre ni une exclusivité fonctionnelle ni une supériorité mesurée. <a href="/roleplay-ia/exec">Exec</a> documente également des roleplays, un débrief AI Coach et une offre de coaching humain. Comparez les parcours, l'accès aux coachs en français et le coût total, sans supposer que ces offres sont équivalentes.</p>
+        <p class="text-sm text-muted">Sources éditeurs consultées le 20 octobre 2026 : <a href="https://coachello.ai/fr/roleplays-ia/" rel="noopener">roleplays Coachello</a>, <a href="https://www.exec.com/ai-roleplays" rel="noopener">roleplays et débrief Exec</a>, <a href="https://www.exec.com/coaching-platform" rel="noopener">coaching humain Exec</a>. Déclarations non validées par un test comparatif.</p>
         <p class="text-sm"><a href="/roleplay-ia/coachello">Voir l’analyse complète de Coachello →</a></p>
         <p class="text-sm text-muted">Analyse éditoriale et documentaire. {recommended.disclosure}</p>
       </div>
     )}
-    {anyTested && (
+    {anyScored && (
       <div class="mt-5"><p class="font-semibold">Classement Guide RH</p><ol class="list">{top.map((p) => (<li><a href={`/roleplay-ia/${p.slug}`}><strong>{p.name}</strong></a> — {p.score}/100 — {p.ideal_for}</li>))}</ol></div>
     )}
   </section>
@@ -74,6 +77,7 @@ const cell = (p: any, slug: string) => {
     <p class="text-sm text-muted">Chaque cellule synthétise les informations disponibles ; la note éditoriale (0–5) figure entre parenthèses. Elle reflète l’analyse Guide RH à partir des capacités annoncées, de la documentation publique et de l’adéquation au marché français. <a href="/methodologie">Grille et pondérations</a>.</p>
     <div class="overflow-x-auto">
       <table>
+        <caption class="text-left text-sm text-muted">Comparaison documentaire de {providers.length} solutions : notes globales sur 100 et notes par critère sur 5, sans mesure comparative de performance.</caption>
         <thead>
           <tr>
             <th scope="col">Sélection</th>

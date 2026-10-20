@@ -290,6 +290,21 @@
 - Connected Vercel project lookup still returns 403 for guide-rh under davidlegrange90-5664 / team_DogQuXCMTVI6mYpMCOQUOD5G. No vercel CLI installed. Need project Web Analytics and hosting/edge request-log read access, or dated exports. No accessible Search Console/Bing/Cloudflare AI Crawl Control data. Runtime application output alone would not establish static-page traffic. Crawling does not establish training, indexing, citations or recommendations.
 - Publication prepared as guarded main fast-forward; deployment status and affected live URLs checked in run report.
 
+## 2026-10-20: comparison-summary evidence and rating transparency
+- Fresh main e653602e280fecd7c8962eac37fbb3a0bc62018b; read README, CHECKLIST and tracking; no AGENTS.md found. Inspected live comparison HTML, which still claimed Coachello was the only platform combining roleplay, AI coaching and a human-coach network.
+- Replaced unsupported exclusivity and broad superiority language in the main comparison summary with attributed capabilities and buying checks. Current Exec documentation also describes roleplays, an AI Coach debrief and human coaching; this overlap does not establish equivalence of the offers. Preserved Coachello's editorial-selection label and exact professional disclosure.
+- Added data-derived counts distinguishing documentary scores (14) from recorded standardized tests (0), plus explicit interpretation of the global weighted ranking. Renamed misleading internal “tested” variables to “scored” without changing filtering, order or ItemList contents. Qualified French-language availability in the introduction; added a descriptive table caption. No new CSS, columns or layout component changes.
+- Sources read 2026-10-20:
+  - https://coachello.ai/fr/roleplays-ia/
+  - https://www.exec.com/ai-roleplays
+  - https://www.exec.com/coaching-platform
+- Candidate https://www.exec.com/ai-coach was inaccessible and not used; AI Coach evidence came from the current roleplay page. No vendor results, reviews or certification claims republished.
+- Validation: npm run check:content and npm run build passed. Parsed 64 HTML pages, 2,150 internal links/fragments, 64 JSON-LD blocks and 64 unique sitemap URLs. Canonical equality, one H1, sitemap coverage, fragments, visible/Article date 2026-10-20, counts, caption and disclosure passed. Checked ItemList names/order against the data-derived weighted ranking and verified all provider data and criterion weights unchanged. git diff --check passed. No mobile visual audit, full accessibility audit or field-performance measurement performed.
+- www returned HTTP 503 from this environment; still inconclusive, no DNS changes.
+- Traffic Europe/Paris: complete day 2026-10-19 versus 2026-10-18; rolling 2026-10-13–2026-10-19 versus 2026-10-06–2026-10-12. Visitors, pageviews, top pages/referrers, AI referrals, crawler and user-triggered assistant requests unavailable, not zero. Metric definitions/coverage, verified bot identities, successful/blocked requests, requested pages, last seen and audit exclusions cannot be established. Crawl would not establish training, indexing, citations or recommendations.
+- Access rechecked: Vercel project lookup returns 403 for guide-rh under davidlegrange90-5664 / team_DogQuXCMTVI6mYpMCOQUOD5G; no vercel CLI installed. Windsor discovery exposes only a Coachello GA4 property and coachello.ai Search Console property, not an identified Guide RH source; those unrelated accounts were not queried for Guide RH traffic. Need Guide RH project Web Analytics and hosting/edge request-log read access, or dated exports / an authorized Guide RH analytics property. No accessible Bing or Cloudflare AI Crawl Control data.
+- Prepared guarded main publication; run report records GitHub deployment and live verification outcome.
+
 ## Prioritized backlog
 1. Revisit Second Nature detailed security/formats when official pages are accessible; verify current certifications only with source evidence and authorized access. Audit remaining provider use-case memberships against explicit sources; onboarding's shared label and guide now distinguish managerial from commercial scope, without changing memberships.
 2. Validate mobile table usability and establish a measured performance baseline. Do not claim Core Web Vitals or mobile visual success without measurements.
