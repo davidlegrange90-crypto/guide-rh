@@ -37,15 +37,20 @@ npm run check:content   # bloque si des champs publiés contiennent encore [À C
 
 ### Ajouter une solution
 1. Ajoutez une entrée dans `providers.json` (copiez une entrée existante). Champs obligatoires : `slug`, `name`, `url`, `country`, `international`, `description`, `formats`, `use_cases` (slugs de `USE_CASES` dans `data.ts`), `public_claims`, `sources`, `disclosure`, `scores` (un objet par critère avec `score: null`), `changelog`.
-2. Laissez `tested_on: null` tant que la solution n'est pas testée : elle apparaît sans note, en bas du tableau, avec la mention « pas encore testé ».
-3. Envoyez le questionnaire commun à l'éditeur et notez la date dans `changelog`.
+2. Laissez `tested_on: null` tant qu'aucun test standardisé n'est réalisé. Une note documentaire peut être publiée séparément si chaque score contient un constat précis et, quand elle existe, une source ; `score: null` signifie que le critère n'est pas évalué.
+3. Indiquez explicitement dans `test_notes` si la fiche repose uniquement sur une revue documentaire. Envoyez le questionnaire commun à l'éditeur et notez la date dans `changelog`.
 
-### Noter une solution après test
-1. Renseignez chaque critère dans `scores` : `score` (0–5), `evidence` (le constat, une phrase), `source` (URL publique quand elle existe).
-2. Renseignez `ideal_for`, `strengths`, `limits`, `test_notes` (scénarios joués, dates, testeurs) et `tested_on`.
+### Publier ou modifier une note documentaire
+1. Renseignez chaque critère dans `scores` : `score` (0–5 ou `null`), `evidence` (le constat et ses limites), `source` (source primaire publique quand elle existe).
+2. Renseignez `ideal_for`, `strengths`, `limits` et `test_notes`, en distinguant capacités annoncées, pièces consultées et vérifications restant à faire. Gardez `tested_on: null`.
 3. Ajoutez une ligne dans `changelog` de la fiche et une entrée dans `src/content/journal/`.
-4. Envoyez la fiche à l'éditeur pour relecture factuelle (pas des notes). Collez sa réponse éventuelle, sans la modifier, dans `right_of_reply`.
-5. `npm run check:content` puis `npm run build`.
+4. Une absence d'information publique n'est pas la preuve qu'une fonction est absente. Formulez le point à vérifier.
+
+### Enregistrer un test standardisé
+1. Exécutez les scénarios communs avec un accès réel et conservez le protocole, la date, les versions et les observations.
+2. Renseignez `tested_on` et `test_notes`. Un test ne modifie pas automatiquement une note : toute modification doit être reliée à un constat reproductible.
+3. Envoyez la fiche à l'éditeur pour relecture factuelle, pas pour validation des notes. Publiez sa réponse éventuelle sans la modifier dans `right_of_reply`.
+4. Ajoutez l'historique et le journal, puis exécutez `npm run check:content` et `npm run build`.
 
 ### Modifier une note
 Changez le score et la preuve, ajoutez une ligne datée dans `changelog` et dans le journal. Ne supprimez jamais l'historique.

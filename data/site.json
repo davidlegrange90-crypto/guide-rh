@@ -22,5 +22,5 @@
     }
   ],
   "review_cadence": "Chaque comparatif est revu au moins une fois par trimestre, et à chaque changement majeur signalé par un éditeur.",
-  "test_cadence_note": "Les tests sont réalisés en français, avec les mêmes scénarios pour toutes les solutions."
+  "test_cadence_note": "Le protocole prévoit des tests en français avec les mêmes scénarios. Aucun test n’est revendiqué sans accès réel, date et notes de test publiées."
 }

@@ -10,7 +10,7 @@
 - [ ] `npm run check:content` passe.
 
 ## Contenu
-- [ ] Au moins 6 solutions testées et notées avant d'afficher un classement (sinon la page reste en « version préliminaire »).
+- [ ] Un classement documentaire est explicitement présenté comme tel, avec le nombre de critères évalués et sans suggérer des tests produit. Un classement fondé sur des tests exige au moins 6 solutions soumises au même protocole.
 - [ ] Toutes les sections « Ce que nous avons observé » des pages cas d'usage et critères sont rédigées.
 - [ ] Réponse d'ouverture du comparatif relue : 40–60 mots, citable seule.
 - [ ] Journal : une entrée pour la mise en ligne du classement.
