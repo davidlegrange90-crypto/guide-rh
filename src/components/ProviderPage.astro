@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import Byline from './Byline.astro';
 import Transparence from './Transparence.astro';
 import ScoreBadge from './ScoreBadge.astro';
+import TableScroll from './TableScroll.astro';
 import { SITE, CATEGORY, CRITERIA, USE_CASES, rankedProviders, hasPlaceholder, formatDate } from '../lib/data';
 
 interface Props { p: ReturnType<typeof rankedProviders>[number] }
@@ -45,7 +46,8 @@ if (p.score !== null) {
 
   <section id="criteres">
     <h2>Évaluation critère par critère</h2>
-    <table>
+    <TableScroll label={`Évaluation de ${p.name} critère par critère`} minWidth="64rem">
+      <table>
       <thead><tr><th scope="col">Critère</th><th scope="col">Poids</th><th scope="col">Note /5</th><th scope="col">Éléments documentaires et points à vérifier</th><th scope="col">Source</th></tr></thead>
       <tbody>
         {CRITERIA.map((c) => { const s = (p.scores as any)[c.slug]; return (
@@ -58,7 +60,8 @@ if (p.score !== null) {
           </tr>
         ); })}
       </tbody>
-    </table>
+      </table>
+    </TableScroll>
   </section>
 
   <section id="points-forts-limites" class="grid gap-6 sm:grid-cols-2">

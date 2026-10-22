@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Byline from '../components/Byline.astro';
+import TableScroll from '../components/TableScroll.astro';
 import { SITE, CRITERIA, SCALE_NOTE, rankedProviders } from '../lib/data';
 const url = `${SITE.url}/methodologie`;
 const total = CRITERIA.reduce((s, c) => s + c.weight, 0);
@@ -22,10 +23,12 @@ const jsonld = [{
 
   <h2 id="grille">La grille de notation</h2>
   <p>{SCALE_NOTE}</p>
-  <table>
+  <TableScroll label="Grille de notation Guide RH" minWidth="48rem">
+    <table>
     <thead><tr><th scope="col">Critère</th><th scope="col">Poids /{total}</th><th scope="col">Ce que nous mesurons</th></tr></thead>
     <tbody>{CRITERIA.map((c) => (<tr><th scope="row">{c.page ? <a href={`/roleplay-ia/${c.slug}`}>{c.label}</a> : c.label}</th><td>{c.weight}</td><td>{c.description}</td></tr>))}</tbody>
-  </table>
+    </table>
+  </TableScroll>
   <p>Formule : note globale = Σ (note du critère × poids) ÷ Σ (5 × poids des critères évalués) × 100. Les poids sont revus une fois par an et tout changement est consigné dans le <a href="/journal">journal</a>.</p>
 
   <h2 id="lecture-notes">Comment lire une note documentaire</h2>

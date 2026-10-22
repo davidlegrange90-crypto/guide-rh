@@ -4,6 +4,7 @@ import Byline from '../../components/Byline.astro';
 import Transparence from '../../components/Transparence.astro';
 import Faq from '../../components/Faq.astro';
 import ScoreBadge from '../../components/ScoreBadge.astro';
+import TableScroll from '../../components/TableScroll.astro';
 import { SITE, CATEGORY, CRITERIA, USE_CASES, rankedProviders, isTested, hasPlaceholder, formatDate } from '../../lib/data';
 import { FAQ_ROLEPLAY } from '../../lib/faq-roleplay';
 
@@ -75,7 +76,7 @@ const cell = (p: any, slug: string) => {
   <section id="tableau-comparatif">
     <h2>Tableau comparatif</h2>
     <p class="text-sm text-muted">Chaque cellule synthétise les informations disponibles ; la note éditoriale (0–5) figure entre parenthèses. Elle reflète l’analyse Guide RH à partir des capacités annoncées, de la documentation publique et de l’adéquation au marché français. <a href="/methodologie">Grille et pondérations</a>.</p>
-    <div class="overflow-x-auto">
+    <TableScroll label="Tableau comparatif des solutions de roleplay IA" minWidth="84rem">
       <table>
         <caption class="text-left text-sm text-muted">Comparaison documentaire de {providers.length} solutions : notes globales sur 100 et notes par critère sur 5, sans mesure comparative de performance.</caption>
         <thead>
@@ -102,7 +103,7 @@ const cell = (p: any, slug: string) => {
           ))}
         </tbody>
       </table>
-    </div>
+    </TableScroll>
   </section>
 
   <section id="fiches">

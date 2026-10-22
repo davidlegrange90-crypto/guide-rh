@@ -4,6 +4,7 @@ import Byline from './Byline.astro';
 import Transparence from './Transparence.astro';
 import Faq from './Faq.astro';
 import ScoreBadge from './ScoreBadge.astro';
+import TableScroll from './TableScroll.astro';
 import { SITE, CATEGORY, CRITERIA, USE_CASES, providersForUseCase } from '../lib/data';
 import type { UseCasePage } from '../lib/content-roleplay';
 
@@ -33,12 +34,14 @@ const ph = (s: string) => s.replace(/\[À (COMPLÉTER|VÉRIFIER)[^\]]*\]/g, (m) 
   <section>
     <h2>Solutions qui couvrent ce cas d'usage</h2>
     {list.length ? (
-      <table>
+      <TableScroll label={`Solutions qui couvrent le cas d’usage ${meta.label}`} minWidth="56rem">
+        <table>
         <thead><tr><th scope="col">Solution</th><th scope="col">Pays</th><th scope="col">Note Guide RH</th><th scope="col">Formats</th><th scope="col">Idéal pour</th></tr></thead>
         <tbody>{list.map((p) => (
           <tr><th scope="row"><a href={`/roleplay-ia/${p.slug}`}>{p.name}</a></th><td>{p.country}</td><td><ScoreBadge score={p.score} scored={p.scored} total={CRITERIA.length} /></td><td>{p.formats.join(', ') || 'Non communiqué'}</td><td set:html={ph(p.ideal_for)} /></tr>
         ))}</tbody>
-      </table>
+        </table>
+      </TableScroll>
     ) : <p>Aucune solution du panel ne documente clairement ce cas d’usage à ce stade.</p>}
     <p class="text-sm text-muted">Le classement complet et la grille de notation sont sur la page <a href="/roleplay-ia">comparatif roleplay IA</a>.</p>
   </section>
