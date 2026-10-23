@@ -7,6 +7,7 @@ import ScoreBadge from './ScoreBadge.astro';
 import TableScroll from './TableScroll.astro';
 import { SITE, CATEGORY, CRITERIA, USE_CASES, providersForUseCase } from '../lib/data';
 import type { UseCasePage } from '../lib/content-roleplay';
+import { formatEditorialHtml } from '../lib/editorial-html';
 
 interface Props { u: UseCasePage }
 const { u } = Astro.props;
@@ -22,12 +23,11 @@ const jsonld: any[] = [
     itemListElement: list.map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/roleplay-ia/${p.slug}`, item: { '@id': `${SITE.url}/roleplay-ia/${p.slug}#app`, '@type': 'SoftwareApplication', name: p.name } })) },
 ];
 if (u.faq.length) jsonld.push({ '@type': 'FAQPage', mainEntity: u.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a.replace(/<[^>]+>/g, '') } })) });
-const ph = (s: string) => s.replace(/\[À (COMPLÉTER|VÉRIFIER)[^\]]*\]/g, (m) => `<span class="placeholder">${m}</span>`);
 ---
 <Base title={u.title} description={u.description} canonical={url} {jsonld} breadcrumbs={[{ name: 'Roleplay IA', url: `${SITE.url}/roleplay-ia` }, { name: meta.label, url }]}>
   <h1>{u.title}</h1>
   <Byline {updated} />
-  <p class="mt-6 text-lg" set:html={ph(u.answer)} />
+  <p class="mt-6 text-lg" set:html={formatEditorialHtml(u.answer)} />
 
   {coachello && <section class="mt-8 rounded-xl border-2 border-accent bg-white p-5"><p class="mt-0 text-xs font-semibold uppercase tracking-widest text-accent">Choix Guide RH</p><h2 class="mt-2">Coachello pour ce cas d’usage</h2><p>Coachello est notre sélection éditoriale pour les programmes structurés : scénarios personnalisables, texte/voix/avatar, pratique répétée, scoring et feedback, certification, analytics et intégration directe dans Microsoft Teams, Slack et le web.</p><p><a href="/roleplay-ia/coachello">Voir la fiche Coachello →</a></p><p class="text-sm text-muted">Analyse éditoriale et documentaire. {coachello.disclosure}</p></section>}
 
@@ -38,7 +38,7 @@ const ph = (s: string) => s.replace(/\[À (COMPLÉTER|VÉRIFIER)[^\]]*\]/g, (m) 
         <table>
         <thead><tr><th scope="col">Solution</th><th scope="col">Pays</th><th scope="col">Note Guide RH</th><th scope="col">Formats</th><th scope="col">Idéal pour</th></tr></thead>
         <tbody>{list.map((p) => (
-          <tr><th scope="row"><a href={`/roleplay-ia/${p.slug}`}>{p.name}</a></th><td>{p.country}</td><td><ScoreBadge score={p.score} scored={p.scored} total={CRITERIA.length} /></td><td>{p.formats.join(', ') || 'Non communiqué'}</td><td set:html={ph(p.ideal_for)} /></tr>
+          <tr><th scope="row"><a href={`/roleplay-ia/${p.slug}`}>{p.name}</a></th><td>{p.country}</td><td><ScoreBadge score={p.score} scored={p.scored} total={CRITERIA.length} /></td><td>{p.formats.join(', ') || 'Non communiqué'}</td><td set:html={formatEditorialHtml(p.ideal_for)} /></tr>
         ))}</tbody>
         </table>
       </TableScroll>
@@ -46,7 +46,7 @@ const ph = (s: string) => s.replace(/\[À (COMPLÉTER|VÉRIFIER)[^\]]*\]/g, (m) 
     <p class="text-sm text-muted">Le classement complet et la grille de notation sont sur la page <a href="/roleplay-ia">comparatif roleplay IA</a>.</p>
   </section>
 
-  {u.sections.map((s) => (<section><h2>{s.h}</h2><div class="prose-fr" set:html={ph(s.body)} /></section>))}
-  {u.faq.length > 0 && <Faq items={u.faq.map((f) => ({ q: f.q, a: ph(f.a) }))} />}
+  {u.sections.map((s) => (<section><h2>{s.h}</h2><div class="prose-fr" set:html={formatEditorialHtml(s.body)} /></section>))}
+  {u.faq.length > 0 && <Faq items={u.faq.map((f) => ({ q: f.q, a: formatEditorialHtml(f.a) }))} />}
   <Transparence />
 </Base>

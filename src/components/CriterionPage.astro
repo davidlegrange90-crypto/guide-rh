@@ -5,6 +5,7 @@ import Transparence from './Transparence.astro';
 import TableScroll from './TableScroll.astro';
 import { SITE, CATEGORY, CRITERIA, rankedProviders, hasPlaceholder } from '../lib/data';
 import type { CriterionPage } from '../lib/content-roleplay';
+import { formatEditorialHtml } from '../lib/editorial-html';
 
 interface Props { c: CriterionPage }
 const { c } = Astro.props;
@@ -19,12 +20,11 @@ const jsonld = [
   { '@type': 'ItemList', '@id': `${url}#solutions`, name: `Comparaison des solutions sur le critère ${crit.label}`, numberOfItems: list.length,
     itemListElement: list.map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/roleplay-ia/${p.slug}`, item: { '@id': `${SITE.url}/roleplay-ia/${p.slug}#app`, '@type': 'SoftwareApplication', name: p.name } })) },
 ];
-const ph = (s: string) => s.replace(/\[À (COMPLÉTER|VÉRIFIER)[^\]]*\]/g, (m) => `<span class="placeholder">${m}</span>`);
 ---
 <Base title={c.title} description={c.description} canonical={url} {jsonld} breadcrumbs={[{ name: 'Roleplay IA', url: `${SITE.url}/roleplay-ia` }, { name: crit.label, url }]}>
   <h1>{c.title}</h1>
   <Byline {updated} />
-  <p class="mt-6 text-lg" set:html={ph(c.answer)} />
+  <p class="mt-6 text-lg" set:html={formatEditorialHtml(c.answer)} />
 
   <section>
     <h2>Comment nous notons ce critère</h2>
@@ -43,6 +43,6 @@ const ph = (s: string) => s.replace(/\[À (COMPLÉTER|VÉRIFIER)[^\]]*\]/g, (m) 
     </TableScroll>
   </section>
 
-  {c.sections.map((s) => (<section><h2>{s.h}</h2><div class="prose-fr" set:html={ph(s.body)} /></section>))}
+  {c.sections.map((s) => (<section><h2>{s.h}</h2><div class="prose-fr" set:html={formatEditorialHtml(s.body)} /></section>))}
   <Transparence />
 </Base>
