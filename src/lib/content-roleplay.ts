@@ -6,7 +6,7 @@ export type UseCasePage = { slug: string; title: string; description: string; an
 export const USE_CASE_PAGES: UseCasePage[] = [
   {
     slug: 'managers',
-    updated: '2026-10-04',
+    updated: '2026-10-24',
     title: 'Roleplay IA pour former les managers : quelle solution choisir ?',
     description: 'Comment le roleplay IA complète une formation management : entretiens difficiles, recadrage, délégation. Solutions comparées, protocole de test et points de vigilance.',
     answer: "Le roleplay IA permet à un manager de répéter un entretien de recadrage, une annonce difficile ou un point de délégation face à un collaborateur simulé, avant de le vivre en réel. Pour ce cas d'usage, les critères qui pèsent le plus sont la qualité du feedback comportemental, la personnalisation des scénarios aux situations de l'entreprise et la possibilité d'associer un coach humain. Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les capacités documentées des notes éditoriales ; aucun test standardisé n'est revendiqué.",
@@ -23,7 +23,7 @@ export const USE_CASE_PAGES: UseCasePage[] = [
   },
   {
     slug: 'gestion-des-conflits',
-    updated: '2026-10-04',
+    updated: '2026-10-24',
     title: "Formation gestion des conflits : s'entraîner avec le roleplay IA",
     description: "Le roleplay IA appliqué à la gestion des conflits en entreprise : désaccords d'équipe, tensions avec un collaborateur, médiation. Solutions comparées et scénarios de test.",
     answer: "Une formation gestion des conflits apprend à nommer le désaccord, écouter la position de l'autre et chercher une issue acceptable. Le roleplay IA permet de s'y entraîner face à un interlocuteur qui s'agace, se ferme ou attaque, sans risque pour la relation réelle. Les solutions les plus adaptées proposent des personnages à intensité émotionnelle réglable et un feedback sur la désescalade. Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les capacités documentées des notes éditoriales ; aucun test standardisé n'est revendiqué.",
@@ -38,7 +38,7 @@ export const USE_CASE_PAGES: UseCasePage[] = [
   },
   {
     slug: 'feedback',
-    updated: '2026-10-04',
+    updated: '2026-10-24',
     title: "S'entraîner au feedback difficile avec le roleplay IA",
     description: 'Donner un feedback négatif sans démotiver : comment le roleplay IA aide les managers à pratiquer, et quelles solutions le font bien.',
     answer: "Le roleplay IA permet de répéter un feedback difficile : formuler les faits et leur impact, faire une demande, puis répondre à la réaction du collaborateur simulé. La qualité dépend de la crédibilité du personnage, de la grille utilisée et des justifications associées au score. Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les capacités documentées des notes éditoriales ; aucun test standardisé n'est revendiqué.",
@@ -53,7 +53,7 @@ export const USE_CASE_PAGES: UseCasePage[] = [
   },
   {
     slug: 'entretien-annuel',
-    updated: '2026-10-04',
+    updated: '2026-10-24',
     title: "Préparer les managers à l'entretien annuel avec le roleplay IA",
     description: "Entretiens annuels et professionnels : s'entraîner à fixer des objectifs, évaluer et gérer les désaccords sur la notation grâce au roleplay IA.",
     answer: "L'entretien annuel est le moment où un manager doit à la fois évaluer, écouter et projeter. Le roleplay IA permet de s'entraîner aux passages délicats : annoncer une évaluation en dessous des attentes, répondre à une demande d'augmentation, refuser une mobilité. Il ne remplace pas la préparation du fond (objectifs, faits), mais la partie conversationnelle. Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les capacités documentées des notes éditoriales ; aucun test standardisé n'est revendiqué.",
@@ -68,7 +68,7 @@ export const USE_CASE_PAGES: UseCasePage[] = [
   },
   {
     slug: 'equipes-commerciales',
-    updated: '2026-10-04',
+    updated: '2026-10-24',
     title: 'Roleplay IA pour la formation commerciale : objections, découverte, closing',
     description: "Formation commerciale et roleplay IA : simulateurs d'appels, traitement des objections, pitch. Solutions françaises et internationales comparées.",
     answer: "La vente est un cas d'usage fréquent du roleplay IA : appels de prospection, découverte, traitement des objections et pitch. Les éditeurs proposent des simulateurs vocaux pour répéter ces conversations et recevoir un scoring. Pour une équipe française, vérifiez la qualité du français à l'oral, la latence et la personnalisation des personnages à vos clients cibles. Les fiches solution distinguent les capacités documentées des notes éditoriales ; aucun test standardisé n'est revendiqué.",
@@ -83,7 +83,7 @@ export const USE_CASE_PAGES: UseCasePage[] = [
   },
   {
     slug: 'relation-client',
-    updated: '2026-10-04',
+    updated: '2026-10-24',
     title: 'Former les conseillers relation client avec le roleplay IA',
     description: "Roleplay IA pour les centres de contact et la relation client : clients mécontents, réclamations, rétention. Solutions comparées.",
     answer: "Dans la relation client, le roleplay IA sert à entraîner les conseillers aux appels difficiles : client mécontent, réclamation ou menace de résiliation. Les critères qui comptent sont le volume de sessions possible par conseiller, l'intégration au parcours d'onboarding et la conformité des scripts au cadre réglementaire du secteur. Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les capacités documentées des notes éditoriales ; aucun test standardisé n'est revendiqué.",
@@ -97,7 +97,7 @@ export const USE_CASE_PAGES: UseCasePage[] = [
   },
   {
     slug: 'onboarding',
-    updated: '2026-10-19',
+    updated: '2026-10-24',
     title: "Roleplay IA pour l'onboarding : managers et commerciaux",
     description: "Choisir un roleplay IA pour la prise de poste : distinguer onboarding managérial et commercial, préparer les scénarios et vérifier le parcours avant achat.",
     answer: "L'onboarding ne recouvre pas les mêmes conversations selon le poste : premier entretien individuel pour un manager, découverte client ou objections pour un commercial. Le roleplay IA peut servir à répéter ces situations dans un parcours d'intégration. Définissez d'abord le public, les scénarios et la validation humaine attendue, puis vérifiez l'intégration au parcours existant. Le tableau réunit des solutions référencées pour l'onboarding au sens large : leur présence ne démontre pas qu'elles couvrent chaque métier. Les notes restent documentaires ; aucun test standardisé n'est revendiqué.",

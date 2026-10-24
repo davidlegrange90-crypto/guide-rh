@@ -337,8 +337,29 @@
 - Access rechecked: Windsor exposes only the unrelated Coachello GA4 property and coachello.ai Search Console property; neither was queried as Guide RH. Vercel lists no teams and project lookup returns 403 for guide-rh under davidlegrange90-5664 / team_DogQuXCMTVI6mYpMCOQUOD5G. The connector does not expose its recommended team-authorization action. Need explicit access to that Vercel team plus Web Analytics and edge/request-log read permission, dated exports, or an authorized Guide RH analytics property. No accessible Bing or Cloudflare AI Crawl Control dataset. Crawling would not prove training, indexing, citations or recommendations.
 - Prepared guarded main publication; the run report records GitHub deployment status and live verification.
 
+## 2026-10-24: Yoodli evidence and documented use-case coverage
+- Fresh main 72a17171a5d9486e5fc12ab66d35d098519534f9; read README, CHECKLIST and the full progress log. The live Yoodli profile returned HTTP 200 but still used generic, unsourced criterion text for AI Act, Qualiopi/OPCO, pricing, human coaching and French references, and listed only three use cases.
+- Replaced those five generic statements with source-specific evidence and limitations. Updated security language to reflect the Trust Center's US/Europe subprocessor regions and the privacy policy's non-EEA transfer language. Documented the published Business per-seat/annual and Enterprise quote model without inventing prices. Distinguished Yoodli Coach and a named CSM from included human coaching sessions.
+- Added six explicitly documented use cases: managers, difficult conversations, feedback, performance reviews, customer service and onboarding. All 11 criteria now have a source link. Updated the seven affected use-case page dates and the main comparison date; added a dated journal entry.
+- Sources read 2026-10-24:
+  - https://support.yoodli.ai/en/articles/9550461-yoodli-overview
+  - https://support.yoodli.ai/en/articles/9550465-practice-with-yoodli
+  - https://support.yoodli.ai/en/articles/15862405-create-chat-based-roleplays
+  - https://yoodli.ai/use-cases/onboarding-certification
+  - https://yoodli.ai/pricing
+  - https://trust.yoodli.ai/
+  - https://yoodli.ai/privacy-policy
+  - https://yoodli.ai/compare/yoodli-vs-hyperbound
+  - https://yoodli.ai/case-studies
+- All source URLs returned HTTP 200. The AI Act statement is explicitly treated as the editor's own claim because the cited comparison page does not provide an intended-use analysis, provider/deployer role or conformity dossier. No case-study outcome figures were republished.
+- Validation: `npm run check:content` and `npm run build` passed. Parsed 64 HTML pages, 2,510 internal links/fragments, 64 JSON-LD blocks and 64 unique sitemap URLs. Verified canonical equality, one H1 per page, complete sitemap coverage, all nine Yoodli use-case links, seven visible/structured update dates, journal/RSS publication and removal of generic evidence text. Every numerical score, `tested_on` and disclosure value for Yoodli was preserved; every other provider object remained byte-equivalent after JSON parsing. `git diff --check` passed. No layout/CSS change, device visual audit or field-performance measurement.
+- www returned HTTP 503 while the apex and live Yoodli profile returned HTTP 200 before publication. No DNS change made.
+- Traffic windows Europe/Paris: complete day 2026-10-23 versus 2026-10-22; rolling 2026-10-17–2026-10-23 versus 2026-10-10–2026-10-16. Visitors, pageviews, top pages/referrers, AI referrals, AI crawler and user-triggered assistant requests are unavailable, not zero. Provider metric definitions/coverage, verified bot identities, successful/blocked requests, requested pages, last seen and audit exclusions cannot be established.
+- Access rechecked: Windsor exposes only the unrelated Coachello GA4 property and coachello.ai Search Console property; neither was queried as Guide RH. Vercel lists no teams and project lookup returns 403 for guide-rh under davidlegrange90-5664 / team_DogQuXCMTVI6mYpMCOQUOD5G. Need explicit access to that Vercel team plus Web Analytics and edge/request-log read permission, dated exports, or an authorized Guide RH analytics property. No accessible Bing or Cloudflare AI Crawl Control dataset. Crawling would not prove training, indexing, citations or recommendations.
+- Prepared guarded main publication; the run report records GitHub deployment status and live verification.
+
 ## Prioritized backlog
-1. Revisit Second Nature detailed security/formats when official pages are accessible; verify current certifications only with source evidence and authorized access. Audit remaining provider use-case memberships against explicit sources; onboarding's shared label and guide now distinguish managerial from commercial scope, without changing memberships.
+1. Revisit Second Nature detailed security/formats when official pages are accessible; verify current certifications only with source evidence and authorized access. Continue auditing remaining provider use-case memberships against explicit sources; Yoodli and onboarding scope have now been reviewed.
 2. Complete a device-level mobile visual audit and establish a measured performance baseline. Keyboard-accessible scroll regions now cover every generated table; do not claim Core Web Vitals or device-level visual success without measurements.
 3. Investigate www hostname with hosting/DNS access; keep apex canonical. No speculative DNS edits.
 4. Ownership, funding and author credentials require verified facts from the owner. Do not fabricate disclosures.

@@ -1111,7 +1111,7 @@
       "url": "https://yoodli.ai/",
       "country": "États-Unis",
       "international": true,
-      "description": "Plateforme de roleplay IA et d'analyse de la communication, orientée vente et prise de parole.",
+      "description": "Plateforme de roleplay IA, d'entraînement et d'analyse de la communication pour la vente, le management, l'onboarding et la relation client.",
       "formats": [
         "texte",
         "voix",
@@ -1119,59 +1119,73 @@
         "vidéo"
       ],
       "use_cases": [
+        "managers",
+        "gestion-des-conflits",
+        "feedback",
+        "entretien-annuel",
         "equipes-commerciales",
+        "relation-client",
+        "onboarding",
         "certification",
         "ramp-up"
       ],
       "public_claims": {
-        "rgpd": "Yoodli annonce une conformité RGPD et une certification SOC 2 Type 2. Les conditions de localisation, de conservation et de sous-traitance doivent être confirmées contractuellement.",
-        "integrations": "L’éditeur annonce des intégrations LMS, CRM, Slack et Microsoft Teams, ainsi que SSO et SCIM pour les déploiements entreprise.",
-        "clients": "Information non documentée dans les sources publiques consultées à ce stade.",
-        "pricing": "Information non documentée dans les sources publiques consultées à ce stade."
+        "rgpd": "Yoodli annonce une conformité RGPD et SOC 2 Type 2. Son Trust Center liste des régions États-Unis et Europe pour Google Cloud, Azure et AWS ; sa politique de confidentialité prévoit des transferts de données européennes hors EEE. Localisation, sous-traitants et conservation doivent être fixés au contrat.",
+        "integrations": "L’éditeur annonce des intégrations LMS, CRM, HRIS, outils de collaboration, SSO et SCIM ; la documentation tarifaire ajoute MCP et les offres Enterprise peuvent intégrer les roleplays hors de la plateforme.",
+        "clients": "L’index officiel publie notamment des cas Snowflake, Google Cloud, RingCentral, VML et Ochsner Health. Aucun cas français nommé n’y a été identifié lors de la revue.",
+        "pricing": "Business est annoncé par siège et facturé annuellement ; Enterprise est destiné aux organisations de 5 000 salariés et plus. Les montants entreprise restent sur devis."
       },
       "sources": [
         "https://yoodli.ai/",
         "https://yoodli.ai/platform/roleplays",
         "https://yoodli.ai/platform/coach",
         "https://support.yoodli.ai/en/articles/9550461-yoodli-overview",
-        "https://support.yoodli.ai/en/articles/9628260-customizing-practice"
+        "https://support.yoodli.ai/en/articles/9628260-customizing-practice",
+        "https://support.yoodli.ai/en/articles/9550465-practice-with-yoodli",
+        "https://support.yoodli.ai/en/articles/15862405-create-chat-based-roleplays",
+        "https://yoodli.ai/use-cases/onboarding-certification",
+        "https://yoodli.ai/pricing",
+        "https://trust.yoodli.ai/",
+        "https://yoodli.ai/privacy-policy",
+        "https://yoodli.ai/compare/yoodli-vs-hyperbound",
+        "https://yoodli.ai/case-studies"
       ],
       "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
-      "ideal_for": "Organisations recherchant une solution centrée sur vente et équipes commerciales.",
+      "ideal_for": "Organisations recherchant des parcours de pratique et de certification pour la vente, le management, l'onboarding ou la relation client.",
       "strengths": [
         "Roleplays personnalisables avec personas, objectifs, contraintes de temps et situations sous pression.",
-        "Formats annoncés : texte, voix, avatar IA et vidéo ; plus de 28 langues déclarées.",
-        "Intégrations LMS, CRM, Slack et Microsoft Teams, avec SSO et SCIM annoncés pour les déploiements entreprise."
+        "Parcours documentés pour la vente, les managers, les conversations difficiles, les entretiens de performance, l'onboarding et le support client.",
+        "Formats annoncés : texte, voix, avatar IA et vidéo ; plus de 28 langues déclarées."
       ],
       "limits": [
-        "Les conditions enterprise et services associés restent à confirmer au cas par cas.",
-        "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
+        "Les montants Business et Enterprise, les services inclus et le périmètre des intégrations restent à confirmer sur devis.",
+        "La documentation indique que l'anglais donne généralement les meilleurs résultats ; le français, le feedback et la latence doivent être validés sur un pilote."
       ],
-      "pricing_public": "Non communiqué publiquement.",
-      "french_clients": "Aucune référence française clairement documentée dans les sources consultées.",
+      "pricing_public": "Business : par siège, facturé annuellement ; Enterprise : sur devis. Aucun montant entreprise affiché.",
+      "french_clients": "Aucune référence française nommée identifiée dans l'index officiel des cas clients consulté le 24 octobre 2026.",
       "tested_on": null,
       "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
           "score": 3.5,
-          "evidence": "Yoodli annonce plus de 28 langues et permet de choisir la langue de pratique et du feedback. La qualité du français n’a pas été testée par Guide RH.",
+          "evidence": "Yoodli annonce plus de 28 langues et permet de choisir la langue de pratique et du feedback. Sa documentation précise que l’anglais donne généralement les meilleurs résultats ; le français n’a pas été testé par Guide RH.",
           "source": "https://support.yoodli.ai/en/articles/9550461-yoodli-overview"
         },
         "rgpd-hebergement": {
           "score": 2,
-          "evidence": "L’éditeur annonce une conformité RGPD et une certification SOC 2 Type 2, sans préciser sur la page consultée la localisation exacte des données ni les durées de conservation.",
-          "source": "https://yoodli.ai/platform/roleplays"
+          "evidence": "Le Trust Center annonce RGPD et SOC 2 Type 2, liste Google Cloud, Azure et AWS avec des régions États-Unis et Europe, et indique des procédures de conservation. La politique de confidentialité prévoit des transferts hors EEE. Demander les régions, durées, sous-traitants et garanties contractuelles du projet.",
+          "source": "https://trust.yoodli.ai/"
         },
         "ai-act": {
           "score": 2.5,
-          "evidence": "Évaluation éditoriale de la maturité des informations publiées sur gouvernance IA, transparence et usages RH.",
-          "source": ""
+          "evidence": "Une page comparative de l’éditeur se déclare conforme à l’AI Act européen, mais ne fournit pas sur cette page d’analyse par usage, de rôle fournisseur/déployeur ni de dossier de conformité. Traiter cette mention comme une déclaration commerciale à vérifier au contrat.",
+          "source": "https://yoodli.ai/compare/yoodli-vs-hyperbound"
         },
         "qualiopi-opco": {
           "score": 0.5,
-          "evidence": "Évaluation éditoriale de la compatibilité avec des parcours de formation finançables et des dispositifs Qualiopi/OPCO.",
-          "source": ""
+          "evidence": "La page tarifaire présente Yoodli comme remboursable au titre du développement professionnel, sans documenter le dispositif français Qualiopi ni une prise en charge OPCO. Faire confirmer l’entité porteuse, le parcours et l’accord du financeur avant achat.",
+          "source": "https://yoodli.ai/pricing"
         },
         "scenarios-personnalisables": {
           "score": 4,
@@ -1195,18 +1209,18 @@
         },
         "prix": {
           "score": 4,
-          "evidence": "Évaluation éditoriale de la transparence et de la flexibilité du modèle tarifaire.",
-          "source": ""
+          "evidence": "Yoodli publie un modèle Business par siège, facturé annuellement, et une offre Enterprise pour les organisations de 5 000 salariés et plus. Aucun montant entreprise n’est affiché ; demander hypothèses de volume, services, intégrations et dépassements sur le devis.",
+          "source": "https://yoodli.ai/pricing"
         },
         "coaching-humain": {
           "score": 1,
-          "evidence": "Évaluation éditoriale de la présence d’un accompagnement humain ou de coaching associé.",
-          "source": ""
+          "evidence": "Les offres Business et Enterprise incluent Yoodli Coach et, pour Enterprise, un CSM nommé et de la conception de programme. La page tarifaire ne documente pas de séances de coaching humain incluses ; distinguer accompagnement client, coach IA et coach humain dans le devis.",
+          "source": "https://yoodli.ai/pricing"
         },
         "references-france": {
           "score": 1.5,
-          "evidence": "Évaluation éditoriale de la solidité et de la visibilité des références françaises.",
-          "source": ""
+          "evidence": "L’index officiel publie plusieurs cas clients nommés, mais aucune organisation française nommée n’y a été identifiée lors de la revue du 24 octobre 2026. Une référence européenne anonyme ne démontre pas un déploiement en France.",
+          "source": "https://yoodli.ai/case-studies"
         }
       },
       "changelog": [
@@ -1225,6 +1239,10 @@
         {
           "date": "2026-10-07",
           "note": "Documentation actualisée avec les formats, langues, personnalisations, intégrations et déclarations de sécurité publiés par l’éditeur ; notes inchangées."
+        },
+        {
+          "date": "2026-10-24",
+          "note": "Critères génériques remplacés par des constats sourcés ; cas d’usage management, conversations difficiles, feedback, entretiens de performance, relation client et onboarding ajoutés depuis la documentation officielle. Notes inchangées et aucun test produit réalisé."
         }
       ]
     },
