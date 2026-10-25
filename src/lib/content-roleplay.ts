@@ -23,7 +23,7 @@ export const USE_CASE_PAGES: UseCasePage[] = [
   },
   {
     slug: 'gestion-des-conflits',
-    updated: '2026-10-24',
+    updated: '2026-10-25',
     title: "Formation gestion des conflits : s'entraîner avec le roleplay IA",
     description: "Le roleplay IA appliqué à la gestion des conflits en entreprise : désaccords d'équipe, tensions avec un collaborateur, médiation. Solutions comparées et scénarios de test.",
     answer: "Une formation gestion des conflits apprend à nommer le désaccord, écouter la position de l'autre et chercher une issue acceptable. Le roleplay IA permet de s'y entraîner face à un interlocuteur qui s'agace, se ferme ou attaque, sans risque pour la relation réelle. Les solutions les plus adaptées proposent des personnages à intensité émotionnelle réglable et un feedback sur la désescalade. Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les capacités documentées des notes éditoriales ; aucun test standardisé n'est revendiqué.",
@@ -38,7 +38,7 @@ export const USE_CASE_PAGES: UseCasePage[] = [
   },
   {
     slug: 'feedback',
-    updated: '2026-10-24',
+    updated: '2026-10-25',
     title: "S'entraîner au feedback difficile avec le roleplay IA",
     description: 'Donner un feedback négatif sans démotiver : comment le roleplay IA aide les managers à pratiquer, et quelles solutions le font bien.',
     answer: "Le roleplay IA permet de répéter un feedback difficile : formuler les faits et leur impact, faire une demande, puis répondre à la réaction du collaborateur simulé. La qualité dépend de la crédibilité du personnage, de la grille utilisée et des justifications associées au score. Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les capacités documentées des notes éditoriales ; aucun test standardisé n'est revendiqué.",
@@ -114,7 +114,7 @@ export const USE_CASE_PAGES: UseCasePage[] = [
   },
   {
     slug: 'recrutement',
-    updated: '2026-10-04',
+    updated: '2026-10-25',
     title: "Former les recruteurs et managers à l'entretien de recrutement avec le roleplay IA",
     description: "Roleplay IA pour l'entretien de recrutement côté recruteur : questions structurées, non-discrimination, évaluation des réponses.",
     answer: "Côté recruteur, le roleplay IA sert à s'entraîner à mener un entretien structuré : poser les mêmes questions à tous, creuser une réponse vague, éviter les questions discriminatoires, conclure proprement. Il s'adresse aux managers qui recrutent occasionnellement autant qu'aux recruteurs. À ne pas confondre avec les simulateurs d'entretien destinés aux candidats. Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les capacités documentées des notes éditoriales ; aucun test standardisé n'est revendiqué.",

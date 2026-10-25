@@ -1,6 +1,6 @@
 {
   "category": "roleplay-ia",
-  "updated": "2026-10-17",
+  "updated": "2026-10-25",
   "providers": [
     {
       "slug": "coachello",
@@ -144,7 +144,7 @@
       "url": "https://face-up.fr/",
       "country": "France / Belgique",
       "international": false,
-      "description": "Simulateur conversationnel IA pour la vente, la relation client et le management, avec avatars et voix.",
+      "description": "Outil auteur de simulations conversationnelles IA pour la vente, la relation client, le management et les situations RH, avec voix et avatars.",
       "formats": [
         "voix",
         "avatar"
@@ -152,55 +152,65 @@
       "use_cases": [
         "equipes-commerciales",
         "relation-client",
-        "managers"
+        "managers",
+        "feedback",
+        "gestion-des-conflits",
+        "recrutement"
       ],
       "public_claims": {
-        "rgpd": "Face Up indique un hébergement des données dans l’Union européenne et présente sa solution comme conforme au RGPD et à l’AI Act. Il s’agit d’informations publiées par l’éditeur, non auditées par Guide RH.",
-        "integrations": "SCORM 1.2/2004, LTI 1.3, SSO SAML/OIDC ; Moodle, Docebo, 360Learning, Rise Up, Didask, TalentLMS, LearnUpon",
-        "clients": "Lefebvre Dalloz, Supermarché Match, Cegos, Crédit Agricole, Generali, URGO Medical (déclarés)",
+        "rgpd": "Face Up déclare un hébergement dans l’Union européenne, un chiffrement AES-256 au repos et TLS 1.2+ en transit, l’absence d’entraînement sur les contenus de session et une conservation des enregistrements audiovisuels de 30 jours par défaut. DPA, sous-traitants et configuration contractuelle restent à vérifier.",
+        "integrations": "SCORM 1.2/2004 et LTI 1.3 annoncés dans toutes les offres ; SSO SAML/OIDC, CRM, SIRH et API annoncés dans l’offre Enterprise. La configuration exacte reste à tester avec le LMS retenu.",
+        "clients": "Eurotunnel, Crédit Agricole, Generali, Lefebvre Dalloz, Amue, URGO Medical, Supermarchés Match et Cegos apparaissent dans les pages éditeur consultées. Les logos et le cas Eurotunnel ne constituent pas une validation indépendante des résultats.",
         "pricing": "La page tarifs affiche une offre de lancement à partir de 2 700 € pour deux mois et jusqu’à 75 utilisateurs. Les abonnements récurrents sont décrits par session ou licence, sans prix unitaire public.",
-        "qualiopi": "Certification Qualiopi annoncée"
+        "qualiopi": "Face Up explique comment ses traces peuvent contribuer à quatre indicateurs Qualiopi. La page consultée ne prouve pas que l’achat du logiciel est certifié ou automatiquement finançable par un OPCO."
       },
       "sources": [
         "https://face-up.fr/",
         "https://face-up.fr/solution/roleplays",
+        "https://face-up.fr/enterprise",
+        "https://face-up.fr/training-organization",
+        "https://face-up.fr/solution/debriefing",
+        "https://face-up.fr/legal/privacy-policy",
+        "https://face-up.fr/legal/ai-transparency",
         "https://face-up.fr/tarifs"
       ],
       "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
-      "ideal_for": "Organisations recherchant une solution centrée sur vente et équipes commerciales, relation client, formation des managers.",
+      "ideal_for": "Organisations qui veulent créer leurs propres simulations pour la vente, la relation client, le management et l’entraînement à des conversations RH.",
       "strengths": [
-        "Intégrations annoncées : SCORM 1.2/2004, LTI 1.3, SSO SAML/OIDC ; Moodle, Docebo, 360Learning, Rise Up, Didask, TalentLMS, LearnUpon.",
-        "Formats annoncés : voix, avatar."
+        "Outil auteur, débrief verbal et non verbal, suivi par cohorte et exports documentés par l’éditeur.",
+        "SCORM 1.2/2004 et LTI 1.3 annoncés dans toutes les offres ; SSO, CRM, SIRH et API selon l’offre.",
+        "Formats annoncés : voix et avatar."
       ],
       "limits": [
         "Seule l’offre de lancement affiche un montant ; le prix unitaire des abonnements et le coût total des options nécessitent un devis.",
-        "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
+        "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios.",
+        "Face Up présente le débrief comme pédagogique et non destiné au recrutement, à la sélection ou aux décisions de carrière ; cadrer les accès et usages des scores."
       ],
       "pricing_public": "Offre de lancement affichée à partir de 2 700 € pour deux mois et jusqu’à 75 utilisateurs ; abonnements sur devis.",
-      "french_clients": "Lefebvre Dalloz, Supermarché Match, Cegos, Crédit Agricole, Generali, URGO Medical (déclarés)",
+      "french_clients": "Eurotunnel, Crédit Agricole, Generali, Lefebvre Dalloz, Amue, URGO Medical, Supermarchés Match et Cegos apparaissent sur les pages éditeur consultées ; résultats non vérifiés indépendamment.",
       "tested_on": null,
       "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
           "score": 5,
-          "evidence": "L’éditeur présente en français des simulations vocales et avec avatar. La qualité de reconnaissance et de restitution du français n’a pas été testée par Guide RH.",
-          "source": "https://face-up.fr/solution/roleplays"
+          "evidence": "L’éditeur présente des démonstrations en français et annonce plus de 60 langues. La reconnaissance, la restitution et la stabilité du français n’ont pas été testées par Guide RH.",
+          "source": "https://face-up.fr/enterprise"
         },
         "rgpd-hebergement": {
           "score": 4.5,
-          "evidence": "Face Up indique que les données restent en Europe et annonce un hébergement UE ainsi qu’une conformité RGPD. Guide RH n’a pas vérifié les contrats, sous-traitants ni durées de conservation.",
-          "source": "https://face-up.fr/"
+          "evidence": "La politique de confidentialité déclare un hébergement dans l’Union européenne, un chiffrement AES-256 au repos et TLS 1.2+ en transit, aucune utilisation des contenus pour entraîner les modèles et 30 jours de conservation par défaut pour les enregistrements activés. Guide RH n’a pas audité le DPA, les sous-traitants ni la configuration contractuelle.",
+          "source": "https://face-up.fr/legal/privacy-policy"
         },
         "ai-act": {
           "score": 4.5,
-          "evidence": "L’éditeur revendique une conformité à l’AI Act sur sa page produit. Cette déclaration ne constitue pas un audit indépendant de l’usage prévu par chaque client.",
-          "source": "https://face-up.fr/"
+          "evidence": "L’éditeur se qualifie de fournisseur, classe son système à risque minimal pour l’usage pédagogique décrit et documente l’information avant et pendant l’interaction, le marquage des contenus et la supervision humaine. Cette analyse éditeur ne couvre pas une réutilisation des scores pour une décision RH et ne constitue pas un avis juridique indépendant.",
+          "source": "https://face-up.fr/legal/ai-transparency"
         },
         "qualiopi-opco": {
           "score": 5,
-          "evidence": "Évaluation éditoriale de la compatibilité avec des parcours de formation finançables et des dispositifs Qualiopi/OPCO.",
-          "source": ""
+          "evidence": "Face Up relie ses scénarios, débriefs et traces de progression aux indicateurs Qualiopi 5, 12, 17 et 19. Cela ne prouve ni une certification Qualiopi du logiciel ni une prise en charge OPCO automatique ; vérifier le prestataire, le parcours et l’accord de financement.",
+          "source": "https://face-up.fr/training-organization"
         },
         "scenarios-personnalisables": {
           "score": 4.5,
@@ -214,13 +224,13 @@
         },
         "analytics-feedback": {
           "score": 4,
-          "evidence": "Face Up documente un score par compétence, un replay horodaté, des moments clés, une progression par apprenant ou équipe et l’export des données.",
-          "source": "https://face-up.fr/"
+          "evidence": "Face Up documente autoévaluation, score selon la grille du formateur, transcription, points forts, axes de progrès, plan d’action, replay horodaté et suivi de cohorte. La pertinence et la reproductibilité annoncée du débrief restent à valider sur un pilote.",
+          "source": "https://face-up.fr/solution/debriefing"
         },
         "integration-lms": {
           "score": 5,
-          "evidence": "L’éditeur documente SCORM 1.2/2004, LTI 1.3, SSO SAML/OIDC et cite plusieurs LMS. La compatibilité exacte doit être validée dans la configuration achetée.",
-          "source": "https://face-up.fr/"
+          "evidence": "L’éditeur annonce SCORM 1.2/2004 et LTI 1.3 dans toutes les offres, puis SSO SAML/OIDC, CRM, SIRH et API dans l’offre Enterprise. Versions, données remontées et compatibilité avec le LMS cible doivent être testées.",
+          "source": "https://face-up.fr/enterprise"
         },
         "prix": {
           "score": 2.5,
@@ -229,13 +239,13 @@
         },
         "coaching-humain": {
           "score": 1.5,
-          "evidence": "Évaluation éditoriale de la présence d’un accompagnement humain ou de coaching associé.",
-          "source": ""
+          "evidence": "La documentation place le formateur au centre : il crée les critères, accède aux sessions et conduit le débrief ; l’équipe Face Up accompagne les premiers scénarios. Aucune séance de coaching humain incluse avec un coach nommé n’est documentée dans les pages consultées.",
+          "source": "https://face-up.fr/enterprise"
         },
         "references-france": {
           "score": 4.5,
-          "evidence": "Évaluation éditoriale de la solidité et de la visibilité des références françaises.",
-          "source": ""
+          "evidence": "La page Enterprise affiche plusieurs organisations françaises et décrit un cas Eurotunnel/CIFFCO. Il s’agit d’une publication de l’éditeur : Guide RH n’a pas vérifié le périmètre, les résultats ni l’autorisation d’usage de chaque logo.",
+          "source": "https://face-up.fr/enterprise"
         }
       },
       "changelog": [
@@ -254,6 +264,10 @@
         {
           "date": "2026-10-07",
           "note": "Ajout de sources éditeur par critère et qualification explicite des déclarations non auditées ; notes inchangées."
+        },
+        {
+          "date": "2026-10-25",
+          "note": "Actualisation des preuves RGPD et AI Act, correction de la portée Qualiopi, ajout des cas feedback, conflit et recrutement, et sources sur les onze critères ; notes inchangées."
         }
       ]
     },

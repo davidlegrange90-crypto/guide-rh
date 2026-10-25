@@ -358,6 +358,26 @@
 - Access rechecked: Windsor exposes only the unrelated Coachello GA4 property and coachello.ai Search Console property; neither was queried as Guide RH. Vercel lists no teams and project lookup returns 403 for guide-rh under davidlegrange90-5664 / team_DogQuXCMTVI6mYpMCOQUOD5G. Need explicit access to that Vercel team plus Web Analytics and edge/request-log read permission, dated exports, or an authorized Guide RH analytics property. No accessible Bing or Cloudflare AI Crawl Control dataset. Crawling would not prove training, indexing, citations or recommendations.
 - Prepared guarded main publication; the run report records GitHub deployment status and live verification.
 
+## 2026-10-25: Face Up evidence, Qualiopi scope and documented use cases
+- Fresh main `736e40f3e9daf269ac4251ff43e0b0d8a65daeb0`; read README, CHECKLIST and the full progress log. The live Face Up profile returned HTTP 200 but still had generic, unsourced evidence for Qualiopi/OPCO, human coaching and French references, and listed only three use cases.
+- Updated the existing profile from current product, enterprise, training-organization, debriefing, privacy, AI-transparency and pricing pages. All 11 criteria now have a source link. Documented the editor's EU hosting, encryption, retention, no-training, transparency, LMS and cohort-reporting statements with explicit limits; no independent security, legal or product-performance audit claimed.
+- Corrected the unsupported wording “Certification Qualiopi annoncée”. Face Up describes how its traces may contribute to indicators 5, 12, 17 and 19; this does not certify the software or establish automatic OPCO funding.
+- Added three use cases explicitly illustrated in the editor's documentation: feedback, conflict management and recruiter training. Recruiter training is described as pedagogical practice, not candidate selection; Face Up states that the product is not a recruitment or selection tool.
+- Sources read 2026-10-25:
+  - https://face-up.fr/solution/roleplays
+  - https://face-up.fr/enterprise
+  - https://face-up.fr/training-organization
+  - https://face-up.fr/solution/debriefing
+  - https://face-up.fr/legal/privacy-policy
+  - https://face-up.fr/legal/ai-transparency
+  - https://face-up.fr/tarifs
+- All numerical scores, criterion weights, `tested_on`, formats and relationship disclosure remained unchanged. Every other provider object remained unchanged. No customer outcome figures were republished.
+- Validation: `npm run check:content` and `npm run build` passed. Parsed 64 HTML pages, 2,527 internal links/fragments, 64 JSON-LD blocks and 64 unique sitemap URLs. Verified canonical equality, one H1 per page, complete sitemap coverage, all 11 Face Up criterion sources, Face Up links and 2026-10-25 dates on the three added use-case pages, journal/RSS publication and `git diff --check`. No CSS/layout change, device visual audit or field-performance measurement.
+- Before publication, apex, the live Face Up profile and the homepage returned HTTP 200. `www.guide-rh.com` returned HTTP 503; no DNS change made.
+- Traffic windows Europe/Paris: complete day 2026-10-24 versus 2026-10-23; rolling 2026-10-18–2026-10-24 versus 2026-10-11–2026-10-17. Visitors, pageviews, top pages/referrers, AI referrals, AI crawler and user-triggered assistant requests are unavailable, not zero. Provider metric definitions/coverage, verified bot identities, successful/blocked requests, requested pages, last seen and audit exclusions cannot be established.
+- Access rechecked: Windsor exposes only the unrelated Coachello GA4 property and `coachello.ai` Search Console property; neither was queried as Guide RH. Vercel lists no teams and project lookup returns 403 for `guide-rh` under `davidlegrange90-5664` / `team_DogQuXCMTVI6mYpMCOQUOD5G`. The error explicitly requires authorizing this connection for that team, then project Web Analytics and hosting/edge request-log read access. No accessible Bing or Cloudflare AI Crawl Control dataset. Crawling would not prove training, indexing, citations or recommendations.
+- Prepared guarded main publication; the run report records GitHub deployment status and live verification.
+
 ## Prioritized backlog
 1. Revisit Second Nature detailed security/formats when official pages are accessible; verify current certifications only with source evidence and authorized access. Continue auditing remaining provider use-case memberships against explicit sources; Yoodli and onboarding scope have now been reviewed.
 2. Complete a device-level mobile visual audit and establish a measured performance baseline. Keyboard-accessible scroll regions now cover every generated table; do not claim Core Web Vitals or device-level visual success without measurements.
