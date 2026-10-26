@@ -1,6 +1,6 @@
 {
   "category": "roleplay-ia",
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "providers": [
     {
       "slug": "coachello",
@@ -286,31 +286,37 @@
       "use_cases": [
         "managers",
         "equipes-commerciales",
-        "relation-client"
+        "relation-client",
+        "feedback",
+        "recrutement"
       ],
       "public_claims": {
         "rgpd": "Reality Academy publie un hébergement annoncé chez Scaleway à Paris, du chiffrement et des engagements de non-entraînement chez plusieurs sous-traitants IA. Ces informations sont déclaratives et n’ont pas été auditées par Guide RH.",
         "integrations": "SCORM, intégrable dans tout LMS",
-        "clients": "AON, L'Oréal, Caterpillar, BNP Paribas, SNCF (déclarés)",
-        "pricing": "Non publié",
-        "qualiopi": "Qualiopi n° 11756139875 (déclaré)"
+        "clients": "La page d’accueil affiche notamment Crédit Agricole, SNCF, L’Oréal, Société Générale et MAIF parmi les organisations de référence de Reality Academy. Elle ne précise pas lesquelles utilisent Roleplay IA ni le périmètre des déploiements.",
+        "pricing": "Montants non publiés. L’éditeur présente trois modalités : scénarios prêts à l’emploi personnalisables, conception sur mesure avec une équipe pédagogique et création autonome avec Roleplay Creator.",
+        "qualiopi": "Reality Academy se déclare certifié Qualiopi et présente un financement OPCO possible. Le numéro 11756139875 affiché en pied de page est celui d’enregistrement de l’organisme de formation ; aucun certificat Qualiopi ni son périmètre n’est lié sur les pages consultées."
       },
       "sources": [
         "https://www.reality-academy.fr/roleplay-ia",
-        "https://www.reality-academy.fr/blog/eu-ai-act-formation-ia-conformite"
+        "https://www.reality-academy.fr/blog/eu-ai-act-formation-ia-conformite",
+        "https://www.reality-academy.fr/"
       ],
       "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
-      "ideal_for": "Organisations recherchant une solution centrée sur formation des managers, vente et équipes commerciales, relation client.",
+      "ideal_for": "Organisations recherchant des simulations vocales pour le management, le feedback, la vente, la relation client ou la formation au recrutement inclusif.",
       "strengths": [
         "Intégrations annoncées : SCORM, intégrable dans tout LMS.",
-        "Formats annoncés : texte, voix, avatar."
+        "Formats annoncés : texte, voix, avatar.",
+        "Rapport individuel annoncé sur 18 critères, avec vue globale pour les formateurs et administrateurs."
       ],
       "limits": [
-        "Tarification enterprise non communiquée publiquement.",
+        "Montants non publiés : demander un devis détaillant conception, personnalisation, intégration LMS, volume d’utilisateurs ou de sessions et accompagnement.",
+        "Le certificat Qualiopi, son titulaire et son périmètre doivent être vérifiés ; la prise en charge OPCO n’est pas automatique.",
+        "Les organisations citées le sont pour l’offre Reality Academy au sens large ; la page consultée ne documente pas leur usage de Roleplay IA.",
         "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
       ],
-      "pricing_public": "Non publié",
-      "french_clients": "AON, L'Oréal, Caterpillar, BNP Paribas, SNCF (déclarés)",
+      "pricing_public": "Montants non publiés ; trois modalités de déploiement sont décrites par l’éditeur.",
+      "french_clients": "Crédit Agricole, SNCF, L’Oréal, Société Générale et MAIF sont affichés parmi les références générales de Reality Academy ; usage de Roleplay IA non précisé.",
       "tested_on": null,
       "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
@@ -357,18 +363,18 @@
         },
         "prix": {
           "score": 2.5,
-          "evidence": "Évaluation éditoriale de la transparence et de la flexibilité du modèle tarifaire.",
-          "source": ""
+          "evidence": "Les montants ne sont pas publiés. La page présente trois modalités : scénarios prêts à l’emploi personnalisables, conception sur mesure avec équipe pédagogique dédiée et création autonome via Roleplay Creator. Demander un devis comparable couvrant conception, LMS, volume et accompagnement.",
+          "source": "https://www.reality-academy.fr/roleplay-ia"
         },
         "coaching-humain": {
           "score": 2,
-          "evidence": "Évaluation éditoriale de la présence d’un accompagnement humain ou de coaching associé.",
-          "source": ""
+          "evidence": "L’offre sur mesure mentionne une équipe pédagogique dédiée et l’intégration possible dans une formation intra-entreprise. La page consultée ne documente pas de séances individuelles avec un coach humain incluses dans l’offre Roleplay IA.",
+          "source": "https://www.reality-academy.fr/roleplay-ia"
         },
         "references-france": {
           "score": 4.5,
-          "evidence": "Évaluation éditoriale de la solidité et de la visibilité des références françaises.",
-          "source": ""
+          "evidence": "La page d’accueil affiche notamment Crédit Agricole, SNCF, L’Oréal, Société Générale et MAIF parmi les organisations de référence de Reality Academy. Elle ne précise pas lesquelles utilisent Roleplay IA, le périmètre des déploiements ni leurs résultats.",
+          "source": "https://www.reality-academy.fr/"
         }
       },
       "changelog": [
@@ -387,6 +393,10 @@
         {
           "date": "2026-10-07",
           "note": "Ajout de sources éditeur par critère sur le sur-mesure, SCORM, l’hébergement et la gouvernance IA ; notes inchangées."
+        },
+        {
+          "date": "2026-10-26",
+          "note": "Tarification, accompagnement et références rendus spécifiques et sourcés ; portée du numéro d’enregistrement et de Qualiopi clarifiée ; cas feedback et recrutement inclusif ajoutés. Notes inchangées et aucun test produit réalisé."
         }
       ]
     },
