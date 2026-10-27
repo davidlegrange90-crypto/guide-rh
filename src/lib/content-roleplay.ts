@@ -97,7 +97,7 @@ export const USE_CASE_PAGES: UseCasePage[] = [
   },
   {
     slug: 'onboarding',
-    updated: '2026-10-24',
+    updated: '2026-10-27',
     title: "Roleplay IA pour l'onboarding : managers et commerciaux",
     description: "Choisir un roleplay IA pour la prise de poste : distinguer onboarding managérial et commercial, préparer les scénarios et vérifier le parcours avant achat.",
     answer: "L'onboarding ne recouvre pas les mêmes conversations selon le poste : premier entretien individuel pour un manager, découverte client ou objections pour un commercial. Le roleplay IA peut servir à répéter ces situations dans un parcours d'intégration. Définissez d'abord le public, les scénarios et la validation humaine attendue, puis vérifiez l'intégration au parcours existant. Le tableau réunit des solutions référencées pour l'onboarding au sens large : leur présence ne démontre pas qu'elles couvrent chaque métier. Les notes restent documentaires ; aucun test standardisé n'est revendiqué.",
@@ -147,7 +147,7 @@ export const USE_CASE_PAGES: UseCasePage[] = [
   },
   {
     slug: 'ramp-up',
-    updated: '2026-10-03',
+    updated: '2026-10-27',
     title: 'Accélérer le ramp-up commercial avec le roleplay IA',
     description: "Construire un pilote de roleplay IA pour le ramp-up commercial : onboarding, grille de compétences, mesure du délai de validation et questions aux éditeurs.",
     answer: "Le roleplay IA peut soutenir le ramp-up en remplaçant une partie de l'apprentissage passif par de la pratique répétée : pitch, découverte, objections, négociation et conversations propres au produit. Les nouveaux commerciaux peuvent s'entraîner dès les premières semaines, recevoir un feedback immédiat et recommencer sans monopoliser un manager. Le gain de temps n'est pas automatique : il doit être mesuré sur votre population. Suivez le délai jusqu'au niveau attendu, les répétitions et la progression sur une grille stable, puis comparez avec un parcours de référence comparable.",

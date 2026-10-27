@@ -393,8 +393,25 @@
 - Access rechecked: Windsor exposes only the unrelated Coachello GA4 property and `coachello.ai` Search Console property; neither was queried as Guide RH. Vercel lists no teams and project lookup returns HTTP 403 for `guide-rh` under `davidlegrange90-5664` / `team_DogQuXCMTVI6mYpMCOQUOD5G`; the connector requires team authorization before Web Analytics or request logs can be read. No accessible Bing or Cloudflare AI Crawl Control dataset. Crawling would not prove training, indexing, citations or recommendations.
 - Prepared guarded main publication; the run report records GitHub deployment status and live verification.
 
+## 2026-10-27: Super Sales data transfers, buying guidance and use cases
+- Fresh main `4f07fddfbb1b504c8867912f350f33646ddf3b37`; read README, CHECKLIST and the full progress log. The live Super Sales profile returned HTTP 200 but used one general source, left four criterion sources empty and repeated a broad Europe-only data statement.
+- Reconciled current official product, CGU, privacy and legal pages. The privacy policy lists Scaleway in France, Firebase in the EU and OpenAI in the United States with SCC and/or Data Privacy Framework, while the commercial page says data never leave the EU. The profile now flags that inconsistency for contractual clarification instead of presenting the marketing wording as established fact.
+- Documented account and simulation retention, AI-output limitations, public plan quotas, the absence of published LMS/SSO/SCORM/xAPI details, automated rather than human coaching, and anonymous rather than verifiable customer references. All 11 criteria now have a source link.
+- Added onboarding and ramp-up as explicitly presented commercial training uses, without republishing the claimed reduction in ramp-up time as a verified result.
+- Sources read and returned HTTP 200 on 2026-10-27:
+  - https://www.super-sales.fr/
+  - https://www.super-sales.fr/cgu
+  - https://www.super-sales.fr/politique-confidentialite
+  - https://www.super-sales.fr/mentions-legales
+- All numerical scores, criterion weights, `tested_on`, formats and relationship disclosure remained unchanged. Every other provider object remained unchanged. No anonymous testimonial result was treated as verified, and no review or product-test result was added.
+- Validation: `npm run check:content` and `npm run build` passed. Parsed 64 HTML pages, 2,551 internal links/fragments, 64 JSON-LD blocks and 64 unique sitemap URLs. Verified canonical equality, one H1 per page, complete sitemap coverage, all 11 Super Sales criterion sources, links and 2026-10-27 dates on onboarding and ramp-up, journal/RSS publication and `git diff --check`. No CSS/layout change, device visual audit or field-performance measurement.
+- Before publication, apex, the comparison, Super Sales profile and both affected use-case pages returned HTTP 200. `www.guide-rh.com` returned HTTP 503; no DNS change made.
+- Traffic windows Europe/Paris: complete day 2026-10-26 versus 2026-10-25; rolling 2026-10-20–2026-10-26 versus 2026-10-13–2026-10-19. Visitors, pageviews, top pages/referrers, AI referrals, AI crawler and user-triggered assistant requests are unavailable, not zero. Provider metric definitions/coverage, verified bot identities, successful/blocked requests, requested pages, last seen and audit exclusions cannot be established.
+- Access rechecked: Windsor exposes only the unrelated Coachello GA4 property and `coachello.ai` Search Console property; neither was queried as Guide RH. Vercel project lookup still returns HTTP 403 for `guide-rh` under `davidlegrange90-5664` / `team_DogQuXCMTVI6mYpMCOQUOD5G`; team access plus Web Analytics and hosting/edge request-log read permissions remain missing. No accessible Bing or Cloudflare AI Crawl Control dataset. Crawling would not prove training, indexing, citations or recommendations.
+- Prepared guarded main publication; the run report records GitHub deployment status and live verification.
+
 ## Prioritized backlog
-1. Revisit Second Nature detailed security/formats when official pages are accessible; verify current certifications only with source evidence and authorized access. Continue auditing remaining provider use-case memberships against explicit sources; Yoodli, Reality Academy and onboarding scope have now been reviewed.
+1. Revisit Second Nature detailed security/formats when official pages are accessible; verify current certifications only with source evidence and authorized access. Continue auditing remaining provider use-case memberships against explicit sources; Yoodli, Reality Academy, Super Sales and onboarding scope have now been reviewed.
 2. Complete a device-level mobile visual audit and establish a measured performance baseline. Keyboard-accessible scroll regions now cover every generated table; do not claim Core Web Vitals or device-level visual success without measurements.
 3. Investigate www hostname with hosting/DNS access; keep apex canonical. No speculative DNS edits.
 4. Ownership, funding and author credentials require verified facts from the owner. Do not fabricate disclosures.

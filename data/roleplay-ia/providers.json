@@ -1,6 +1,6 @@
 {
   "category": "roleplay-ia",
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "providers": [
     {
       "slug": "coachello",
@@ -525,35 +525,43 @@
       "url": "https://www.super-sales.fr/",
       "country": "France",
       "international": false,
-      "description": "Simulateur d'appels de vente IA avec avatars générés à partir de profils LinkedIn et scoring automatique.",
+      "description": "Simulateur d'appels de vente IA avec avatars générés à partir de profils LinkedIn, scoring automatique et parcours d’onboarding commercial.",
       "formats": [
         "voix",
         "texte"
       ],
       "use_cases": [
-        "equipes-commerciales"
+        "equipes-commerciales",
+        "onboarding",
+        "ramp-up"
       ],
       "public_claims": {
-        "rgpd": "Europe et conformité RGPD déclarées ; pièces contractuelles à vérifier.",
-        "integrations": "Non précisé",
-        "clients": "Secteurs cités, sans entreprises nommées vérifiables sur la page.",
-        "pricing": "Starter gratuit (3 simulations/mois), Pro 49 €/utilisateur/mois (10 simulations), Entreprise dès 99 €/utilisateur/mois (consulté le 8 octobre 2026)."
+        "rgpd": "La politique de confidentialité indique Scaleway en France, Firebase en UE et OpenAI aux États-Unis, avec SCC et/ou Data Privacy Framework pour les transferts. Cela contredit la formulation commerciale selon laquelle les données ne quittent jamais l’UE ; périmètre et garanties à clarifier contractuellement.",
+        "integrations": "Aucun protocole LMS, SSO, SCORM ou xAPI documenté sur les pages produit et CGU consultées.",
+        "clients": "Trois témoignages abrégés par fonction et secteur sont publiés, sans entreprise nommée ni cas client vérifiable.",
+        "pricing": "Starter gratuit (3 simulations/mois), Pro 49 €/utilisateur/mois (10 simulations), Entreprise à partir de 99 €/utilisateur/mois avec simulations illimitées (consulté le 27 octobre 2026)."
       },
       "sources": [
-        "https://www.super-sales.fr/"
+        "https://www.super-sales.fr/",
+        "https://www.super-sales.fr/cgu",
+        "https://www.super-sales.fr/politique-confidentialite",
+        "https://www.super-sales.fr/mentions-legales"
       ],
       "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
-      "ideal_for": "Organisations recherchant une solution centrée sur vente et équipes commerciales.",
+      "ideal_for": "Équipes commerciales francophones souhaitant entraîner les appels, intégrer de nouvelles recrues et suivre leur progression dans un même outil.",
       "strengths": [
-        "Positionnement spécialisé sur la simulation conversationnelle.",
-        "Formats annoncés : voix, texte."
+        "Positionnement spécialisé sur les simulations de vente et l’onboarding commercial.",
+        "Formats voix et texte, scénarios personnalisés, scoring et tableaux de bord annoncés.",
+        "Tarifs et quotas publics pour les trois offres."
       ],
       "limits": [
-        "Les conditions enterprise et services associés restent à confirmer au cas par cas.",
+        "Faire clarifier le parcours des données : la page commerciale annonce des données restant en Europe, tandis que la politique de confidentialité liste OpenAI aux États-Unis.",
+        "Aucune intégration LMS, SSO, SCORM ou xAPI n’est documentée publiquement ; demander une démonstration du flux cible.",
+        "Les témoignages sont anonymisés et les gains annoncés ne sont pas vérifiables à partir des pages consultées.",
         "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
       ],
-      "pricing_public": "Starter gratuit (3 simulations/mois), Pro 49 €/utilisateur/mois (10 simulations), Entreprise dès 99 €/utilisateur/mois (consulté le 8 octobre 2026).",
-      "french_clients": "Secteurs cités, sans entreprises nommées vérifiables sur la page.",
+      "pricing_public": "Starter gratuit avec 3 simulations/mois ; Pro à 49 €/utilisateur/mois avec 10 simulations ; Entreprise à partir de 99 €/utilisateur/mois avec simulations illimitées (consulté le 27 octobre 2026).",
+      "french_clients": "Trois témoignages abrégés par fonction et secteur, sans entreprise nommée ni cas client vérifiable.",
       "tested_on": null,
       "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
       "right_of_reply": "",
@@ -565,18 +573,18 @@
         },
         "rgpd-hebergement": {
           "score": 4,
-          "evidence": "Hébergement européen et RGPD déclarés. Demander DPA, sous-traitants et conservation ; aucune conformité auditée par Guide RH.",
-          "source": "https://www.super-sales.fr/"
+          "evidence": "La politique de confidentialité liste Scaleway en France, Firebase en UE et OpenAI aux États-Unis, avec SCC et/ou Data Privacy Framework. Elle prévoit trois ans après la dernière connexion pour les données de compte et la durée du compte actif pour les simulations. Ces éléments doivent être rapprochés de l’affirmation commerciale selon laquelle les données ne quittent jamais l’UE ; Guide RH ne les a pas audités.",
+          "source": "https://www.super-sales.fr/politique-confidentialite"
         },
         "ai-act": {
           "score": 3,
-          "evidence": "La page ne documente pas le périmètre AI Act de cette offre. Demander sa documentation.",
-          "source": ""
+          "evidence": "Les CGU présentent scores et feedbacks comme des outils d’entraînement indicatifs, sans garantie de résultat et sous la responsabilité de l’utilisateur. Elles ne publient toutefois pas d’analyse AI Act, de rôles fournisseur/déployeur ni de documentation sur l’usage prévu.",
+          "source": "https://www.super-sales.fr/cgu"
         },
         "qualiopi-opco": {
           "score": 1,
-          "evidence": "Aucun justificatif Qualiopi/OPCO identifié sur la page consultée. Faire confirmer tout financement.",
-          "source": ""
+          "evidence": "Les pages produit, tarifaires et contractuelles consultées ne documentent ni certification Qualiopi ni financement OPCO pour l’achat de licences. Une absence de mention ne prouve pas l’inéligibilité ; faire confirmer l’entité porteuse, la prestation et l’accord du financeur.",
+          "source": "https://www.super-sales.fr/"
         },
         "scenarios-personnalisables": {
           "score": 4.5,
@@ -595,8 +603,8 @@
         },
         "integration-lms": {
           "score": 2.5,
-          "evidence": "La page consultée ne précise pas de protocole LMS/SSO. Demander une démonstration technique.",
-          "source": ""
+          "evidence": "Les pages produit et CGU consultées ne documentent ni LMS, ni SSO, ni SCORM/xAPI. Demander une démonstration du lancement, du provisionnement et de la remontée des résultats dans l’environnement cible.",
+          "source": "https://www.super-sales.fr/cgu"
         },
         "prix": {
           "score": 5,
@@ -605,8 +613,8 @@
         },
         "coaching-humain": {
           "score": 1,
-          "evidence": "Le coaching décrit est automatisé ; aucune séance humaine incluse documentée.",
-          "source": ""
+          "evidence": "Le coaching décrit est automatisé. L’offre Entreprise annonce un onboarding dédié et un support prioritaire, mais aucune séance individuelle avec un coach humain n’est documentée.",
+          "source": "https://www.super-sales.fr/"
         },
         "references-france": {
           "score": 2.5,
@@ -630,6 +638,10 @@
         {
           "date": "2026-10-08",
           "note": "Sources par critère ajoutées ; quotas tarifaires et limites documentaires clarifiés. Notes inchangées ; aucun test produit réalisé."
+        },
+        {
+          "date": "2026-10-27",
+          "note": "Sous-traitants, transferts, conservation, limites contractuelles et tarifs actualisés ; contradiction sur la localisation des données signalée ; cas onboarding et ramp-up ajoutés. Notes inchangées et aucun test produit réalisé."
         }
       ]
     },
