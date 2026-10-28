@@ -97,7 +97,7 @@ export const USE_CASE_PAGES: UseCasePage[] = [
   },
   {
     slug: 'onboarding',
-    updated: '2026-10-27',
+    updated: '2026-10-28',
     title: "Roleplay IA pour l'onboarding : managers et commerciaux",
     description: "Choisir un roleplay IA pour la prise de poste : distinguer onboarding managérial et commercial, préparer les scénarios et vérifier le parcours avant achat.",
     answer: "L'onboarding ne recouvre pas les mêmes conversations selon le poste : premier entretien individuel pour un manager, découverte client ou objections pour un commercial. Le roleplay IA peut servir à répéter ces situations dans un parcours d'intégration. Définissez d'abord le public, les scénarios et la validation humaine attendue, puis vérifiez l'intégration au parcours existant. Le tableau réunit des solutions référencées pour l'onboarding au sens large : leur présence ne démontre pas qu'elles couvrent chaque métier. Les notes restent documentaires ; aucun test standardisé n'est revendiqué.",

@@ -410,8 +410,27 @@
 - Access rechecked: Windsor exposes only the unrelated Coachello GA4 property and `coachello.ai` Search Console property; neither was queried as Guide RH. Vercel project lookup still returns HTTP 403 for `guide-rh` under `davidlegrange90-5664` / `team_DogQuXCMTVI6mYpMCOQUOD5G`; team access plus Web Analytics and hosting/edge request-log read permissions remain missing. No accessible Bing or Cloudflare AI Crawl Control dataset. Crawling would not prove training, indexing, citations or recommendations.
 - Prepared guarded main publication; the run report records GitHub deployment status and live verification.
 
+## 2026-10-28: Second Nature security, integrations and onboarding evidence
+- Fresh main `d243d42d03a1c03da5e157456776814da4ee48e3`; read README, CHECKLIST and the full progress log. The live Second Nature profile returned HTTP 200 but left five criterion sources empty, described security pages as inaccessible and did not include onboarding among its documented uses.
+- Relied only on current official pages, all read directly and returning HTTP 200 on 2026-10-28. Documented the editor's claims for GCP in the Netherlands, encryption, non-use of customer data for model training, deletion, SOC 2 Type II, ISO 27001 and ISO 27701. These remain vendor claims: certificates and scope, DPA, subprocessors, transfers and retention require buyer verification.
+- Expanded integration evidence to SCORM, LTI, API, SCIM, SAML SSO, named LMS and CRM platforms. Added onboarding as an explicitly documented commercial and customer-service use case. All 11 criteria now have a source link.
+- Sources read 2026-10-28:
+  - https://secondnature.ai/faqs/
+  - https://secondnature.ai/product/
+  - https://secondnature.ai/enterprise/
+  - https://secondnature.ai/use-case/customer-support/
+  - https://secondnature.ai/end-user-license-agreement/
+  - https://lp.secondnature.ai/ai-role-play-sales-training
+  - https://lp.secondnature.ai/
+- All numerical scores, criterion weights, `tested_on`, formats and relationship disclosure remained unchanged. Every other provider object remained unchanged. No promotional outcome, customer review, price, Google review or product-test result was added.
+- Validation: `npm run check:content` and `npm run build` passed. Parsed 64 HTML pages, 2,622 internal links/assets, 64 JSON-LD blocks and 64 unique sitemap URLs. Verified canonical equality, one H1 per page, complete sitemap coverage, all 11 Second Nature criterion sources, eight use-case links including onboarding, visible/structured 2026-10-28 dates, journal/RSS publication and `git diff --check`.
+- Before publication, apex, comparison, Second Nature and onboarding returned HTTP 200. `www.guide-rh.com` returned HTTP 503; no DNS change made.
+- Traffic windows Europe/Paris: complete day 2026-10-27 versus 2026-10-26; rolling 2026-10-21–2026-10-27 versus 2026-10-14–2026-10-20. Visitors, pageviews, top pages/referrers, AI referrals, AI crawler and user-triggered assistant requests are unavailable, not zero. Provider metric definitions/coverage, verified bot identities, successful/blocked requests, requested pages, last seen and audit exclusions cannot be established.
+- Access rechecked: Windsor exposes only the unrelated Coachello GA4 property and `coachello.ai` Search Console property; neither was queried as Guide RH. Vercel lists no teams and project lookup returns HTTP 403 for `guide-rh` under `davidlegrange90-5664` / `team_DogQuXCMTVI6mYpMCOQUOD5G`; team authorization plus Web Analytics and hosting/edge request-log read permissions remain missing. No accessible Bing or Cloudflare AI Crawl Control dataset. Crawling would not prove training, indexing, citations or recommendations.
+- Prepared guarded main publication; the run report records GitHub deployment status and live verification.
+
 ## Prioritized backlog
-1. Revisit Second Nature detailed security/formats when official pages are accessible; verify current certifications only with source evidence and authorized access. Continue auditing remaining provider use-case memberships against explicit sources; Yoodli, Reality Academy, Super Sales and onboarding scope have now been reviewed.
+1. Continue auditing remaining provider evidence and use-case memberships against explicit sources, prioritizing profiles with missing criterion sources. Yoodli, Reality Academy, Super Sales and Second Nature have now been reviewed; Second Nature formats remain unchanged because additional formats were not established by this review.
 2. Complete a device-level mobile visual audit and establish a measured performance baseline. Keyboard-accessible scroll regions now cover every generated table; do not claim Core Web Vitals or device-level visual success without measurements.
 3. Investigate www hostname with hosting/DNS access; keep apex canonical. No speculative DNS edits.
 4. Ownership, funding and author credentials require verified facts from the owner. Do not fabricate disclosures.
