@@ -429,8 +429,27 @@
 - Access rechecked: Windsor exposes only the unrelated Coachello GA4 property and `coachello.ai` Search Console property; neither was queried as Guide RH. Vercel lists no teams and project lookup returns HTTP 403 for `guide-rh` under `davidlegrange90-5664` / `team_DogQuXCMTVI6mYpMCOQUOD5G`; team authorization plus Web Analytics and hosting/edge request-log read permissions remain missing. No accessible Bing or Cloudflare AI Crawl Control dataset. Crawling would not prove training, indexing, citations or recommendations.
 - Prepared guarded main publication; the run report records GitHub deployment status and live verification.
 
+## 2026-10-29: Ringover Pitch Room pricing, references and ramp-up evidence
+- Fresh main `91e2fd5fbe15a5ceebfd6a91ffc95f13096c6687`; read README, CHECKLIST and the full progress log. The live Ringover Pitch Room profile returned HTTP 200 but left four criterion sources empty and did not connect its documented new-recruit training to onboarding or ramp-up.
+- Relied only on current official Ringover pages, all read directly and returning HTTP 200 on 2026-10-29. The profile now states that the public pricing page presents Empower IA conversationnelle without a usable Pitch Room amount, and lists the exact quote inputs to compare. It distinguishes manager feedback and complementary human training from any human coaching service supplied by Ringover.
+- Qualified the launch article's customer names as Ringover-wide references, not proof of Pitch Room deployments. Added onboarding and ramp-up because Ringover explicitly describes simulated-call training for new arrivals and new commercial recruits; no promotional time-saving claim was repeated as a measured result. All 11 criteria now have a source link.
+- Sources read 2026-10-29:
+  - https://www.ringover.fr/plateforme-coaching
+  - https://www.ringover.fr/simulation-entretien-de-vente
+  - https://www.ringover.fr/actualites/ringover-pitch-room-ia-simulation-vente
+  - https://www.ringover.fr/simulateur-entretien-embauche
+  - https://www.ringover.fr/tarifs
+  - https://www.ringover.fr/cgv
+  - https://www.ringover.fr/accord-traitement-donnees
+- All numerical scores, criterion weights, `tested_on`, formats and relationship disclosure remained unchanged. Every other provider object remained unchanged. No price, customer outcome, review, Google review or product-test result was invented.
+- Validation: `npm run check:content` and `npm run build` passed. Parsed 64 HTML pages, 2,634 internal links/assets, 64 JSON-LD blocks and 64 unique sitemap URLs. Verified canonical equality, one H1 per page, complete sitemap coverage, all 11 Ringover criterion sources, five use-case links including onboarding and ramp-up, visible/structured 2026-10-29 dates, journal/RSS publication and `git diff --check`.
+- Before publication, apex, comparison and the affected live pages returned HTTP 200. `www.guide-rh.com` returned HTTP 503; no DNS change made.
+- Traffic windows Europe/Paris: complete day 2026-10-28 versus 2026-10-27; rolling 2026-10-22–2026-10-28 versus 2026-10-15–2026-10-21. Visitors, pageviews, top pages/referrers, AI referrals, AI crawler and user-triggered assistant requests are unavailable, not zero. Provider metric definitions/coverage, verified bot identities, successful/blocked requests, requested pages, last seen and audit exclusions cannot be established.
+- Access rechecked: Windsor exposes only the unrelated Coachello GA4 property and `coachello.ai` Search Console property; neither was queried as Guide RH. Vercel lists no teams and project lookup returns HTTP 403 for `guide-rh` under `davidlegrange90-5664` / `team_DogQuXCMTVI6mYpMCOQUOD5G`; explicit team authorization plus Web Analytics and hosting/edge request-log read permissions remain missing. No accessible Bing or Cloudflare AI Crawl Control dataset. Crawling would not prove training, indexing, citations or recommendations.
+- Prepared guarded main publication; the run report records GitHub deployment status and live verification.
+
 ## Prioritized backlog
-1. Continue auditing remaining provider evidence and use-case memberships against explicit sources, prioritizing profiles with missing criterion sources. Yoodli, Reality Academy, Super Sales and Second Nature have now been reviewed; Second Nature formats remain unchanged because additional formats were not established by this review.
+1. Continue auditing remaining provider evidence and use-case memberships against explicit sources, prioritizing profiles with missing criterion sources. Yoodli, Reality Academy, Super Sales, Second Nature and Ringover Pitch Room have now been reviewed; do not infer capabilities or formats absent from primary documentation.
 2. Complete a device-level mobile visual audit and establish a measured performance baseline. Keyboard-accessible scroll regions now cover every generated table; do not claim Core Web Vitals or device-level visual success without measurements.
 3. Investigate www hostname with hosting/DNS access; keep apex canonical. No speculative DNS edits.
 4. Ownership, funding and author credentials require verified facts from the owner. Do not fabricate disclosures.

@@ -1,6 +1,6 @@
 {
   "category": "roleplay-ia",
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "providers": [
     {
       "slug": "coachello",
@@ -910,36 +910,41 @@
       "use_cases": [
         "equipes-commerciales",
         "relation-client",
-        "recrutement"
+        "recrutement",
+        "onboarding",
+        "ramp-up"
       ],
       "public_claims": {
         "rgpd": "DPA public avec mesures de sécurité, sous-traitants IA et mécanismes de transfert ; périmètre Pitch Room à confirmer contractuellement.",
         "integrations": "Empower, CRM, téléphonie et logiciels de performance commerciale annoncés ; pas d’intégration LMS documentée sur les pages consultées.",
-        "clients": "Aucun cas client Pitch Room nommé dans les sources consultées.",
-        "pricing": "Non publié"
+        "clients": "L’article de lancement cite des clients de la plateforme Ringover, mais aucun cas client Pitch Room nommé. Ces références générales ne prouvent pas l’usage du module.",
+        "pricing": "La page tarifaire présente Empower IA conversationnelle sans montant visible pour Pitch Room. Licences requises, simulations, personnalisation et services sont à chiffrer au devis."
       },
       "sources": [
         "https://www.ringover.fr/plateforme-coaching",
         "https://www.ringover.fr/simulation-entretien-de-vente",
         "https://www.ringover.fr/actualites/ringover-pitch-room-ia-simulation-vente",
+        "https://www.ringover.fr/simulateur-entretien-embauche",
+        "https://www.ringover.fr/tarifs",
         "https://www.ringover.fr/accord-traitement-donnees",
         "https://www.ringover.fr/cgv"
       ],
       "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
-      "ideal_for": "Équipes commerciales, service client ou recrutement qui souhaitent entraîner des conversations vocales et exploiter les résultats dans l’écosystème Empower.",
+      "ideal_for": "Équipes commerciales, service client ou recrutement qui souhaitent intégrer des simulations vocales à l’onboarding et à la montée en compétence dans l’écosystème Empower.",
       "strengths": [
         "Personas, scénarios, difficulté et critères d’évaluation personnalisables annoncés.",
         "Conseils en temps réel et rapport d’analyse post-session annoncés.",
         "Connexion aux données d’appels et aux outils commerciaux via Empower annoncée."
       ],
       "limits": [
-        "Tarification et conditions d’accès à Pitch Room non communiquées publiquement.",
+        "Tarification et conditions d’accès à Pitch Room non communiquées publiquement ; la page tarifaire Empower n’affiche pas de montant exploitable pour ce module.",
+        "Aucun cas client nommé ne permet d’attribuer les références générales de Ringover à Pitch Room.",
         "Vérifier la transcription, la latence, la calibration des conseils, les droits managers et les flux de données sur un pilote."
       ],
-      "pricing_public": "Non publié",
-      "french_clients": "Aucun cas client Pitch Room français nommé dans les sources consultées.",
+      "pricing_public": "Aucun prix Pitch Room visible sur la page tarifaire Ringover consultée le 29 octobre 2026.",
+      "french_clients": "Aucun cas client Pitch Room français nommé dans les sources officielles consultées ; les références de l’article de lancement concernent Ringover au sens large.",
       "tested_on": null,
-      "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
+      "test_notes": "Revue documentaire du 29 octobre 2026 à partir des pages officielles Pitch Room, vente, recrutement, tarifs, CGV et DPA. Aucun test produit, audit de sécurité ou test standardisé Guide RH réalisé.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
@@ -959,8 +964,8 @@
         },
         "qualiopi-opco": {
           "score": 1,
-          "evidence": "Aucun justificatif Qualiopi ni accord de financement OPCO identifié pour Pitch Room dans les pages consultées. Faire confirmer toute prise en charge avant achat.",
-          "source": ""
+          "evidence": "Aucun justificatif Qualiopi ni accord de financement OPCO n’a été identifié dans la page produit officielle consultée. Cette absence documentaire ne prouve pas l’inéligibilité : faire confirmer l’organisme porteur et toute prise en charge avant achat.",
+          "source": "https://www.ringover.fr/plateforme-coaching"
         },
         "scenarios-personnalisables": {
           "score": 4,
@@ -984,18 +989,18 @@
         },
         "prix": {
           "score": 2.5,
-          "evidence": "Aucun prix Pitch Room identifié publiquement. Demander les licences Empower requises, les volumes de simulation, la personnalisation et les services inclus.",
-          "source": ""
+          "evidence": "La page tarifaire présente Empower IA conversationnelle mais n’affiche pas de montant exploitable pour Pitch Room. Demander les licences requises, les volumes de simulation, la personnalisation et les services inclus.",
+          "source": "https://www.ringover.fr/tarifs"
         },
         "coaching-humain": {
           "score": 1,
-          "evidence": "Les pages consultées décrivent un coaching IA et un suivi par les managers ; aucune séance de coaching humain fournie par Ringover n’y est documentée.",
-          "source": ""
+          "evidence": "La page vente présente la simulation comme complémentaire au coaching ou au feedback d’un manager. Elle ne documente aucune séance de coaching humain fournie par Ringover dans l’offre Pitch Room.",
+          "source": "https://www.ringover.fr/simulation-entretien-de-vente"
         },
         "references-france": {
           "score": 3,
-          "evidence": "Ringover publie des références pour sa plateforme globale, mais aucun cas client Pitch Room français nommé n’a été identifié dans les sources consultées.",
-          "source": ""
+          "evidence": "L’article de lancement cite des clients de Ringover au sens large, mais aucun cas client Pitch Room français nommé. Ces références ne doivent pas être attribuées au module sans confirmation.",
+          "source": "https://www.ringover.fr/actualites/ringover-pitch-room-ia-simulation-vente"
         }
       },
       "changelog": [
@@ -1014,6 +1019,10 @@
         {
           "date": "2026-10-10",
           "note": "Scénarios, cas d’usage, feedback, intégrations et informations contractuelles sur les données actualisés depuis les pages Ringover ; notes inchangées et aucun test produit réalisé."
+        },
+        {
+          "date": "2026-10-29",
+          "note": "Tarifs, coaching humain et références précisés depuis les pages officielles ; onboarding et ramp-up ajoutés comme usages documentés. Notes inchangées."
         }
       ]
     },
