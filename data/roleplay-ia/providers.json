@@ -1,6 +1,6 @@
 {
   "category": "roleplay-ia",
-  "updated": "2026-10-29",
+  "updated": "2026-10-30",
   "providers": [
     {
       "slug": "coachello",
@@ -1042,37 +1042,43 @@
         "managers",
         "feedback",
         "equipes-commerciales",
-        "relation-client"
+        "relation-client",
+        "gestion-des-conflits"
       ],
       "public_claims": {
-        "rgpd": "Uptale déclare utiliser Azure OpenAI, stocker les données exclusivement en Europe, ne pas les transmettre directement à OpenAI et ne pas les utiliser pour entraîner les modèles. Le périmètre contractuel et les durées de conservation restent à confirmer.",
+        "rgpd": "Uptale déclare utiliser Azure OpenAI, stocker les données exclusivement en Europe, ne pas les transmettre directement à OpenAI et ne pas les utiliser pour entraîner les modèles. La page d’accueil annonce aussi une certification ISO 27001. Certificat, périmètre, sous-traitants, régions et durées restent à vérifier.",
         "integrations": "La plateforme documente SSO, export SCORM et intégrations LMS/LXP via xAPI, LTI ou intégration personnalisée.",
-        "clients": "Le cas Monoprix décrit deux capsules de roleplay IA pour la vente, la relation client, le feedback et le coaching terrain des managers.",
+        "clients": "Le cas Monoprix décrit deux capsules de roleplay IA pour la vente, la relation client, le feedback et le coaching terrain des managers. Un cas Orange & HES décrit aussi un jeu de rôle vocal pour techniciens. Les résultats restent des déclarations publiées par Uptale.",
         "pricing": "Les packs Factory publiés débutent à 30 k€ par an et incluent plateforme, CSM et crédits de création ; aucun tarif autonome propre au Roleplay IA n'est publié."
       },
       "sources": [
         "https://www.uptale.io/fr/platform/roleplay-ai/",
+        "https://www.uptale.io/fr/",
+        "https://www.uptale.io/demos-vr/?theme=education",
         "https://www.uptale.io/fr/platform/plateforme/",
         "https://www.uptale.io/en/resources/artificial-intelligence-uptale/",
         "https://www.uptale.io/fr/platform/service-uptale-factory",
-        "https://www.uptale.io/fr/content/cas-client/monoprix-6-points-de-nps-grace-a-lia-conversationnelle/"
+        "https://www.uptale.io/fr/content/cas-client/monoprix-6-points-de-nps-grace-a-lia-conversationnelle/",
+        "https://www.uptale.io/fr/content/cas-client/orange-hes-relation-client-maitriser-excellence-service-disc/"
       ],
       "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
-      "ideal_for": "Entreprises qui veulent intégrer des conversations vocales avec avatars à des parcours immersifs, notamment pour la vente, la relation client et les managers.",
+      "ideal_for": "Entreprises qui veulent intégrer des conversations vocales avec avatars à des parcours immersifs, notamment pour la vente, la relation client, les managers et les tensions professionnelles courantes.",
       "strengths": [
         "Scénarios vocaux avec embranchements, intentions reconnues et client virtuel filmé ou généré par IA.",
         "Conseils en direct, transcription et rapport final fondé sur des critères personnalisés annoncés.",
-        "Déploiement multisupport et connexions LMS documentées au niveau de la plateforme."
+        "Déploiement multisupport et connexions LMS documentées au niveau de la plateforme.",
+        "Cas français Monoprix et Orange publiés par l’éditeur, avec des périmètres roleplay identifiables."
       ],
       "limits": [
         "Les tarifs Factory couvrent une offre plus large ; isoler sur devis le coût du Roleplay IA, les crédits nécessaires et les fonctions incluses.",
         "La création autonome des roleplays est encore annoncée comme bientôt disponible sur la page produit ; vérifier sa disponibilité contractuelle.",
+        "Demander le certificat ISO 27001 actuel, son périmètre et les services couverts plutôt que déduire la certification du seul libellé du site.",
         "Valider sur pilote la qualité du français, la latence, les embranchements et la calibration des critères."
       ],
       "pricing_public": "Packs Factory publiés à 30 k€, 60 k€ ou 100 k€ par an selon le volume de crédits ; prix autonome du Roleplay IA non publié.",
-      "french_clients": "Monoprix est présenté dans un cas client français consacré à deux capsules d’IA conversationnelle ; résultats et périmètre déclarés par Uptale et Monoprix, non vérifiés indépendamment par Guide RH.",
+      "french_clients": "Monoprix est présenté dans un cas consacré à deux capsules d’IA conversationnelle ; Orange & HES dans un jeu de rôle vocal pour techniciens. Résultats et périmètres déclarés dans les cas Uptale, non vérifiés indépendamment par Guide RH.",
       "tested_on": null,
-      "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
+      "test_notes": "Revue documentaire du 30 octobre 2026 à partir des pages officielles Roleplay IA, plateforme, Factory, démos, sécurité déclarée et cas Monoprix et Orange. Aucun test produit, audit de certification ou test standardisé Guide RH réalisé.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
@@ -1092,8 +1098,8 @@
         },
         "qualiopi-opco": {
           "score": 2.5,
-          "evidence": "Aucun justificatif Qualiopi propre à Uptale ni garantie de financement OPCO du Roleplay IA n’a été identifié dans les sources consultées. Faire confirmer l’organisme porteur et l’éligibilité du parcours.",
-          "source": ""
+          "evidence": "Aucun justificatif Qualiopi propre à Uptale ni garantie de financement OPCO du Roleplay IA n’a été identifié dans les pages officielles consultées. Cette absence documentaire ne prouve pas l’inéligibilité : faire confirmer l’organisme porteur et le financement du parcours.",
+          "source": "https://www.uptale.io/fr/"
         },
         "scenarios-personnalisables": {
           "score": 4,
@@ -1127,8 +1133,8 @@
         },
         "references-france": {
           "score": 3.5,
-          "evidence": "Uptale publie un cas Monoprix consacré à deux capsules de roleplay IA pour hôtes de caisse et managers. Les résultats annoncés proviennent du cas client et n’ont pas été vérifiés indépendamment par Guide RH.",
-          "source": "https://www.uptale.io/fr/content/cas-client/monoprix-6-points-de-nps-grace-a-lia-conversationnelle/"
+          "evidence": "Uptale publie un cas Orange & HES décrivant un jeu de rôle avec reconnaissance vocale pour des techniciens, en complément du cas Monoprix déjà référencé. Les résultats annoncés n’ont pas été vérifiés indépendamment par Guide RH.",
+          "source": "https://www.uptale.io/fr/content/cas-client/orange-hes-relation-client-maitriser-excellence-service-disc/"
         }
       },
       "changelog": [
@@ -1147,6 +1153,10 @@
         {
           "date": "2026-10-11",
           "note": "Formats, scénarios, feedback, intégrations, hébergement déclaré, offre Factory et cas Monoprix documentés depuis les sources Uptale ; notes inchangées et aucun test produit réalisé."
+        },
+        {
+          "date": "2026-10-30",
+          "note": "Déclaration ISO 27001, cas vocal Orange et scénario de gestion des conflits documentés ; tous les critères sont sourcés, notes inchangées."
         }
       ]
     },

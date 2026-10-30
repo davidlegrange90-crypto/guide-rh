@@ -23,7 +23,7 @@ export const USE_CASE_PAGES: UseCasePage[] = [
   },
   {
     slug: 'gestion-des-conflits',
-    updated: '2026-10-25',
+    updated: '2026-10-30',
     title: "Formation gestion des conflits : s'entraîner avec le roleplay IA",
     description: "Le roleplay IA appliqué à la gestion des conflits en entreprise : désaccords d'équipe, tensions avec un collaborateur, médiation. Solutions comparées et scénarios de test.",
     answer: "Une formation gestion des conflits apprend à nommer le désaccord, écouter la position de l'autre et chercher une issue acceptable. Le roleplay IA permet de s'y entraîner face à un interlocuteur qui s'agace, se ferme ou attaque, sans risque pour la relation réelle. Les solutions les plus adaptées proposent des personnages à intensité émotionnelle réglable et un feedback sur la désescalade. Guide RH recommande de valider ces points sur un pilote avec vos propres scénarios. Les fiches solution distinguent les capacités documentées des notes éditoriales ; aucun test standardisé n'est revendiqué.",
@@ -31,6 +31,7 @@ export const USE_CASE_PAGES: UseCasePage[] = [
       { h: 'Ce qu\'un bon scénario de conflit doit contenir', body: "<ul><li>Un enjeu concret (répartition de la charge, décision contestée, comportement blessant).</li><li>Un personnage qui réagit à ce que dit l'apprenant, et non un script linéaire.</li><li>Une montée en tension possible si l'apprenant s'y prend mal.</li><li>Un feedback qui distingue le fond (la solution trouvée) et la forme (le ton, l'écoute, les mots qui ont apaisé ou envenimé).</li></ul>" },
       { h: 'Scénario proposé pour un pilote', body: "« Deux membres de votre équipe se reprochent mutuellement un retard de livraison. Vous recevez l'un d'eux, convaincu d'avoir raison. » Utilisez le même contexte, le même niveau de tension et la même grille sur chaque solution. Guide RH propose ce protocole mais ne l'a pas encore exécuté sur les solutions du comparatif." },
       { h: 'Ce qu’il faut vérifier pendant le pilote', body: "Notez séparément la crédibilité des réactions, la latence, la qualité du français et le feedback. Vérifiez surtout si le personnage réagit aux formulations de l'apprenant, si une escalade peut être désamorcée et si le feedback explique quels mots ont aggravé ou apaisé l'échange." },
+      { h: 'Un exemple public et sa limite', body: "<p>Le <a href=\"https://www.uptale.io/demos-vr/?theme=education\" rel=\"noopener\">catalogue de démonstrations Uptale</a> classe « Résolution de conflits RH » parmi les expériences AI Roleplay et l’associe à la méthode OSBD. Cette démonstration établit l’existence d’un scénario public, pas la qualité du dialogue, du feedback ou de l’efficacité pédagogique dans votre contexte. Source éditeur consultée le 30 octobre 2026 ; aucun test Guide RH réalisé.</p>" },
     ],
     faq: [
       { q: "Le roleplay IA convient-il aux conflits graves (harcèlement, discrimination) ?", a: "Non. Ces situations relèvent de procédures et d'acteurs spécialisés (RH, référents, médecine du travail). Le roleplay IA sert aux tensions du quotidien managérial." },

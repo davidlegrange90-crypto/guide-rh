@@ -448,8 +448,27 @@
 - Access rechecked: Windsor exposes only the unrelated Coachello GA4 property and `coachello.ai` Search Console property; neither was queried as Guide RH. Vercel lists no teams and project lookup returns HTTP 403 for `guide-rh` under `davidlegrange90-5664` / `team_DogQuXCMTVI6mYpMCOQUOD5G`; explicit team authorization plus Web Analytics and hosting/edge request-log read permissions remain missing. No accessible Bing or Cloudflare AI Crawl Control dataset. Crawling would not prove training, indexing, citations or recommendations.
 - Prepared guarded main publication; the run report records GitHub deployment status and live verification.
 
+## 2026-10-30: Uptale certification claim, conflict scenario and Orange evidence
+- Fresh main `13558ffc9ff9be4e6edf95cb50cdd7e46a53b5bf`; read README, CHECKLIST and the full progress log. The live Uptale profile returned HTTP 200 but left one criterion source empty, omitted the homepage's current ISO 27001 claim and did not connect its public conflict roleplay to the corresponding use-case guide.
+- Relied only on current official Uptale pages, all read directly and returning HTTP 200 on 2026-10-30. Added the editor's ISO 27001 claim with explicit buyer guidance to request the current certificate, scope and covered services; no certification audit claimed.
+- Added the public “Résolution de conflits RH” AI Roleplay to the conflict-management guide, with a clear limit that a demo does not establish dialogue quality, feedback quality or effectiveness. Added the Orange & HES voice-recognition roleplay alongside the existing Monoprix case without republishing participant or outcome figures as independent results. All 11 criteria now have a source link.
+- Sources read 2026-10-30:
+  - https://www.uptale.io/fr/
+  - https://www.uptale.io/fr/platform/roleplay-ai/
+  - https://www.uptale.io/fr/platform/plateforme/
+  - https://www.uptale.io/fr/platform/service-uptale-factory
+  - https://www.uptale.io/demos-vr/?theme=education
+  - https://www.uptale.io/fr/content/cas-client/monoprix-6-points-de-nps-grace-a-lia-conversationnelle/
+  - https://www.uptale.io/fr/content/cas-client/orange-hes-relation-client-maitriser-excellence-service-disc/
+- All numerical scores, criterion weights, `tested_on`, formats and relationship disclosure remained unchanged. Every other provider object remained unchanged. No certificate details, customer outcome, review, Google review or product-test result was invented.
+- Validation: `npm run check:content` and `npm run build` passed. Parsed 64 HTML pages, 2,641 internal links/assets, 64 JSON-LD blocks and 64 unique sitemap URLs. Verified canonical equality, one H1 per page, complete sitemap coverage, all 11 Uptale criterion sources, five use-case links including conflict management, visible/structured 2026-10-30 dates, journal/RSS publication and `git diff --check`.
+- Before publication, apex, comparison, Uptale and conflict-management pages returned HTTP 200. `www.guide-rh.com` returned HTTP 503; no DNS change made. No layout/CSS change or field-performance measurement was made in this bounded cycle.
+- Traffic windows Europe/Paris: complete day 2026-10-29 versus 2026-10-28; rolling 2026-10-23–2026-10-29 versus 2026-10-16–2026-10-22. Visitors, pageviews, top pages/referrers, AI referrals, AI crawler and user-triggered assistant requests are unavailable, not zero. Provider metric definitions/coverage, verified bot identities, successful/blocked requests, requested pages, last seen and audit exclusions cannot be established.
+- Access rechecked: Windsor exposes only the unrelated Coachello GA4 property and `coachello.ai` Search Console property; neither was queried as Guide RH. Vercel lists no teams and project lookup returns HTTP 403 for `guide-rh` under `davidlegrange90-5664` / `team_DogQuXCMTVI6mYpMCOQUOD5G`; explicit team authorization plus Web Analytics and hosting/edge request-log read permissions remain missing. No accessible Bing or Cloudflare AI Crawl Control dataset. Crawling would not prove training, indexing, citations or recommendations.
+- Prepared guarded main publication; the run report records GitHub deployment status and live verification.
+
 ## Prioritized backlog
-1. Continue auditing remaining provider evidence and use-case memberships against explicit sources, prioritizing profiles with missing criterion sources. Yoodli, Reality Academy, Super Sales, Second Nature and Ringover Pitch Room have now been reviewed; do not infer capabilities or formats absent from primary documentation.
+1. Continue auditing remaining provider evidence and use-case memberships against explicit sources, prioritizing profiles with missing criterion sources. Yoodli, Reality Academy, Super Sales, Second Nature, Ringover Pitch Room and Uptale have now been reviewed; do not infer capabilities or formats absent from primary documentation.
 2. Complete a device-level mobile visual audit and establish a measured performance baseline. Keyboard-accessible scroll regions now cover every generated table; do not claim Core Web Vitals or device-level visual success without measurements.
 3. Investigate www hostname with hosting/DNS access; keep apex canonical. No speculative DNS edits.
 4. Ownership, funding and author credentials require verified facts from the owner. Do not fabricate disclosures.
