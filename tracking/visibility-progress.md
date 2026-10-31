@@ -468,12 +468,33 @@
 - Prepared guarded main publication; the run report records GitHub deployment status and live verification.
 
 ## Prioritized backlog
-1. Continue auditing remaining provider evidence and use-case memberships against explicit sources, prioritizing profiles with missing criterion sources. Yoodli, Reality Academy, Super Sales, Second Nature, Ringover Pitch Room and Uptale have now been reviewed; do not infer capabilities or formats absent from primary documentation.
+1. Continue auditing remaining provider evidence and use-case memberships against explicit sources, prioritizing profiles with missing criterion sources. Yoodli, Reality Academy, Super Sales, Edflex, Second Nature, Ringover Pitch Room and Uptale have now been reviewed; do not infer capabilities or formats absent from primary documentation.
 2. Complete a device-level mobile visual audit and establish a measured performance baseline. Keyboard-accessible scroll regions now cover every generated table; do not claim Core Web Vitals or device-level visual success without measurements.
 3. Investigate www hostname with hosting/DNS access; keep apex canonical. No speculative DNS edits.
 4. Ownership, funding and author credentials require verified facts from the owner. Do not fabricate disclosures.
 5. Search Console/Bing/analytics access needed to measure indexing, search queries, qualified visits and outbound provider clicks. No traffic or ranking result measured yet.
 6. Plan actual product benchmarks only with product access and recorded identical scenarios/rubrics. Do not report proposed tests as executed.
+
+## 2026-10-31: Edflex Qualiopi scope, offer structure and human-support distinction
+- Fresh main `9dcf02e884b8344e29a9b2a910ae038a78c2b873`; read README, CHECKLIST and the full progress log. No AGENTS.md found. The live Edflex profile and apex returned HTTP 200 before publication.
+- Relied only on current official Edflex pages, all read directly and returning HTTP 200 on 2026-10-31. All 11 Edflex criteria now have a source link, up from eight.
+- Qualified Edflex's declaration that it is Qualiopi-certified for training actions: this does not by itself make a roleplay licence eligible for OPCO funding. Buyers should request the current certificate and scope, identify the eligible service and obtain the funder's approval.
+- Documented the public offer structure without inventing prices: Prime and AI Roleplays include roleplays; Ultimate adds a dedicated L&D team, simulation creation and AI-led virtual classes. No amount was publicly displayed, so the profile recommends separating users, sessions, creation, integrations and support in the quote.
+- Distinguished expert support and a dedicated L&D team from individual human coaching for learners. Edflex's published virtual-class description names an AI instructor; no included one-to-one human coaching was inferred.
+- Sources read 2026-10-31:
+  - https://www.edflex.com/roleplays
+  - https://www.edflex.com/offres
+  - https://www.edflex.com/nos-reseaux
+  - https://www.edflex.com/integrations
+  - https://www.edflex.com/coach-ia-formation
+  - https://www.edflex.com/clients/edf-rationalisation-formation-digitale-et-engagement
+- All numerical scores, criterion weights, `tested_on`, formats, use cases and relationship disclosure remained unchanged. Every other provider object remained unchanged. No price, funding approval, review, Google review, customer result or product-test result was invented.
+- Validation: `npm run check:content` and `npm run build` passed. Parsed 64 HTML pages, 2,843 internal links/assets, 64 JSON-LD blocks and 64 unique sitemap URLs. Verified canonical equality, one H1 per page, complete sitemap coverage, internal targets and fragments, all 11 Edflex criterion sources, protected provider fields, journal/RSS publication and `git diff --check`.
+- No layout/CSS change, device visual audit or field-performance measurement was made in this bounded cycle.
+- Apex returned HTTP 200; `www.guide-rh.com` returned HTTP 503 from this environment. No DNS change made.
+- Traffic windows Europe/Paris: complete day 2026-10-30 versus 2026-10-29; rolling 2026-10-24–2026-10-30 versus 2026-10-17–2026-10-23. Visitors, pageviews, top pages/referrers, AI referrals, AI crawler and user-triggered assistant requests are unavailable, not zero. Provider metric definitions/coverage, verified bot identities, successful/blocked requests, requested pages, last seen and audit exclusions cannot be established.
+- Access rechecked: Windsor exposes only the unrelated Coachello GA4 property and `coachello.ai` Search Console property; neither was queried as Guide RH. Vercel lists no teams and project lookup returns HTTP 403 for `guide-rh` under `davidlegrange90-5664` / `team_DogQuXCMTVI6mYpMCOQUOD5G`; explicit team authorization plus Web Analytics and hosting/edge request-log read permissions remain missing. No accessible Bing or Cloudflare AI Crawl Control dataset. Crawling would not prove training, indexing, citations or recommendations.
+- Prepared guarded main publication; the run report records GitHub deployment status and live verification.
 
 ## Operating rules
 Read current main and this log before editing. Choose meaningful bounded improvements, not a daily page quota. Build/content checks must pass; validate changed links and structured data; push without force and verify deployment/live pages. Record verified results separately from hypotheses and pending checks. No paid services or outreach authorized.

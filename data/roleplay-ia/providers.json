@@ -666,14 +666,16 @@
         "rgpd": "Edflex déclare un hébergement exclusivement européen sur AWS et une pseudonymisation avant traitement par les fournisseurs d’IA ; pièces contractuelles à vérifier.",
         "integrations": "Intégrations LMS/LXP, SIRH, Teams, Slack et SSO annoncées pour la plateforme ; périmètre roleplay à confirmer.",
         "clients": "EDF publie un cas client mentionnant l’usage des roleplays IA Edflex.",
-        "pricing": "Non publié"
+        "pricing": "Les offres Prime et AI Roleplays incluent des roleplays IA ; Ultimate ajoute une équipe L&D dédiée et la création de simulations. Aucun montant public n’est affiché."
       },
       "sources": [
         "https://www.edflex.com/roleplays",
         "https://www.edflex.com/blog/nouveautes-edflex-2026-episode-1",
         "https://www.edflex.com/integrations",
         "https://www.edflex.com/coach-ia-formation",
-        "https://www.edflex.com/clients/edf-rationalisation-formation-digitale-et-engagement"
+        "https://www.edflex.com/clients/edf-rationalisation-formation-digitale-et-engagement",
+        "https://www.edflex.com/offres",
+        "https://www.edflex.com/nos-reseaux"
       ],
       "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
       "ideal_for": "Organisations souhaitant intégrer des exercices texte ou voix à une plateforme de contenus et à leur écosystème de formation.",
@@ -683,13 +685,14 @@
         "Intégrations LMS/LXP, SIRH et outils de travail documentées au niveau de la plateforme."
       ],
       "limits": [
-        "Tarification non communiquée publiquement.",
+        "Aucun montant public : comparer à périmètre égal les utilisateurs, sessions, création de simulations, intégrations et accompagnement.",
+        "La certification Qualiopi déclarée concerne les actions de formation d’Edflex ; elle ne rend pas automatiquement une licence roleplay finançable.",
         "Vérifier en pilote les langues, la latence, la calibration du feedback et les connecteurs réellement disponibles pour les roleplays."
       ],
-      "pricing_public": "Non publié",
+      "pricing_public": "Prime et AI Roleplays incluent des roleplays IA ; Ultimate ajoute une équipe L&D dédiée, la création de simulations et des classes virtuelles IA. Aucun montant public identifié le 31 octobre 2026.",
       "french_clients": "EDF est cité dans un cas client Edflex décrivant l’intégration de roleplays IA.",
       "tested_on": null,
-      "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
+      "test_notes": "Analyse documentaire mise à jour le 31 octobre 2026 à partir des pages roleplays, offres, intégrations, sécurité, certification et cas client de l’éditeur. Aucun test standardisé Guide RH ni audit de conformité n’a été réalisé.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
@@ -709,8 +712,8 @@
         },
         "qualiopi-opco": {
           "score": 3,
-          "evidence": "Les pages produit consultées ne démontrent pas qu’un achat de licences roleplay est finançable par un OPCO. Demander l’entité porteuse, la prestation éligible et l’accord du financeur.",
-          "source": ""
+          "evidence": "Edflex déclare être certifiée Qualiopi pour les actions de formation. Cette certification de l’organisme ne démontre pas qu’un achat de licences roleplay est finançable : demander le certificat actuel, son périmètre, l’entité porteuse, la prestation éligible et l’accord de l’OPCO.",
+          "source": "https://www.edflex.com/nos-reseaux"
         },
         "scenarios-personnalisables": {
           "score": 2.5,
@@ -734,13 +737,13 @@
         },
         "prix": {
           "score": 2.5,
-          "evidence": "Aucun montant public identifié pour les roleplays. Demander le coût total, les volumes de sessions, la personnalisation, les connecteurs et l’accompagnement inclus.",
-          "source": ""
+          "evidence": "Les offres Prime et AI Roleplays incluent des roleplays IA ; Ultimate ajoute une équipe L&D dédiée, la création de simulations et des classes virtuelles IA. Aucun montant n’est affiché. Demander un devis séparant utilisateurs, sessions, création, connecteurs et accompagnement.",
+          "source": "https://www.edflex.com/offres"
         },
         "coaching-humain": {
           "score": 1.5,
-          "evidence": "Les pages consultées décrivent un feedback et des conseils fournis par l’IA ; aucune séance de coaching humain incluse n’y est documentée.",
-          "source": ""
+          "evidence": "Edflex décrit du feedback IA, un support expert, une équipe L&D dédiée en Ultimate et des classes virtuelles avec instructeur IA. Ces services ne documentent pas des séances individuelles avec un coach humain pour les apprenants ; faire préciser l’accompagnement inclus.",
+          "source": "https://www.edflex.com/offres"
         },
         "references-france": {
           "score": 3,
@@ -764,6 +767,10 @@
         {
           "date": "2026-10-09",
           "note": "Formats, cas d’usage, intégrations, feedback et déclarations de sécurité actualisés depuis les pages officielles ; notes inchangées et aucun test produit réalisé."
+        },
+        {
+          "date": "2026-10-31",
+          "note": "Certification Qualiopi, structure des offres, tarification et accompagnement humain clarifiés depuis les pages officielles ; notes inchangées et aucun test produit réalisé."
         }
       ]
     },
