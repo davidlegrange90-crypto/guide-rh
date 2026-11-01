@@ -468,7 +468,7 @@
 - Prepared guarded main publication; the run report records GitHub deployment status and live verification.
 
 ## Prioritized backlog
-1. Continue auditing remaining provider evidence and use-case memberships against explicit sources, prioritizing profiles with missing criterion sources. Yoodli, Reality Academy, Super Sales, Edflex, Second Nature, Ringover Pitch Room and Uptale have now been reviewed; do not infer capabilities or formats absent from primary documentation.
+1. Continue auditing remaining provider evidence and use-case memberships against explicit sources, prioritizing profiles with missing criterion sources. Yoodli, Reality Academy, Super Sales, Edflex, Mursion, Second Nature, Ringover Pitch Room and Uptale have now been reviewed; do not infer capabilities or formats absent from primary documentation.
 2. Complete a device-level mobile visual audit and establish a measured performance baseline. Keyboard-accessible scroll regions now cover every generated table; do not claim Core Web Vitals or device-level visual success without measurements.
 3. Investigate www hostname with hosting/DNS access; keep apex canonical. No speculative DNS edits.
 4. Ownership, funding and author credentials require verified facts from the owner. Do not fabricate disclosures.
@@ -493,6 +493,26 @@
 - No layout/CSS change, device visual audit or field-performance measurement was made in this bounded cycle.
 - Apex returned HTTP 200; `www.guide-rh.com` returned HTTP 503 from this environment. No DNS change made.
 - Traffic windows Europe/Paris: complete day 2026-10-30 versus 2026-10-29; rolling 2026-10-24–2026-10-30 versus 2026-10-17–2026-10-23. Visitors, pageviews, top pages/referrers, AI referrals, AI crawler and user-triggered assistant requests are unavailable, not zero. Provider metric definitions/coverage, verified bot identities, successful/blocked requests, requested pages, last seen and audit exclusions cannot be established.
+- Access rechecked: Windsor exposes only the unrelated Coachello GA4 property and `coachello.ai` Search Console property; neither was queried as Guide RH. Vercel lists no teams and project lookup returns HTTP 403 for `guide-rh` under `davidlegrange90-5664` / `team_DogQuXCMTVI6mYpMCOQUOD5G`; explicit team authorization plus Web Analytics and hosting/edge request-log read permissions remain missing. No accessible Bing or Cloudflare AI Crawl Control dataset. Crawling would not prove training, indexing, citations or recommendations.
+- Prepared guarded main publication; the run report records GitHub deployment status and live verification.
+
+## 2026-11-01: Mursion contract model, French-evidence limits and onboarding uses
+- Fresh main `ffbe70bff69dc4d01be1d5d194e105c153bbd281`; read README, CHECKLIST and the full progress log. No AGENTS.md found. The live Mursion profile and apex returned HTTP 200 before publication.
+- Relied only on current official Mursion pages, all read directly and returning HTTP 200 on 2026-11-01. All 11 Mursion criteria now have a source link, up from eight.
+- Documented the public contract model without inventing an amount: the terms describe a SaaS subscription, generally annual, with licences and support/simulation services defined and priced in a Statement of Work. The profile now lists the quote dimensions that must be separated.
+- The public terms do not document Qualiopi or OPCO funding. Their silence is not treated as proof of ineligibility; buyers should verify the training provider, current certificate, eligible service and funder approval.
+- The public customer-story archive names several international organizations but no detailed French case was identified. The profile explicitly states that this public selection does not prove the absence of French customers.
+- Added onboarding and commercial teams as documented uses. H&R Block's editor-published case describes custom onboarding simulations for new call-centre agents. T-Mobile's case says the simulation program extended to B2B Sales onboarding. No promotional outcome figure was republished as an independently verified result.
+- Sources read 2026-11-01:
+  - https://www.mursion.com/order-terms/
+  - https://www.mursion.com/customer-stories/
+  - https://www.mursion.com/customer-story/new-call-center-agent-onboarding-at-hr-block/
+  - https://www.mursion.com/customer-story/t-mobile-uses-vr-simulations/
+- All numerical scores, criterion weights, `tested_on`, formats and relationship disclosure remained unchanged. Every other provider object remained unchanged. No price, French reference, funding approval, customer result, review, Google review or product-test result was invented.
+- Validation: `npm run check:content` and `npm run build` passed. Parsed 64 HTML pages, 2,856 internal links/assets, 64 JSON-LD blocks and 64 unique sitemap URLs. Verified canonical equality, one H1 per page, complete sitemap coverage, internal targets and fragments, all 11 Mursion criterion sources, the two intended use-case additions, protected provider fields, journal/RSS publication and `git diff --check`.
+- No layout/CSS change, device visual audit or field-performance measurement was made in this bounded cycle.
+- Apex and the live Mursion profile returned HTTP 200; `www.guide-rh.com` returned HTTP 503. No DNS change made.
+- Traffic windows Europe/Paris: complete day 2026-10-31 versus 2026-10-30; rolling 2026-10-25–2026-10-31 versus 2026-10-18–2026-10-24. Visitors, pageviews, top pages/referrers, AI referrals, AI crawler and user-triggered assistant requests are unavailable, not zero. Provider metric definitions/coverage, verified bot identities, successful/blocked requests, requested pages, last seen and audit exclusions cannot be established.
 - Access rechecked: Windsor exposes only the unrelated Coachello GA4 property and `coachello.ai` Search Console property; neither was queried as Guide RH. Vercel lists no teams and project lookup returns HTTP 403 for `guide-rh` under `davidlegrange90-5664` / `team_DogQuXCMTVI6mYpMCOQUOD5G`; explicit team authorization plus Web Analytics and hosting/edge request-log read permissions remain missing. No accessible Bing or Cloudflare AI Crawl Control dataset. Crawling would not prove training, indexing, citations or recommendations.
 - Prepared guarded main publication; the run report records GitHub deployment status and live verification.
 

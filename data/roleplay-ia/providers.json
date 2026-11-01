@@ -1324,13 +1324,15 @@
         "gestion-des-conflits",
         "feedback",
         "entretien-annuel",
-        "relation-client"
+        "relation-client",
+        "equipes-commerciales",
+        "onboarding"
       ],
       "public_claims": {
         "rgpd": "La notice du 1er mars 2026 indique un hébergement aux États-Unis et des transferts possibles vers d’autres pays. Un accord Enterprise, dont le DPA, peut régir les données client à la place de cette notice générale.",
         "integrations": "Mursion documente SCORM 1.2/2004, remontée des complétions, SAML 2.0, OAuth 2.0/OIDC, création de comptes au premier accès et liens directs vers les scénarios.",
         "clients": "Le site publie des cas Best Western, Ericsson et H&R Block. Ce sont des références et résultats présentés par l’éditeur, pas une validation indépendante ni une preuve de déploiement en France.",
-        "pricing": "Aucun barème public chiffré identifié dans les pages consultées ; demander un devis séparant simulations IA, séances animées et coaching."
+        "pricing": "Les conditions publiques décrivent un abonnement SaaS, généralement annuel, dont licences et services sont précisés dans un SOW. Aucun montant public n’est affiché."
       },
       "sources": [
         "https://www.mursion.com/platform/simulations/",
@@ -1339,6 +1341,10 @@
         "https://www.mursion.com/platform/enterprise/integrations/",
         "https://www.mursion.com/privacynotice/",
         "https://www.mursion.com/ai-commitment/",
+        "https://www.mursion.com/order-terms/",
+        "https://www.mursion.com/customer-stories/",
+        "https://www.mursion.com/customer-story/new-call-center-agent-onboarding-at-hr-block/",
+        "https://www.mursion.com/customer-story/t-mobile-uses-vr-simulations/",
         "https://support.mursion.com/knowledge/mursions-code-of-conduct",
         "https://support.mursion.com/knowledge/operating-hours",
         "https://support.mursion.com/knowledge/what-browsers-are-supported-by-mursion"
@@ -1354,12 +1360,13 @@
         "Confirmer le français disponible pour chaque modalité : une traduction des conditions ne prouve pas la disponibilité d’un avatar IA ou d’un coach francophone.",
         "La notice générale annonce un hébergement américain ; vérifier DPA, transferts, sous-traitants, rétention et configuration de chaque offre.",
         "Les simulations humaines ont des horaires distincts du service IA 24/7 ; vérifier créneaux en France, réservation et coûts.",
-        "Valider les prérequis navigateur, webcam, microphone et réseau sur les postes réels avant le pilote."
+        "Valider les prérequis navigateur, webcam, microphone et réseau sur les postes réels avant le pilote.",
+        "Aucune référence française détaillée ni preuve publique Qualiopi/OPCO n’a été identifiée ; demander les pièces applicables au projet français."
       ],
-      "pricing_public": "Aucun barème chiffré identifié dans les sources consultées le 14 octobre 2026. Devis à demander selon les modalités et volumes.",
+      "pricing_public": "Abonnement SaaS et services décrits dans un Statement of Work, généralement pour un an sauf stipulation différente. Aucun barème chiffré identifié le 1er novembre 2026.",
       "french_clients": "Aucune référence française clairement documentée dans les sources consultées.",
       "tested_on": null,
-      "test_notes": "Analyse documentaire mise à jour le 14 octobre 2026 à partir des pages officielles produit, coaching, intégrations, confidentialité et support. Aucun test produit, benchmark comparatif ni audit de conformité Guide RH réalisé.",
+      "test_notes": "Analyse documentaire mise à jour le 1er novembre 2026 à partir des pages officielles produit, coaching, intégrations, confidentialité, conditions commerciales, support et cas clients. Aucun test produit, benchmark comparatif ni audit de conformité Guide RH réalisé.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
@@ -1379,8 +1386,8 @@
         },
         "qualiopi-opco": {
           "score": 0.5,
-          "evidence": "Aucune preuve spécifique de certification Qualiopi ou de prise en charge OPCO identifiée dans les sources consultées. Vérifier le prestataire de formation et le financement du parcours.",
-          "source": ""
+          "evidence": "Les conditions publiques encadrent une licence SaaS et des services définis dans un SOW, sans documenter Qualiopi ni une prise en charge OPCO. Cette absence dans les conditions consultées ne prouve pas l’inéligibilité d’un parcours : vérifier l’organisme porteur, le certificat et l’accord du financeur.",
+          "source": "https://www.mursion.com/order-terms/"
         },
         "scenarios-personnalisables": {
           "score": 4.5,
@@ -1404,8 +1411,8 @@
         },
         "prix": {
           "score": 2,
-          "evidence": "Aucun prix public chiffré trouvé dans les pages produit consultées. Demander le coût total par modalité, les volumes, les créneaux humains, le coaching, la personnalisation et les intégrations.",
-          "source": ""
+          "evidence": "Les conditions décrivent un abonnement SaaS, généralement annuel, et des services dont le périmètre et les frais figurent dans un SOW. Aucun montant public n’est affiché. Demander le coût total par modalité, volume, créneau humain, coaching, personnalisation et intégration.",
+          "source": "https://www.mursion.com/order-terms/"
         },
         "coaching-humain": {
           "score": 4,
@@ -1414,8 +1421,8 @@
         },
         "references-france": {
           "score": 1.5,
-          "evidence": "Aucune étude de cas française détaillée identifiée dans les sources consultées. Les cas internationaux publiés par l’éditeur ne permettent pas de conclure à un déploiement français.",
-          "source": ""
+          "evidence": "La bibliothèque officielle consultée présente notamment Novo Nordisk, Oracle, Upwork, Ericsson, Dow et T-Mobile, mais aucune étude de cas française détaillée n’y a été identifiée. Cette sélection publique ne prouve pas l’absence de clients en France.",
+          "source": "https://www.mursion.com/customer-stories/"
         }
       },
       "changelog": [
@@ -1434,6 +1441,10 @@
         {
           "date": "2026-10-14",
           "note": "Clarification des simulations IA et humaines, coaching, données, intégrations et prérequis à partir des sources officielles ; notes inchangées, aucun test produit."
+        },
+        {
+          "date": "2026-11-01",
+          "note": "Modèle contractuel, prix non publié, périmètre France et usages onboarding/commerciaux documentés depuis les sources officielles ; notes inchangées et aucun test produit réalisé."
         }
       ]
     },
