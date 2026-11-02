@@ -1603,10 +1603,10 @@
         "relation-client"
       ],
       "public_claims": {
-        "rgpd": "Hyperbound déclare SOC 2 Type II, ISO 27001, chiffrement, SSO et support des exigences RGPD. La résidence des données dans l’UE figure dans les options complémentaires publiées ; périmètre, sous-traitants, transferts et DPA à vérifier.",
+        "rgpd": "Hyperbound publie un DPA, distingue ses rôles de responsable et sous-traitant, et déclare recourir aux clauses contractuelles types et au Data Privacy Framework pour certains transferts. Son Trust Center affiche SOC 2 Type II, ISO 27001:2022 et quatre sous-traitants d’infrastructure localisés aux États-Unis. La résidence UE est une option commerciale : demander une cartographie par service, le DPA signé, la liste à jour des sous-traitants et les garanties de transfert.",
         "integrations": "Le catalogue distingue CRM, LMS, enregistreurs d’appels, SAML/SSO et communication. Il cite notamment Salesforce, HubSpot, 360Learning, Cornerstone, Workramp, Entra, Okta et Teams.",
-        "clients": "Un cas Vanta est publié par Hyperbound. Il décrit la pratique des SDR et l’appui au coaching des managers ; résultats non vérifiés indépendamment par Guide RH et aucune preuve spécifique de déploiement français.",
-        "pricing": "La page distingue Free, Practice et Perform. Facturation par utilisateur et licences séparées Practice/Perform annoncées, sans montant public ; options complémentaires et périmètre à chiffrer."
+        "clients": "Hyperbound publie plusieurs cas internationaux, dont Vanta, JumpCloud et Klaviyo. Ils restent des publications de l’éditeur, sans vérification indépendante des résultats par Guide RH ; aucune référence française détaillée n’a été identifiée dans la bibliothèque consultée.",
+        "pricing": "La page distingue Free, Practice et Perform. Facturation par utilisateur, remises de volume et économies pluriannuelles sont annoncées, sans montant public ; options complémentaires et périmètre à chiffrer."
       },
       "sources": [
         "https://www.hyperbound.ai/",
@@ -1616,25 +1616,30 @@
         "https://www.hyperbound.ai/pricing",
         "https://www.hyperbound.ai/integrations",
         "https://www.hyperbound.ai/enterprise",
-        "https://www.hyperbound.ai/case-studies/vanta"
+        "https://www.hyperbound.ai/case-studies/vanta",
+        "https://www.hyperbound.ai/privacy-policy",
+        "https://security.hyperbound.ai/",
+        "https://www.hyperbound.ai/pricing-b",
+        "https://www.hyperbound.ai/case-studies"
       ],
       "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
-      "ideal_for": "Équipes commerciales souhaitant relier entraînement, certification interne et analyse des appels réels, avec licences et intégrations à préciser.",
+      "ideal_for": "Équipes commerciales souhaitant relier entraînement, certification interne et analyse des appels réels, avec licences, gouvernance des scores et flux de données à préciser.",
       "strengths": [
         "Français et français canadien explicitement annoncés.",
         "Personas, objections et scorecards adaptés au processus commercial, avec scénarios multi-interlocuteurs.",
         "Catalogue d’intégrations et séparation des offres Practice/Perform publiquement documentés."
       ],
       "limits": [
-        "La résidence UE est listée comme option complémentaire ; elle ne prouve pas que tous les traitements et sous-traitants restent dans l’UE.",
+        "La résidence UE est listée comme option complémentaire, tandis que le Trust Center affiche des sous-traitants d’infrastructure aux États-Unis ; cartographier chaque service, transfert et mécanisme contractuel.",
+        "La politique de confidentialité nomme plusieurs fournisseurs d’IA, mais ne documente pas une conformité AI Act, l’explicabilité des scores ou des règles d’usage RH : cadrer ces points avant déploiement.",
         "Confirmer versions et flux de l’intégration LMS : le catalogue ne précise pas à lui seul SCORM, LTI ou les données remontées.",
         "Aucun prix chiffré public identifié ; demander licences, volumes, options, intégration et durée d’engagement.",
         "Qualité du français, stabilité des scores et pertinence du feedback à valider par un pilote. Le cas Vanta ne prouve pas un effet généralisable."
       ],
-      "pricing_public": "Free avec roleplays préconstruits ; Practice et Perform au prix personnalisé par utilisateur, sans montant affiché. Résidence UE, API d’export et services d’implémentation figurent parmi les options complémentaires. Relevé le 16 octobre 2026.",
-      "french_clients": "Aucune référence française clairement documentée dans les sources consultées.",
+      "pricing_public": "Free avec roleplays préconstruits ; Practice et Perform au prix personnalisé par utilisateur, sans montant affiché. Remises de volume et économies pluriannuelles sont annoncées sans taux public. Résidence UE, API d’export et services d’implémentation figurent parmi les options complémentaires. Relevé le 2 novembre 2026.",
+      "french_clients": "Aucune référence française détaillée identifiée dans la bibliothèque publique de cas consultée le 2 novembre 2026 ; cela ne prouve pas l’absence de clients en France.",
       "tested_on": null,
-      "test_notes": "Analyse documentaire du 16 octobre 2026 fondée sur les pages produit, après-vente, onboarding, tarifs, intégrations, Enterprise et le cas Vanta publiés par Hyperbound. Aucun test produit ni audit de conformité Guide RH réalisé.",
+      "test_notes": "Analyse documentaire mise à jour le 2 novembre 2026 à partir des pages produit, offres, intégrations, cas clients, politique de confidentialité et Trust Center publiés par Hyperbound. Aucun test produit, audit de sécurité, contrôle de certification ou validation de conformité Guide RH réalisé.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
@@ -1644,18 +1649,18 @@
         },
         "rgpd-hebergement": {
           "score": 2,
-          "evidence": "L’offre Enterprise déclare SOC 2 Type II, ISO 27001 et support des exigences RGPD. La résidence UE est listée comme option complémentaire, sans détail suffisant sur tous les traitements. Demander DPA, sous-traitants et garanties de transfert.",
-          "source": "https://www.hyperbound.ai/pricing"
+          "evidence": "La politique de confidentialité distingue les rôles de responsable et sous-traitant, renvoie au DPA et déclare des SCC et le Data Privacy Framework pour certains transferts. Le Trust Center affiche SOC 2 Type II, ISO 27001:2022 et des sous-traitants d’infrastructure aux États-Unis. L’option de résidence UE ne suffit pas à établir le lieu de tous les traitements : demander la cartographie, le DPA et les garanties applicables.",
+          "source": "https://www.hyperbound.ai/privacy-policy"
         },
         "ai-act": {
           "score": 2.5,
-          "evidence": "Le périmètre de gouvernance et de conformité à l’AI Act n’est pas établi par les pages consultées. Définir l’usage développemental des scores, la supervision humaine et les limites d’utilisation RH avant déploiement.",
-          "source": ""
+          "evidence": "La politique de confidentialité nomme Anthropic, AWS AI, OpenAI et Azure AI comme fournisseurs et mentionne un droit à ne pas faire l’objet d’une décision automatisée. Elle n’établit pas une conformité AI Act, l’explicabilité des scores ou leurs usages RH. Définir finalité développementale, information des salariés, supervision humaine, recours et interdictions d’usage avant déploiement.",
+          "source": "https://www.hyperbound.ai/privacy-policy"
         },
         "qualiopi-opco": {
           "score": 0.5,
-          "evidence": "Aucune preuve publique spécifique Qualiopi ou de prise en charge OPCO identifiée dans les sources consultées. Vérifier le prestataire de formation et le financement du parcours.",
-          "source": ""
+          "evidence": "La page d’offres présente Free, Practice et Perform comme des produits logiciels et services Enterprise ; elle ne documente ni certificat Qualiopi ni prise en charge OPCO. Son silence ne prouve pas l’inéligibilité d’un parcours : vérifier l’organisme porteur, son certificat en cours, la prestation éligible et l’accord du financeur.",
+          "source": "https://www.hyperbound.ai/pricing-b"
         },
         "scenarios-personnalisables": {
           "score": 4.5,
@@ -1679,8 +1684,8 @@
         },
         "prix": {
           "score": 2.5,
-          "evidence": "Free propose des roleplays préconstruits ; Practice et Perform ont des licences par utilisateur distinctes. Aucun montant public affiché. Vérifier le coût des options, de la résidence UE et des services.",
-          "source": "https://www.hyperbound.ai/pricing"
+          "evidence": "Free propose des roleplays préconstruits ; Practice et Perform ont des licences par utilisateur distinctes. Des remises de volume et économies pluriannuelles sont annoncées, sans montant ni taux public. Vérifier durée, minimum, coût des options, résidence UE et services.",
+          "source": "https://www.hyperbound.ai/pricing-b"
         },
         "coaching-humain": {
           "score": 1,
@@ -1689,8 +1694,8 @@
         },
         "references-france": {
           "score": 1,
-          "evidence": "Le cas Vanta est une référence internationale publiée par l’éditeur. Aucun cas français détaillé n’a été identifié dans les sources consultées.",
-          "source": ""
+          "evidence": "La bibliothèque publique présente plusieurs cas internationaux, dont Vanta, JumpCloud et Klaviyo. Aucun cas français détaillé n’y a été identifié lors de la revue ; cela ne prouve pas l’absence de clients en France.",
+          "source": "https://www.hyperbound.ai/case-studies"
         }
       },
       "changelog": [
@@ -1709,6 +1714,10 @@
         {
           "date": "2026-10-16",
           "note": "Documentation des scénarios, français, scorecards, intégrations, offres et résidence UE optionnelle ; notes inchangées, aucun test produit."
+        },
+        {
+          "date": "2026-11-02",
+          "note": "Ajout des sources confidentialité, sécurité, financement et références ; cartographie des transferts et gouvernance des scores à vérifier, notes inchangées."
         }
       ]
     },

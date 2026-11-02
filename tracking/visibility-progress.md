@@ -518,3 +518,22 @@
 
 ## Operating rules
 Read current main and this log before editing. Choose meaningful bounded improvements, not a daily page quota. Build/content checks must pass; validate changed links and structured data; push without force and verify deployment/live pages. Record verified results separately from hypotheses and pending checks. No paid services or outreach authorized.
+
+## 2026-11-02: Hyperbound data transfers, AI governance and reference evidence
+- Fresh main `962ed8309fba001285bfc200e40f87404af0b025`; read README, CHECKLIST and the current progress log. No AGENTS.md found. Apex, the live Hyperbound profile and sitemap returned HTTP 200 before publication.
+- Relied only on current official Hyperbound pages read on 2026-11-02. All 11 Hyperbound criteria now have a source link, up from eight.
+- Documented the privacy policy's distinction between controller and processor roles, DPA precedence, named AI providers and announced SCC/Data Privacy Framework transfer mechanisms. The Trust Center displays SOC 2 Type II, ISO 27001:2022 and four infrastructure subprocessors located in the United States. Because EU data residency is an offer option, the profile now asks for a service-level data map, current subprocessors, the signed DPA and applicable transfer safeguards rather than implying that every processing operation stays in the EU.
+- Added practical AI-governance checks. The privacy policy names Anthropic, AWS AI, OpenAI and Azure AI and mentions a right not to be subject to automated decision-making, but does not establish AI Act conformity, score explainability or appropriate HR uses. Buyers should define a developmental purpose, employee notice, human oversight, recourse and prohibited uses.
+- The public offer page describes Free, Practice and Perform, per-user pricing, volume discounts and multi-year savings without amounts. It does not document Qualiopi or OPCO funding; silence is not treated as proof of ineligibility. The public case-study library contains several international cases but no detailed French case identified in the review; this does not prove the absence of French customers.
+- Sources read 2026-11-02:
+  - https://www.hyperbound.ai/privacy-policy
+  - https://security.hyperbound.ai/
+  - https://www.hyperbound.ai/pricing-b
+  - https://www.hyperbound.ai/case-studies
+- All numerical scores, criterion weights, `tested_on`, formats, use cases and relationship disclosure remained unchanged. Every other provider object remained unchanged. No price amount, French reference, funding approval, review, Google review, customer result or product-test result was invented.
+- Validation: `npm run check:content` and telemetry-disabled `npm run build` passed. Parsed 64 HTML pages, 2,727 internal links/assets, 64 JSON-LD blocks and 64 unique sitemap URLs. Verified canonical equality, one H1 per page, complete sitemap coverage, internal targets and fragments, all 11 Hyperbound criterion sources, protected provider fields, journal/RSS publication and `git diff --check`.
+- No layout/CSS change, device visual audit or field-performance measurement was made in this bounded cycle.
+- Apex, Hyperbound and sitemap returned HTTP 200; `www.guide-rh.com` returned HTTP 503. No DNS change made.
+- Traffic windows Europe/Paris: complete day 2026-11-01 versus 2026-10-31; rolling 2026-10-26–2026-11-01 versus 2026-10-19–2026-10-25. Visitors, pageviews, top pages/referrers, AI referrals, AI crawler and user-triggered assistant requests are unavailable, not zero. Provider metric definitions/coverage, verified bot identities, successful/blocked requests, requested pages, last seen and audit exclusions cannot be established.
+- Access rechecked: Windsor exposes only the unrelated Coachello GA4 property `396191540` and `sc-domain:coachello.ai`; neither was queried as Guide RH. Vercel lists no teams and project lookup returns HTTP 403 for `guide-rh` under `davidlegrange90-5664` / `team_DogQuXCMTVI6mYpMCOQUOD5G`; explicit team authorization plus Web Analytics and hosting/edge request-log read permissions remain missing. No accessible Guide RH Search Console, Bing or Cloudflare AI Crawl Control dataset. Crawling would not prove training, indexing, citations or recommendations.
+- Prepared guarded main publication; the run report records GitHub deployment status and live verification.
