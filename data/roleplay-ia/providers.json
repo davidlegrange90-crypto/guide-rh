@@ -414,34 +414,38 @@
         "managers",
         "feedback",
         "gestion-des-conflits",
-        "entretien-annuel"
+        "entretien-annuel",
+        "onboarding"
       ],
       "public_claims": {
         "rgpd": "Hébergement France et absence de réutilisation pour entraîner les modèles déclarés ; documents de sécurité à demander.",
         "integrations": "SCORM et SSO annoncés dans la formule Entreprise.",
-        "clients": "AFP, Action Logement, Crédit Agricole, Groupama, CHU de Rennes, Clarins, Galeries Lafayette, IFP Énergies nouvelles, Veolia, Ministère de l'Intérieur (déclarés)",
-        "pricing": "Pilote mensuel jusqu’à 20 personnes ; Entreprise annuelle avec pack de simulations et prix dégressif par utilisateur. Montants sur devis (consulté le 8 octobre 2026)."
+        "clients": "La page clients déclare 31 organisations et cite notamment AP-HP, RATP Dev, Galeries Lafayette, Groupama, AFP, Crédit Agricole et des ministères. Guide RH n’a pas confirmé ces références auprès des organisations.",
+        "pricing": "Pilote mensuel jusqu’à 20 personnes avec prix fixe par utilisateur ; Entreprise annuelle avec pack de simulations et prix dégressif par utilisateur. Aucun montant public affiché (consulté le 3 novembre 2026)."
       },
       "sources": [
         "https://www.practicio.ai/",
         "https://www.practicio.ai/plateforme",
         "https://www.practicio.ai/tarifs",
-        "https://www.practicio.ai/securite-des-donnees"
+        "https://www.practicio.ai/securite-des-donnees",
+        "https://www.practicio.ai/clients"
       ],
       "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
-      "ideal_for": "Organisations recherchant une solution centrée sur formation des managers, feedback et conversations difficiles, gestion des conflits, entretiens annuels.",
+      "ideal_for": "Organisations recherchant une solution centrée sur la prise de poste des managers, le feedback, les conversations difficiles, la gestion des conflits et les entretiens annuels.",
       "strengths": [
         "Simulations orales et retours par compétence annoncés.",
         "SCORM et SSO annoncés en formule Entreprise."
       ],
       "limits": [
         "Chiffrer les simulations incluses, le sur-mesure et les options d’accompagnement dans le devis.",
+        "La page d’offres ne documente ni certificat Qualiopi ni financement OPCO ; vérifier l’organisme porteur, la prestation éligible et l’accord du financeur.",
+        "L’accompagnement au lancement est inclus et des ateliers sont optionnels, mais cela ne démontre pas un coaching individuel humain fourni aux apprenants.",
         "La qualité du feedback, la latence et le niveau de personnalisation doivent être validés sur un pilote avec vos propres scénarios."
       ],
-      "pricing_public": "Pilote mensuel jusqu’à 20 personnes ; Entreprise annuelle avec pack de simulations et prix dégressif par utilisateur. Montants sur devis (consulté le 8 octobre 2026).",
-      "french_clients": "AFP, Action Logement, Crédit Agricole, Groupama, CHU de Rennes, Clarins, Galeries Lafayette, IFP Énergies nouvelles, Veolia, Ministère de l'Intérieur (déclarés)",
+      "pricing_public": "Pilote mensuel jusqu’à 20 personnes avec prix fixe par utilisateur ; Entreprise annuelle avec pack de simulations et prix dégressif par utilisateur. Aucun montant public affiché. Relevé le 3 novembre 2026.",
+      "french_clients": "La page clients déclare 31 organisations et cite notamment AP-HP, RATP Dev, Galeries Lafayette, Groupama, AFP, Crédit Agricole, Ministère de l’Intérieur et Ministère des Armées. Références non confirmées directement par Guide RH.",
       "tested_on": null,
-      "test_notes": "Analyse documentaire réalisée à partir des informations publiques de l’éditeur. Aucun test standardisé Guide RH n’a encore été publié pour cette solution.",
+      "test_notes": "Analyse documentaire mise à jour le 3 novembre 2026 à partir des pages plateforme, offres, sécurité et clients publiées par Practicio. Aucun test standardisé Guide RH, audit de sécurité ou validation de résultat client n’a été réalisé.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
@@ -461,8 +465,8 @@
         },
         "qualiopi-opco": {
           "score": 3,
-          "evidence": "Les pages consultées ne documentent pas une certification Qualiopi ni un accord de financement OPCO pour cette offre. À confirmer avant achat.",
-          "source": ""
+          "evidence": "La page d’offres décrit des licences Pilote et Entreprise, ainsi que des services de lancement et ateliers optionnels ; elle ne documente ni certificat Qualiopi ni prise en charge OPCO. Son silence ne prouve pas l’inéligibilité d’un parcours : vérifier l’organisme porteur, son certificat en cours, la prestation éligible et l’accord du financeur.",
+          "source": "https://www.practicio.ai/tarifs"
         },
         "scenarios-personnalisables": {
           "score": 4.5,
@@ -491,13 +495,13 @@
         },
         "coaching-humain": {
           "score": 2,
-          "evidence": "Configuration initiale incluse ; ateliers, webinar et accompagnement dédié optionnels. Cela ne garantit pas un coaching individuel inclus.",
+          "evidence": "L’accompagnement au lancement et la configuration des premiers scénarios sont inclus. Webinar, ateliers en présentiel et accompagnement dédié sont optionnels. La page précise que Practicio complète le formateur ou le manager ; elle ne documente pas un coaching individuel humain inclus pour chaque apprenant.",
           "source": "https://www.practicio.ai/tarifs"
         },
         "references-france": {
           "score": 5,
-          "evidence": "Logos et exemples AP-HP, Galeries Lafayette et RATP Dev publiés par l’éditeur. Guide RH n’a pas confirmé ces références auprès des clients.",
-          "source": "https://www.practicio.ai/"
+          "evidence": "La page clients publie notamment AP-HP, RATP Dev, Galeries Lafayette, Groupama, AFP, Crédit Agricole et deux ministères. Guide RH n’a pas confirmé ces références ni leurs résultats auprès des organisations.",
+          "source": "https://www.practicio.ai/clients"
         }
       },
       "changelog": [
@@ -516,6 +520,10 @@
         {
           "date": "2026-10-08",
           "note": "Sources par critère actualisées ; format vocal et périmètre des offres clarifiés. Notes inchangées ; aucun test produit réalisé."
+        },
+        {
+          "date": "2026-11-03",
+          "note": "Ajout de la prise de poste managériale, des limites Qualiopi/OPCO et de la page clients ; notes inchangées, aucun test produit."
         }
       ]
     },
