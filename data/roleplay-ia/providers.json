@@ -1763,8 +1763,8 @@
       "public_claims": {
         "rgpd": "Exec déclare un chiffrement au repos et en transit, une isolation logique, des durées de conservation configurables et des certifications SOC 2 Type II et SOC 3. La page publique ne précise pas la localisation d’hébergement ni le périmètre RGPD applicable à un client français.",
         "integrations": "L’éditeur documente LTI 1.3 pour lancer les roleplays depuis un LMS. La page tarifaire réserve aussi l’API, SSO/SCIM, les intégrations d’enregistreurs d’appels et les intégrations sur mesure à certains forfaits.",
-        "clients": "Des témoignages nommés sont publiés pour Private Health Management, Cockroach Labs et Axonius. Aucun cas client français détaillé n’a été identifié dans les sources consultées.",
-        "pricing": "Au 13 octobre 2026, la page tarifaire affiche un forfait gratuit, Starter à 20 $ par siège et par mois et Professional à 39 $ par siège et par mois, facturés annuellement, avec minimums de sièges ; Enterprise est sur devis."
+        "clients": "La page de démonstration publie des témoignages de Private Health Management, Linear et Paramount. Aucun cas client français détaillé n’a été identifié dans cette sélection publique.",
+        "pricing": "Au 5 novembre 2026, la page tarifaire affiche un forfait gratuit, Starter à 20 $ par siège et par mois et Professional à 39 $ par siège et par mois, facturés annuellement, avec minimums de sièges ; Enterprise est sur devis."
       },
       "sources": [
         "https://www.exec.com/ai-roleplays",
@@ -1775,7 +1775,8 @@
         "https://www.exec.com/enterprise-privacy",
         "https://www.exec.com/pricing",
         "https://www.exec.com/news/roleplays-inside-your-lms",
-        "https://www.exec.com/solutions/employee-training"
+        "https://www.exec.com/solutions/employee-training",
+        "https://www.exec.com/see-exec"
       ],
       "disclosure": "Aucun lien commercial déclaré avec Guide RH.",
       "ideal_for": "Organisations qui veulent relier pratique conversationnelle, certification, reporting et coaching humain dans une même plateforme.",
@@ -1786,13 +1787,15 @@
       ],
       "limits": [
         "Les déclarations de sécurité ne constituent pas un audit indépendant ; localisation des données, sous-traitants, transferts et DPA doivent être vérifiés avant achat.",
+        "Les offres publiques décrivent une plateforme logicielle, des fonctions de certification des apprenants et du coaching, mais ne documentent ni certificat Qualiopi ni prise en charge OPCO.",
+        "Les témoignages publics consultés ne constituent pas une preuve de déploiement en France ; demander un cas comparable, son périmètre et un contact de référence.",
         "Les limites de séances, minimums de sièges et fonctions incluses varient selon le forfait publié.",
         "La qualité du français, des avatars, du feedback et de l’intégration LMS doit être validée sur un pilote avec vos scénarios."
       ],
-      "pricing_public": "Gratuit ; Starter 20 $/siège/mois (minimum 5) ; Professional 39 $/siège/mois (minimum 15), facturation annuelle affichée ; Enterprise sur devis. Tarifs relevés le 13 octobre 2026, hors conversion et fiscalité.",
+      "pricing_public": "Gratuit ; Starter 20 $/siège/mois (minimum 5) ; Professional 39 $/siège/mois (minimum 15), facturation annuelle affichée ; Enterprise sur devis. Tarifs relevés le 5 novembre 2026, hors conversion et fiscalité.",
       "french_clients": "Aucune référence française clairement documentée dans les sources consultées.",
       "tested_on": null,
-      "test_notes": "Analyse documentaire mise à jour le 13 octobre 2026 à partir des pages produit, démonstration, sécurité, tarification, intégration LMS et coaching de l’éditeur. Aucun test standardisé Guide RH ni audit de conformité n’a été réalisé.",
+      "test_notes": "Analyse documentaire mise à jour le 5 novembre 2026 à partir des pages produit, démonstration, sécurité, tarification, intégration LMS, formation et coaching de l’éditeur. Aucun test standardisé Guide RH ni audit de conformité n’a été réalisé.",
       "right_of_reply": "",
       "scores": {
         "langue-francaise": {
@@ -1812,8 +1815,8 @@
         },
         "qualiopi-opco": {
           "score": 0.5,
-          "evidence": "Aucune preuve publique spécifique à Qualiopi, à un organisme de formation français ou à une prise en charge OPCO n’a été identifiée dans les sources consultées.",
-          "source": ""
+          "evidence": "La page tarifaire décrit des offres logicielles, des fonctions de certification dans la plateforme et du coaching, mais ne documente ni certificat Qualiopi ni prise en charge OPCO. Ce silence ne prouve pas l’inéligibilité d’un parcours : vérifier l’organisme porteur, son certificat en cours, la prestation éligible et l’accord du financeur.",
+          "source": "https://www.exec.com/pricing"
         },
         "scenarios-personnalisables": {
           "score": 4,
@@ -1847,8 +1850,8 @@
         },
         "references-france": {
           "score": 1,
-          "evidence": "Aucune étude de cas française détaillée et vérifiable n’a été identifiée. Les témoignages publics consultés concernent des organisations non françaises.",
-          "source": ""
+          "evidence": "La page de démonstration cite Private Health Management, Linear et Paramount. Aucun cas français détaillant le produit, le périmètre et les résultats n’a été identifié dans cette sélection publique ; cela ne prouve pas l’absence de clients français.",
+          "source": "https://www.exec.com/see-exec"
         }
       },
       "changelog": [
@@ -1867,6 +1870,10 @@
         {
           "date": "2026-10-13",
           "note": "Documentation des formats, langues, scénarios, feedback, sécurité, tarifs, LTI 1.3 et coaching humain à partir de sources officielles ; notes inchangées et aucun test produit revendiqué."
+        },
+        {
+          "date": "2026-11-05",
+          "note": "Documentation des limites Qualiopi/OPCO et des références françaises, avec vérification des tarifs publics ; notes inchangées."
         }
       ]
     }
