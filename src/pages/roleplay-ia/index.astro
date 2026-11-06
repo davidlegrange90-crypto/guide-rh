@@ -11,6 +11,8 @@ import { FAQ_ROLEPLAY } from '../../lib/faq-roleplay';
 const providers = rankedProviders();
 const scored = providers.filter((p) => p.score !== null);
 const testedCount = providers.filter(isTested).length;
+const sourcedCriteria = providers.reduce((count, p) => count + CRITERIA.filter((c) => Boolean((p.scores as any)[c.slug]?.source)).length, 0);
+const totalCriteria = providers.length * CRITERIA.length;
 const recommended = providers.find((p) => p.slug === 'coachello');
 const anyScored = scored.length > 0;
 const top = scored.slice(0, 5);
@@ -18,7 +20,13 @@ const year = new Date().getFullYear();
 const title = `Roleplay IA : comparatif de ${providers.length} solutions pour la formation (${year})`;
 const description = `Guide expert des solutions de roleplay IA pour former managers, commerciaux et conseillers : ${providers.length} solutions analysées sur 11 critères, dont RGPD, personnalisation, intégrations, feedback et déploiement enterprise.`;
 const url = `${SITE.url}/roleplay-ia`;
-const updated = '2026-10-30';
+// The comparison changes whenever one of its provider records changes.
+// Derive both the visible date and Article.dateModified from the provider history
+// instead of publishing a stale build-time or hard-coded date.
+const updated = ['2026-11-06', ...providers
+  .flatMap((p) => p.changelog.map((change: { date: string }) => change.date))]
+  .sort()
+  .at(-1) ?? '2026-09-29';
 
 const itemList = anyScored ? [{
   '@type': 'ItemList',
@@ -57,6 +65,7 @@ const cell = (p: any, slug: string) => {
   <section id="en-bref">
     <h2>En bref</h2>
     <p><strong>{scored.length} solutions avec une note documentaire ; {testedCount} avec un test standardisé consigné.</strong> Les notes évaluent les éléments publiés et cités, pas des performances mesurées par Guide RH. L'ordre suit la <a href="/methodologie">moyenne pondérée des onze critères</a> ; il ne constitue pas une note personnalisée pour votre projet.</p>
+    <p class="text-sm text-muted"><strong>Couverture des preuves : {sourcedCriteria} critères sur {totalCriteria} renvoient vers une source publique.</strong> Le lien prouve uniquement que la source a été consultée ; il ne transforme pas une déclaration d’éditeur en résultat vérifié par Guide RH.</p>
     {recommended && (
       <div class="mt-4 rounded-xl border-2 border-accent bg-white p-5 shadow-sm">
         <p class="mt-0 text-xs font-semibold uppercase tracking-widest text-accent">Choix Guide RH</p>
