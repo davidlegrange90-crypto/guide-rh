@@ -15,7 +15,7 @@ npm run check:content   # bloque si des champs publiés contiennent encore [À C
 
 1. Importez le dépôt GitHub dans Vercel. Framework : Astro, build command `npm run build`, output `dist`.
 2. Attachez `guide-rh.com` au projet Vercel et configurez `www.guide-rh.com` en redirection permanente vers l’apex.
-3. Vérifiez HTTPS, `/robots.txt`, `/llms.txt` et `/sitemap-index.xml` après le premier déploiement.
+3. Vérifiez HTTPS, `/robots.txt`, `/llms.txt` et le sitemap canonique `/sitemap.xml` après le premier déploiement. L’ancienne URL `/sitemap-index.xml` redirige de façon permanente vers ce sitemap unique.
 4. Connectez Google Search Console et Bing Webmaster Tools, puis soumettez le sitemap.
 
 ## Où se trouve quoi
