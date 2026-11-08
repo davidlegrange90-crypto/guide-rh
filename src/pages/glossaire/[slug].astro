@@ -1,14 +1,14 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { SITE, CATEGORY } from '../../lib/data';
-import { GLOSSAIRE } from '../../lib/glossaire';
+import { SITE } from '../../lib/data';
+import { GLOSSAIRE, GLOSSARY_UPDATED } from '../../lib/glossaire';
 export function getStaticPaths() { return GLOSSAIRE.map((g) => ({ params: { slug: g.slug }, props: { g } })); }
 const { g } = Astro.props;
 const url = `${SITE.url}/glossaire/${g.slug}`;
 const related = g.related.map((r) => GLOSSAIRE.find((x) => x.slug === r)).filter(Boolean);
 const jsonld = [
   { '@type': 'DefinedTerm', name: g.term, description: g.def, url, inDefinedTermSet: `${SITE.url}/glossaire` },
-  { '@type': 'Article', '@id': `${url}#article`, headline: `${g.term} : définition`, description: g.def, url, inLanguage: 'fr-FR', datePublished: '2026-10-01', dateModified: CATEGORY.updated < '2026-10-01' ? '2026-10-01' : CATEGORY.updated, author: SITE.authors.map((a) => ({ '@id': `${SITE.url}/a-propos#${a.id}` })), publisher: { '@id': `${SITE.url}#organization` }, mainEntityOfPage: url },
+  { '@type': 'Article', '@id': `${url}#article`, headline: `${g.term} : définition`, description: g.def, url, inLanguage: 'fr-FR', datePublished: GLOSSARY_UPDATED, dateModified: GLOSSARY_UPDATED, author: SITE.authors.map((a) => ({ '@id': `${SITE.url}/a-propos#${a.id}` })), publisher: { '@id': `${SITE.url}#organization` }, mainEntityOfPage: url },
 ];
 ---
 <Base title={`${g.term} : définition et usage en formation`} description={g.def} canonical={url} {jsonld} breadcrumbs={[{ name: 'Glossaire', url: `${SITE.url}/glossaire` }, { name: g.term, url }]}>
