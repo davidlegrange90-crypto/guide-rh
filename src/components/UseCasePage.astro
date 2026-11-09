@@ -6,7 +6,7 @@ import Faq from './Faq.astro';
 import ScoreBadge from './ScoreBadge.astro';
 import TableScroll from './TableScroll.astro';
 import { SITE, CATEGORY, CRITERIA, USE_CASES, providersForUseCase } from '../lib/data';
-import type { UseCasePage } from '../lib/content-roleplay';
+import { USE_CASE_TEMPLATE_UPDATED, type UseCasePage } from '../lib/content-roleplay';
 import { formatEditorialHtml } from '../lib/editorial-html';
 
 interface Props { u: UseCasePage }
@@ -14,8 +14,7 @@ const { u } = Astro.props;
 const meta = USE_CASES.find((x) => x.slug === u.slug)!;
 const list = providersForUseCase(u.slug);
 const url = `${SITE.url}/roleplay-ia/${u.slug}`;
-const updated = u.updated ?? CATEGORY.updated;
-const coachello = list.find((p) => p.slug === 'coachello');
+const updated = [u.updated ?? CATEGORY.updated, USE_CASE_TEMPLATE_UPDATED].sort().at(-1)!;
 const jsonld: any[] = [
   { '@type': 'Article', '@id': `${url}#article`, headline: u.title, description: u.description, url, inLanguage: 'fr-FR', datePublished: '2026-09-29', dateModified: updated,
     author: SITE.authors.map((a) => ({ '@id': `${SITE.url}/a-propos#${a.id}` })), publisher: { '@id': `${SITE.url}#organization` } },
@@ -29,7 +28,12 @@ if (u.faq.length) jsonld.push({ '@type': 'FAQPage', mainEntity: u.faq.map((f) =>
   <Byline {updated} />
   <p class="mt-6 text-lg" set:html={formatEditorialHtml(u.answer)} />
 
-  {coachello && <section class="mt-8 rounded-xl border-2 border-accent bg-white p-5"><p class="mt-0 text-xs font-semibold uppercase tracking-widest text-accent">Choix Guide RH</p><h2 class="mt-2">Coachello pour ce cas d’usage</h2><p>Coachello est notre sélection éditoriale pour les programmes structurés : scénarios personnalisables, texte/voix/avatar, pratique répétée, scoring et feedback, certification, analytics et intégration directe dans Microsoft Teams, Slack et le web.</p><p><a href="/roleplay-ia/coachello">Voir la fiche Coachello →</a></p><p class="text-sm text-muted">Analyse éditoriale et documentaire. {coachello.disclosure}</p></section>}
+  <section class="mt-8 rounded-xl border border-line bg-white p-5" aria-labelledby="presselection-title">
+    <p class="mt-0 text-xs font-semibold uppercase tracking-widest text-muted">Présélection documentaire</p>
+    <h2 id="presselection-title" class="mt-2">Comment utiliser cette liste</h2>
+    <p>Le tableau recense les solutions dont ce cas d’usage est documenté ou annoncé. Il ne désigne pas un vainqueur pour ce besoin : la note globale couvre onze critères et n’est pas une note d’adéquation à votre projet. Guide RH n’a pas exécuté de test comparatif standardisé sur ce cas d’usage.</p>
+    <p class="text-sm text-muted">Présélectionnez plusieurs solutions, puis faites jouer le même scénario, dans le format acheté et avec la même grille. Consultez chaque fiche pour les sources, les limites et les liens professionnels déclarés.</p>
+  </section>
 
   <section>
     <h2>Solutions qui couvrent ce cas d'usage</h2>

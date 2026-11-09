@@ -3,6 +3,9 @@
 export type Section = { h: string; body: string };
 export type UseCasePage = { slug: string; title: string; description: string; answer: string; updated?: string; sections: Section[]; faq: { q: string; a: string }[] };
 
+// Significant shared-template changes must update every rendered use-case guide.
+export const USE_CASE_TEMPLATE_UPDATED = '2026-11-09';
+
 export const USE_CASE_PAGES: UseCasePage[] = [
   {
     slug: 'managers',

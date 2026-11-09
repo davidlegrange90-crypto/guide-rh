@@ -1,5 +1,5 @@
 import { SITE, rankedProviders, USE_CASES, CRITERIA } from '../lib/data';
-import { USE_CASE_PAGES, CRITERION_PAGES } from '../lib/content-roleplay';
+import { USE_CASE_PAGES, USE_CASE_TEMPLATE_UPDATED, CRITERION_PAGES } from '../lib/content-roleplay';
 import { GLOSSAIRE, GLOSSARY_UPDATED } from '../lib/glossaire';
 import { getCollection } from 'astro:content';
 
@@ -82,7 +82,10 @@ export async function GET() {
   }
 
   for (const page of USE_CASE_PAGES) {
-    if (page.updated) lastmod.set(`/roleplay-ia/${page.slug}`, page.updated);
+    lastmod.set(
+      `/roleplay-ia/${page.slug}`,
+      latestDate(page.updated ? [page.updated] : [], USE_CASE_TEMPLATE_UPDATED),
+    );
   }
   for (const page of CRITERION_PAGES) {
     if (page.updated) lastmod.set(`/roleplay-ia/${page.slug}`, page.updated);
