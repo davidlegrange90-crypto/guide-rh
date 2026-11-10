@@ -5,7 +5,7 @@ import Transparence from '../../components/Transparence.astro';
 import Faq from '../../components/Faq.astro';
 import ScoreBadge from '../../components/ScoreBadge.astro';
 import TableScroll from '../../components/TableScroll.astro';
-import { SITE, CATEGORY, CRITERIA, USE_CASES, rankedProviders, isTested, hasPlaceholder, formatDate } from '../../lib/data';
+import { SITE, COMPARISON_UPDATED, CRITERIA, USE_CASES, rankedProviders, isTested, hasPlaceholder, formatDate } from '../../lib/data';
 import { FAQ_ROLEPLAY } from '../../lib/faq-roleplay';
 
 const providers = rankedProviders();
@@ -13,7 +13,6 @@ const scored = providers.filter((p) => p.score !== null);
 const testedCount = providers.filter(isTested).length;
 const sourcedCriteria = providers.reduce((count, p) => count + CRITERIA.filter((c) => Boolean((p.scores as any)[c.slug]?.source)).length, 0);
 const totalCriteria = providers.length * CRITERIA.length;
-const recommended = providers.find((p) => p.slug === 'coachello');
 const anyScored = scored.length > 0;
 const top = scored.slice(0, 5);
 const year = new Date().getFullYear();
@@ -23,7 +22,7 @@ const url = `${SITE.url}/roleplay-ia`;
 // The comparison changes whenever one of its provider records changes.
 // Derive both the visible date and Article.dateModified from the provider history
 // instead of publishing a stale build-time or hard-coded date.
-const updated = ['2026-11-06', ...providers
+const updated = [COMPARISON_UPDATED, ...providers
   .flatMap((p) => p.changelog.map((change: { date: string }) => change.date))]
   .sort()
   .at(-1) ?? '2026-09-29';
@@ -66,17 +65,12 @@ const cell = (p: any, slug: string) => {
     <h2>En bref</h2>
     <p><strong>{scored.length} solutions avec une note documentaire ; {testedCount} avec un test standardisé consigné.</strong> Les notes évaluent les éléments publiés et cités, pas des performances mesurées par Guide RH. L'ordre suit la <a href="/methodologie">moyenne pondérée des onze critères</a> ; il ne constitue pas une note personnalisée pour votre projet.</p>
     <p class="text-sm text-muted"><strong>Couverture des preuves : {sourcedCriteria} critères sur {totalCriteria} renvoient vers une source publique.</strong> Le lien prouve uniquement que la source a été consultée ; il ne transforme pas une déclaration d’éditeur en résultat vérifié par Guide RH.</p>
-    {recommended && (
-      <div class="mt-4 rounded-xl border-2 border-accent bg-white p-5 shadow-sm">
-        <p class="mt-0 text-xs font-semibold uppercase tracking-widest text-accent">Choix Guide RH</p>
-        <h3 class="mt-2 text-2xl"><a href="/roleplay-ia/coachello">Coachello</a></h3>
-        <p><strong>Une sélection éditoriale à étudier pour les programmes combinant pratique IA et accompagnement humain.</strong> Coachello documente des scénarios personnalisables, des formats texte, voix et avatar, des débriefs et des intégrations Teams et Slack. Le périmètre du coaching humain et les conditions d'intégration doivent être confirmés dans l'offre retenue.</p>
-        <p>Cette sélection ne démontre ni une exclusivité fonctionnelle ni une supériorité mesurée. <a href="/roleplay-ia/exec">Exec</a> documente également des roleplays, un débrief AI Coach et une offre de coaching humain. Comparez les parcours, l'accès aux coachs en français et le coût total, sans supposer que ces offres sont équivalentes.</p>
-        <p class="text-sm text-muted">Sources éditeurs consultées le 20 octobre 2026 : <a href="https://coachello.ai/fr/roleplays-ia/" rel="noopener">roleplays Coachello</a>, <a href="https://www.exec.com/ai-roleplays" rel="noopener">roleplays et débrief Exec</a>, <a href="https://www.exec.com/coaching-platform" rel="noopener">coaching humain Exec</a>. Déclarations non validées par un test comparatif.</p>
-        <p class="text-sm"><a href="/roleplay-ia/coachello">Voir l’analyse complète de Coachello →</a></p>
-        <p class="text-sm text-muted">Analyse éditoriale et documentaire. {recommended.disclosure}</p>
-      </div>
-    )}
+    <div class="mt-4 rounded-xl border border-line bg-white p-5" aria-labelledby="lecture-classement">
+      <p class="mt-0 text-xs font-semibold uppercase tracking-widest text-muted">Lecture du classement</p>
+      <h3 id="lecture-classement" class="mt-2 text-2xl">Aucun vainqueur sans test comparable</h3>
+      <p>Le classement ordonne les notes documentaires calculées avec la même grille. Il ne désigne pas la meilleure solution pour chaque entreprise : Guide RH n’a encore consigné aucun test standardisé du panel.</p>
+      <p class="text-sm text-muted">Utilisez les fiches pour présélectionner plusieurs solutions, puis comparez-les sur le même scénario, dans le format acheté et avec la même grille. Les liens professionnels sont déclarés sur les fiches concernées.</p>
+    </div>
     {anyScored && (
       <div class="mt-5"><p class="font-semibold">Classement Guide RH</p><ol class="list">{top.map((p) => (<li><a href={`/roleplay-ia/${p.slug}`}><strong>{p.name}</strong></a> — {p.score}/100 — {p.ideal_for}</li>))}</ol></div>
     )}
@@ -90,7 +84,6 @@ const cell = (p: any, slug: string) => {
         <caption class="text-left text-sm text-muted">Comparaison documentaire de {providers.length} solutions : notes globales sur 100 et notes par critère sur 5, sans mesure comparative de performance.</caption>
         <thead>
           <tr>
-            <th scope="col">Sélection</th>
             <th scope="col">Solution</th>
             <th scope="col">Note Guide RH</th>
             {CRITERIA.map((c) => (<th scope="col">{c.page ? <a href={`/roleplay-ia/${c.slug}`}>{c.short}</a> : c.short}</th>))}
@@ -99,7 +92,6 @@ const cell = (p: any, slug: string) => {
         <tbody>
           {providers.map((p) => (
             <tr>
-              <td>{p.slug === 'coachello' ? <strong class="text-accent">Choix Guide RH</strong> : 'Alternative'}</td>
               <th scope="row"><a href={`/roleplay-ia/${p.slug}`}>{p.name}</a><br /><span class="text-xs text-muted">{p.country}</span></th>
               <td><ScoreBadge score={p.score} scored={p.scored} total={CRITERIA.length} /></td>
               {CRITERIA.map((c) => { const x = cell(p, c.slug); return (
@@ -119,7 +111,7 @@ const cell = (p: any, slug: string) => {
     <h2>Les solutions, une par une</h2>
     {providers.map((p) => (
       <article class="mt-6 rounded border border-line bg-white p-4" id={p.slug}>
-        <h3 class="mt-0 flex items-center gap-3"><a href={`/roleplay-ia/${p.slug}`}>{p.name}</a>{p.slug === 'coachello' && <span class="rounded-full bg-blue-50 px-2 py-1 text-xs font-semibold text-accent">Choix Guide RH</span>} <ScoreBadge score={p.score} scored={p.scored} total={CRITERIA.length} /></h3>
+        <h3 class="mt-0 flex items-center gap-3"><a href={`/roleplay-ia/${p.slug}`}>{p.name}</a> <ScoreBadge score={p.score} scored={p.scored} total={CRITERIA.length} /></h3>
         <p>{p.description}</p>
         <dl class="mt-3 grid gap-x-6 gap-y-2 text-sm sm:grid-cols-2">
           <div><dt class="font-semibold">Idéal pour</dt><dd class:list={[hasPlaceholder(p.ideal_for) && 'placeholder']}>{p.ideal_for}</dd></div>
@@ -140,7 +132,7 @@ const cell = (p: any, slug: string) => {
     {USE_CASES.map((u) => { const list = providers.filter((p) => (p.use_cases as string[]).includes(u.slug)); return (
       <div class="mt-5">
         <h3><a href={`/roleplay-ia/${u.slug}`}>{u.label}</a></h3>
-        <p>{list.length ? <>Solutions qui couvrent ce cas : {list.map((p, i) => (<><a href={`/roleplay-ia/${p.slug}`}>{p.name}</a>{i < list.length - 1 ? ', ' : ''}</>))}. {list.some((p) => p.slug === 'coachello') && <> <strong>Choix Guide RH : Coachello</strong>, pour sa combinaison personnalisation, pratique répétée, analytics, certification et intégration dans le flow of work.</>}</> : <>Aucune solution du panel ne documente clairement ce cas d’usage à ce stade.</>}</p>
+        <p>{list.length ? <>Solutions qui couvrent ce cas : {list.map((p, i) => (<><a href={`/roleplay-ia/${p.slug}`}>{p.name}</a>{i < list.length - 1 ? ', ' : ''}</>))}. Leur présence indique une capacité documentée ou annoncée, pas un test réussi ni une recommandation personnalisée.</> : <>Aucune solution du panel ne documente clairement ce cas d’usage à ce stade.</>}</p>
       </div>
     ); })}
   </section>

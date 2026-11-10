@@ -2,13 +2,13 @@
 import Base from '../layouts/Base.astro';
 import Byline from '../components/Byline.astro';
 import TableScroll from '../components/TableScroll.astro';
-import { SITE, CRITERIA, SCALE_NOTE, rankedProviders } from '../lib/data';
+import { SITE, METHODOLOGY_UPDATED, CRITERIA, SCALE_NOTE, rankedProviders } from '../lib/data';
 const url = `${SITE.url}/methodologie`;
 const total = CRITERIA.reduce((s, c) => s + c.weight, 0);
 const providers = rankedProviders();
 const scoredCount = providers.filter((p) => p.score !== null).length;
 const testedCount = providers.filter((p) => Boolean(p.tested_on)).length;
-const updated = '2026-10-21';
+const updated = METHODOLOGY_UPDATED;
 const jsonld = [{
   '@type': 'Article', '@id': `${url}#article`, headline: 'Méthodologie Guide RH : critères, notes et statut des évaluations',
   description: 'Grille publique de 11 critères pondérés : analyse documentaire, notes éditoriales, protocole proposé pour les tests, sources, limites et droit de réponse.',
@@ -37,7 +37,7 @@ const jsonld = [{
     <li><strong>Une déclaration éditeur est une preuve documentaire, pas une vérification produit.</strong> Les qualités qui nécessitent un usage réel, comme le naturel d’une voix ou la pertinence d’un feedback, restent à confirmer en pilote.</li>
     <li><strong>0 peut signifier qu’aucune information publique exploitable n’a été trouvée</strong> lorsque le critère le prévoit. Cela ne prouve pas que la fonction est absente ; la fiche doit alors indiquer le point à vérifier.</li>
     <li><strong>Une note nulle au sens des données (<code>null</code>) signifie « non évalué ».</strong> Le critère est exclu du calcul et le nombre de critères évalués est affiché sur la fiche. Ce cas est distinct d’une note de 0/5.</li>
-    <li><strong>L’ordre est calculé sur la moyenne pondérée.</strong> En cas d’égalité, les solutions sont départagées alphabétiquement. Une sélection éditoriale affichée séparément ne modifie ni le calcul ni l’ordre.</li>
+    <li><strong>L’ordre est calculé sur la moyenne pondérée.</strong> En cas d’égalité, les solutions sont départagées alphabétiquement. Aucun placement préférentiel n’est ajouté au classement.</li>
   </ul>
 
   <h2 id="sources">Sources et niveau de preuve</h2>
@@ -61,7 +61,7 @@ const jsonld = [{
   </ol>
 
   <h2 id="independance">Indépendance</h2>
-  <p>{SITE.funding} Tout lien professionnel ou commercial entre Guide RH et un éditeur est indiqué sur la fiche de cet éditeur. Les lecteurs doivent tenir compte de ces liens lorsqu'ils interprètent une note ou une sélection éditoriale. Une sélection éditoriale est distincte du calcul du classement. Toute correction factuelle demandée par un éditeur est traitée indépendamment de l'existence ou non d'une relation commerciale.</p>
+  <p>{SITE.funding} Tout lien professionnel ou commercial entre Guide RH et un éditeur est indiqué sur la fiche de cet éditeur. Les lecteurs doivent tenir compte de ces liens lorsqu'ils interprètent une note. Aucun lien déclaré ne donne lieu à un placement préférentiel dans le comparatif. Toute correction factuelle demandée par un éditeur est traitée indépendamment de l'existence ou non d'une relation commerciale.</p>
 
   <h2 id="limites">Limites</h2>
   <ul class="list">
@@ -69,5 +69,5 @@ const jsonld = [{
     <li>Les prix non publiés doivent être confirmés par devis. Les fonctionnalités, conditions et tarifs peuvent évoluer après publication.</li>
     <li>Les solutions évoluent vite : une fiche datée de plus de six mois doit être lue avec prudence.</li>
   </ul>
-  <p class="text-sm text-muted">Méthodologie mise à jour le <time datetime={updated}>21 octobre 2026</time>. Les dates des fiches et du comparatif reflètent leurs propres révisions.</p>
+  <p class="text-sm text-muted">Méthodologie mise à jour le <time datetime={updated}>10 novembre 2026</time>. Les dates des fiches et du comparatif reflètent leurs propres révisions.</p>
 </Base>

@@ -1,4 +1,4 @@
-import { SITE, rankedProviders, USE_CASES, CRITERIA } from '../lib/data';
+import { SITE, COMPARISON_UPDATED, METHODOLOGY_UPDATED, rankedProviders, USE_CASES, CRITERIA } from '../lib/data';
 import { USE_CASE_PAGES, USE_CASE_TEMPLATE_UPDATED, CRITERION_PAGES } from '../lib/content-roleplay';
 import { GLOSSAIRE, GLOSSARY_UPDATED } from '../lib/glossaire';
 import { getCollection } from 'astro:content';
@@ -22,7 +22,7 @@ export async function GET() {
     : '2026-09-29';
   const comparisonUpdated = latestDate(
     providers.flatMap((provider) => provider.changelog.map((change) => change.date)),
-    '2026-11-06',
+    COMPARISON_UPDATED,
   );
 
   const staticPages = [
@@ -54,7 +54,7 @@ export async function GET() {
   const lastmod = new Map<string, string>([
     ['/', journalUpdated],
     ['/roleplay-ia', comparisonUpdated],
-    ['/methodologie', '2026-10-21'],
+    ['/methodologie', METHODOLOGY_UPDATED],
     ['/journal', journalUpdated],
     ['/glossaire', GLOSSARY_UPDATED],
   ]);
