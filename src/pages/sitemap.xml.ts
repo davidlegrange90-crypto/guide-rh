@@ -1,4 +1,4 @@
-import { SITE, COMPARISON_UPDATED, METHODOLOGY_UPDATED, rankedProviders, USE_CASES, CRITERIA } from '../lib/data';
+import { SITE, COMPARISON_UPDATED, METHODOLOGY_UPDATED, PROVIDER_TEMPLATE_UPDATED, rankedProviders, USE_CASES, CRITERIA } from '../lib/data';
 import { USE_CASE_PAGES, USE_CASE_TEMPLATE_UPDATED, CRITERION_PAGES } from '../lib/content-roleplay';
 import { GLOSSAIRE, GLOSSARY_UPDATED } from '../lib/glossaire';
 import { getCollection } from 'astro:content';
@@ -62,7 +62,7 @@ export async function GET() {
   for (const provider of providers) {
     const providerDate = latestDate(
       provider.changelog.map((change) => change.date),
-      '2026-09-29',
+      PROVIDER_TEMPLATE_UPDATED,
     );
     lastmod.set(`/roleplay-ia/${provider.slug}`, providerDate);
 

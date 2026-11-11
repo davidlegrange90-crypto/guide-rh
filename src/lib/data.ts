@@ -9,6 +9,7 @@ export const SITE = site;
 export const CATEGORY = { slug: 'roleplay-ia', label: 'Roleplay IA', updated: providersFile.updated };
 export const COMPARISON_UPDATED = '2026-11-10';
 export const METHODOLOGY_UPDATED = '2026-11-10';
+export const PROVIDER_TEMPLATE_UPDATED = '2026-11-11';
 export const CRITERIA: Criterion[] = criteriaFile.criteria;
 export const SCALE_NOTE: string = criteriaFile.scale;
 

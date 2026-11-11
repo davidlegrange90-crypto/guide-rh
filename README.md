@@ -50,7 +50,8 @@ npm run check:content   # bloque si des champs publiés contiennent encore [À C
 1. Exécutez les scénarios communs avec un accès réel et conservez le protocole, la date, les versions et les observations.
 2. Renseignez `tested_on` et `test_notes`. Un test ne modifie pas automatiquement une note : toute modification doit être reliée à un constat reproductible.
 3. Envoyez la fiche à l'éditeur pour relecture factuelle, pas pour validation des notes. Publiez sa réponse éventuelle sans la modifier dans `right_of_reply`.
-4. Ajoutez l'historique et le journal, puis exécutez `npm run check:content` et `npm run build`.
+4. Le balisage `Review` n'est généré que lorsque `tested_on` contient la date d'un test standardisé réel. Une note documentaire reste visible mais ne produit pas ce balisage.
+5. Ajoutez l'historique et le journal, puis exécutez `npm run check:content` et `npm run build`.
 
 ### Modifier une note
 Changez le score et la preuve, ajoutez une ligne datée dans `changelog` et dans le journal. Ne supprimez jamais l'historique.

@@ -4,7 +4,7 @@ import Byline from './Byline.astro';
 import Transparence from './Transparence.astro';
 import ScoreBadge from './ScoreBadge.astro';
 import TableScroll from './TableScroll.astro';
-import { SITE, CATEGORY, CRITERIA, USE_CASES, rankedProviders, hasPlaceholder, formatDate } from '../lib/data';
+import { SITE, CATEGORY, PROVIDER_TEMPLATE_UPDATED, CRITERIA, USE_CASES, rankedProviders, hasPlaceholder, formatDate } from '../lib/data';
 
 interface Props { p: ReturnType<typeof rankedProviders>[number] }
 const { p } = Astro.props;
@@ -13,14 +13,16 @@ const others = all.filter((x) => x.slug !== p.slug && x.use_cases.some((u: strin
 const url = `${SITE.url}/roleplay-ia/${p.slug}`;
 const title = `${p.name} : avis, fonctionnalités et alternatives | Guide RH`;
 const description = `${p.name} : analyse documentaire sur 11 critères, note éditoriale, points forts, limites, prix publiés et alternatives pour la formation en entreprise.`;
-const lastChange = [p.changelog?.[p.changelog.length - 1]?.date ?? CATEGORY.updated, '2026-10-02'].sort().at(-1)!;
+const lastChange = [p.changelog?.[p.changelog.length - 1]?.date ?? CATEGORY.updated, PROVIDER_TEMPLATE_UPDATED].sort().at(-1)!;
 
 const jsonld: any[] = [
   { '@type': 'SoftwareApplication', '@id': `${url}#app`, name: p.name, url, sameAs: p.url, description: p.description, applicationCategory: 'BusinessApplication', applicationSubCategory: 'AI roleplay for corporate training', operatingSystem: 'Web', featureList: p.formats },
   { '@type': 'Article', '@id': `${url}#article`, headline: title, description, url, inLanguage: 'fr-FR', datePublished: '2026-09-29', dateModified: lastChange, mainEntity: { '@id': `${url}#app` },
     author: SITE.authors.map((a) => ({ '@id': `${SITE.url}/a-propos#${a.id}` })), publisher: { '@id': `${SITE.url}#organization` }, mainEntityOfPage: url },
 ];
-if (p.score !== null) {
+// Only expose Review markup after a real, dated test. Documentary scores stay
+// visible on the page but must not imply first-hand product experience to search engines.
+if (p.tested_on && p.score !== null) {
   jsonld.push({ '@type': 'Review', '@id': `${url}#review`, name: `Évaluation éditoriale de ${p.name} par Guide RH`, itemReviewed: { '@id': `${url}#app`, '@type': 'SoftwareApplication', name: p.name }, author: { '@id': `${SITE.url}/a-propos#${SITE.authors[0].id}` }, datePublished: '2026-09-29', dateModified: lastChange,
     reviewRating: { '@type': 'Rating', ratingValue: p.score, bestRating: 100, worstRating: 0 }, reviewBody: p.test_notes });
   jsonld[0].review = { '@id': `${url}#review` };

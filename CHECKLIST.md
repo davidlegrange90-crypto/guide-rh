@@ -18,7 +18,7 @@
 ## Technique et SEO
 - [ ] `npm run build` sans erreur ; 64+ pages générées.
 - [ ] Lighthouse (mobile) : Performance ≥ 95, SEO ≥ 95, Accessibilité ≥ 95.
-- [ ] Rich Results Test (Google) sur `/roleplay-ia`, une fiche solution, une page cas d'usage, une page glossaire : Article, ItemList, FAQPage, BreadcrumbList, SoftwareApplication, Review reconnus sans erreur.
+- [ ] Rich Results Test (Google) sur `/roleplay-ia`, une fiche solution, une page cas d'usage, une page glossaire : Article, ItemList, FAQPage, BreadcrumbList et SoftwareApplication reconnus sans erreur. `Review` n'est attendu que sur une fiche avec `tested_on` renseigné après un test standardisé réel.
 - [ ] `https://guide-rh.com/robots.txt` : aucun blocage des crawlers IA ; Cloudflare « Block AI bots » désactivé.
 - [ ] `https://guide-rh.com/llms.txt` et le sitemap canonique `/sitemap.xml` accessibles ; `/sitemap-index.xml` redirige en 301 vers `/sitemap.xml`.
 - [ ] Redirections 301 depuis www, guiderh.com, guide-rh.fr et autres variantes.
