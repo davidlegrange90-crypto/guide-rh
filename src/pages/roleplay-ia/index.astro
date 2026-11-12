@@ -5,7 +5,7 @@ import Transparence from '../../components/Transparence.astro';
 import Faq from '../../components/Faq.astro';
 import ScoreBadge from '../../components/ScoreBadge.astro';
 import TableScroll from '../../components/TableScroll.astro';
-import { SITE, COMPARISON_UPDATED, CRITERIA, USE_CASES, rankedProviders, isTested, hasPlaceholder, formatDate } from '../../lib/data';
+import { SITE, COMPARISON_UPDATED, CRITERIA, USE_CASES, rankedProviders, isTested, hasPlaceholder, sourceHost, formatDate } from '../../lib/data';
 import { FAQ_ROLEPLAY } from '../../lib/faq-roleplay';
 
 const providers = rankedProviders();
@@ -50,7 +50,7 @@ const jsonld = [
 const cell = (p: any, slug: string) => {
   const s = p.scores[slug];
   const ev = s?.evidence ?? '';
-  return { score: s?.score, ev, src: s?.source, ph: hasPlaceholder(ev) };
+  return { score: s?.score, ev, src: s?.source, sourceName: s?.source ? sourceHost(s.source) : null, ph: hasPlaceholder(ev) };
 };
 ---
 <Base {title} {description} canonical={url} {jsonld} breadcrumbs={[{ name: 'Roleplay IA', url }]}>
@@ -97,7 +97,7 @@ const cell = (p: any, slug: string) => {
               {CRITERIA.map((c) => { const x = cell(p, c.slug); return (
                 <td class:list={[x.ph && 'placeholder']}>
                   {x.ev}{typeof x.score === 'number' && <> ({x.score})</>}
-                  {x.src && <> <a href={x.src} rel="noopener" class="text-xs">[source]</a></>}
+                  {x.src && <> <a href={x.src} rel="noopener" class="text-xs" aria-label={`${x.sourceName} — source pour ${p.name}, critère ${c.label}`}>{x.sourceName}</a></>}
                 </td>
               ); })}
             </tr>

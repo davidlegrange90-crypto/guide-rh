@@ -7,9 +7,10 @@ export type Provider = (typeof providersFile.providers)[number];
 
 export const SITE = site;
 export const CATEGORY = { slug: 'roleplay-ia', label: 'Roleplay IA', updated: providersFile.updated };
-export const COMPARISON_UPDATED = '2026-11-10';
+export const COMPARISON_UPDATED = '2026-11-12';
 export const METHODOLOGY_UPDATED = '2026-11-10';
-export const PROVIDER_TEMPLATE_UPDATED = '2026-11-11';
+export const PROVIDER_TEMPLATE_UPDATED = '2026-11-12';
+export const CRITERION_TEMPLATE_UPDATED = '2026-11-12';
 export const CRITERIA: Criterion[] = criteriaFile.criteria;
 export const SCALE_NOTE: string = criteriaFile.scale;
 
@@ -48,6 +49,14 @@ export function rankedProviders(): (Provider & { rank: number | null; score: num
 
 export const isTested = (p: Provider) => Boolean(p.tested_on);
 export const hasPlaceholder = (s: unknown) => typeof s === 'string' && /\[À (COMPLÉTER|VÉRIFIER)/.test(s);
+
+export function sourceHost(url: string) {
+  try {
+    return new URL(url).hostname.replace(/^www\./, '');
+  } catch {
+    return 'source';
+  }
+}
 
 export function providerBySlug(slug: string) {
   return rankedProviders().find((p) => p.slug === slug);

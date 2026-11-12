@@ -4,7 +4,7 @@ import Byline from './Byline.astro';
 import Transparence from './Transparence.astro';
 import ScoreBadge from './ScoreBadge.astro';
 import TableScroll from './TableScroll.astro';
-import { SITE, CATEGORY, PROVIDER_TEMPLATE_UPDATED, CRITERIA, USE_CASES, rankedProviders, hasPlaceholder, formatDate } from '../lib/data';
+import { SITE, CATEGORY, PROVIDER_TEMPLATE_UPDATED, CRITERIA, USE_CASES, rankedProviders, hasPlaceholder, sourceHost, formatDate } from '../lib/data';
 
 interface Props { p: ReturnType<typeof rankedProviders>[number] }
 const { p } = Astro.props;
@@ -52,13 +52,13 @@ if (p.tested_on && p.score !== null) {
       <table>
       <thead><tr><th scope="col">Critère</th><th scope="col">Poids</th><th scope="col">Note /5</th><th scope="col">Éléments documentaires et points à vérifier</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        {CRITERIA.map((c) => { const s = (p.scores as any)[c.slug]; return (
+        {CRITERIA.map((c) => { const s = (p.scores as any)[c.slug]; const host = s?.source ? sourceHost(s.source) : null; return (
           <tr>
             <th scope="row">{c.page ? <a href={`/roleplay-ia/${c.slug}`}>{c.label}</a> : c.label}</th>
             <td>{c.weight}</td>
             <td>{typeof s?.score === 'number' ? s.score : '—'}</td>
             <td class:list={[hasPlaceholder(s?.evidence) && 'placeholder']}>{s?.evidence}</td>
-            <td>{s?.source ? <a href={s.source} rel="noopener">lien</a> : '—'}</td>
+            <td>{s?.source ? <a href={s.source} rel="noopener" aria-label={`${host} — source pour ${p.name}, critère ${c.label}`}>{host}</a> : '—'}</td>
           </tr>
         ); })}
       </tbody>

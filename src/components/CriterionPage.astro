@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import Byline from './Byline.astro';
 import Transparence from './Transparence.astro';
 import TableScroll from './TableScroll.astro';
-import { SITE, CATEGORY, CRITERIA, rankedProviders, hasPlaceholder } from '../lib/data';
+import { SITE, CATEGORY, CRITERION_TEMPLATE_UPDATED, CRITERIA, rankedProviders, hasPlaceholder, sourceHost } from '../lib/data';
 import type { CriterionPage } from '../lib/content-roleplay';
 import { formatEditorialHtml } from '../lib/editorial-html';
 
@@ -12,7 +12,7 @@ const { c } = Astro.props;
 const crit = CRITERIA.find((x) => x.slug === c.slug)!;
 const list = rankedProviders();
 const url = `${SITE.url}/roleplay-ia/${c.slug}`;
-const updated = c.updated ?? CATEGORY.updated;
+const updated = [c.updated ?? CATEGORY.updated, CRITERION_TEMPLATE_UPDATED].sort().at(-1)!;
 const anyScored = list.some((p) => typeof (p.scores as any)[c.slug]?.score === 'number');
 const jsonld = [
   { '@type': 'Article', '@id': `${url}#article`, headline: c.title, description: c.description, url, inLanguage: 'fr-FR', datePublished: '2026-09-29', dateModified: updated,
@@ -36,8 +36,8 @@ const jsonld = [
     <TableScroll label={`Comparaison des solutions pour le critère ${crit.label}`} minWidth="58rem">
       <table>
       <thead><tr><th scope="col">Solution</th><th scope="col">Note Guide RH /5</th><th scope="col">Éléments pris en compte</th><th scope="col">Source</th></tr></thead>
-      <tbody>{list.map((p) => { const s = (p.scores as any)[c.slug]; return (
-        <tr><th scope="row"><a href={`/roleplay-ia/${p.slug}`}>{p.name}</a></th><td>{typeof s?.score === 'number' ? s.score : '—'}</td><td class:list={[hasPlaceholder(s?.evidence) && 'placeholder']}>{s?.evidence}</td><td>{s?.source ? <a href={s.source} rel="noopener">lien</a> : '—'}</td></tr>
+      <tbody>{list.map((p) => { const s = (p.scores as any)[c.slug]; const host = s?.source ? sourceHost(s.source) : null; return (
+        <tr><th scope="row"><a href={`/roleplay-ia/${p.slug}`}>{p.name}</a></th><td>{typeof s?.score === 'number' ? s.score : '—'}</td><td class:list={[hasPlaceholder(s?.evidence) && 'placeholder']}>{s?.evidence}</td><td>{s?.source ? <a href={s.source} rel="noopener" aria-label={`${host} — source pour ${p.name}, critère ${crit.label}`}>{host}</a> : '—'}</td></tr>
       ); })}</tbody>
       </table>
     </TableScroll>

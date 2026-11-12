@@ -1,4 +1,4 @@
-import { SITE, COMPARISON_UPDATED, METHODOLOGY_UPDATED, PROVIDER_TEMPLATE_UPDATED, rankedProviders, USE_CASES, CRITERIA } from '../lib/data';
+import { SITE, COMPARISON_UPDATED, METHODOLOGY_UPDATED, PROVIDER_TEMPLATE_UPDATED, CRITERION_TEMPLATE_UPDATED, rankedProviders, USE_CASES, CRITERIA } from '../lib/data';
 import { USE_CASE_PAGES, USE_CASE_TEMPLATE_UPDATED, CRITERION_PAGES } from '../lib/content-roleplay';
 import { GLOSSAIRE, GLOSSARY_UPDATED } from '../lib/glossaire';
 import { getCollection } from 'astro:content';
@@ -88,7 +88,10 @@ export async function GET() {
     );
   }
   for (const page of CRITERION_PAGES) {
-    if (page.updated) lastmod.set(`/roleplay-ia/${page.slug}`, page.updated);
+    lastmod.set(
+      `/roleplay-ia/${page.slug}`,
+      latestDate(page.updated ? [page.updated] : [], CRITERION_TEMPLATE_UPDATED),
+    );
   }
   for (const entry of GLOSSAIRE) {
     lastmod.set(`/glossaire/${entry.slug}`, GLOSSARY_UPDATED);
