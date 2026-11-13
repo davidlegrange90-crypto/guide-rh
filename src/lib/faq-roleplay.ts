@@ -5,15 +5,15 @@ export const FAQ_ROLEPLAY = [
   },
   {
     q: "Le jeu de rôle avec l'IA est-il efficace pour développer les soft skills ?",
-    a: "Les soft skills se développent par la pratique et le feedback, deux choses que le roleplay IA rend disponibles sans contrainte de planning. Les études publiées à ce jour portent surtout sur la vente et la prise de parole ; pour le management, les retours d'expérience des entreprises sont encourageants mais peu de résultats mesurés indépendamment existent. Nous relevons dans chaque fiche les preuves d'efficacité publiées par l'éditeur et leur niveau de rigueur.",
+    a: "Guide RH ne dispose pas encore de tests standardisés permettant d’attribuer un gain de compétences à ces solutions. Pour vérifier leur intérêt dans votre contexte, comparez plusieurs outils sur le même scénario et avec une grille définie avant le pilote. Séparez l’activité (sessions, complétion), la progression en simulation et le transfert en situation réelle. Les résultats publiés par les éditeurs restent des preuves documentaires, pas des mesures vérifiées par Guide RH. Voir la <a href=\"/methodologie\">méthodologie</a>.",
   },
   {
     q: "Quelle différence entre roleplay IA et jeu de rôle classique avec un formateur ?",
-    a: "Le jeu de rôle classique apporte la finesse d'un formateur et le regard des pairs, mais coûte cher, se planifie difficilement et ne permet qu'une ou deux répétitions. Le roleplay IA permet de répéter dix fois le même entretien, en privé, avec un feedback immédiat et homogène. Les deux se combinent : l'IA pour la répétition, le formateur ou le coach pour les situations complexes et la prise de recul.",
+    a: "Le jeu de rôle animé permet au formateur et aux pairs d’observer, de reformuler et de contextualiser le débrief. Un outil IA peut rendre un scénario disponible à la demande, mais la crédibilité du dialogue, la pertinence du feedback, la confidentialité et le nombre utile de répétitions doivent être vérifiés. Les deux formats peuvent se combiner ; comparez-les sur le même objectif pédagogique plutôt que de supposer qu’un format remplace l’autre.",
   },
   {
     q: "Roleplay IA, réalité virtuelle ou serious game : que choisir ?",
-    a: "La réalité virtuelle immerge dans un environnement (prise de parole, sécurité) mais demande du matériel ; le serious game travaille des connaissances par le jeu ; le roleplay IA travaille la conversation elle-même. Pour des compétences relationnelles (feedback, conflit, vente), le roleplay IA est le format le plus direct et le moins coûteux à déployer, sur un simple navigateur.",
+    a: "Le roleplay IA cible une conversation, par texte, voix ou avatar. La réalité virtuelle ajoute un environnement immersif et peut nécessiter du matériel ; un serious game peut aussi travailler des décisions ou des connaissances. Il n’existe pas de format universellement moins coûteux : comparez le format réellement acheté, le scénario, les équipements, l’animation, les données traitées et le coût total. Voir le guide <a href=\"/roleplay-ia/prix\">prix et coût total</a>.",
   },
   {
     q: "Quelle alternative française à Yoodli ou Mursion ?",
@@ -25,7 +25,7 @@ export const FAQ_ROLEPLAY = [
   },
   {
     q: "Le roleplay IA est-il finançable par l'OPCO ?",
-    a: "Un outil logiciel seul n'est pas une action de formation au sens du Code du travail. La prise en charge OPCO passe généralement par un parcours de formation certifié Qualiopi qui intègre le roleplay IA (éditeur certifié ou organisme de formation partenaire). Le tableau comparatif indique pour chaque solution si l'éditeur est certifié Qualiopi et si des prises en charge ont été documentées.",
+    a: "La certification Qualiopi atteste le processus qualité du prestataire ; elle ne rend pas automatiquement une dépense finançable. La prise en charge dépend de l’action, du prestataire et de la catégorie couverte par sa certification, du dispositif, des règles de votre OPCO et de son accord. Avant de commander, demandez le programme, le devis détaillé et une confirmation écrite de l’OPCO. Une licence logicielle seule ne doit pas être présentée comme financée sans cet accord. Voir le guide <a href=\"/roleplay-ia/qualiopi-opco\">Qualiopi et OPCO</a>.",
   },
   {
     q: "Quelles solutions hébergent les données en France ou dans l'UE ?",
@@ -33,15 +33,15 @@ export const FAQ_ROLEPLAY = [
   },
   {
     q: "Le roleplay IA est-il concerné par l'AI Act ?",
-    a: "Un outil d'entraînement n'est pas en soi un système à haut risque. Il peut le devenir si ses scores servent à évaluer, promouvoir ou sanctionner des salariés. La bonne pratique consiste à réserver les résultats au collaborateur et à son développement, à informer les salariés de l'usage de l'IA et à garder une supervision humaine sur toute décision RH. Voir la page <a href=\"/roleplay-ia/ai-act\">Conformité AI Act</a>.",
+    a: "Oui. Le classement dépend toutefois de la finalité prévue et des modalités d’usage, pas du seul nom de l’outil. Un système réservé à l’entraînement n’est pas automatiquement à haut risque. Un système destiné à évaluer des résultats d’apprentissage dans le cadre visé par l’annexe III, ou à soutenir des décisions sur l’emploi ou la performance, peut relever du haut risque. Documentez qui voit les scores, les décisions qu’ils peuvent alimenter et la supervision humaine. Voir le guide <a href=\"/roleplay-ia/ai-act\">AI Act</a>.",
   },
   {
     q: "Comment lancer un pilote de roleplay IA dans mon entreprise ?",
-    a: "Choisissez une population et un cas précis (par exemple 30 managers et l'entretien de recadrage), définissez deux ou trois indicateurs (taux de complétion, progression du score entre la première et la dernière session, retours qualitatifs), et faites tester deux solutions sur les mêmes scénarios pendant six à huit semaines. Impliquez le CSE et la DPO dès le départ.",
+    a: "Choisissez un cas d’usage et une population clairement définis. Avant le lancement, fixez le même scénario, le format réellement acheté, la grille, les règles d’accès aux résultats et les indicateurs pour toutes les solutions comparées. La taille de l’échantillon et la durée dépendent de votre objectif : aucun nombre de participants ni délai n’est universel. Associez la DPO et les représentants du personnel lorsque les données et l’usage prévu le justifient.",
   },
   {
     q: "Les collaborateurs acceptent-ils d'être évalués par une IA ?",
-    a: "L'acceptation dépend de l'usage des résultats. Lorsque les scores restent privés et servent uniquement à s'entraîner, les collaborateurs y voient un espace sans jugement. Lorsque les scores remontent au manager ou aux RH, la méfiance apparaît. Le cadre à poser : résultats individuels non partagés sans accord, information claire, et possibilité de refuser.",
+    a: "Ne supposez pas l’acceptation : mesurez-la pendant le pilote. Expliquez la finalité, les personnes qui accèdent aux sessions et aux scores, la durée de conservation et les éventuelles alternatives. Recueillez un retour anonyme et distinguez l’acceptation de la simple facilité d’usage. Si des résultats individuels sont partagés ou peuvent influer sur une décision d’emploi, faites examiner le cadre juridique et le dialogue social avant le déploiement.",
   },
   {
     q: "Comment ce comparatif est-il financé et qui le rédige ?",

@@ -7,7 +7,7 @@ export type Provider = (typeof providersFile.providers)[number];
 
 export const SITE = site;
 export const CATEGORY = { slug: 'roleplay-ia', label: 'Roleplay IA', updated: providersFile.updated };
-export const COMPARISON_UPDATED = '2026-11-12';
+export const COMPARISON_UPDATED = '2026-11-13';
 export const METHODOLOGY_UPDATED = '2026-11-10';
 export const PROVIDER_TEMPLATE_UPDATED = '2026-11-12';
 export const CRITERION_TEMPLATE_UPDATED = '2026-11-12';
