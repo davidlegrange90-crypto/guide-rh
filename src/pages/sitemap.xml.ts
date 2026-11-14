@@ -1,6 +1,6 @@
 import { SITE, COMPARISON_UPDATED, METHODOLOGY_UPDATED, PROVIDER_TEMPLATE_UPDATED, CRITERION_TEMPLATE_UPDATED, rankedProviders, USE_CASES, CRITERIA } from '../lib/data';
 import { USE_CASE_PAGES, USE_CASE_TEMPLATE_UPDATED, CRITERION_PAGES } from '../lib/content-roleplay';
-import { GLOSSAIRE, GLOSSARY_UPDATED } from '../lib/glossaire';
+import { GLOSSAIRE, GLOSSARY_INDEX_UPDATED, glossaryUpdated } from '../lib/glossaire';
 import { getCollection } from 'astro:content';
 
 const latestDate = (dates: string[], fallback: string) =>
@@ -56,7 +56,7 @@ export async function GET() {
     ['/roleplay-ia', comparisonUpdated],
     ['/methodologie', METHODOLOGY_UPDATED],
     ['/journal', journalUpdated],
-    ['/glossaire', GLOSSARY_UPDATED],
+    ['/glossaire', GLOSSARY_INDEX_UPDATED],
   ]);
 
   for (const provider of providers) {
@@ -94,7 +94,7 @@ export async function GET() {
     );
   }
   for (const entry of GLOSSAIRE) {
-    lastmod.set(`/glossaire/${entry.slug}`, GLOSSARY_UPDATED);
+    lastmod.set(`/glossaire/${entry.slug}`, glossaryUpdated(entry));
   }
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>

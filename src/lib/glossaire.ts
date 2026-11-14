@@ -1,5 +1,5 @@
-// The glossary text has not changed since its original editorial publication.
-// Keep this date independent from provider data updates.
+// Keep glossary dates independent from provider data updates. Individual
+// definitions can declare a later review date without refreshing every entry.
 export const GLOSSARY_UPDATED = '2026-10-01';
 
 export const GLOSSAIRE = [
@@ -11,8 +11,16 @@ export const GLOSSAIRE = [
   { slug: 'scorm', term: 'SCORM', def: "Standard d'échange entre un contenu de formation et un LMS. Un module SCORM s'ouvre dans le LMS et lui remonte une complétion et un score global.", body: "<p>Versions courantes : SCORM 1.2 et SCORM 2004. Suffisant pour suivre qui a fait l'exercice ; insuffisant pour analyser le détail des sessions, qui relève de xAPI.</p>", related: ['xapi', 'lms'] },
   { slug: 'xapi', term: 'xAPI (Tin Can)', def: "Standard qui décrit chaque action d'apprentissage sous la forme « acteur – verbe – objet » et la stocke dans un LRS. Permet de remonter le détail d'une session de roleplay IA (durée, critères, progression).", body: "<p>À privilégier si vous voulez analyser la progression des collaborateurs au-delà de la complétion.</p>", related: ['scorm', 'lms'] },
   { slug: 'lms', term: 'LMS / LXP', def: "Plateforme de gestion de la formation (LMS) ou d'expérience d'apprentissage (LXP) : catalogue, inscriptions, suivi, contenus. Le roleplay IA s'y intègre par lien, SCORM, LTI ou xAPI.", body: "<p>Voir la page <a href=\"/roleplay-ia/integration-lms\">intégration LMS</a> du comparatif.</p>", related: ['scorm', 'xapi'] },
-  { slug: 'qualiopi', term: 'Qualiopi', def: "Certification qualité obligatoire pour les prestataires de formation qui veulent que leurs actions soient financées par des fonds publics ou mutualisés (OPCO, CPF). Un éditeur de roleplay IA certifié peut proposer des parcours finançables.", body: "<p>Voir la page <a href=\"/roleplay-ia/qualiopi-opco\">Qualiopi et OPCO</a> du comparatif.</p>", related: ['opco'] },
-  { slug: 'opco', term: 'OPCO', def: "Opérateur de compétences : organisme paritaire qui finance la formation professionnelle des entreprises de sa branche. La prise en charge d'un roleplay IA passe par un parcours de formation certifié Qualiopi.", body: "", related: ['qualiopi'] },
-  { slug: 'ai-act', term: 'AI Act (règlement européen sur l\'IA)', def: "Règlement de l'Union européenne qui classe les systèmes d'IA par niveau de risque et fixe des obligations de transparence, de documentation et de supervision humaine. Les usages RH d'évaluation des salariés sont classés à haut risque.", body: "<p>Voir la page <a href=\"/roleplay-ia/ai-act\">roleplay IA et AI Act</a> du comparatif.</p>", related: ['rgpd'] },
+  { slug: 'qualiopi', term: 'Qualiopi', def: "Certification qui atteste la qualité du processus mis en œuvre par un prestataire d’actions concourant au développement des compétences, pour une ou plusieurs catégories d’actions. Elle est requise lorsque ce prestataire veut accéder à certains fonds publics ou mutualisés ; elle ne garantit pas la prise en charge d’un achat précis.", body: "<p>Vérifiez le prestataire, la catégorie d’action couverte et l’accord du financeur. Voir le guide <a href=\"/roleplay-ia/qualiopi-opco\">Qualiopi et OPCO</a> et la <a href=\"https://travail-emploi.gouv.fr/qualiopi-marque-de-certification-qualite-des-prestataires-de-formation\" rel=\"noopener\">présentation officielle du ministère du Travail</a>.</p>", related: ['opco'], updated: '2026-11-14' },
+  { slug: 'opco', term: 'OPCO', def: "Opérateur de compétences : organisme agréé qui accompagne les entreprises et finance notamment l’alternance selon les niveaux fixés par les branches. Une certification Qualiopi du prestataire peut être requise, mais la prise en charge d’un parcours ou d’une licence de roleplay IA dépend du dispositif et de l’accord de l’OPCO.", body: "<p>Demandez une confirmation écrite avant de commander. Voir le guide <a href=\"/roleplay-ia/qualiopi-opco\">Qualiopi et OPCO</a> et les <a href=\"https://travail-emploi.gouv.fr/les-operateurs-de-competences-opco\" rel=\"noopener\">missions officielles des OPCO</a>.</p>", related: ['qualiopi'], updated: '2026-11-14' },
+  { slug: 'ai-act', term: 'AI Act (règlement européen sur l\'IA)', def: "Règlement de l’Union européenne qui encadre les systèmes d’IA selon leurs risques et leur finalité prévue. Un outil d’entraînement n’est pas automatiquement à haut risque ; certains usages destinés à évaluer des apprentissages dans les contextes visés par l’annexe III ou à soutenir des décisions d’emploi peuvent l’être.", body: "<p>La qualification dépend de la fonction, de la finalité et des modalités d’usage. Voir le guide <a href=\"/roleplay-ia/ai-act\">roleplay IA et AI Act</a> et la <a href=\"https://digital-strategy.ec.europa.eu/en/faqs/navigating-ai-act\" rel=\"noopener\">méthode de classification de la Commission européenne</a>.</p>", related: ['rgpd'], updated: '2026-11-14' },
   { slug: 'rgpd', term: 'RGPD', def: "Règlement général sur la protection des données. Les sessions de roleplay IA contiennent des données personnelles de salariés ; leur hébergement, leur conservation et leurs sous-traitants doivent être documentés.", body: "<p>Voir la page <a href=\"/roleplay-ia/rgpd-hebergement\">RGPD et hébergement</a> du comparatif.</p>", related: ['ai-act'] },
 ];
+
+export const glossaryUpdated = (entry: (typeof GLOSSAIRE)[number]) =>
+  entry.updated ?? GLOSSARY_UPDATED;
+
+export const GLOSSARY_INDEX_UPDATED = GLOSSAIRE
+  .map(glossaryUpdated)
+  .sort()
+  .at(-1)!;

@@ -1,18 +1,20 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { SITE } from '../../lib/data';
-import { GLOSSAIRE, GLOSSARY_UPDATED } from '../../lib/glossaire';
+import { SITE, formatDate } from '../../lib/data';
+import { GLOSSAIRE, GLOSSARY_UPDATED, glossaryUpdated } from '../../lib/glossaire';
 export function getStaticPaths() { return GLOSSAIRE.map((g) => ({ params: { slug: g.slug }, props: { g } })); }
 const { g } = Astro.props;
 const url = `${SITE.url}/glossaire/${g.slug}`;
+const updated = glossaryUpdated(g);
 const related = g.related.map((r) => GLOSSAIRE.find((x) => x.slug === r)).filter(Boolean);
 const jsonld = [
   { '@type': 'DefinedTerm', name: g.term, description: g.def, url, inDefinedTermSet: `${SITE.url}/glossaire` },
-  { '@type': 'Article', '@id': `${url}#article`, headline: `${g.term} : définition`, description: g.def, url, inLanguage: 'fr-FR', datePublished: GLOSSARY_UPDATED, dateModified: GLOSSARY_UPDATED, author: SITE.authors.map((a) => ({ '@id': `${SITE.url}/a-propos#${a.id}` })), publisher: { '@id': `${SITE.url}#organization` }, mainEntityOfPage: url },
+  { '@type': 'Article', '@id': `${url}#article`, headline: `${g.term} : définition`, description: g.def, url, inLanguage: 'fr-FR', datePublished: GLOSSARY_UPDATED, dateModified: updated, author: SITE.authors.map((a) => ({ '@id': `${SITE.url}/a-propos#${a.id}` })), publisher: { '@id': `${SITE.url}#organization` }, mainEntityOfPage: url },
 ];
 ---
 <Base title={`${g.term} : définition et usage en formation`} description={g.def} canonical={url} {jsonld} breadcrumbs={[{ name: 'Glossaire', url: `${SITE.url}/glossaire` }, { name: g.term, url }]}>
   <h1>{g.term}</h1>
+  <p class="mt-2 text-sm text-muted">Mis à jour le <time datetime={updated}>{formatDate(updated)}</time> · <a href="/methodologie">Méthodologie</a> · <a href="/a-propos#transparence">Transparence</a></p>
   <p class="mt-4 text-lg"><strong>Définition.</strong> {g.def}</p>
   <div class="prose-fr" set:html={g.body} />
   {related.length > 0 && <p class="mt-6 text-sm">Voir aussi : {related.map((r, i) => (<><a href={`/glossaire/${r!.slug}`}>{r!.term}</a>{i < related.length - 1 ? ', ' : ''}</>))}.</p>}
